@@ -43,6 +43,7 @@ def generate_json(base_dir, base_url):
                     "level2": niveles[1] if len(niveles) > 1 else None,
                     "level3": niveles[2] if len(niveles) > 2 else None
                 })
+    logging.debug(f"Generated JSON with {len(result)} images from {base_dir}")
     return result
 
 def embed_metadata(image, metadata):
