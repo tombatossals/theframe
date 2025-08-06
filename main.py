@@ -7,7 +7,7 @@ import sys
 from dotenv import load_dotenv
 
 from image_processor import process_image
-from lib.tools import generate_json
+from tools import generate_json
 from tv_uploader import upload_to_tv
 
 # Load environment variables
