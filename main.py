@@ -64,11 +64,9 @@ def main():
         if not image:
             logging.error("No se pudo obtener una imagen del origen especificado.")
             sys.exit(1)
-        logging.debug(f"Image fetched: {image.get('metadata', {}).get('name', 'Unknown')}")
 
-        # Upload the image to the TV
-        logging.info(f"Uploading image to TV at {tv_ip}...")
         upload_to_tv(image, tv_ip, tv_token)
+
     elif args.command == 'generate':
 
         destination_json = args.destination or os.getenv('DESTINATION_JSON')

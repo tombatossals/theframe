@@ -105,6 +105,8 @@ def pick_random_image(source_json_url, embed_metadata=False) -> Background:
         if embed_metadata:
             return embed_metadata(image_data, selected_image['metadata'])
 
+        logging.debug(f"Fetched image: {selected_image.get('author', 'Unknown')} - {selected_image.get('name', 'Unknown')}")
+
         return {
             "metadata": {
                 "filename": selected_image.get('filename', 'unknown.jpg'),
@@ -121,35 +123,27 @@ def pick_random_image(source_json_url, embed_metadata=False) -> Background:
         }
 
     except Exception as e:
-        logging.error(f"Error al seleccionar imagen: {e}")
+        logging.error(f"Error picking a image from the repository: {e}")
         return None
 
-def upload_to_tv(image_data, tv_ip, tv_token, tv_port=8002, timeout=5):
+def upload_to_tv(image, tv_ip, tv_token, tv_port=8002, timeout=5):
 
+    logging.debug(f"Conectando a TV en {tv_ip}:{tv_port} con token {tv_token}")
+    logger = logging.getLogger("samsungtvws").setLevel(logging.INFO)
+
+    tv = SamsungTVWS(host=tv_ip, port=tv_port, token=tv_token)
+    uploadedID = tv.art().upload(image.get("binary"), file_type="JPEG", matte='none')
+    tv.art().select_image(uploadedID, show=tv.art().get_artmode() == "on")
+    logging.debug(f"Uploaded image: {image.get('metadata', {}).get('name', 'Unknown')}")
+
+    # Delete old images
     try:
-        logging.debug(f"Conectando a TV en {tv_ip}:{tv_port} con token {tv_token}")
-        tv = SamsungTVWS(host=tv_ip, port=tv_port, token=tv_token)
-        info = tv.art().get_artmode()
-        logging.debug(info)
-
-        uploadedID = tv.art().upload(image_data, file_type="JPEG", matte='none')
-        tv.art().select_image(uploadedID, show=tv.art().get_artmode() == "on")
-
-        print(f"Imagen subida con ID: {uploadedID}")
-
-        # Delete old images
-        try:
-            current_img = tv.art().get_current()
-        except Exception as e:
-            pass
-
-        info = tv.art().available()
-        print(info)
+        current_img = tv.art().get_current()
         ids = [ i.get("content_id") for i in info if i.get("content_id") != current_img.get("content_id")]
+        logging.debug(f"Deleting old images: {ids}")
         tv.art().delete_list(ids)
+    except Exception as e:
+        return
 
-    except Exception:
-        logging.error(f"Error al conectar con el TV en {tv_ip}:{tv_port}")
-        return False
 
 
