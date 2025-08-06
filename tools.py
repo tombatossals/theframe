@@ -33,6 +33,7 @@ def generate_json(base_dir, base_url):
                 name = data[1].strip() if len(data) > 1 else author
 
                 result.append({
+                    "filename": file,
                     "author": author,
                     "name": name,
                     "file_size": os.path.getsize(ruta_absoluta),
@@ -102,7 +103,15 @@ def pick_random_image(source_json_url, embed_metadata=False) -> Background:
 
         return {
             "metadata": {
-                "url": image_url
+                "filename": selected_image.get('filename', 'unknown.jpg'),
+                "url": image_url,
+                "author": selected_image.get('author', 'Unknown'),
+                "name": selected_image.get('name', 'Unknown'),
+                "file_size": selected_image.get('file_size', 0),
+                "file_type": selected_image.get('file_type', 'unknown'),
+                "level1": selected_image.get('level1', None),
+                "level2": selected_image.get('level2', None),
+                "level3": selected_image.get('level3', None)
             },
             "binary": image_data
         }

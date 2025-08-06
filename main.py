@@ -61,7 +61,13 @@ def main():
 
         logging.debug("Fetching random image from source...")
         image = pick_random_image(backgrounds_source, embed_metadata=args.embed)
+        if not image:
+            logging.error("No se pudo obtener una imagen del origen especificado.")
+            sys.exit(1)
         logging.debug(f"Image fetched: {image.get('metadata', {}).get('name', 'Unknown')}")
+
+        # Upload the image to the TV
+        logging.info(f"Uploading image to TV at {tv_ip}...")
         upload_to_tv(image, tv_ip, tv_token)
     elif args.command == 'generate':
 
