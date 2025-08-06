@@ -60,7 +60,7 @@ def main():
 
 
         logging.debug("Fetching random image from source...")
-        image = pick_random_image(backgrounds_source, embed_metadata=args.embed)
+        image = pick_random_image(backgrounds_source, embed=args.embed)
         if not image:
             logging.error("No se pudo obtener una imagen del origen especificado.")
             sys.exit(1)

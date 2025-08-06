@@ -1,12 +1,14 @@
+import io
 import json
 import logging
 import os
+import platform
 import random
 import urllib.request
 from urllib.parse import quote
 
 from dotenv import load_dotenv
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from samsungtvws import SamsungTVWS
 
 from bgtypes import Background
@@ -49,48 +51,118 @@ def generate_json(base_dir, base_url):
     logging.debug(f"Generated JSON with {len(result)} images from {base_dir}")
     return result
 
-def embed_metadata(image, metadata):
+def embed_metadata(image: Background) -> bytes:
+    logging.getLogger("pil").setLevel(logging.ERROR)  # Reduce PIL logging noise
+    pil_image = Image.open(io.BytesIO(image.get("binary"))).convert("RGBA")
+    metadata = image.get("metadata", {})
+    _, height = pil_image.size
 
-    pil_image = Image.open(io.BytesIO(image_data))
+    # Crear capa para dibujo
+    overlay = Image.new("RGBA", pil_image.size, (255, 255, 255, 0))
+    draw = ImageDraw.Draw(overlay)
 
-    # Crear un objeto de dibujo
-    draw = ImageDraw.Draw(pil_image)
+    # Cargar fuente
+    if platform.system() == "Darwin":
+        font_path = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+    else:
+        font_path = "/usr/share/fonts/TTF/DejaVuSans-Bold.ttf"
 
-    # Configurar la fuente (asegúrate de que la fuente exista en tu sistema)
-    # Cambia la ruta según tu sistema
-    font_path = "/usr/share/fonts/TTF/DejaVuSans-Bold.ttf"
-    font_size = 96
-    font = ImageFont.truetype(font_path, font_size)
+    font_size_author = int(height * 0.025)
+    font_size_title = int(height * 0.03)
 
-    # Obtener el tamaño de la imagen
-    image_width, image_height = pil_image.size
+    font_author = ImageFont.truetype(font_path, font_size_author)
+    font_title = ImageFont.truetype(font_path, font_size_title)
 
-    # Calcular las dimensiones del texto usando textbbox
-    text_bbox = draw.textbbox((0, 0), "test", font=font)
-    text_width = text_bbox[2] - text_bbox[0]
-    text_height = text_bbox[3] - text_bbox[1]
+    # Texto a mostrar
+    line_author = f"{metadata.get('author', 'Unknown')}"
+    line_title = f"{metadata.get('name', 'Unknown')}"
 
-    # Calcular la posición para centrar el texto en la parte baja
-    text_x = (image_width - text_width) // 2
-    text_y = image_height - text_height - 80  # 10 px de margen inferior
+    # Calcular tamaños de texto usando textbbox
+    def get_text_size(text, font):
+        bbox = draw.textbbox((0, 0), text, font=font)
+        return bbox[2] - bbox[0], bbox[3] - bbox[1]
 
-    # Dibujar un rectángulo como fondo del texto (opcional)
-    margin = 20
-    draw.rectangle(
-        [text_x - margin, text_y, text_x +
-            text_width + margin, text_y + text_height + margin + 10],
-        fill="black",
+    text_w1, text_h1 = get_text_size(line_author, font_author)
+    text_w2, text_h2 = get_text_size(line_title, font_title)
+
+    # Padding
+    padding_x = 40
+    padding_y = 35
+    spacing = 15
+    divider_height = 2
+    line_space = 25
+
+    box_width = max(text_w1, text_w2) + 2 * padding_x
+    box_height = (
+        text_h1 + divider_height + text_h2 +
+        2 * padding_y + spacing + line_space
     )
 
-    # Dibujar el texto
-    draw.text((text_x, text_y), metadata, font=font, fill="white")
+    box_x0 = 50
+    box_y0 = height - box_height - 50
+    box_x1 = box_x0 + box_width
+    box_y1 = box_y0 + box_height
+
+
+    # Crear capa sombra
+    shadow = Image.new("RGBA", pil_image.size, (0, 0, 0, 0))
+    shadow_draw = ImageDraw.Draw(shadow)
+    offset = 10
+    shadow_box = [box_x0 + offset, box_y0 + offset, box_x1 + offset, box_y1 + offset]
+    shadow_draw.rectangle(shadow_box, fill=(0, 0, 0, 180))
+    shadow = shadow.filter(ImageFilter.GaussianBlur(radius=10))
+
+    # Dibujar caja y texto **antes** de componer capas
+    draw.rectangle(
+        [box_x0, box_y0, box_x1, box_y1],
+        fill=(0, 0, 0, 140),
+        outline=(255, 255, 255, 255),
+        width=1
+    )
+
+    # 4. Componer sombra + caja + texto
+    base = Image.alpha_composite(pil_image, shadow)
+
+
+
+    # Dibujar caja con sombra (más oscura)
+    draw.rectangle(
+        [box_x0, box_y0, box_x1, box_y1],
+        fill=(0, 0, 0, 140),            # Fondo semitransparente
+        outline=(255, 255, 255, 255),  # Borde blanco
+        width=1                        # Grosor del borde
+    )
+
+    # Coordenadas de texto
+    text_x = box_x0 + padding_x
+    text_y = box_y0 + padding_y
+
+    # Dibujar autor (sombra y texto)
+    shadow_offset = 2
+    draw.text((text_x + shadow_offset, text_y + shadow_offset), line_author, font=font_author, fill=(0, 0, 0, 255))
+    draw.text((text_x, text_y), line_author, font=font_author, fill=(255, 255, 255, 255))
+
+    # Línea divisoria
+    divider_y = text_y + text_h1 + line_space
+    draw.rectangle(
+        [text_x, divider_y, text_x + max(text_w1, text_w2), divider_y + divider_height],
+        fill=(255, 255, 255, 255)
+    )
+
+    # Título
+    title_y = divider_y + divider_height + spacing
+    draw.text((text_x + shadow_offset, title_y + shadow_offset), line_title, font=font_title, fill=(0, 0, 0, 255))
+    draw.text((text_x, title_y), line_title, font=font_title, fill=(255, 255, 255, 255))
+
+    # Componer imagen final
     buffer = io.BytesIO()
-    pil_image.save(buffer, format="JPEG")
+    final_image = Image.alpha_composite(base, overlay)
+    final_image.convert("RGB").save(buffer, format="JPEG", quality=95)
+    #final_image.convert("RGB").save("test.jpg", format="JPEG", quality=95)
+
     return buffer.getvalue()
 
-def pick_random_image(source_json_url, embed_metadata=False) -> Background:
-    """Selecciona una imagen aleatoria de un JSON de imágenes desde una URL y la devuelve en formato binario"""
-    try:
+def pick_random_image(source_json_url, embed=False) -> Background:
         with urllib.request.urlopen(source_json_url) as response:
             raw_data = response.read()
             decoded = raw_data.decode('utf-8')
@@ -102,12 +174,10 @@ def pick_random_image(source_json_url, embed_metadata=False) -> Background:
         with urllib.request.urlopen(image_url) as img_response:
             image_data = img_response.read()
 
-        if embed_metadata:
-            return embed_metadata(image_data, selected_image['metadata'])
 
         logging.debug(f"Fetched image: {selected_image.get('author', 'Unknown')} - {selected_image.get('name', 'Unknown')}")
 
-        return {
+        bgimage = {
             "metadata": {
                 "filename": selected_image.get('filename', 'unknown.jpg'),
                 "url": image_url,
@@ -122,28 +192,33 @@ def pick_random_image(source_json_url, embed_metadata=False) -> Background:
             "binary": image_data
         }
 
-    except Exception as e:
-        logging.error(f"Error picking a image from the repository: {e}")
-        return None
+        if embed:
+            bgimage['binary'] = embed_metadata(bgimage)
+
+        return bgimage
+
 
 def upload_to_tv(image, tv_ip, tv_token, tv_port=8002, timeout=5):
 
-    logging.debug(f"Conectando a TV en {tv_ip}:{tv_port} con token {tv_token}")
-    logger = logging.getLogger("samsungtvws").setLevel(logging.INFO)
-
-    tv = SamsungTVWS(host=tv_ip, port=tv_port, token=tv_token)
-    uploadedID = tv.art().upload(image.get("binary"), file_type="JPEG", matte='none')
-    tv.art().select_image(uploadedID, show=tv.art().get_artmode() == "on")
-    logging.debug(f"Uploaded image: {image.get('metadata', {}).get('name', 'Unknown')}")
-
-    # Delete old images
     try:
-        current_img = tv.art().get_current()
-        ids = [ i.get("content_id") for i in info if i.get("content_id") != current_img.get("content_id")]
-        logging.debug(f"Deleting old images: {ids}")
-        tv.art().delete_list(ids)
-    except Exception as e:
-        return
+        logging.debug(f"Conectando a TV en {tv_ip}:{tv_port} con token {tv_token}")
+        logger = logging.getLogger("samsungtvws").setLevel(logging.INFO)
 
+        tv = SamsungTVWS(host=tv_ip, port=tv_port, token=tv_token)
+        uploadedID = tv.art().upload(image.get("binary"), file_type="JPEG", matte='none')
+        tv.art().select_image(uploadedID, show=tv.art().get_artmode() == "on")
+        logging.debug(f"Uploaded image: {image.get('metadata', {}).get('name', 'Unknown')}")
+
+        # Delete old images
+        try:
+            current_img = tv.art().get_current()
+            ids = [ i.get("content_id") for i in info if i.get("content_id") != current_img.get("content_id")]
+            logging.debug(f"Deleting old images: {ids}")
+            tv.art().delete_list(ids)
+        except Exception as e:
+            return
+
+    except Exception as e:
+        logging.error(f"Error al subir la imagen a la TV: {e}")
 
 
