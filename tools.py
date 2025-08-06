@@ -28,11 +28,13 @@ def generate_json(base_dir, base_url):
                 ruta_relativa = os.path.relpath(ruta_absoluta, base_dir)
                 url = f"{base_url}/{ruta_relativa.replace(os.sep, '/').replace(' ', '%20')}"
 
+                data = os.path.basename(os.path.splitext(file)[0]).split("-")
+                author = data[0].strip()
+                name = data[1].strip() if len(data) > 1 else author
+
                 result.append({
-                    "file_path": ruta_absoluta,
-                    "author": os.path.basename(ruta_absoluta.split("-")[0]),
-                    "name": os.path.splitext(file)[0],
-                    "file_name": file,
+                    "author": author,
+                    "name": name,
                     "file_size": os.path.getsize(ruta_absoluta),
                     "file_type": os.path.splitext(file)[1].lower(),
                     "url": url,
