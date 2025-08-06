@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 
 import argparse
+import json
+import logging
 import os
 import sys
-import json
 
 from dotenv import load_dotenv
 
-from image_processor import process_image
-from tools import generate_json
-from tv_uploader import upload_to_tv
+from tools import generate_json, pick_random_image, upload_to_tv
 
 # Load environment variables
 load_dotenv()
+
 
 
 def main():
@@ -21,15 +21,20 @@ def main():
     # Parameters
     parser.add_argument('--ip', help='Samsung TV device IP address (optional if THEFRAME_IP is in .env)')
     parser.add_argument('--source', help='JSON URL with available images (optional if BACKGROUNDS_SOURCE is in .env)')
+    parser.add_argument('--embed', action='store_true', help='Embed metadata in the image before uploading')
+    parser.add_argument('--token', help='Samsung TV Token (optional if THEFRAME_TOKEN is in .env)')
+
     parser.add_argument('--destination', help='JSON FILE to write the generated images (optional if DESTINATION_JSON is in .env)')
     parser.add_argument('--images_dir', help='Directory with images to process (optional if IMAGES_DIR is in .env)')
     parser.add_argument('--base_url', help='Base URL for the images (optional if BASE_URL is in .env)')
 
-    parser.add_argument('--convert', action='store_true', help='Convert/process the image before uploading')
     parser.add_argument('command', choices=['upload', 'generate'], help='Command to execute')
+    parser.add_argument('--debug', action='store_true', default=False, help='Log debug messages')
 
     args = parser.parse_args()
 
+    log_level = logging.DEBUG if args.debug else logging.INFO
+    logging.basicConfig(level=log_level, format="%(asctime)s [%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
 
     # Execute according to command
     if args.command == 'upload':
@@ -40,6 +45,12 @@ def main():
             print("Error: Debe especificar la IP del TV con --ip o configurar IP en el archivo .env")
             sys.exit(1)
 
+        # If token is provided, use it; otherwise, use the one from .env
+        tv_token = args.token or os.getenv('THEFRAME_TOKEN')
+
+        if not tv_token:
+            print("Error: Debe especificar el token del TV con --token o configurar THEFRAME_TOKEN en el archivo .env")
+            sys.exit(1)
         # Determine image source: command line argument or environment variable
         backgrounds_source = args.source or os.getenv('SOURCE_JSON')
 
@@ -48,21 +59,10 @@ def main():
             sys.exit(1)
 
 
-        print(f"Obteniendo imágenes desde: {backgrounds_source}")
-        print(f"TV destino: {tv_ip}")
-        print(f"Procesar imagen: {'Sí' if args.convert else 'No'}")
-
-        # For now we show the configuration
-        print("¡Configuración completada! (Implementación pendiente)")
-
-        # Example of what would come:
-        # selected_image = get_random_image_from_json(backgrounds_source)
-        # downloaded_image = download_image(selected_image)
-        #
-        # if args.convert:
-        #     downloaded_image = process_image(downloaded_image)
-        #
-        # success = upload_to_tv(downloaded_image, tv_ip)
+        logging.debug("Fetching random image from source...")
+        image = pick_random_image(backgrounds_source, embed_metadata=args.embed)
+        logging.debug(f"Image fetched: {image.get('metadata', {}).get('name', 'Unknown')}")
+        upload_to_tv(image, tv_ip, tv_token)
     elif args.command == 'generate':
 
         destination_json = args.destination or os.getenv('DESTINATION_JSON')

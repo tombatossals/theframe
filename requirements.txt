@@ -1,7 +1,3 @@
 samsungtvws[async,encrypted]
-wakeonlan
-python-dotenv
-bs4
-lxml
 pillow
 dotenv
