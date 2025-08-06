@@ -3,6 +3,7 @@
 import argparse
 import os
 import sys
+import json
 
 from dotenv import load_dotenv
 
@@ -84,7 +85,7 @@ def main():
 
         # Save to disk (optional)
         with open(destination_json, 'w', encoding='utf-8') as f:
-            json.dump(destination_json, f, ensure_ascii=False, indent=2)
+            json.dump(images, f, ensure_ascii=False, indent=2)
 
 if __name__ == "__main__":
     main()
