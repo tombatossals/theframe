@@ -3,6 +3,7 @@ import logging
 import os
 import random
 import urllib.request
+from urllib.parse import quote
 
 from dotenv import load_dotenv
 from PIL import Image, ImageDraw, ImageFont
@@ -26,7 +27,8 @@ def generate_json(base_dir, base_url):
             if file.lower().endswith(('.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp')):
                 ruta_absoluta = os.path.join(root, file)
                 ruta_relativa = os.path.relpath(ruta_absoluta, base_dir)
-                url = f"{base_url}/{ruta_relativa.replace(os.sep, '/').replace(' ', '%20')}"
+                ruta_url = quote(ruta_relativa.replace(os.sep, '/'))
+                url = f"{base_url}/{ruta_url}"
 
                 data = os.path.basename(os.path.splitext(file)[0]).split("-")
                 author = data[0].strip()
@@ -43,6 +45,7 @@ def generate_json(base_dir, base_url):
                     "level2": niveles[1] if len(niveles) > 1 else None,
                     "level3": niveles[2] if len(niveles) > 2 else None
                 })
+
     logging.debug(f"Generated JSON with {len(result)} images from {base_dir}")
     return result
 
