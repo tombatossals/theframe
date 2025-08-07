@@ -8,10 +8,19 @@ import urllib.request
 from urllib.parse import quote
 
 from dotenv import load_dotenv
+from ollama import ChatResponse, chat
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from samsungtvws import SamsungTVWS
 
-from bgtypes import Background
+from _types import Background
+
+
+def disable_logger(logger_name):
+    logger = logging.getLogger(logger_name)
+    logger.setLevel(logging.CRITICAL)
+    logger.propagate = False
+    logger.handlers.clear()
+    logger.addHandler(logging.NullHandler())
 
 
 def generate_json(base_dir, base_url):
@@ -57,7 +66,7 @@ def generate_json(base_dir, base_url):
     return final
 
 def embed_metadata(image: Background) -> bytes:
-    logging.getLogger("pil").setLevel(logging.ERROR)  # Reduce PIL logging noise
+    disable_logger("pil")
     pil_image = Image.open(io.BytesIO(image.get("binary"))).convert("RGBA")
     metadata = image.get("metadata", {})
     _, height = pil_image.size
@@ -204,7 +213,7 @@ def upload_to_tv(image, tv_ip, tv_token, tv_port=8002, timeout=5):
 
     try:
         logging.debug(f"Conectando a TV en {tv_ip}:{tv_port} con token {tv_token}")
-        logger = logging.getLogger("samsungtvws").setLevel(logging.INFO)
+        disable_logger("samsungtvws")
 
         tv = SamsungTVWS(host=tv_ip, port=tv_port, token=tv_token)
         uploadedID = tv.art().upload(image.get("binary"), file_type="JPEG", matte='none')
@@ -223,4 +232,49 @@ def upload_to_tv(image, tv_ip, tv_token, tv_port=8002, timeout=5):
     except Exception as e:
         logging.error(f"Error al subir la imagen a la TV: {e}")
 
+def get_full_name(name: str) -> str:
+    parts = [p.strip() for p in name.split(",")]
+    if len(parts) == 2:
+        return f"{parts[1]} {parts[0]}"
+    return name
+
+
+def populate_painters(paintings, painters_json, question = "fullname"):
+    disable_logger("httpx")
+    disable_logger("httpcore")
+    disable_logger("asyncio")
+
+    prompts = {
+        "century": "Can you provide in just one word (roman numerals) the century of this artist: ",
+        "fullname": "Can you provide the full name of this artist, without any abbreviations or commas: ",
+        "style": "Can you provide the style of this artist, in just one word: "
+    }
+
+    painters = dict()
+    populated_painters = dict()
+
+    if os.path.exists(painters_json):
+        with open(painters_json, 'r', encoding='utf-8') as f:
+            painters = json.load(f)
+
+    for painting in paintings:
+        author = get_full_name(painting.get('author', 'Unknown'))
+        if author in painters.keys():
+            populated_painters[author] = painters.get(author)
+
+        if populated_painters.get(author) is None or populated_painters.get(author).get(question) is None:
+            logging.debug(f"Populating painter: {author}...")
+            response: ChatResponse = chat(model='gpt-oss:20b', messages=[
+            {
+                'role': 'user',
+                'content': prompts[question]  + author + " - " + painting.get('title', 'Unknown')
+            }])
+
+            answer = response.message.content.strip()
+            populated_painters[author] = {
+                question: answer
+            }
+            logging.debug(f"Populated: {author} - {answer}")
+
+    return populated_painters
 

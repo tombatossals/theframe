@@ -1,3 +1,4 @@
 samsungtvws[async,encrypted]
 pillow
 dotenv
+ollama

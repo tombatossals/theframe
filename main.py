@@ -8,7 +8,8 @@ import sys
 
 from dotenv import load_dotenv
 
-from tools import generate_json, pick_random_image, upload_to_tv
+from tools import (generate_json, pick_random_image, populate_painters,
+                   upload_to_tv)
 
 # Load environment variables
 load_dotenv()
@@ -24,11 +25,12 @@ def main():
     parser.add_argument('--embed', action='store_true', help='Embed metadata in the image before uploading')
     parser.add_argument('--token', help='Samsung TV Token (optional if THEFRAME_TOKEN is in .env)')
 
-    parser.add_argument('--destination', help='JSON FILE to write the generated images (optional if DESTINATION_JSON is in .env)')
+    parser.add_argument('--paintings_json', help='JSON FILE to write the generated images (optional if PAINTINGS_JSON is in .env)')
+    parser.add_argument('--painters_json', help='JSON FILE to write the generated images (optional if PAINTERS_JSON is in .env)')
     parser.add_argument('--images_dir', help='Directory with images to process (optional if IMAGES_DIR is in .env)')
     parser.add_argument('--base_url', help='Base URL for the images (optional if BASE_URL is in .env)')
 
-    parser.add_argument('command', choices=['upload', 'generate'], help='Command to execute')
+    parser.add_argument('command', choices=['upload', 'generate', 'populate'], help='Command to execute')
     parser.add_argument('--debug', action='store_true', default=False, help='Log debug messages')
 
     args = parser.parse_args()
@@ -69,9 +71,9 @@ def main():
 
     elif args.command == 'generate':
 
-        destination_json = args.destination or os.getenv('DESTINATION_JSON')
-        if not destination_json:
-            print("Error: Debe especificar el archivo de destino con --destination o configurar DESTINATION_JSON en el archivo .env")
+        paintings_json = args.paintings_json or os.getenv('PAINTINGS_JSON')
+        if not paintings_json:
+            print("Error: Debe especificar el archivo de destino con --paintings_json o configurar PAINTINGS_JSON en el archivo .env")
             sys.exit(1)
 
         images_dir = args.images_dir or os.getenv('IMAGES_DIR')
@@ -88,8 +90,29 @@ def main():
         images = generate_json(images_dir, base_url)
 
         # Save to disk (optional)
-        with open(destination_json, 'w', encoding='utf-8') as f:
+        with open(paintings_json, 'w', encoding='utf-8') as f:
             json.dump(images, f, ensure_ascii=False, indent=2)
+
+    elif args.command == 'populate':
+        paintings_json = args.paintings_json or os.getenv('PAINTINGS_JSON')
+        if not paintings_json:
+            print("Error: Debe especificar el archivo de destino con --paintings_json o configurar PAINTINGS_JSON en el archivo .env")
+            sys.exit(1)
+
+        painters_json = args.painters_json or os.getenv('PAINTERS_JSON')
+        if not painters_json:
+            print("Error: Debe especificar el archivo de destino con --painters_json o configurar PAINTERS_JSON en el archivo .env")
+            sys.exit(1)
+
+        with open(paintings_json, 'r', encoding='utf-8') as f:
+            paintings = json.load(f)
+            populated_painters = populate_painters(paintings[0:500], painters_json)
+            with open(painters_json, 'w', encoding='utf-8') as f:
+                json.dump(populated_painters, f, ensure_ascii=False, indent=2)
+
+    else:
+        print("Comando no reconocido. Use 'upload', 'generate' o 'populate'.")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
