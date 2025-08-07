@@ -133,5 +133,926 @@
   },
   "Salvator Rosa": {
     "fullname": "Salvator Rosa"
+  },
+  "Jacob de Heusch": {
+    "fullname": "Jacob de Heusch"
+  },
+  "Abraham Janssens": {
+    "fullname": "Abraham Janssens"
+  },
+  "Harmen Steenwijck": {
+    "fullname": "Harmen Steenwijck"
+  },
+  "Thomas Heeremans": {
+    "fullname": "Thomas Heeremans"
+  },
+  "Jan Porcellis": {
+    "fullname": "Jan Porcellis"
+  },
+  "Jan Abrahamsz. Beerstraten": {
+    "fullname": "Jan Abraham Beerstraten"
+  },
+  "Bernardo Strozzi": {
+    "fullname": "Bernardo Strozzi"
+  },
+  "Herman van Swanevelt": {
+    "fullname": "Herman van Swanevelt"
+  },
+  "Juan de Arellano": {
+    "fullname": "Juan de Arellano"
+  },
+  "Hendrik van Minderhout": {
+    "fullname": "Hendrik van Minderhout"
+  },
+  "Francisco de Zurbarán": {
+    "fullname": "Francisco de Zurbarán"
+  },
+  "Frans Post": {
+    "fullname": "Frans Post"
+  },
+  "Philippe de Champaigne": {
+    "fullname": "Philippe de Champaigne"
+  },
+  "Jacob van Strij": {
+    "fullname": "Jacob van Strij"
+  },
+  "Jan Asselyn": {
+    "fullname": "Jan Asselyn"
+  },
+  "Hendrick van Iii Cleve": {
+    "fullname": "Hendrik van Cleve"
+  },
+  "Tobias Stranover": {
+    "fullname": "Tobias Stranover"
+  },
+  "Jacopo Tintoretto": {
+    "fullname": "Jacopo Tintoretto"
+  },
+  "Giuseppe Bernardino Bison": {
+    "fullname": "Giuseppe Bernardino Bison"
+  },
+  "Adam Willaerts": {
+    "fullname": "Adam Willaerts"
+  },
+  "Jacopo Tintiretto": {
+    "fullname": "Jacopo Tintoretto"
+  },
+  "Grant Wood": {
+    "fullname": "Grant Wood"
+  },
+  "Bruno Liljefors": {
+    "fullname": "Bruno Liljefors"
+  },
+  "Haris Petie": {
+    "fullname": "Haris Petie"
+  },
+  "John Singer Sargent": {
+    "fullname": "John Singer Sargent"
+  },
+  "Gustave Loiseau": {
+    "fullname": "Gustave Loiseau"
+  },
+  "Eugène Boudin": {
+    "fullname": "Eugène Boudin"
+  },
+  "Camille Pissarro": {
+    "fullname": "Camille Pissarro"
+  },
+  "Claude Monet": {
+    "fullname": "Claude Monet"
+  },
+  "Armand Guillaumin": {
+    "fullname": "Armand Guillaumin"
+  },
+  "Olga Wisinger": {
+    "fullname": "Olga Wisinger-Florian"
+  },
+  "Alfred William Finch": {
+    "fullname": "Alfred William Finch"
+  },
+  "Lovis Corinth": {
+    "fullname": "Lovis Corinth"
+  },
+  "Gustave Caillebotte": {
+    "fullname": "Gustave Caillebotte"
+  },
+  "Alexander Koester": {
+    "fullname": "Alexander Koester"
+  },
+  "Mary Cassatt": {
+    "fullname": "Mary Cassatt"
+  },
+  "Ernest Lawson": {
+    "fullname": "Ernest Lawson"
+  },
+  "Edouard Manet": {
+    "fullname": "Édouard Manet"
+  },
+  "Edgar Degas": {
+    "fullname": "Edgar Degas"
+  },
+  "Hippolyte Delpy": {
+    "fullname": "Hippolyte Delpy"
+  },
+  "Alfred Sisley": {
+    "fullname": "Alfred Sisley"
+  },
+  "Hippolyte Camille Delpy": {
+    "fullname": "Hippolyte Camille Delpy"
+  },
+  "Frederick Mccubbin": {
+    "fullname": "Frederick William McCubbin"
+  },
+  "Georges Valmier": {
+    "fullname": "Georges Valmier"
+  },
+  "H. B. Claflin": {
+    "fullname": "Henry Benjamin Claflin"
+  },
+  "Michael Angelo Rooker": {
+    "fullname": "Michael Angelo Rooker"
+  },
+  "Max Liebermann": {
+    "fullname": "Maximilian Liebermann"
+  },
+  "Pierre": {
+    "fullname": "Pierre-Auguste Renoir"
+  },
+  "Frederick Childe Hassam": {
+    "fullname": "Frederick Childe Hassam"
+  },
+  "Karl Hagemeister": {
+    "fullname": "Karl Hagemeister"
+  },
+  "Robert William Vonnoh": {
+    "fullname": "Robert William Vonnoh"
+  },
+  "Peter Hansen": {
+    "fullname": "Peter Hansen"
+  },
+  "Berthe Morisot": {
+    "fullname": "Berthe Henriette Morisot"
+  },
+  "August Fink": {
+    "fullname": "August Fink"
+  },
+  "Franklin Carmichael": {
+    "fullname": "Franklin Carmichael"
+  },
+  "Duccio di Buoninsegna": {
+    "fullname": "Duccio di Buoninsegna"
+  },
+  "Sano di Pietro": {
+    "fullname": "Sano di Pietro"
+  },
+  "E.A. Séguy": {
+    "fullname": "Émile Auguste Seguy"
+  },
+  "Alphonse Mucha": {
+    "fullname": "Alphonse Mucha"
+  },
+  "Kōno Bairei": {
+    "fullname": "Kōno Bairei"
+  },
+  "Carl Rottmann": {
+    "fullname": "Carl Rottmann"
+  },
+  "Horace Vernet": {
+    "fullname": "Horace Vernet"
+  },
+  "Lancelot Turpin De Crissé": {
+    "fullname": "Lancelot Turpin De Crissé Théodore"
+  },
+  "Albert Bierstadt": {
+    "fullname": "Albert Bierstadt"
+  },
+  "Konstantinovich Aivazovsky": {
+    "fullname": "Konstantin Konstantinovich Aivazovsky"
+  },
+  "Thomas Gainsborough": {
+    "fullname": "Thomas Gainsborough"
+  },
+  "Eugene Delacroix": {
+    "fullname": "Eugène Delacroix"
+  },
+  "Philip James de Loutherbourg": {
+    "fullname": "Philip James de Loutherbourg"
+  },
+  "George Stubbs": {
+    "fullname": "George Stubbs"
+  },
+  "Friedrich Caspar David": {
+    "fullname": "Friedrich Caspar David"
+  },
+  "Joseph Mallord William Turner": {
+    "fullname": "Joseph Mallord William Turner"
+  },
+  "Karl Blechen": {
+    "fullname": "Karl Blechen"
+  },
+  "Dedham Vale": {
+    "fullname": "John Constable"
+  },
+  "Richard Parkes Bonington": {
+    "fullname": "Richard Parkes Bonington"
+  },
+  "Franz de Paula Ferg": {
+    "fullname": "Franz de Paula Ferg"
+  },
+  "John Constable": {
+    "fullname": "John Constable"
+  },
+  "Johan Christian Clausen Dahl": {
+    "fullname": "Johan Christian Clausen Dahl"
+  },
+  "P.C. Skovgaard": {
+    "fullname": "Peder Carl Skovgaard"
+  },
+  "Robert Charles Dudley": {
+    "fullname": "Robert Charles Dudley"
+  },
+  "Károly Markó": {
+    "fullname": "Károly Markó"
+  },
+  "Sir Richard Steele s Cottage Hampstead": {
+    "fullname": "Sir Richard Steele"
+  },
+  "Joseph Wright": {
+    "fullname": "Joseph Wright"
+  },
+  "Alexander Nasmyth": {
+    "fullname": "Alexander Nasmyth"
+  },
+  "English Landscape": {
+    "fullname": "English Landscape"
+  },
+  "Emanuel Leutze": {
+    "fullname": "Emanuel Leutze"
+  },
+  "Johan Anton Richter": {
+    "fullname": "Johan Anton Richter"
+  },
+  "Dedham Lock and Mill": {
+    "fullname": "The artist is not listed."
+  },
+  "Josephus Augustus Knip": {
+    "fullname": "Josephus Augustus Knip"
+  },
+  "Richard Wilson": {
+    "fullname": "Richard Wilson"
+  },
+  "Waterloo Bridge": {
+    "fullname": "Waterloo Bridge"
+  },
+  "Flatford Mill ii": {
+    "fullname": "John Constable"
+  },
+  "Malvern Hall Warwickshire": {
+    "fullname": "Malvern Hall Warwickshire"
+  },
+  "East Bergholt Church": {
+    "fullname": "John Constable"
+  },
+  "West Lodge East Bergholt": {
+    "fullname": "Thomas Gainsborough"
+  },
+  "Salisbury Cathedral and Leadenhall from the River Avon 1820": {
+    "fullname": "John Sell Cotman"
+  },
+  "Hampstead Heath with a Bonfire": {
+    "fullname": "Hampstead Heath with a Bonfire"
+  },
+  "Salisbury Cathedral from Lower Marsh Close": {
+    "fullname": "John William Smith"
+  },
+  "Wivenhoe Park Essex": {
+    "fullname": "John Everett Millais"
+  },
+  "John Constable Trentham Park": {
+    "fullname": "John Constable"
+  },
+  "John Constable East Bergholt": {
+    "fullname": "John Constable"
+  },
+  "Flatford Mill": {
+    "fullname": "John Constable"
+  },
+  "The White Horse": {
+    "fullname": "The White Horse"
+  },
+  "The Hay Wain 1821": {
+    "fullname": "John Constable"
+  },
+  "Hadleigh Castle The Mouth of the Thames Morning after a Stormy Night": {
+    "fullname": "John William Smith"
+  },
+  "Hokusai": {
+    "fullname": "Katsushika Hokusai"
+  },
+  "Utagawa Kuniyoshi": {
+    "fullname": "Utagawa Kuniyoshi"
+  },
+  "Franz Marc": {
+    "fullname": "Franz Marc"
+  },
+  "August Babberger": {
+    "fullname": "August Babberger"
+  },
+  "Edvard Munch": {
+    "fullname": "Edvard Munch"
+  },
+  "Ernst Ludwig Kirchner": {
+    "fullname": "Ernst Ludwig Kirchner"
+  },
+  "Wassily Kandinsky": {
+    "fullname": "Wassily Kandinsky"
+  },
+  "Max Beckmann": {
+    "fullname": "Maximilian Johannes Ludwig Beckmann"
+  },
+  "Johan Thomas Lundbye": {
+    "fullname": "Johan Thomas Lundby"
+  },
+  "Christen Købke": {
+    "fullname": "Christen Købke"
+  },
+  "Wilhelm Marstrand": {
+    "fullname": "Wilhelm Marstrand"
+  },
+  "Johan Teyler": {
+    "fullname": "Johan Teyler"
+  },
+  "Harald Oskar Sohlberg": {
+    "fullname": "Harald Oskar Sohlberg"
+  },
+  "Henry Lyman Saÿen": {
+    "fullname": "Henry Lyman Saÿen"
+  },
+  "Béla Iványi Grünwald": {
+    "fullname": "Béla Iványi Grünwald"
+  },
+  "Károly Ferenczy": {
+    "fullname": "Károly Ferenczy"
+  },
+  "Claude Vernet": {
+    "fullname": "Claude Joseph Vernet"
+  },
+  "Nicolas Poussin": {
+    "fullname": "Nicolas Poussin"
+  },
+  "George Seurat": {
+    "fullname": "Georges Seurat"
+  },
+  "Maximilien Luce": {
+    "fullname": "Maximilien Luce"
+  },
+  "Paul Signac": {
+    "fullname": "Paul Signac"
+  },
+  "Georges Seurat": {
+    "fullname": "Georges Eugène Seurat"
+  },
+  "William Morris": {
+    "fullname": "William Morris Saint James"
+  },
+  "Poème onirique (1922)": {
+    "fullname": "Paul Klee"
+  },
+  "Étude de Portrait de Florent Schmitt (1915)": {
+    "fullname": "Pablo Ruiz Picasso"
+  },
+  "Portrait cubiste (1914)": {
+    "fullname": "Pablo Picasso"
+  },
+  "COMPOSITION 3 (circa 1950)": {
+    "fullname": "John Herbert Cage"
+  },
+  "Étude pour le portrait de Florent Schmitt (1914)": {
+    "fullname": "Édouard Vuillard"
+  },
+  "Étude pour ‘La Femme au gant’ ou Composition (1920)": {
+    "fullname": "Henri Matisse"
+  },
+  "Paysage de Picardie (circa 1903)": {
+    "fullname": "Charles Cottet"
+  },
+  "Paysage à Meudon (1911)": {
+    "fullname": "Pierre-Auguste Renoir"
+  },
+  "Figure suggérée dans une peinture mesure": {
+    "fullname": "Georges Braque"
+  },
+  "Composition à quatre éléments (1923)": {
+    "fullname": "Henri Matisse"
+  },
+  "Composition au bol noir (1921)": {
+    "fullname": "Georges Braque"
+  },
+  "Composition (1922)": {
+    "fullname": "Pablo Ruiz Picasso"
+  },
+  "François de Nomé": {
+    "fullname": "François de Nomé"
+  },
+  "VAUDEVILLE (1917)": {
+    "fullname": "VAUDEVILLE"
+  },
+  "Tête d’homme (1913)": {
+    "fullname": "Pablo Ruiz Picasso"
+  },
+  "Symphonie en violet (1930)": {
+    "fullname": "Henri Matisse"
+  },
+  "Composition (1915)": {
+    "fullname": "Wassily Kandinsky"
+  },
+  "Sans titre (1930": {
+    "fullname": "Pablo Picasso"
+  },
+  "Landscape (1914)": {
+    "fullname": "Pablo Picasso"
+  },
+  "Composition ou Peinture objet (1921)": {
+    "fullname": "Fernand Léger"
+  },
+  "Paysage à l’arbre (1910)": {
+    "fullname": "Henri Matisse"
+  },
+  "Le Pêcheur (1913)": {
+    "fullname": "Paul Signac"
+  },
+  "Femmes assises devant une fenêtre (1914)": {
+    "fullname": "Pierre Bonnard"
+  },
+  "Composition (1915": {
+    "fullname": "Paul Klee"
+  },
+  "COMPOSITION 4 (circa 1950)": {
+    "fullname": "Piet Mondrian"
+  },
+  "COMPOSITION (circa 1950)": {
+    "fullname": "John Cage"
+  },
+  "Untitled [Cubist portrait of a seated man] (1914–15)": {
+    "fullname": "Pablo Picasso"
+  },
+  "La femme au gant noir (circa 1920)": {
+    "fullname": "Emmanuel Halperin"
+  },
+  "Composition cubiste bleue (circa 1912": {
+    "fullname": "Georges Braque"
+  },
+  "Cubist Composition (Centre Noir) (1921)": {
+    "fullname": "Pablo Ruiz Picasso"
+  },
+  "COMPOSITION 2 (circa 1950)": {
+    "fullname": "Robert Motherwell"
+  },
+  "Le village de Moret": {
+    "fullname": "Alfred Sisley"
+  },
+  "Figure en gloire (1936)": {
+    "fullname": "Clément Lemoine"
+  },
+  "Samuel Colman": {
+    "fullname": "Samuel Colman"
+  },
+  "Thomas Cole": {
+    "fullname": "Thomas Cole"
+  },
+  "William James Glackens": {
+    "fullname": "William James Glackens"
+  },
+  "George Bellows": {
+    "fullname": "George Bellows"
+  },
+  "William Henry Hunt": {
+    "fullname": "William Henry Hunt"
+  },
+  "John William Waterhouse": {
+    "fullname": "John William Waterhouse"
+  },
+  "Laurent de la Hyre": {
+    "fullname": "Laurent de la Hyre"
+  },
+  "Christoffer Wilhelm Eckersberg": {
+    "fullname": "Christoffer Wilhelm Eckersberg"
+  },
+  "Hubert Robert": {
+    "fullname": "Hubert Robert"
+  },
+  "Benjamin West": {
+    "fullname": "Benjamin West"
+  },
+  "Pierre Valenciennes": {
+    "fullname": "Pierre Henri de Valenciennes"
+  },
+  "Robert Zünd": {
+    "fullname": "Robert Zünd"
+  },
+  "Jacques David": {
+    "fullname": "Jacques David Louis"
+  },
+  "Jan van Os": {
+    "fullname": "Jan van Os"
+  },
+  "Jacob Philipp Hackert": {
+    "fullname": "Jacob Philipp Hackert"
+  },
+  "Paolo Anesi": {
+    "fullname": "Paolo Anesi"
+  },
+  "Canaletto": {
+    "fullname": "Giovanni Antonio Canal"
+  },
+  "Caspar Andriaans van Wittel": {
+    "fullname": "Caspar Andriessen van Wittel"
+  },
+  "Luca Carlevaris": {
+    "fullname": "Luca Carlevaris"
+  },
+  "Paul Klee": {
+    "fullname": "Paul Klee"
+  },
+  "Dominic Serres": {
+    "fullname": "Dominic Serres"
+  },
+  "Félix Ziem": {
+    "fullname": "Félix Ziem"
+  },
+  "Paul Gauguin": {
+    "fullname": "Paul Jules Gauguin"
+  },
+  "Édouard Vuillard": {
+    "fullname": "Édouard Vuillard"
+  },
+  "Vincent van Gogh": {
+    "fullname": "Vincent van Gogh"
+  },
+  "Pierre Bonnard": {
+    "fullname": "Pierre Bonnard"
+  },
+  "Henri de Toulouse": {
+    "fullname": "Henri de Toulouse Lautrec"
+  },
+  "Paul Cézanne": {
+    "fullname": "Paul Gustave Cézanne"
+  },
+  "Henri Matisse": {
+    "fullname": "Henri Matisse"
+  },
+  "Tivadar Csontváry Kosztka": {
+    "fullname": "Tivadar Csontváry Kosztka"
+  },
+  "Village behind the view of Auvers": {
+    "fullname": "Vincent van Gogh"
+  },
+  "Still Life by Cezanne": {
+    "fullname": "Paul Cézanne"
+  },
+  "The Seine at Bercy by Cezanne": {
+    "fullname": "Paul Cézanne"
+  },
+  "The Great Pine": {
+    "fullname": "The Great Pine"
+  },
+  "Robert Delaunay": {
+    "fullname": "Robert Delaunay"
+  },
+  "Henri Rousseau": {
+    "fullname": "Henri Rousseau"
+  },
+  "Samuel Scott": {
+    "fullname": "Samuel Scott"
+  },
+  "Jan van der Heyden": {
+    "fullname": "Johannes van der Heyden"
+  },
+  "Jan van Goyen": {
+    "fullname": "Jan van Goyen"
+  },
+  "Aelbert Cuyp": {
+    "fullname": "Aelbert Cuyp"
+  },
+  "Pieter Claesz": {
+    "fullname": "Pieter Claesz"
+  },
+  "David Vinckboons": {
+    "fullname": "David Vinckboons"
+  },
+  "Hendrick Avercamp": {
+    "fullname": "Hendrick Avercamp"
+  },
+  "Esaias van de Velde": {
+    "fullname": "Esaias van de Velde"
+  },
+  "Rachel Ruysch": {
+    "fullname": "Rachel Ruysch"
+  },
+  "Salomon van Ruysdael": {
+    "fullname": "Salomon van Ruysdael"
+  },
+  "Emanuel de Witte": {
+    "fullname": "Emanuel de Witte"
+  },
+  "Pieter Jansz Saenredam": {
+    "fullname": "Pieter Janszoon Saenredam"
+  },
+  "Herman Saftleven": {
+    "fullname": "Herman Saftleven"
+  },
+  "Théodore Rousseau": {
+    "fullname": "Théodore Rousseau"
+  },
+  "Gustáv Mallý": {
+    "fullname": "Gustáv Mallý"
+  },
+  "Thomas Mackenzie": {
+    "fullname": "Thomas Mackenzie"
+  },
+  "Henri Edmond Cross": {
+    "fullname": "Henri Edmond Cross Cap"
+  },
+  "Theo van Rysselberghe": {
+    "fullname": "Theodoor van Rysselberghe"
+  },
+  "Frederic Edwin Church": {
+    "fullname": "Frederic Edwin Church"
+  },
+  "Narcisse": {
+    "fullname": "Narcisse Virgile Diaz de La Peña"
+  },
+  "Pieter Aertsen": {
+    "fullname": "Pieter Aertsen"
+  },
+  "Simon Denis": {
+    "fullname": "Simon Denis"
+  },
+  "Arnold Böcklin": {
+    "fullname": "Arnold Böcklin"
+  },
+  "Gustav Klimt": {
+    "fullname": "Gustav Klimt"
+  },
+  "Rippl": {
+    "fullname": "József Rippl-Rónai"
+  },
+  "Niels Larsen Stevns": {
+    "fullname": "Niels Larsen Stevns"
+  },
+  "Amedeo Modigliani's Reclining Nude from the Back": {
+    "fullname": "Amedeo Modigliani"
+  },
+  "Amedeo Modigliani's Nu couché": {
+    "fullname": "Amedeo Modigliani"
+  },
+  "Amedeo Modigliani's Nude on a Blue Cushion": {
+    "fullname": "Amedeo Modigliani"
+  },
+  "Amedeo Modigliani's Reclining Nude with Loose Hair": {
+    "fullname": "Amedeo Modigliani"
+  },
+  "Amedeo Modigliani's Alice": {
+    "fullname": "Amedeo Modigliani"
+  },
+  "Amedeo Modigliani's Redheaded Girl in Evening Dress (Jeune fille rousse en robe de soir)": {
+    "fullname": "Amedeo Modigliani"
+  },
+  "Amedeo Modigliani's Nu couché (sur le côté gauche)": {
+    "fullname": "Amedeo Modigliani"
+  },
+  "Hannah Borger Overbeck": {
+    "fullname": "Hannah Borger Overbeck"
+  },
+  "William": {
+    "fullname": "Adolphe William Bouguereau"
+  },
+  "Winslow Homer": {
+    "fullname": "Winslow Homer"
+  },
+  "Henri Fantin": {
+    "fullname": "Henri Fantin‑Latour"
+  },
+  "Gustave Courbet": {
+    "fullname": "Gustave Courbet"
+  },
+  "Johan Barthold Jongkind": {
+    "fullname": "Johan Barthold Jongkind"
+  },
+  "Henri": {
+    "fullname": "Henri-Joseph Harpignies"
+  },
+  "Edward Hopper": {
+    "fullname": "Edward Harrison Hopper"
+  },
+  "Heywood Hardy": {
+    "fullname": "Heywood Hardy"
+  },
+  "Adolph von Menzel": {
+    "fullname": "Adolf von Menzel"
+  },
+  "Hector Giacomelli": {
+    "fullname": "Hector Giacomelli"
+  },
+  "Frederic Remington": {
+    "fullname": "Frederic Remington"
+  },
+  "Charles Hamilton Smith": {
+    "fullname": "Charles Hamilton Smith"
+  },
+  "John James Audubon": {
+    "fullname": "John James Audubon"
+  },
+  "Richard Bergh": {
+    "fullname": "Richard Bergh"
+  },
+  "Géza Mészöly": {
+    "fullname": "Géza Mészöly"
+  },
+  "Giovanni Paolo Pannini": {
+    "fullname": "Giovanni Paolo Pannini"
+  },
+  "Francesco Guardi": {
+    "fullname": "Francesco Guardi"
+  },
+  "Francois Boucher": {
+    "fullname": "François Boucher"
+  },
+  "Giovanni Battista Tiepolo": {
+    "fullname": "Giovanni Battista Tiepolo"
+  },
+  "Jean Siméon Chardin": {
+    "fullname": "Jean Siméon Chardin"
+  },
+  "Antoine Watteau": {
+    "fullname": "Antoine Watteau"
+  },
+  "Sebastiano Ricci": {
+    "fullname": "Sebastiano Ricci"
+  },
+  "Pietro Longhi": {
+    "fullname": "Pietro Longhi"
+  },
+  "Antonio Joli": {
+    "fullname": "Antonio Joli"
+  },
+  "Giuseppe Zais": {
+    "fullname": "Giuseppe Zais"
+  },
+  "Francesco Zuccarelli": {
+    "fullname": "Francesco Zuccarelli"
+  },
+  "François Boucher": {
+    "fullname": "François Boucher"
+  },
+  "Giovanni Battista Busiri": {
+    "fullname": "Giovanni Battista Busiri"
+  },
+  "Jean Pillement": {
+    "fullname": "Jean-Baptiste Pillement"
+  },
+  "Philips Koninck": {
+    "fullname": "Philips Koninck"
+  },
+  "Jan Frans Van Bloemen": {
+    "fullname": "Jan Frans Van Bloemen"
+  },
+  "Marten Ryckaert": {
+    "fullname": "Marten Ryckaert"
+  },
+  "Piet Mondrian's Composition in colour A (1917)": {
+    "fullname": "Piet Cornelis Mondriaan"
+  },
+  "Piet Mondrian": {
+    "fullname": "Pieter Cornelis Mondriaan"
+  },
+  "Georgius Jacobus Johannes van Os": {
+    "fullname": "Georgius Jacobus Johannes van Os"
+  },
+  "Piet Mondrian's Composition No. 10 Pier and Ocean (1915)": {
+    "fullname": "Piet Mondrian"
+  },
+  "Piet Mondrian's Composition with Red, Yellow, and Blue (1935–1942)": {
+    "fullname": "Pieter Cornelis Mondriaan"
+  },
+  "Piet Mondrian's Composition No IV (1914)": {
+    "fullname": "Pieter Cornelis Mondriaan"
+  },
+  "Piet Mondrian's Composition with Red, Blue, and Yellow (1930)": {
+    "fullname": "Pieter Cornelis Mondriaan"
+  },
+  "Piet Mondrian's Trafalgar Square (1939–1943)": {
+    "fullname": "Pieter Cornelis Mondriaan"
+  },
+  "Piet Mondrian's Gray Tree (1911)": {
+    "fullname": "Pieter Cornelis Mondriaan"
+  },
+  "Composition No. VII (1913) Piet Mondrian's Tableau No. 2": {
+    "fullname": "Pieter Cornelis Mondriaan"
+  },
+  "Piet Mondrian's Avond (Evening)": {
+    "fullname": "Pieter Cornelis Mondriaan"
+  },
+  "Piet Mondrian's Broadway Boogie Woogie": {
+    "fullname": "Piet Willem Mondrian"
+  },
+  "Piet Mondrian's Composition in Oval with Color Planes 1 (1914)": {
+    "fullname": "Pieter Cornelis Mondriaan"
+  },
+  "Piet Mondrian's The Flowering Apple Tree (1912)": {
+    "fullname": "Piet Mondrian"
+  },
+  "Piet Mondrian's Composition with Red, Yellow, Blue, and Black (1921)": {
+    "fullname": "Piet Mondrian"
+  },
+  "Piet Mondrian's Composition No. II with Red and Blue (1929)": {
+    "fullname": "Pieter Cornelis Mondrian"
+  },
+  "Piet Mondrian's Dune III (1909)": {
+    "fullname": "Piet Mondrian"
+  },
+  "Piet Mondrian's Composition A (1920) famous painting": {
+    "fullname": "Pieter Cornelis Mondriaan"
+  },
+  "Piet Mondrian's New York City I (1942)": {
+    "fullname": "Piet Mondrian"
+  },
+  "Ogata Korin": {
+    "fullname": "Ogata Korin"
+  },
+  "Altichiero da Zevio": {
+    "fullname": "Altichiero da Zevio"
+  },
+  "Lorenzo Monaco": {
+    "fullname": "Lorenzo Monaco"
+  },
+  "Joseph Pennell": {
+    "fullname": "Joseph Pennell"
+  },
+  "Jan Brueghel The Elder": {
+    "fullname": "Jan Brueghel the Elder"
+  },
+  "Tizian": {
+    "fullname": "Tiziano Vecellio"
+  },
+  "Giovanni Bellini": {
+    "fullname": "Giovanni Bellini"
+  },
+  "Pieter Bruegel": {
+    "fullname": "Pieter Bruegel the Elder"
+  },
+  "Benozzo Gozzoli": {
+    "fullname": "Benozzo Gozzoli"
+  },
+  "Leonardo da Vinci": {
+    "fullname": "Leonardo da Vinci"
+  },
+  "Lucas the Elder Cranach": {
+    "fullname": "Lucas Cranach the Elder"
+  },
+  "Sandro Botticelli": {
+    "fullname": "Alessandro di Mariano di Vanni Filipepi"
+  },
+  "Raffaello Sanzio": {
+    "fullname": "Raffaello Sanzio da Urbino"
+  },
+  "George Roth": {
+    "fullname": "George Roth"
+  },
+  "Pieter Brueghel The Younger": {
+    "fullname": "Pieter Bruegel the Younger"
+  },
+  "Michelangelo": {
+    "fullname": "Michelangelo di Lodovico Buonarroti Simoni"
+  },
+  "Giovanni Battista Cima da Conegliano": {
+    "fullname": "Giovanni Battista Cima da Conegliano"
+  },
+  "Paolo Uccello": {
+    "fullname": "Paolo Uccello"
+  },
+  "natività mistica": {
+    "fullname": "Natività Mìstica"
+  },
+  "Michelangelo Buonarroti": {
+    "fullname": "Michelangelo Buonarroti"
+  },
+  "Marte e venere by Sandro botticelli": {
+    "fullname": "Sandro Botticelli"
+  },
+  "Madonna and Child with the Young St. John the Baptist": {
+    "fullname": "Giovanni Battista Cima"
+  },
+  "Albrecht Altdorfer": {
+    "fullname": "Albrecht Altdorfer"
+  },
+  "Portrait of young man by Sandro Botticelli": {
+    "fullname": "Alessandro Botticelli"
+  },
+  "Mystic nativity": {
+    "fullname": "Mystic Nativity"
+  },
+  "Pallas and the Centaur by Sandro Botticelli": {
+    "fullname": "Sandro Botticelli"
   }
 }

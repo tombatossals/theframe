@@ -106,7 +106,7 @@ def main():
 
         with open(paintings_json, 'r', encoding='utf-8') as f:
             paintings = json.load(f)
-            populated_painters = populate_painters(paintings[0:500], painters_json)
+            populated_painters = populate_painters(paintings, painters_json)
             with open(painters_json, 'w', encoding='utf-8') as f:
                 json.dump(populated_painters, f, ensure_ascii=False, indent=2)
 
