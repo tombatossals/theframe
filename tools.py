@@ -34,22 +34,27 @@ def generate_json(base_dir, base_url):
 
                 data = os.path.basename(os.path.splitext(file)[0]).split("-")
                 author = data[0].strip()
-                name = data[1].strip() if len(data) > 1 else author
+                title = data[1].strip() if len(data) > 1 else author
 
                 result.append({
                     "filename": file,
+                    "title": title,
                     "author": author,
-                    "name": name,
                     "file_size": os.path.getsize(ruta_absoluta),
                     "file_type": os.path.splitext(file)[1].lower(),
-                    "url": url,
-                    "level1": niveles[0] if len(niveles) > 0 else None,
-                    "level2": niveles[1] if len(niveles) > 1 else None,
-                    "level3": niveles[2] if len(niveles) > 2 else None
+                    "url": url
                 })
 
-    logging.debug(f"Generated JSON with {len(result)} images from {base_dir}")
-    return result
+    paintings = set()
+    final = list()
+    for paint in result:
+        key = (paint.get("author"), paint.get("title"))
+        if key not in paintings:
+            paintings.add(key)
+            final.append(paint)
+
+    logging.debug(f"Generated JSON with {len(final)} images from {base_dir}")
+    return final
 
 def embed_metadata(image: Background) -> bytes:
     logging.getLogger("pil").setLevel(logging.ERROR)  # Reduce PIL logging noise
@@ -75,7 +80,7 @@ def embed_metadata(image: Background) -> bytes:
 
     # Texto a mostrar
     line_author = f"{metadata.get('author', 'Unknown')}"
-    line_title = f"{metadata.get('name', 'Unknown')}"
+    line_title = f"{metadata.get('title', 'Unknown')}"
 
     # Calcular tamaños de texto usando textbbox
     def get_text_size(text, font):
@@ -175,19 +180,16 @@ def pick_random_image(source_json_url, embed=False) -> Background:
             image_data = img_response.read()
 
 
-        logging.debug(f"Fetched image: {selected_image.get('author', 'Unknown')} - {selected_image.get('name', 'Unknown')}")
+        logging.debug(f"Fetched image: {selected_image.get('author', 'Unknown')} - {selected_image.get('title', 'Unknown')}")
 
         bgimage = {
             "metadata": {
                 "filename": selected_image.get('filename', 'unknown.jpg'),
                 "url": image_url,
                 "author": selected_image.get('author', 'Unknown'),
-                "name": selected_image.get('name', 'Unknown'),
+                "title": selected_image.get('title', 'Unknown'),
                 "file_size": selected_image.get('file_size', 0),
-                "file_type": selected_image.get('file_type', 'unknown'),
-                "level1": selected_image.get('level1', None),
-                "level2": selected_image.get('level2', None),
-                "level3": selected_image.get('level3', None)
+                "file_type": selected_image.get('file_type', 'unknown')
             },
             "binary": image_data
         }
@@ -207,7 +209,7 @@ def upload_to_tv(image, tv_ip, tv_token, tv_port=8002, timeout=5):
         tv = SamsungTVWS(host=tv_ip, port=tv_port, token=tv_token)
         uploadedID = tv.art().upload(image.get("binary"), file_type="JPEG", matte='none')
         tv.art().select_image(uploadedID, show=tv.art().get_artmode() == "on")
-        logging.debug(f"Uploaded image: {image.get('metadata', {}).get('name', 'Unknown')}")
+        logging.debug(f"Uploaded image: {image.get('metadata', {}).get('title', 'Unknown')}")
 
         # Delete old images
         try:
