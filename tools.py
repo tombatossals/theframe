@@ -5,6 +5,7 @@ import os
 import platform
 import random
 import urllib.request
+from pathlib import Path
 from urllib.parse import quote
 
 from dotenv import load_dotenv
@@ -65,8 +66,10 @@ def generate_json(base_dir, base_url):
     logging.debug(f"Generated JSON with {len(final)} images from {base_dir}")
     return final
 
-def embed_metadata(image: Background) -> bytes:
-    disable_logger("pil")
+def embed_metadata(image: Background, test=False) -> bytes:
+    disable_logger("PIL")
+    disable_logger("PIL.image")
+
     pil_image = Image.open(io.BytesIO(image.get("binary"))).convert("RGBA")
     metadata = image.get("metadata", {})
     _, height = pil_image.size
@@ -81,15 +84,22 @@ def embed_metadata(image: Background) -> bytes:
     else:
         font_path = "/usr/share/fonts/TTF/DejaVuSans-Bold.ttf"
 
-    font_size_author = int(height * 0.025)
+    font_size_author = int(height * 0.02)
     font_size_title = int(height * 0.03)
+    font_size_extra = int(height * 0.02)
 
     font_author = ImageFont.truetype(font_path, font_size_author)
     font_title = ImageFont.truetype(font_path, font_size_title)
+    font_extra = ImageFont.truetype(font_path, font_size_extra)
+
+    color_author =(255, 239, 180, 255)
+    color_title = (255, 255, 255, 255)
+    color_extra = (90, 130, 200, 255)
 
     # Texto a mostrar
     line_author = f"{metadata.get('author', 'Unknown')}"
     line_title = f"{metadata.get('title', 'Unknown')}"
+    line_extra = f"Estilo {metadata.get('style', 'Estilo desconocido')} · {metadata.get('century', 'Siglo desconocido')} ({metadata.get('year', 'Año desconocido')}) · {metadata.get('location', 'Ubicación desconocida')}"
 
     # Calcular tamaños de texto usando textbbox
     def get_text_size(text, font):
@@ -98,6 +108,7 @@ def embed_metadata(image: Background) -> bytes:
 
     text_w1, text_h1 = get_text_size(line_author, font_author)
     text_w2, text_h2 = get_text_size(line_title, font_title)
+    text_w3, text_h3 = get_text_size(line_extra, font_extra)
 
     # Padding
     padding_x = 40
@@ -106,10 +117,10 @@ def embed_metadata(image: Background) -> bytes:
     divider_height = 2
     line_space = 25
 
-    box_width = max(text_w1, text_w2) + 2 * padding_x
+    box_width = max(text_w1, text_w2, text_w3) + 2 * padding_x
     box_height = (
-        text_h1 + divider_height + text_h2 +
-        2 * padding_y + spacing + line_space
+        text_h1 + 2 + text_h2 + divider_height+ text_h3 + 2 * padding_y +
+        2 * spacing + line_space
     )
 
     box_x0 = 50
@@ -137,8 +148,6 @@ def embed_metadata(image: Background) -> bytes:
     # 4. Componer sombra + caja + texto
     base = Image.alpha_composite(pil_image, shadow)
 
-
-
     # Dibujar caja con sombra (más oscura)
     draw.rectangle(
         [box_x0, box_y0, box_x1, box_y1],
@@ -154,35 +163,51 @@ def embed_metadata(image: Background) -> bytes:
     # Dibujar autor (sombra y texto)
     shadow_offset = 2
     draw.text((text_x + shadow_offset, text_y + shadow_offset), line_author, font=font_author, fill=(0, 0, 0, 255))
-    draw.text((text_x, text_y), line_author, font=font_author, fill=(255, 255, 255, 255))
-
-    # Línea divisoria
-    divider_y = text_y + text_h1 + line_space
-    draw.rectangle(
-        [text_x, divider_y, text_x + max(text_w1, text_w2), divider_y + divider_height],
-        fill=(255, 255, 255, 255)
-    )
+    draw.text((text_x, text_y), line_author, font=font_author, fill=color_author)
 
     # Título
-    title_y = divider_y + divider_height + spacing
+    title_y = text_y + text_h1 + spacing
     draw.text((text_x + shadow_offset, title_y + shadow_offset), line_title, font=font_title, fill=(0, 0, 0, 255))
-    draw.text((text_x, title_y), line_title, font=font_title, fill=(255, 255, 255, 255))
+    draw.text((text_x, title_y), line_title, font=font_title, fill=color_title)
+
+    # Línea divisoria
+    divider_y = title_y + text_h2 + line_space
+    draw.rectangle(
+        [text_x, divider_y, text_x + max(text_w1, text_w2, text_w3), divider_y + divider_height],
+        fill=color_title
+    )
+
+    # Extra
+    extra_y = divider_y + divider_height + spacing
+    draw.text((text_x + shadow_offset, extra_y + shadow_offset), line_extra, font=font_extra, fill=(0, 0, 0, 255))
+    draw.text((text_x, extra_y), line_extra, font=font_extra, fill=color_extra)
 
     # Componer imagen final
     buffer = io.BytesIO()
     final_image = Image.alpha_composite(base, overlay)
     final_image.convert("RGB").save(buffer, format="JPEG", quality=95)
-    #final_image.convert("RGB").save("test.jpg", format="JPEG", quality=95)
+
+    if test:
+        final_image.convert("RGB").save("test.jpg", format="JPEG", quality=95)
 
     return buffer.getvalue()
 
-def pick_random_image(source_json_url, embed=False) -> Background:
+def pick_random_image(source_json_url, populated_json, embed=False, test=False) -> Background:
         with urllib.request.urlopen(source_json_url) as response:
             raw_data = response.read()
             decoded = raw_data.decode('utf-8')
             images = json.loads(decoded)
 
-        selected_image = random.choice(images)
+        with open(populated_json, 'r', encoding='utf-8') as f:
+            populated = json.load(f)
+
+        r = random.choice(list(populated.keys()))
+        selected_image = next((img for img in images if img.get('title') == r), None)
+        populated_data = populated.get(r, {})
+
+        if not selected_image:
+            logging.error(f"No se encontró la imagen {r} en el JSON de origen.")
+            return None
         image_url = selected_image['url']
 
         with urllib.request.urlopen(image_url) as img_response:
@@ -195,8 +220,12 @@ def pick_random_image(source_json_url, embed=False) -> Background:
             "metadata": {
                 "filename": selected_image.get('filename', 'unknown.jpg'),
                 "url": image_url,
-                "author": selected_image.get('author', 'Unknown'),
-                "title": selected_image.get('title', 'Unknown'),
+                "author": populated_data.get('author', 'Unknown'),
+                "style": populated_data.get('style', 'Unknown'),
+                "year": populated_data.get('year', 'Unknown'),
+                "century": populated_data.get('century', 'Unknown'),
+                "location": populated_data.get('location', 'Unknown'),
+                "title": populated_data.get('title', 'Unknown'),
                 "file_size": selected_image.get('file_size', 0),
                 "file_type": selected_image.get('file_type', 'unknown')
             },
@@ -204,7 +233,7 @@ def pick_random_image(source_json_url, embed=False) -> Background:
         }
 
         if embed:
-            bgimage['binary'] = embed_metadata(bgimage)
+            bgimage['binary'] = embed_metadata(bgimage, test=test)
 
         return bgimage
 
@@ -238,43 +267,119 @@ def get_full_name(name: str) -> str:
         return f"{parts[1]} {parts[0]}"
     return name
 
+def get_incremental_name(path_str: str) -> str:
+    p = Path(path_str)
+    if p.suffix.lower() != ".json":
+        raise ValueError("El archivo debe terminar en .json")
 
-def populate_painters(paintings, painters_json, question = "fullname"):
+    filename = p.with_suffix("") # quita .json
+    filename = filename.with_name(filename.name + ".incremental.json")
+    return str(filename)
+
+
+def populate(paintings, destination_json):
     disable_logger("httpx")
     disable_logger("httpcore")
     disable_logger("asyncio")
 
-    prompts = {
-        "century": "Can you provide in just one word (roman numerals) the century of this artist: ",
-        "fullname": "Can you provide the full name of this artist, without any abbreviations or commas: ",
-        "style": "Can you provide the style of this artist, in just one word: "
-    }
+    prompt = """
+    System instructions:
 
-    painters = dict()
-    populated_painters = dict()
+You are an expert in art history and museum cataloging.
 
-    if os.path.exists(painters_json):
-        with open(painters_json, 'r', encoding='utf-8') as f:
-            painters = json.load(f)
+Your task is to normalize and complete artwork metadata from a minimal input JSON.
 
-    for painting in paintings:
-        author = get_full_name(painting.get('author', 'Unknown'))
-        if author in painters.keys():
-            populated_painters[author] = painters.get(author)
+ALWAYS return a valid JSON in Spanish, with no additional text.
 
-        if populated_painters.get(author) is None or populated_painters.get(author).get(question) is None:
-            logging.debug(f"Populating painter: {author}...")
+Normalize author names to their canonical Spanish form.
+
+If multiple versions of an artwork exist, prioritize the canonical or best-documented version and specify its current museum location.
+
+Fill missing fields with the best available evidence; if there is reasonable doubt, choose the most well-supported data from museums or reference catalogs and maintain historical consistency.
+
+Required output format:
+{{
+"title": "...",
+"author": "...",
+"style": "...",
+"year": "...",
+"century": "...",
+"location": "..."
+}}
+
+Rules:
+
+title: Spanish title, without year or notes.
+
+author: normalized author name in Spanish.
+
+style: style or movement (e.g., Venetian Renaissance, Mannerism, High Renaissance). Use the most accepted term for that specific work.
+
+year: most accepted execution year for the prioritized version (numeric or brief range if appropriate).
+
+century: century in Roman numerals (e.g., XVI).
+
+location: museum, city, country.
+
+Do not include comments or explanations outside the JSON.
+
+User instructions:
+Input:
+{{
+"title": "{title}",
+"author": "{author}"
+}}
+
+Return the enriched JSON.
+
+Implementation notes:
+
+If the input contains an ambiguous year (e.g., “1542” in the title), do not carry it over to the “year” field if it does not match the prioritized version; use the most accepted year for the canonical version (for Venus y Adonis, Prado 1554).
+
+If the user wants a different policy (e.g., prioritize a specific museum’s version), add an optional “preferred_location” parameter in the input and adapt the selection accordingly.
+
+For works with multiple versions (e.g., variants in the Getty or NGA), if no preference is provided, prioritize the best-documented or primary academic reference version; for Venus y Adonis, the Prado version with the precise 1554 date is commonly the reference."""
+
+    completed = dict()
+    populated = dict()
+
+    if os.path.exists(destination_json):
+        with open(destination_json, 'r', encoding='utf-8') as f:
+            completed = json.load(f)
+
+    if os.path.exists(get_incremental_name(destination_json)):
+        with open(get_incremental_name(destination_json), 'r', encoding='utf-8') as f:
+            completed = { **completed, **json.load(f) }
+
+    logging.debug(f"Found {len(completed)} completed paintings in {destination_json}")
+
+    for i, painting in enumerate(paintings):
+        author = get_full_name(painting.get('author'))
+        title = painting.get('title')
+        if title in completed.keys():
+            populated[title] = completed.get(title)
+            continue
+
+        if populated.get(title) is None:
+            logging.debug(f"Populating data: {author} - {title}...")
             response: ChatResponse = chat(model='gpt-oss:20b', messages=[
             {
                 'role': 'user',
-                'content': prompts[question]  + author + " - " + painting.get('title', 'Unknown')
+                'content': prompt.format(
+                    title=title,
+                    author=author
+                )
             }])
 
+
             answer = response.message.content.strip()
-            populated_painters[author] = {
-                question: answer
-            }
-            logging.debug(f"Populated: {author} - {answer}")
+            populated[title] = json.loads(answer)
+            logging.debug(f"Done. ({i + 1}/{len(paintings)}) {answer}")
 
-    return populated_painters
+            with open(get_incremental_name(destination_json), "w") as f:
+                json.dump(populated, f, ensure_ascii=False, indent=2)
+                f.flush()
+                os.fsync(f.fileno())
 
+
+    return completed

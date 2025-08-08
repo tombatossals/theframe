@@ -8,8 +8,7 @@ import sys
 
 from dotenv import load_dotenv
 
-from tools import (generate_json, pick_random_image, populate_painters,
-                   upload_to_tv)
+from tools import generate_json, pick_random_image, populate, upload_to_tv
 
 # Load environment variables
 load_dotenv()
@@ -27,11 +26,16 @@ def main():
 
     parser.add_argument('--paintings_json', help='JSON FILE to write the generated images (optional if PAINTINGS_JSON is in .env)')
     parser.add_argument('--painters_json', help='JSON FILE to write the generated images (optional if PAINTERS_JSON is in .env)')
+    parser.add_argument('--populated_json', help='JSON FILE to write the generated images (optional if POPULATED_JSON is in .env)')
+
     parser.add_argument('--images_dir', help='Directory with images to process (optional if IMAGES_DIR is in .env)')
     parser.add_argument('--base_url', help='Base URL for the images (optional if BASE_URL is in .env)')
 
     parser.add_argument('command', choices=['upload', 'generate', 'populate'], help='Command to execute')
+
     parser.add_argument('--debug', action='store_true', default=False, help='Log debug messages')
+
+    parser.add_argument('--test', action='store_true', default=False, help='Only for testing purposes, saves the final image as test.jpg')
 
     args = parser.parse_args()
 
@@ -53,21 +57,27 @@ def main():
         if not tv_token:
             print("Error: Debe especificar el token del TV con --token o configurar THEFRAME_TOKEN en el archivo .env")
             sys.exit(1)
+
+        populated_json = args.populated_json or os.getenv('POPULATED_JSON')
+        if not populated_json:
+            print("Error: Debe especificar el archivo de destino con --populated_json o configurar POPULATED_JSON en el archivo .env")
+            sys.exit(1)
+
         # Determine image source: command line argument or environment variable
         backgrounds_source = args.source or os.getenv('SOURCE_JSON')
-
         if not backgrounds_source:
             print("Error: Debe especificar la URL del JSON con --source o configurar SOURCE en el archivo .env")
             sys.exit(1)
 
 
         logging.debug("Fetching random image from source...")
-        image = pick_random_image(backgrounds_source, embed=args.embed)
+        image = pick_random_image(backgrounds_source, populated_json, embed=args.embed, test=args.test)
         if not image:
             logging.error("No se pudo obtener una imagen del origen especificado.")
             sys.exit(1)
 
-        upload_to_tv(image, tv_ip, tv_token)
+        if not args.test:
+            upload_to_tv(image, tv_ip, tv_token)
 
     elif args.command == 'generate':
 
@@ -99,16 +109,16 @@ def main():
             print("Error: Debe especificar el archivo de destino con --paintings_json o configurar PAINTINGS_JSON en el archivo .env")
             sys.exit(1)
 
-        painters_json = args.painters_json or os.getenv('PAINTERS_JSON')
-        if not painters_json:
-            print("Error: Debe especificar el archivo de destino con --painters_json o configurar PAINTERS_JSON en el archivo .env")
+        populated_json = args.populated_json or os.getenv('POPULATED_JSON')
+        if not populated_json:
+            print("Error: Debe especificar el archivo de destino con --populated_json o configurar POPULATED_JSON en el archivo .env")
             sys.exit(1)
 
         with open(paintings_json, 'r', encoding='utf-8') as f:
             paintings = json.load(f)
-            populated_painters = populate_painters(paintings, painters_json)
-            with open(painters_json, 'w', encoding='utf-8') as f:
-                json.dump(populated_painters, f, ensure_ascii=False, indent=2)
+            populated = populate(paintings, populated_json)
+            with open(populated_json, 'w', encoding='utf-8') as f:
+                json.dump(populated, f, ensure_ascii=False, indent=2)
 
     else:
         print("Comando no reconocido. Use 'upload', 'generate' o 'populate'.")

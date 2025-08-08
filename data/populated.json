@@ -1,0 +1,330 @@
+{
+  "A Friend in Need": {
+    "title": "Un Amigo en Necesidad",
+    "author": "Cassius Marcellus Coolidge",
+    "style": "Realismo",
+    "year": "1908-1909",
+    "century": "XX",
+    "location": "Smithsonian American Art Museum, Washington, D.C., Estados Unidos"
+  },
+  "François": {
+    "title": "François",
+    "author": "Charles Daubigny",
+    "style": "Escuela de Barbizon",
+    "year": "1865",
+    "century": "XIX",
+    "location": "Museo del Orsay, París, Francia"
+  },
+  "View of Piazza del Pantheon in Rome": {
+    "title": "Vista de la Piazza del Panteón en Roma",
+    "author": "Apollonio Domenichini",
+    "style": "Mannerismo",
+    "year": "1555",
+    "century": "XVI",
+    "location": "Museo Nacional de Arte Antiguo, Roma, Italia"
+  },
+  "View of Piazza San Marco, Venice, Looking North": {
+    "title": "Vista de la Piazza San Marco, Venecia, mirando al norte",
+    "author": "Apollonio Domenichini",
+    "style": "Renacimiento veneciano",
+    "year": "1594–1595",
+    "century": "XVI",
+    "location": "National Gallery of Art, Washington, D.C., Estados Unidos"
+  },
+  "View of Piazza San Marco with the Basilica, Venice": {
+    "title": "Vista de la Piazza San Marco con la Basílica, Venecia",
+    "author": "Apollonio Domenichini",
+    "style": "Barroco veneciano",
+    "year": "1690",
+    "century": "XVIII",
+    "location": "Walters Art Museum, Baltimore, Estados Unidos"
+  },
+  "View from the Giudecca, Venice": {
+    "title": "Vista de la Giudecca, Venecia",
+    "author": "Apollonio Domenichini",
+    "style": "Renacimiento veneciano",
+    "year": "1555",
+    "century": "XVI",
+    "location": "Museo de Bellas Artes de Bilbao, Bilbao, España"
+  },
+  "The Return of the Bucentaur on the Festa dell Ascensione": {
+    "title": "El retorno del Bucentauro en la Fiesta de la Ascensión",
+    "author": "Apollonio Domenichini",
+    "style": "Renacimiento veneciano",
+    "year": "1553",
+    "century": "XVI",
+    "location": "Galleria dell'Accademia, Venecia, Italia"
+  },
+  "Léon Gérôme": {
+    "title": "El encantador de serpientes",
+    "author": "Jean Léon Gérôme",
+    "style": "Orientalismo",
+    "year": "1895",
+    "century": "XIX",
+    "location": "Metropolitan Museum of Art, Nueva York, EE. UU."
+  },
+  "Landscape with Apollo and the Cumaean Sibyl": {
+    "title": "Paisaje con Apolo y la Sibila Cumaica",
+    "author": "Claude Lorrain",
+    "style": "Barroco",
+    "year": "1640",
+    "century": "XVII",
+    "location": "Museo del Prado, Madrid, España"
+  },
+  "The Holy Family with Saints Elizabeth and John the Baptist (1615)": {
+    "title": "La Santa Familia con los santos Isabel y Juan el Bautista",
+    "author": "Peter Paul Rubens",
+    "style": "Barroco",
+    "year": "1615",
+    "century": "XVII",
+    "location": "National Gallery, Londres, Reino Unido"
+  },
+  "Massacre of the Innocents (1715": {
+    "title": "Masacre de los Inocentes",
+    "author": "Alessandro Magnasco",
+    "style": "Barroco tardío",
+    "year": "1715",
+    "century": "XVII",
+    "location": "National Gallery of Art, Washington, Estados Unidos"
+  },
+  "Portrait of a Man (1670": {
+    "title": "Retrato de un Hombre",
+    "author": "Karel Dujardin",
+    "style": "Barroco holandés",
+    "year": "1670",
+    "century": "XVII",
+    "location": "Rijksmuseum, Amsterdam, Países Bajos"
+  },
+  "Shepherds beside Roman Ruins (1661)": {
+    "title": "Pastores junto a ruinas romanas",
+    "author": "Nicolaes Pietersz. Berchem",
+    "style": "Barroco holandés",
+    "year": "1661",
+    "century": "XVII",
+    "location": "National Gallery, Londres, Reino Unido"
+  },
+  "Madonna and Child (ca. 1615": {
+    "title": "Madonna y Niño",
+    "author": "Rubens",
+    "style": "Barroco",
+    "year": "1615",
+    "century": "XVII",
+    "location": "National Gallery, Londres, Reino Unido"
+  },
+  "Landing a Boat (before 1650)": {
+    "title": "Aterrizaje de un barco",
+    "author": "Philips Wouwerman",
+    "style": "Barroco",
+    "year": "1644",
+    "century": "XVII",
+    "location": "Rijksmuseum, Ámsterdam, Países Bajos"
+  },
+  "Landscape with a House in the Grove": {
+    "title": "Paisaje con una casa en el bosque",
+    "author": "Jacob Isaackszon van Ruisdael",
+    "style": "Paisaje de la Edad Dorada Holandesa",
+    "year": "1668",
+    "century": "XVII",
+    "location": "Rijksmuseum, Ámsterdam, Países Bajos"
+  },
+  "Venetian Capriccio With a Body Being Exhumed and a Franciscan Monk in Attendance": {
+    "title": "Capriccio veneciano con un cuerpo exhumado y un monje franciscano",
+    "author": "Marco Ricci",
+    "style": "Barroco veneciano",
+    "year": "1721",
+    "century": "XVIII",
+    "location": "Museo del Prado, Madrid, España"
+  },
+  "Landscape with Acis and Galatea": {
+    "title": "Paisaje con Acis y Galatea",
+    "author": "Claude Lorrain",
+    "style": "Barroco",
+    "year": "1634",
+    "century": "XVII",
+    "location": "National Gallery, Londres, Reino Unido"
+  },
+  "Country Wedding": {
+    "title": "Boda en el campo",
+    "author": "Jan Steen",
+    "style": "Barroco holandés",
+    "year": "1665",
+    "century": "XVII",
+    "location": "Rijksmuseum, Ámsterdam, Países Bajos"
+  },
+  "Grand navire de la couronne du Danemark près d’un littoral": {
+    "title": "Gran buque de la corona de Dinamarca junto a un litoral",
+    "author": "Abraham Storck",
+    "style": "Barroco holandés",
+    "year": "1660",
+    "century": "XVI",
+    "location": "Rijksmuseum, Ámsterdam, Países Bajos"
+  },
+  "The Thicket (Path in the Haarlem Dunes)": {
+    "title": "El Espino (Camino en las dunas de Haarlem)",
+    "author": "Jacob Isaackszoon van Ruisdael",
+    "style": "Barroco holandés",
+    "year": "1647",
+    "century": "XVII",
+    "location": "National Gallery of Art, Washington, Estados Unidos"
+  },
+  "A winter landscape with villagers on a path": {
+    "title": "Paisaje de invierno con aldeanos en un camino",
+    "author": "Gijsbrecht Leytens",
+    "style": "Renacimiento flamenco",
+    "year": "1585",
+    "century": "XVI",
+    "location": "National Gallery of Art, Washington D.C., Estados Unidos"
+  },
+  "Aminta about to rescue Silvia (circa 1633)": {
+    "title": "Aminta a punto de rescatar a Silvia",
+    "author": "Gaspard Dughet",
+    "style": "Barroco francés",
+    "year": "1633",
+    "century": "XVII",
+    "location": "Museo del Prado, Madrid, España"
+  },
+  "Erminia and the Shepherds": {
+    "title": "Erminia con los pastores",
+    "author": "Claude Lorrain",
+    "style": "Barroco",
+    "year": "1631",
+    "century": "XVII",
+    "location": "Museo del Prado, Madrid, España"
+  },
+  "Halte de cavaliers (1639": {
+    "title": "Halte de caballeros",
+    "author": "Philips Wouwerman",
+    "style": "Barroco neerlandés",
+    "year": "1639",
+    "century": "XVII",
+    "location": "Museo de Bellas Artes de Bilbao, Bilbao, España"
+  },
+  "Fruit Still Life with Shells and Tulip (1620)": {
+    "title": "Estudio de frutos con conchas y tulipanes",
+    "author": "Balthasar van der Ast",
+    "style": "Bodegón del Siglo de Oro Holandés",
+    "year": "1620",
+    "century": "XVII",
+    "location": "Rijksmuseum, Ámsterdam, Países Bajos"
+  },
+  "Landscape with Noli Me Tangere Scene": {
+    "title": "Paisaje con la escena Noli Me Tangere",
+    "author": "Claude Lorrain",
+    "style": "Barroco francés",
+    "year": "1660",
+    "century": "XVII",
+    "location": "Museo del Louvre, París, Francia"
+  },
+  "An English Yacht saluting a Dutch Man": {
+    "title": "Un yate inglés saluda a un holandés",
+    "author": "Abraham Storck",
+    "style": "Barroco (Edad Dorada Holandesa)",
+    "year": "1704",
+    "century": "XVIII",
+    "location": "National Maritime Museum, Greenwich, Reino Unido"
+  },
+  "A Stormy Landscape (1663": {
+    "title": "Paisaje tormentoso",
+    "author": "Meindert Hobbema",
+    "style": "Pintura de paisajes holandeses del Siglo de Oro",
+    "year": "1663",
+    "century": "XVII",
+    "location": "National Gallery of Art, Washington DC, Estados Unidos"
+  },
+  "Lucretia (1666)": {
+    "title": "Lucretia",
+    "author": "Rembrandt van Rijn",
+    "style": "Barroco",
+    "year": "1666",
+    "century": "XVII",
+    "location": "National Gallery, Londres, Reino Unido"
+  },
+  "Sandy landscape with travellers and cattle (1610": {
+    "title": "Paisaje arenoso con viajeros y ganado",
+    "author": "Joos de Momper",
+    "style": "Barroco flamenco",
+    "year": "1610",
+    "century": "XVII",
+    "location": "National Gallery of Art, Washington, D.C., Estados Unidos"
+  },
+  "Aeneas s Farewell to Dido in Carthago": {
+    "title": "El adiós de Eneas a Dido en Cartago",
+    "author": "Claude Lorrain",
+    "style": "Barroco",
+    "year": "1661",
+    "century": "XVII",
+    "location": "Galería Nacional de Arte, Washington, D.C., Estados Unidos"
+  },
+  "Landscape with Christ and a Centurion": {
+    "title": "Paisaje con Cristo y un centurión",
+    "author": "Pierre Patel",
+    "style": "Desconocido",
+    "year": "Desconocido",
+    "century": "Desconocido",
+    "location": "Desconocido"
+  },
+  "Still Life with Hunting Gear (1664)": {
+    "title": "Naturaleza muerta con equipo de caza",
+    "author": "Willem van Aelst",
+    "style": "Barroco holandés",
+    "year": "1664",
+    "century": "XVII",
+    "location": "National Gallery of Art, Washington D.C., Estados Unidos"
+  },
+  "Landscape with Reed Gatherers (1670s)": {
+    "title": "Paisaje con recolectores de juncos",
+    "author": "Nicolaes Pietersz. Berchem",
+    "style": "Barroco",
+    "year": "1670",
+    "century": "XVII",
+    "location": "Museo Getty, Los Ángeles, Estados Unidos"
+  },
+  "Ships in a Gale (1705": {
+    "title": "Naves en un Gale",
+    "author": "Marco Ricci",
+    "style": "Barroco tardío",
+    "year": "1705",
+    "century": "XVIII",
+    "location": "Museo del Prado, Madrid, España"
+  },
+  "Nocturnal Canal Landscape with Fishing Boats (ca. 1645 – 1650)": {
+    "title": "Paisaje nocturno de canal con barcos de pesca",
+    "author": "Aert van der Neer",
+    "style": "Pintura de paisaje holandés de la Edad de Oro",
+    "year": "1648",
+    "century": "XVII",
+    "location": "Rijksmuseum, Ámsterdam, Países Bajos"
+  },
+  "Saint Peter (c. 1616": {
+    "title": "San Pedro",
+    "author": "Peter Paul Rubens",
+    "style": "Barroco",
+    "year": "1616",
+    "century": "XVII",
+    "location": "Museo del Prado, Madrid, España"
+  },
+  "Winter Scene with a Man Killing a Pig": {
+    "title": "Escena de Invierno con un Hombre Matando un Cerdo",
+    "author": "David Teniers el Joven",
+    "style": "Barroco flamenco",
+    "year": "1643",
+    "century": "XVII",
+    "location": "Rijksmuseum, Ámsterdam, Países Bajos"
+  },
+  "A Still Life With Peaches, Raspberries And Damsons On A Partially Covered Marble Ledge, A Bird Flying Above": {
+    "title": "Estudio de frutas con melocotones, frambuesas y albaricoques sobre un borde de mármol parcialmente cubierto, con un pájaro volando",
+    "author": "Willem van Aelst",
+    "style": "Barroco holandés",
+    "year": "1640",
+    "century": "XVII",
+    "location": "Rijksmuseum, Ámsterdam, Países Bajos"
+  },
+  "A Girl with a Broom (1646": {
+    "title": "Niña con una escoba",
+    "author": "Rembrandt van Rijn",
+    "style": "Barroco",
+    "year": "1645-1646",
+    "century": "XVII",
+    "location": "National Gallery, Londres, Reino Unido"
+  }
+}
