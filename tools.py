@@ -225,7 +225,6 @@ def pick_random_image(populated_json, embed=False, test=False) -> Background:
             "binary": image_data
         }
 
-        print(bgimage.get("metadata"))
         if embed:
             bgimage['binary'] = embed_metadata(bgimage, test=test)
 
