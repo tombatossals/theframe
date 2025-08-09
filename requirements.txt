@@ -2,3 +2,4 @@ samsungtvws[async,encrypted]
 pillow
 dotenv
 ollama
+python-slugify

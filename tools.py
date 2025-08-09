@@ -12,6 +12,7 @@ from dotenv import load_dotenv
 from ollama import ChatResponse, chat
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from samsungtvws import SamsungTVWS
+from slugify import slugify
 
 from _types import Background
 
@@ -289,9 +290,9 @@ You are an expert in art history and museum cataloging.
 
 Your task is to normalize and complete artwork metadata from a minimal input JSON.
 
-ALWAYS return a valid JSON in Spanish, with no additional text.
+ALWAYS return a valid JSON with all fields filled, including their corresponding information translated in Spanish, with no additional text.
 
-Normalize author names to their canonical Spanish form.
+In the translated section, normalize author names to their canonical Spanish form.
 
 If multiple versions of an artwork exist, prioritize the canonical or best-documented version and specify its current museum location.
 
@@ -304,30 +305,42 @@ Required output format:
 "style": "...",
 "year": "...",
 "century": "...",
-"location": "..."
+"location": "...",
+"wikipedia_url": "...",
+"languages": {{
+    "es": {{
+        "title": "...",
+        "author": "...",
+        "style": "...",
+        "year": "...",
+        "century": "...",
+        "location": "..."
+    }}
+}}
 }}
 
 Rules:
 
-title: Spanish title, without year or notes.
+title: In english, title without year or notes.
 
-author: normalized author name in Spanish.
+author: normalized author name, in english.
 
-style: style or movement (e.g., Venetian Renaissance, Mannerism, High Renaissance). Use the most accepted term for that specific work.
+style: In english, style or movement (e.g., Venetian Renaissance, Mannerism, High Renaissance). Use the most accepted term for that specific work.
 
 year: most accepted execution year for the prioritized version (numeric or brief range if appropriate).
 
 century: century in Roman numerals (e.g., XVI).
 
-location: museum, city, country.
+location: In english, museum, city, country.
+
+wikipedia_url: English Wikipedia URL of this painting.
 
 Do not include comments or explanations outside the JSON.
 
 User instructions:
 Input:
 {{
-"title": "{title}",
-"author": "{author}"
+"title_and_author": "{title}"
 }}
 
 Return the enriched JSON.
@@ -354,26 +367,27 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
     logging.debug(f"Found {len(completed)} completed paintings in {destination_json}")
 
     for i, painting in enumerate(paintings):
-        author = get_full_name(painting.get('author'))
-        title = painting.get('title')
-        if title in completed.keys():
-            populated[title] = completed.get(title)
+        title = painting.get('name')
+        if painting.get("number") in [ c.get("number") for c in completed.values()]:
+            populated[painting.get("filename")] = completed.get(title)
             continue
 
-        if populated.get(title) is None:
-            logging.debug(f"Populating data: {author} - {title}...")
+        if populated.get("filename") is None:
+            logging.debug(f"Populating data: {title}...")
             response: ChatResponse = chat(model='gpt-oss:20b', messages=[
             {
                 'role': 'user',
                 'content': prompt.format(
-                    title=title,
-                    author=author
+                    title=title
                 )
             }])
 
 
-            answer = response.message.content.strip()
-            populated[title] = json.loads(answer)
+            answer = json.loads(response.message.content.strip())
+            answer["image_url"] = ""
+            answer["number"] = painting.get("number", "")
+            answer["filename"] = f"{str(i+1).zfill(4)}-{slugify(answer.get('author'))}-{slugify(answer.get('title'))}.jpg"
+            populated[answer.get("filename")] = answer
             logging.debug(f"Done. ({i + 1}/{len(paintings)}) {answer}")
 
             with open(get_incremental_name(destination_json), "w") as f:

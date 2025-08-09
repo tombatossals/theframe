@@ -202,6 +202,8 @@ cython_debug/
 .cursorindexingignore
 
 test.jpg
+paintings/
+.DS_Store
 
 # Marimo
 marimo/_static/
