@@ -193,46 +193,39 @@ def embed_metadata(image: Background, test=False) -> bytes:
 
     return buffer.getvalue()
 
-def pick_random_image(source_json_url, populated_json, embed=False, test=False) -> Background:
-        with urllib.request.urlopen(source_json_url) as response:
-            raw_data = response.read()
-            decoded = raw_data.decode('utf-8')
-            images = json.loads(decoded)
-
+def pick_random_image(populated_json, embed=False, test=False) -> Background:
         with open(populated_json, 'r', encoding='utf-8') as f:
             populated = json.load(f)
 
-        r = random.choice(list(populated.keys()))
-        selected_image = next((img for img in images if img.get('title') == r), None)
-        populated_data = populated.get(r, {})
+        _, selected_image = random.choice(list(populated.items()))
 
         if not selected_image:
             logging.error(f"No se encontró la imagen {r} en el JSON de origen.")
             return None
-        image_url = selected_image['url']
 
-        with urllib.request.urlopen(image_url) as img_response:
+        url = f"http://192.168.4.10/theframe/paintings/{selected_image.get('filename')}"
+        with urllib.request.urlopen(url) as img_response:
             image_data = img_response.read()
 
 
         logging.debug(f"Fetched image: {selected_image.get('author', 'Unknown')} - {selected_image.get('title', 'Unknown')}")
 
+        metadata = selected_image.get("languages").get("es")
         bgimage = {
             "metadata": {
                 "filename": selected_image.get('filename', 'unknown.jpg'),
-                "url": image_url,
-                "author": populated_data.get('author', 'Unknown'),
-                "style": populated_data.get('style', 'Unknown'),
-                "year": populated_data.get('year', 'Unknown'),
-                "century": populated_data.get('century', 'Unknown'),
-                "location": populated_data.get('location', 'Unknown'),
-                "title": populated_data.get('title', 'Unknown'),
-                "file_size": selected_image.get('file_size', 0),
-                "file_type": selected_image.get('file_type', 'unknown')
+                "url": url,
+                "author": metadata.get('author', 'Unknown'),
+                "style": metadata.get('style', 'Unknown'),
+                "year": metadata.get('year', 'Unknown'),
+                "century": metadata.get('century', 'Unknown'),
+                "location": metadata.get('location', 'Unknown'),
+                "title": metadata.get('title', 'Unknown')
             },
             "binary": image_data
         }
 
+        print(bgimage.get("metadata"))
         if embed:
             bgimage['binary'] = embed_metadata(bgimage, test=test)
 
