@@ -438,5 +438,291 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/The_Garden_of_earthly_delights.jpg",
     "number": 20,
     "filename": "0020-hieronymus-bosch-the-garden-of-earthly-delights.jpg"
+  },
+  "0021-frida-kahlo-the-two-fridas.jpg": {
+    "title": "The Two Fridas",
+    "author": "Frida Kahlo",
+    "style": "Surrealism",
+    "year": "1939",
+    "century": "XX",
+    "location": "Museo de Arte Moderno, Mexico City, Mexico",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Two_Fridas",
+    "languages": {
+      "es": {
+        "title": "Los dos Fridas",
+        "author": "Frida Kahlo",
+        "style": "Surrealismo",
+        "year": "1939",
+        "century": "XX",
+        "location": "Museo de Arte Moderno, Ciudad de México, México"
+      }
+    },
+    "image_url": "",
+    "number": 21,
+    "filename": "0021-frida-kahlo-the-two-fridas.jpg"
+  },
+  "0022-jan-van-eyck-portrait-of-giovanni-arnolfini-and-his-wife.jpg": {
+    "title": "Portrait of Giovanni Arnolfini and his Wife",
+    "author": "Jan van Eyck",
+    "style": "Early Netherlandish",
+    "year": "1434",
+    "century": "XIV",
+    "location": "National Gallery, London, United Kingdom",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Arnolfini_Portrait",
+    "languages": {
+      "es": {
+        "title": "Retrato de Giovanni Arnolfini y su esposa",
+        "author": "Jan van Eyck",
+        "style": "Neerlandés temprano",
+        "year": "1434",
+        "century": "XIV",
+        "location": "Galería Nacional, Londres, Reino Unido"
+      }
+    },
+    "image_url": "",
+    "number": 22,
+    "filename": "0022-jan-van-eyck-portrait-of-giovanni-arnolfini-and-his-wife.jpg"
+  },
+  "0023-peter-paul-rubens-the-descent-from-the-cross.jpg": {
+    "title": "The Descent from the Cross",
+    "author": "Peter Paul Rubens",
+    "style": "Baroque",
+    "year": "1611–1614",
+    "century": "XVII",
+    "location": "Museo del Prado, Madrid, Spain",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Descent_from_the_Cross_(Rubens,_1612%E2%80%931614)",
+    "languages": {
+      "es": {
+        "title": "El descenso de la cruz",
+        "author": "Peter Paul Rubens",
+        "style": "Barroco",
+        "year": "1611–1614",
+        "century": "XVII",
+        "location": "Museo del Prado, Madrid, España"
+      }
+    },
+    "image_url": "",
+    "number": 23,
+    "filename": "0023-peter-paul-rubens-the-descent-from-the-cross.jpg"
+  },
+  "0024-rembrandt-van-rijn-the-night-watch.jpg": {
+    "title": "The Night Watch",
+    "author": "Rembrandt van Rijn",
+    "style": "Dutch Golden Age Baroque",
+    "year": "1642",
+    "century": "XVII",
+    "location": "Rijksmuseum, Amsterdam, Netherlands",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Night_Watch",
+    "languages": {
+      "es": {
+        "title": "La guardia de noche",
+        "author": "Rembrandt van Rijn",
+        "style": "Barroco holandés",
+        "year": "1642",
+        "century": "XVII",
+        "location": "Rijksmuseum, Ámsterdam, Países Bajos"
+      }
+    },
+    "image_url": "",
+    "number": 24,
+    "filename": "0024-rembrandt-van-rijn-the-night-watch.jpg"
+  },
+  "0025-rene-magritte-the-transfixed-time.jpg": {
+    "title": "The Transfixed Time",
+    "author": "René Magritte",
+    "style": "Surrealism",
+    "year": "1961",
+    "century": "XX",
+    "location": "Museum of Modern Art, New York, United States",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Time_Transfixed",
+    "languages": {
+      "es": {
+        "title": "Tiempo transfijado",
+        "author": "René Magritte",
+        "style": "Surrealismo",
+        "year": "1961",
+        "century": "XX",
+        "location": "Museo de Arte Moderno, Nueva York, Estados Unidos"
+      }
+    },
+    "image_url": "",
+    "number": 25,
+    "filename": "0025-rene-magritte-the-transfixed-time.jpg"
+  },
+  "0026-eugene-delacroix-the-death-of-sardanapalus.jpg": {
+    "title": "The Death of Sardanapalus",
+    "author": "Eugène Delacroix",
+    "style": "Romanticism",
+    "year": "1833-1834",
+    "century": "XIX",
+    "location": "Musée du Luxembourg, Paris, France",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Death_of_Sardanapalus",
+    "languages": {
+      "es": {
+        "title": "La muerte de Sardanápal",
+        "author": "Eugène Delacroix",
+        "style": "Romanticismo",
+        "year": "1833-1834",
+        "century": "XIX",
+        "location": "Museo del Luxembourg, París, Francia"
+      }
+    },
+    "image_url": "",
+    "number": 26,
+    "filename": "0026-eugene-delacroix-the-death-of-sardanapalus.jpg"
+  },
+  "0027-wassily-kandinsky-composition-viii.jpg": {
+    "title": "Composition VIII",
+    "author": "Wassily Kandinsky",
+    "style": "Abstract",
+    "year": "1923",
+    "century": "XX",
+    "location": "Museum of Modern Art, New York City",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Composition_VIII_(Kandinsky)",
+    "languages": {
+      "es": {
+        "title": "Composición VIII",
+        "author": "Wassily Kandinsky",
+        "style": "Abstracto",
+        "year": "1923",
+        "century": "XX",
+        "location": "Museo de Arte Moderno, Nueva York"
+      }
+    },
+    "image_url": "",
+    "number": 27,
+    "filename": "0027-wassily-kandinsky-composition-viii.jpg"
+  },
+  "0028-caspar-david-friedrich-sea-of-ice.jpg": {
+    "title": "Sea of Ice",
+    "author": "Caspar David Friedrich",
+    "style": "German Romantic landscape",
+    "year": "1823",
+    "century": "XIX",
+    "location": "National Gallery, London, United Kingdom",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Sea_of_Ice",
+    "languages": {
+      "es": {
+        "title": "El mar de hielo",
+        "author": "Caspar David Friedrich",
+        "style": "Paisaje romántico alemán",
+        "year": "1823",
+        "century": "XIX",
+        "location": "Galería Nacional, Londres, Reino Unido"
+      }
+    },
+    "image_url": "",
+    "number": 28,
+    "filename": "0028-caspar-david-friedrich-sea-of-ice.jpg"
+  },
+  "0030-marc-chagall-i-and-the-people.jpg": {
+    "title": "I and the People",
+    "author": "Marc Chagall",
+    "style": "Modernist",
+    "year": "1925",
+    "century": "XX",
+    "location": "Museum of Modern Art, New York City, United States",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Marc_Chagall",
+    "languages": {
+      "es": {
+        "title": "Yo y el pueblo",
+        "author": "Marc Chagall",
+        "style": "Modernismo",
+        "year": "1925",
+        "century": "XX",
+        "location": "Museo de Arte Moderno, Nueva York, Estados Unidos"
+      }
+    },
+    "image_url": "",
+    "number": 30,
+    "filename": "0030-marc-chagall-i-and-the-people.jpg"
+  },
+  "0031-pablo-picasso-guernica.jpg": {
+    "title": "Guernica",
+    "author": "Pablo Picasso",
+    "style": "Cubism",
+    "year": "1937",
+    "century": "XX",
+    "location": "Museo Reina Sofía, Madrid, Spain",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Guernica_(Picasso)",
+    "languages": {
+      "es": {
+        "title": "Guernica",
+        "author": "Pablo Picasso",
+        "style": "Cubismo",
+        "year": "1937",
+        "century": "XX",
+        "location": "Museo Reina Sofía, Madrid, España"
+      }
+    },
+    "image_url": "",
+    "number": 31,
+    "filename": "0031-pablo-picasso-guernica.jpg"
+  },
+  "0032-vincent-van-gogh-bedroom-in-arles.jpg": {
+    "title": "Bedroom in Arles",
+    "author": "Vincent van Gogh",
+    "style": "Post-Impressionism",
+    "year": "1888",
+    "century": "XIX",
+    "location": "Musée d'Orsay, Paris, France",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bedroom_in_Arles",
+    "languages": {
+      "es": {
+        "title": "El dormitorio en Arles",
+        "author": "Vincent van Gogh",
+        "style": "Postimpresionismo",
+        "year": "1888",
+        "century": "XIX",
+        "location": "Museo d'Orsay, París, Francia"
+      }
+    },
+    "image_url": "",
+    "number": 32,
+    "filename": "0032-vincent-van-gogh-bedroom-in-arles.jpg"
+  },
+  "0033-james-abbott-mcneill-whistler-arrangement-in-grey-and-black-no-1.jpg": {
+    "title": "Arrangement in Grey and Black No. 1",
+    "author": "James Abbott McNeill Whistler",
+    "style": "American Realism",
+    "year": "1871",
+    "century": "XIX",
+    "location": "National Gallery of Art, Washington, D.C., United States",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Whistler%27s_Mother",
+    "languages": {
+      "es": {
+        "title": "Retrato de la Madre del Pintor",
+        "author": "James Abbott McNeill Whistler",
+        "style": "Realismo",
+        "year": "1871",
+        "century": "XIX",
+        "location": "Galería Nacional de Arte, Washington D.C., EE. UU."
+      }
+    },
+    "image_url": "",
+    "number": 33,
+    "filename": "0033-james-abbott-mcneill-whistler-arrangement-in-grey-and-black-no-1.jpg"
+  },
+  "0034-vincent-van-gogh-the-night-cafe.jpg": {
+    "title": "The Night Café",
+    "author": "Vincent van Gogh",
+    "style": "Post-Impressionism",
+    "year": "1888",
+    "century": "XIX",
+    "location": "Musée d'Orsay, Paris, France",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Night_Café",
+    "languages": {
+      "es": {
+        "title": "El café nocturno",
+        "author": "Vincent van Gogh",
+        "style": "Post-impresionismo",
+        "year": "1888",
+        "century": "XIX",
+        "location": "Museo d'Orsay, París, Francia"
+      }
+    },
+    "image_url": "",
+    "number": 34,
+    "filename": "0034-vincent-van-gogh-the-night-cafe.jpg"
   }
 }
