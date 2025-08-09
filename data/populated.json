@@ -900,5 +900,203 @@
     "image_url": "",
     "number": 45,
     "filename": "0045-rene-magritte-the-murderer.jpg"
+  },
+  "0046-tiziano-vecellio-venus-de-urbino.jpg": {
+    "title": "Venus de Urbino",
+    "author": "Tiziano Vecellio",
+    "style": "Venetian High Renaissance",
+    "year": "1538–1543",
+    "century": "XVI",
+    "location": "National Gallery, London, United Kingdom",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Venus_de_Urbino",
+    "languages": {
+      "es": {
+        "title": "Venus de Urbino",
+        "author": "Tiziano Vecellio (Titán)",
+        "style": "Renacimiento veneciano",
+        "year": "1538–1543",
+        "century": "XVI",
+        "location": "National Gallery, Londres, Reino Unido"
+      }
+    },
+    "image_url": "",
+    "number": 46,
+    "filename": "0046-tiziano-vecellio-venus-de-urbino.jpg"
+  },
+  "0047-joan-miro-ciphers-and-constellations-in-love-with-a-woman.jpg": {
+    "title": "Ciphers and Constellations, in Love with a Woman",
+    "author": "Joan Miró",
+    "style": "Surrealism",
+    "year": "1941",
+    "century": "XX",
+    "location": "Museum of Modern Art, New York City, United States",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Joan_Mir%C3%B3",
+    "languages": {
+      "es": {
+        "title": "Cifras y Constelaciones, en Amor con una Mujer",
+        "author": "Joan Miró",
+        "style": "Surrealismo",
+        "year": "1941",
+        "century": "XX",
+        "location": "Museo de Arte Moderno, Nueva York, Estados Unidos"
+      }
+    },
+    "image_url": "",
+    "number": 47,
+    "filename": "0047-joan-miro-ciphers-and-constellations-in-love-with-a-woman.jpg"
+  },
+  "0048-henri-matisse-the-dance.jpg": {
+    "title": "The Dance",
+    "author": "Henri Matisse",
+    "style": "Fauvism",
+    "year": "1909–10",
+    "century": "XX",
+    "location": "Pushkin State Museum of Fine Arts, Moscow, Russia",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/La_Danse_(Matisse)",
+    "languages": {
+      "es": {
+        "title": "La Danza",
+        "author": "Henri Matisse",
+        "style": "Fauvismo",
+        "year": "1909–10",
+        "century": "XX",
+        "location": "Museo Estatal Pushkin de Bellas Artes, Moscú, Rusia"
+      }
+    },
+    "image_url": "",
+    "number": 48,
+    "filename": "0048-henri-matisse-the-dance.jpg"
+  },
+  "0049-amedeo-modigliani-nude-on-a-divan.jpg": {
+    "title": "Nude on a Divan",
+    "author": "Amedeo Modigliani",
+    "style": "Modernism",
+    "year": "1918",
+    "century": "XX",
+    "location": "Musée d'Orsay, Paris, France",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nude_Sitting_on_a_Divan",
+    "languages": {
+      "es": {
+        "title": "Desnudo sentado en un diván",
+        "author": "Amedeo Modigliani",
+        "style": "Modernismo",
+        "year": "1918",
+        "century": "XX",
+        "location": "Museo d'Orsay, París, Francia"
+      }
+    },
+    "image_url": "",
+    "number": 49,
+    "filename": "0049-amedeo-modigliani-nude-on-a-divan.jpg"
+  },
+  "0050-edvard-munch-melancholy.jpg": {
+    "title": "Melancholy",
+    "author": "Edvard Munch",
+    "style": "Expressionism",
+    "year": "1934",
+    "century": "XX",
+    "location": "Munch Museum, Oslo, Norway",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Melancholy_(Munch)",
+    "languages": {
+      "es": {
+        "title": "Melancolía",
+        "author": "Edvard Munch",
+        "style": "Expresionismo",
+        "year": "1934",
+        "century": "XX",
+        "location": "Museo Munch, Oslo, Noruega"
+      }
+    },
+    "image_url": "",
+    "number": 50,
+    "filename": "0050-edvard-munch-melancholy.jpg"
+  },
+  "0051-claude-monet-gare-saint-lazare.jpg": {
+    "title": "Gare Saint Lazare",
+    "author": "Claude Monet",
+    "style": "Impressionism",
+    "year": "1877–1878",
+    "century": "XIX",
+    "location": "Musée d'Orsay, Paris, France",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gare_Saint-Lazare_(Monet)",
+    "languages": {
+      "es": {
+        "title": "Gare Saint Lazare, París",
+        "author": "Claude Monet",
+        "style": "Impresionismo",
+        "year": "1877–1878",
+        "century": "siglo XIX",
+        "location": "Museo de Orsay, París, Francia"
+      }
+    },
+    "image_url": "",
+    "number": 51,
+    "filename": "0051-claude-monet-gare-saint-lazare.jpg"
+  },
+  "0052-georgia-o-keeffe-ram-s-head-white-hollyhock-hills.jpg": {
+    "title": "Ram's Head, White Hollyhock Hills",
+    "author": "Georgia O'Keeffe",
+    "style": "American Modernism",
+    "year": "1930",
+    "century": "XX",
+    "location": "National Museum of Women in the Arts, Washington, D.C., United States",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ram%27s_Head,_White_Hollyhock_Hills",
+    "languages": {
+      "es": {
+        "title": "Cabeza de Carnero, Colinas de Hojas de Hojuelas Blancas",
+        "author": "Georgia O'Keeffe",
+        "style": "Modernismo Americano",
+        "year": "1930",
+        "century": "XX",
+        "location": "National Museum of Women in the Arts, Washington, D.C., Estados Unidos"
+      }
+    },
+    "image_url": "",
+    "number": 52,
+    "filename": "0052-georgia-o-keeffe-ram-s-head-white-hollyhock-hills.jpg"
+  },
+  "0053-andrea-mantegna-lamentation-over-the-dead-christ.jpg": {
+    "title": "Lamentation over the Dead Christ",
+    "author": "Andrea Mantegna",
+    "style": "Italian Renaissance",
+    "year": "1480",
+    "century": "XV",
+    "location": "Louvre Museum, Paris, France",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lamentation_(Mantegna)",
+    "languages": {
+      "es": {
+        "title": "Lamentación sobre Cristo Muerto",
+        "author": "Andrea Mantegna",
+        "style": "Renacimiento italiano",
+        "year": "1480",
+        "century": "XV",
+        "location": "Museo del Louvre, París, Francia"
+      }
+    },
+    "image_url": "",
+    "number": 53,
+    "filename": "0053-andrea-mantegna-lamentation-over-the-dead-christ.jpg"
+  },
+  "0054-rene-magritte-the-son-of-man.jpg": {
+    "title": "The Son of Man",
+    "author": "René Magritte",
+    "style": "Surrealism",
+    "year": "1964",
+    "century": "XX",
+    "location": "Museum of Modern Art, New York, United States",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Son_of_Man",
+    "languages": {
+      "es": {
+        "title": "El Hijo del Hombre",
+        "author": "René Magritte",
+        "style": "Surrealismo",
+        "year": "1964",
+        "century": "XX",
+        "location": "Museo de Arte Moderno, Nueva York, Estados Unidos"
+      }
+    },
+    "image_url": "",
+    "number": 54,
+    "filename": "0054-rene-magritte-the-son-of-man.jpg"
   }
 }
