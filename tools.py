@@ -5,6 +5,7 @@ import os
 import platform
 import random
 import urllib.request
+from collections import Counter
 from pathlib import Path
 from urllib.parse import quote
 
@@ -278,7 +279,7 @@ def url_exists(url: str) -> bool:
     except requests.RequestException:
         return False
 
-def populate(paintings, destination_json, base_url):
+def populate(destination_json, paintings, base_url):
     disable_logger("httpx")
     disable_logger("httpcore")
     disable_logger("asyncio")
@@ -366,20 +367,28 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
 
     logging.debug(f"Found {len(completed)}/{len(paintings)} completed paintings in {destination_json}")
 
-    for i, painting in enumerate(paintings):
-        title = painting.get('name')
-        if painting.get("number") in [ c.get("number") for c in completed.values()]:
-            c = next((c for c in completed.values() if c.get("number") == painting.get("number")), None)
-            if c.get("image_url"):
-                del c["image_url"]
-            c["bg_url"] = None
-            if url_exists(f"{base_url}/{c.get('filename')}"):
-                c["bg_url"] = f"{base_url}/{c.get('filename')}"
+    if len(paintings) > 0:
+        for i, painting in enumerate(paintings):
+            title = painting.get('name')
+            completed[f"new-{slugify(title)}"] = {
+                "title": title
+            }
+        return completed
 
-            populated[c.get("filename")] = c
-            continue
+    updated = False
+    for i, painting in enumerate(completed):
+        if painting.get("image_url"):
+            del painting["image_url"]
 
-        if populated.get("filename") is None:
+        if painting.get("bg_url") == None and url_exists(f"{base_url}/{painting.get('filename')}"):
+            painting["bg_url"] = f"{base_url}/{painting.get('filename')}"
+            updated = True
+
+    if updated:
+        return completed
+
+    for i, painting in enumerate(completed):
+        if painting.get("filename") is None:
             logging.debug(f"Populating data: {title}...")
             response: ChatResponse = chat(model='gpt-oss:20b', messages=[
             {
@@ -407,3 +416,13 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
 
 
     return completed
+
+def find_duplicates(paintings):
+    seen = Counter()
+    duplicates = []
+    for painting in paintings:
+        identifier = (painting['title'], painting['author'])
+        seen[identifier] += 1
+        if seen[identifier] > 1:
+            duplicates.append(painting)
+    return duplicates

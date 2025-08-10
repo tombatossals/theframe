@@ -615,6 +615,28 @@
     "filename": "0028-caspar-david-friedrich-sea-of-ice.jpg",
     "bg_url": "http://192.168.4.10/theframe/paintings/0028-caspar-david-friedrich-sea-of-ice.jpg"
   },
+  "0029-joan-miro-dutch-interior-i.jpg": {
+    "title": "Dutch Interior I",
+    "author": "Joan Miró",
+    "style": "Surrealism",
+    "year": "1931",
+    "century": "XX",
+    "location": "Museum of Modern Art, New York, United States",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dutch_Interior",
+    "languages": {
+      "es": {
+        "title": "Interior Holandés I",
+        "author": "Joan Miró",
+        "style": "Surrealismo",
+        "year": "1931",
+        "century": "XX",
+        "location": "Museo de Arte Moderno, Nueva York, Estados Unidos"
+      }
+    },
+    "number": 29,
+    "filename": "0029-joan-miro-dutch-interior-i.jpg",
+    "bg_url": null
+  },
   "0030-marc-chagall-i-and-the-people.jpg": {
     "title": "I and the People",
     "author": "Marc Chagall",
@@ -725,6 +747,28 @@
     "filename": "0034-vincent-van-gogh-the-night-cafe.jpg",
     "bg_url": "http://192.168.4.10/theframe/paintings/0034-vincent-van-gogh-the-night-cafe.jpg"
   },
+  "0035-caravaggio-narcissus.jpg": {
+    "title": "Narcissus",
+    "author": "Caravaggio",
+    "style": "Baroque",
+    "year": "1609-10",
+    "century": "XVII",
+    "location": "National Gallery, London, United Kingdom",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Narcissus_(Caravaggio)",
+    "languages": {
+      "es": {
+        "title": "Narciso",
+        "author": "Caravaggio",
+        "style": "Barroco",
+        "year": "1609-10",
+        "century": "XVII",
+        "location": "Galería Nacional, Londres, Reino Unido"
+      }
+    },
+    "image_url": "",
+    "number": 35,
+    "filename": "0035-caravaggio-narcissus.jpg"
+  },
   "0036-jean-michel-basquiat-untitled-skull.jpg": {
     "title": "Untitled (Skull)",
     "author": "Jean-Michel Basquiat",
@@ -813,6 +857,28 @@
     "filename": "0039-pierre-auguste-renoir-the-great-bathers.jpg",
     "bg_url": "http://192.168.4.10/theframe/paintings/0039-pierre-auguste-renoir-the-great-bathers.jpg"
   },
+  "0040-thomas-gainsborough-the-blue-boy.jpg": {
+    "title": "The Blue Boy",
+    "author": "Thomas Gainsborough",
+    "style": "Portrait",
+    "year": "1770",
+    "century": "XVIII",
+    "location": "National Gallery, London, United Kingdom",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Blue_Boy",
+    "languages": {
+      "es": {
+        "title": "El Muchacho Azul",
+        "author": "Thomas Gainsborough",
+        "style": "Retrato",
+        "year": "1770",
+        "century": "siglo XVIII",
+        "location": "Galería Nacional, Londres, Reino Unido"
+      }
+    },
+    "image_url": "",
+    "number": 40,
+    "filename": "0040-thomas-gainsborough-the-blue-boy.jpg"
+  },
   "0041-raphael-the-school-of-athens.jpg": {
     "title": "The School of Athens",
     "author": "Raphael",
@@ -834,6 +900,28 @@
     "number": 41,
     "filename": "0041-raphael-the-school-of-athens.jpg",
     "bg_url": "http://192.168.4.10/theframe/paintings/0041-raphael-the-school-of-athens.jpg"
+  },
+  "0042-max-beckmann-night.jpg": {
+    "title": "Night",
+    "author": "Max Beckmann",
+    "style": "German Expressionism",
+    "year": "1935",
+    "century": "XX",
+    "location": "Museum of Fine Arts, Houston, United States",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Night_(Beckmann)",
+    "languages": {
+      "es": {
+        "title": "La noche",
+        "author": "Max Beckmann",
+        "style": "Expresionismo alemán",
+        "year": "1935",
+        "century": "XX",
+        "location": "Museo de Bellas Artes de Houston, Estados Unidos"
+      }
+    },
+    "image_url": "",
+    "number": 42,
+    "filename": "0042-max-beckmann-night.jpg"
   },
   "0043-henri-matisse-harmony-in-red.jpg": {
     "title": "Harmony in Red",
@@ -1098,94 +1186,6 @@
     "number": 54,
     "filename": "0054-rene-magritte-the-son-of-man.jpg",
     "bg_url": "http://192.168.4.10/theframe/paintings/0054-rene-magritte-the-son-of-man.jpg"
-  },
-  "0051-thomas-gainsborough-the-blue-boy.jpg": {
-    "title": "The Blue Boy",
-    "author": "Thomas Gainsborough",
-    "style": "Portrait",
-    "year": "1770",
-    "century": "XVIII",
-    "location": "National Gallery, London, United Kingdom",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Blue_Boy",
-    "languages": {
-      "es": {
-        "title": "El Muchacho Azul",
-        "author": "Thomas Gainsborough",
-        "style": "Retrato",
-        "year": "1770",
-        "century": "siglo XVIII",
-        "location": "Galería Nacional, Londres, Reino Unido"
-      }
-    },
-    "image_url": "",
-    "number": 51,
-    "filename": "0051-thomas-gainsborough-the-blue-boy.jpg"
-  },
-  "0052-max-beckmann-night.jpg": {
-    "title": "Night",
-    "author": "Max Beckmann",
-    "style": "German Expressionism",
-    "year": "1935",
-    "century": "XX",
-    "location": "Museum of Fine Arts, Houston, United States",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Night_(Beckmann)",
-    "languages": {
-      "es": {
-        "title": "La noche",
-        "author": "Max Beckmann",
-        "style": "Expresionismo alemán",
-        "year": "1935",
-        "century": "XX",
-        "location": "Museo de Bellas Artes de Houston, Estados Unidos"
-      }
-    },
-    "image_url": "",
-    "number": 52,
-    "filename": "0052-max-beckmann-night.jpg"
-  },
-  "0053-caravaggio-narcissus.jpg": {
-    "title": "Narcissus",
-    "author": "Caravaggio",
-    "style": "Baroque",
-    "year": "1609-10",
-    "century": "XVII",
-    "location": "National Gallery, London, United Kingdom",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Narcissus_(Caravaggio)",
-    "languages": {
-      "es": {
-        "title": "Narciso",
-        "author": "Caravaggio",
-        "style": "Barroco",
-        "year": "1609-10",
-        "century": "XVII",
-        "location": "Galería Nacional, Londres, Reino Unido"
-      }
-    },
-    "image_url": "",
-    "number": 53,
-    "filename": "0053-caravaggio-narcissus.jpg"
-  },
-  "0054-diego-velazquez-las-meninas.jpg": {
-    "title": "Las Meninas",
-    "author": "Diego Velázquez",
-    "style": "Spanish Baroque",
-    "year": "1656",
-    "century": "XVII",
-    "location": "Museo del Prado, Madrid, Spain",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Las_Meninas",
-    "languages": {
-      "es": {
-        "title": "Las Meninas",
-        "author": "Diego Velázquez",
-        "style": "Spanish Baroque",
-        "year": "1656",
-        "century": "XVII",
-        "location": "Museo del Prado, Madrid, Spain"
-      }
-    },
-    "image_url": "",
-    "number": 54,
-    "filename": "0054-diego-velazquez-las-meninas.jpg"
   },
   "0055-artemisia-gentileschi-judith-beheading-holofernes.jpg": {
     "title": "Judith Beheading Holofernes",
@@ -1671,26 +1671,26 @@
     "filename": "0076-gustave-caillebotte-man-on-the-window.jpg",
     "bg_url": null
   },
-  "0077-vincent-van-gogh-cafe-terrace-at-night.jpg": {
-    "title": "Café Terrace at Night",
-    "author": "Vincent van Gogh",
+  "0077-georges-seurat-bathers-at-asnieres.jpg": {
+    "title": "Bathers at Asnières",
+    "author": "Georges Seurat",
     "style": "Post-Impressionism",
-    "year": "1888",
+    "year": 1888,
     "century": "XIX",
-    "location": "Van Gogh Museum, Amsterdam, Netherlands",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Café_Terrace_at_Night",
+    "location": "Musée d'Orsay, Paris, France",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bathers_at_Asnières",
     "languages": {
       "es": {
-        "title": "Café de la terraza al anochecer",
-        "author": "Vincent van Gogh",
-        "style": "Postimpresionismo",
-        "year": "1888",
+        "title": "Los bañadores en Asnières",
+        "author": "Georges Seurat",
+        "style": "Post-impresionismo",
+        "year": 1888,
         "century": "XIX",
-        "location": "Museo Van Gogh, Ámsterdam, Países Bajos"
+        "location": "Museo del Orsay, París, Francia"
       }
     },
     "number": 77,
-    "filename": "0077-vincent-van-gogh-cafe-terrace-at-night.jpg",
+    "filename": "0077-georges-seurat-bathers-at-asnieres.jpg",
     "bg_url": null
   },
   "0078-pablo-picasso-boy-with-a-pipe.jpg": {
@@ -3196,7 +3196,7 @@
     "year": "1906",
     "century": "XX",
     "location": "Österreichische Galerie, Vienna, Austria",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Fritza_Riedler",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Adele_Bloch-Bauer_I",
     "languages": {
       "es": {
         "title": "Retrato de Fritza Riedler",
@@ -3890,7 +3890,7 @@
       }
     },
     "image_url": "",
-    "number": 176,
+    "number": 177,
     "filename": "0177-jackson-pollock-autumn-rhythm-number-30.jpg"
   },
   "0178-johannes-vermeer-the-milkmaid.jpg": {
@@ -3911,7 +3911,7 @@
         "location": "Rijksmuseum, Ámsterdam, Países Bajos"
       }
     },
-    "number": 177,
+    "number": 178,
     "filename": "0178-johannes-vermeer-the-milkmaid.jpg",
     "bg_url": null
   },
@@ -3933,7 +3933,7 @@
         "location": "Museo del Prado, Madrid, España"
       }
     },
-    "number": 178,
+    "number": 179,
     "filename": "0179-titian-diana-and-actaeon.jpg",
     "bg_url": null
   },
@@ -3955,7 +3955,7 @@
         "location": "Museo d'Orsay, París, Francia"
       }
     },
-    "number": 179,
+    "number": 180,
     "filename": "0180-pierre-auguste-renoir-after-the-bath.jpg",
     "bg_url": null
   },
@@ -3977,7 +3977,7 @@
         "location": "Musée d'Orsay, París, Francia"
       }
     },
-    "number": 180,
+    "number": 181,
     "filename": "0181-marc-chagall-in-the-city.jpg",
     "bg_url": null
   },
@@ -3999,30 +3999,9 @@
         "location": "El Museo Metropolitano de Arte, Nueva York, Estados Unidos"
       }
     },
-    "number": 181,
+    "number": 182,
     "filename": "0182-vincent-van-gogh-irises.jpg",
     "bg_url": null
-  },
-  "0181-marc-chagall-through-the-city.jpg": {
-    "title": "Through the City",
-    "author": "Marc Chagall",
-    "style": "Modernism",
-    "year": "1942",
-    "century": "XX",
-    "location": "Museum of Modern Art, New York, USA",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Through_the_City_(Chagall)",
-    "languages": {
-      "es": {
-        "title": "Por la ciudad",
-        "author": "Marc Chagall",
-        "style": "Modernismo",
-        "year": "1942",
-        "century": "XX",
-        "location": "Museo de Arte Moderno, Nueva York, EE. UU."
-      }
-    },
-    "number": 180,
-    "filename": "0181-marc-chagall-through-the-city.jpg"
   },
   "0183-albert-bierstadt-rocky-mountains.jpg": {
     "title": "Rocky Mountains",
@@ -4042,7 +4021,7 @@
         "location": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
       }
     },
-    "number": 182,
+    "number": 183,
     "filename": "0183-albert-bierstadt-rocky-mountains.jpg",
     "bg_url": null
   },
@@ -4064,7 +4043,7 @@
         "location": "Museo Nacional de Arte, Ciudad de México, México"
       }
     },
-    "number": 183,
+    "number": 184,
     "filename": "0184-frida-kahlo-self-portrait-with-cropped-hair.jpg",
     "bg_url": null
   },
@@ -4086,7 +4065,7 @@
         "location": "National Gallery, Londres, Reino Unido"
       }
     },
-    "number": 184,
+    "number": 185,
     "filename": "0185-titian-bacchus-and-ariadne.jpg",
     "bg_url": null
   },
@@ -4108,7 +4087,7 @@
         "location": "Museo de Arte de St. Louis, St. Louis, Missouri, Estados Unidos"
       }
     },
-    "number": 185,
+    "number": 186,
     "filename": "0186-vincent-van-gogh-seascape-saintes-maries.jpg",
     "bg_url": null
   },
@@ -4130,7 +4109,7 @@
         "location": "Museo del Prado, Madrid, España"
       }
     },
-    "number": 186,
+    "number": 187,
     "filename": "0187-diego-velazquez-the-surrender-of-breda.jpg",
     "bg_url": null
   },
@@ -4152,7 +4131,7 @@
         "location": "Museo del Prado, Madrid, España"
       }
     },
-    "number": 187,
+    "number": 188,
     "filename": "0188-el-greco-the-burial-of-count-orgaz.jpg",
     "bg_url": null
   },
@@ -4174,7 +4153,7 @@
         "location": "Museo del Orsay, París, Francia"
       }
     },
-    "number": 188,
+    "number": 189,
     "filename": "0189-gustave-caillebotte-paris-street-rainy-day.jpg",
     "bg_url": null
   },
@@ -4196,7 +4175,7 @@
         "location": "Galería Nacional de Arte, Washington, D.C., Estados Unidos"
       }
     },
-    "number": 189,
+    "number": 190,
     "filename": "0190-gustav-klimt-tree-of-life.jpg",
     "bg_url": null
   },
@@ -4218,7 +4197,7 @@
         "location": "Fundació Joan Miró, Barcelona, España"
       }
     },
-    "number": 190,
+    "number": 191,
     "filename": "0191-joan-miro-life-with-old-shoes.jpg",
     "bg_url": null
   },
@@ -4240,7 +4219,7 @@
         "location": "Museo de Bellas Artes de Lieja, Lieja, Bélgica"
       }
     },
-    "number": 191,
+    "number": 192,
     "filename": "0192-paul-delvaux-night-train.jpg",
     "bg_url": null
   },
@@ -4262,7 +4241,7 @@
         "location": "Tate Britain, Londres, Reino Unido"
       }
     },
-    "number": 192,
+    "number": 193,
     "filename": "0193-francis-bacon-three-studies-for-figures-on-the-base-of-a-crucifixion.jpg",
     "bg_url": null
   },
@@ -4284,7 +4263,7 @@
         "location": "Museo del Louvre, París, Francia"
       }
     },
-    "number": 193,
+    "number": 194,
     "filename": "0194-nicolas-poussin-the-violation-of-the-sabine-women.jpg",
     "bg_url": null
   },
@@ -4306,7 +4285,7 @@
         "location": "Museo d'Orsay, París, Francia"
       }
     },
-    "number": 194,
+    "number": 195,
     "filename": "0195-umberto-boccioni-modern-idol.jpg",
     "bg_url": null
   },
@@ -4328,7 +4307,7 @@
         "location": "Museo d'Orsay, París, Francia"
       }
     },
-    "number": 195,
+    "number": 196,
     "filename": "0196-albert-charles-lebourg-quays-of-dieppe-after-the-rain.jpg",
     "bg_url": null
   },
@@ -4350,7 +4329,7 @@
         "location": "National Gallery of Art, Washington, DC, Estados Unidos"
       }
     },
-    "number": 196,
+    "number": 197,
     "filename": "0197-camille-pissarro-boulevard-montmartre-at-night.jpg",
     "bg_url": null
   },
@@ -4372,52 +4351,8 @@
         "location": "Galería Uffizi, Florencia, Italia"
       }
     },
-    "number": 197,
-    "filename": "0198-raphael-portrait-of-bindo-altoviti.jpg",
-    "bg_url": null
-  },
-  "0199-georges-seurat-bathers-at-asnieres.jpg": {
-    "title": "Bathers at Asnières",
-    "author": "Georges Seurat",
-    "style": "Post-Impressionism",
-    "year": 1888,
-    "century": "XIX",
-    "location": "Musée d'Orsay, Paris, France",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Bathers_at_Asnières",
-    "languages": {
-      "es": {
-        "title": "Los bañadores en Asnières",
-        "author": "Georges Seurat",
-        "style": "Post-impresionismo",
-        "year": 1888,
-        "century": "XIX",
-        "location": "Museo del Orsay, París, Francia"
-      }
-    },
     "number": 198,
-    "filename": "0199-georges-seurat-bathers-at-asnieres.jpg",
-    "bg_url": null
-  },
-  "0200-joan-miro-dutch-interior-i.jpg": {
-    "title": "Dutch Interior I",
-    "author": "Joan Miró",
-    "style": "Surrealism",
-    "year": "1931",
-    "century": "XX",
-    "location": "Museum of Modern Art, New York, United States",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Dutch_Interior",
-    "languages": {
-      "es": {
-        "title": "Interior Holandés I",
-        "author": "Joan Miró",
-        "style": "Surrealismo",
-        "year": "1931",
-        "century": "XX",
-        "location": "Museo de Arte Moderno, Nueva York, Estados Unidos"
-      }
-    },
-    "number": 199,
-    "filename": "0200-joan-miro-dutch-interior-i.jpg",
+    "filename": "0198-raphael-portrait-of-bindo-altoviti.jpg",
     "bg_url": null
   }
 }
