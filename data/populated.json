@@ -635,7 +635,7 @@
     },
     "number": 29,
     "filename": "0029-joan-miro-dutch-interior-i.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0029-joan-miro-dutch-interior-i.jpg"
   },
   "0030-marc-chagall-i-and-the-people.jpg": {
     "title": "I and the People",
@@ -878,7 +878,8 @@
     },
     "image_url": "",
     "number": 40,
-    "filename": "0040-thomas-gainsborough-the-blue-boy.jpg"
+    "filename": "0040-thomas-gainsborough-the-blue-boy.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0040-thomas-gainsborough-the-blue-boy.jpg"
   },
   "0041-raphael-the-school-of-athens.jpg": {
     "title": "The School of Athens",
@@ -922,7 +923,8 @@
     },
     "image_url": "",
     "number": 42,
-    "filename": "0042-max-beckmann-night.jpg"
+    "filename": "0042-max-beckmann-night.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0042-max-beckmann-night.jpg"
   },
   "0043-henri-matisse-harmony-in-red.jpg": {
     "title": "Harmony in Red",
@@ -1692,7 +1694,7 @@
     },
     "number": 77,
     "filename": "0077-georges-seurat-bathers-at-asnieres.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0077-georges-seurat-bathers-at-asnieres.jpg"
   },
   "0078-pablo-picasso-boy-with-a-pipe.jpg": {
     "title": "Boy with a Pipe",
@@ -1716,27 +1718,27 @@
     "filename": "0078-pablo-picasso-boy-with-a-pipe.jpg",
     "bg_url": "http://192.168.4.10/theframe/paintings/0078-pablo-picasso-boy-with-a-pipe.jpg"
   },
-  "0079-mary-cassatt-the-bath.jpg": {
-    "title": "The Bath",
-    "author": "Mary Cassatt",
+  "0079-camille-pissarro-boulevard-montmartre-at-night.jpg": {
+    "title": "Boulevard Montmartre at Night",
+    "author": "Camille Pissarro",
     "style": "Impressionism",
-    "year": "1892",
+    "year": "1896",
     "century": "XIX",
-    "location": "The Metropolitan Museum of Art, New York, USA",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Child%27s_Bath",
+    "location": "National Gallery of Art, Washington, DC, United States",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Camille_Pissarro",
     "languages": {
       "es": {
-        "title": "El baño",
-        "author": "Mary Cassatt",
+        "title": "El Boulevard Montmartre en la noche",
+        "author": "Camille Pissarro",
         "style": "Impresionismo",
-        "year": "1892",
+        "year": "1896",
         "century": "XIX",
-        "location": "El Museo Metropolitano de Arte, Nueva York, EE. UU."
+        "location": "National Gallery of Art, Washington, DC, Estados Unidos"
       }
     },
     "number": 79,
-    "filename": "0079-mary-cassatt-the-bath.jpg",
-    "bg_url": "http://192.168.4.10/theframe/paintings/0079-mary-cassatt-the-bath.jpg"
+    "filename": "0079-camille-pissarro-boulevard-montmartre-at-night.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0079-camille-pissarro-boulevard-montmartre-at-night.jpg"
   },
   "0080-mary-cassatt-the-child-bath.jpg": {
     "title": "The Child Bath",
@@ -4310,28 +4312,6 @@
     },
     "number": 196,
     "filename": "0196-albert-charles-lebourg-quays-of-dieppe-after-the-rain.jpg",
-    "bg_url": null
-  },
-  "0197-camille-pissarro-boulevard-montmartre-at-night.jpg": {
-    "title": "Boulevard Montmartre at Night",
-    "author": "Camille Pissarro",
-    "style": "Impressionism",
-    "year": "1896",
-    "century": "XIX",
-    "location": "National Gallery of Art, Washington, DC, United States",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Boulevard_Montmartre_at_Night",
-    "languages": {
-      "es": {
-        "title": "El Boulevard Montmartre en la noche",
-        "author": "Camille Pissarro",
-        "style": "Impresionismo",
-        "year": "1896",
-        "century": "XIX",
-        "location": "National Gallery of Art, Washington, DC, Estados Unidos"
-      }
-    },
-    "number": 197,
-    "filename": "0197-camille-pissarro-boulevard-montmartre-at-night.jpg",
     "bg_url": null
   },
   "0198-raphael-portrait-of-bindo-altoviti.jpg": {
