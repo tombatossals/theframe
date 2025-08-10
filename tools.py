@@ -8,6 +8,7 @@ import urllib.request
 from pathlib import Path
 from urllib.parse import quote
 
+import requests
 from dotenv import load_dotenv
 from ollama import ChatResponse, chat
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
@@ -269,8 +270,16 @@ def get_incremental_name(path_str: str) -> str:
     filename = filename.with_name(filename.name + ".incremental.json")
     return str(filename)
 
+def url_exists(url: str) -> bool:
+    disable_logger("requests")
+    disable_logger("urllib3")
+    try:
+        respuesta = requests.head(url, allow_redirects=True, timeout=5)
+        return respuesta.status_code == 200
+    except requests.RequestException:
+        return False
 
-def populate(paintings, destination_json):
+def populate(paintings, destination_json, base_url):
     disable_logger("httpx")
     disable_logger("httpcore")
     disable_logger("asyncio")
@@ -356,12 +365,19 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
         with open(get_incremental_name(destination_json), 'r', encoding='utf-8') as f:
             completed = { **completed, **json.load(f) }
 
-    logging.debug(f"Found {len(completed)} completed paintings in {destination_json}")
+    logging.debug(f"Found {len(completed)}/{len(paintings)} completed paintings in {destination_json}")
 
     for i, painting in enumerate(paintings):
         title = painting.get('name')
         if painting.get("number") in [ c.get("number") for c in completed.values()]:
-            populated[painting.get("filename")] = completed.get(title)
+            c = next((c for c in completed.values() if c.get("number") == painting.get("number")), None)
+            if c.get("image_url"):
+                del c["image_url"]
+            c["bg_url"] = None
+            if url_exists(f"{base_url}/{c.get('filename')}"):
+                c["bg_url"] = f"{base_url}/{c.get('filename')}"
+
+            populated[c.get("filename")] = c
             continue
 
         if populated.get("filename") is None:
@@ -374,13 +390,16 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
                 )
             }])
 
-
             answer = json.loads(response.message.content.strip())
-            answer["image_url"] = ""
-            answer["number"] = painting.get("number", "")
+            answer["number"] = i
             answer["filename"] = f"{str(i+1).zfill(4)}-{slugify(answer.get('author'))}-{slugify(answer.get('title'))}.jpg"
+            if url_exists(f"{base_url}/{answer.get('filename')}"):
+                answer["bg_url"] = f"{base_url}/{answer.get('filename')}"
+            else:
+                answer["bg_url"] = None
             populated[answer.get("filename")] = answer
-            logging.debug(f"Done. ({i + 1}/{len(paintings)}) {answer}")
+
+            logging.debug(f"Done. ({i + 1}/{len(paintings)}) {answer.get('filename')}")
 
             with open(get_incremental_name(destination_json), "w") as f:
                 json.dump(populated, f, ensure_ascii=False, indent=2)

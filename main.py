@@ -114,9 +114,14 @@ def main():
             print("Error: Debe especificar el archivo de destino con --populated_json o configurar POPULATED_JSON en el archivo .env")
             sys.exit(1)
 
+        base_url = args.base_url or os.getenv('BASE_URL')
+        if not base_url:
+            print("Error: Debe especificar la URL base con --base_url o configurar BASE_URL en el archivo .env")
+            sys.exit(1)
+
         with open(paintings_json, 'r', encoding='utf-8') as f:
             paintings = json.load(f)
-            populated = populate(paintings, populated_json)
+            populated = populate(paintings[0:200], populated_json, base_url)
             with open(populated_json, 'w', encoding='utf-8') as f:
                 json.dump(populated, f, ensure_ascii=False, indent=2)
 
