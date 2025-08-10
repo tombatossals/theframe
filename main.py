@@ -125,10 +125,12 @@ def main():
         paintings = []
         finished_paintings = []
         increment = args.increment
-        with open(paintings_json, 'r', encoding='utf-8') as f:
-            p = json.load(f)[0:10]
-            paintings = p[0:10]
-            finished_paintings = p[10:] if len(p) > 10 else []
+
+        if increment:
+            with open(paintings_json, 'r', encoding='utf-8') as f:
+                p = json.load(f)[0:10]
+                paintings = p[0:10]
+                finished_paintings = p[10:] if len(p) > 10 else []
 
         populated = populate(populated_json, paintings, base_url,)
         with open(populated_json, 'w', encoding='utf-8') as f:

@@ -363,9 +363,14 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
 
     if os.path.exists(get_incremental_name(destination_json)):
         with open(get_incremental_name(destination_json), 'r', encoding='utf-8') as f:
-            completed = { **completed, **json.load(f) }
+            n = json.load(f)
+            for clave in list(n.keys()):
+                if completed.get(clave, {}).get("bg_url"):
+                    del n[clave]
+            completed = { **completed, **n }
 
-    logging.debug(f"Found {len(completed)}/{len(paintings)} completed paintings in {destination_json}")
+    pending = [i for i in completed.values() if i.get("bg_url") is not None]
+    logging.debug(f"Found {len(pending)}/{len(completed)} completed paintings in {destination_json}")
 
     if len(paintings) > 0:
         for i, painting in enumerate(paintings):
@@ -376,7 +381,7 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
         return completed
 
     updated = False
-    for i, painting in enumerate(completed):
+    for i, painting in enumerate(completed.values()):
         if painting.get("image_url"):
             del painting["image_url"]
 
@@ -387,7 +392,7 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
     if updated:
         return completed
 
-    for i, painting in enumerate(completed):
+    for i, painting in enumerate(completed.values()):
         if painting.get("filename") is None:
             logging.debug(f"Populating data: {title}...")
             response: ChatResponse = chat(model='gpt-oss:20b', messages=[
