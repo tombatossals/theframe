@@ -198,14 +198,13 @@ def pick_random_image(populated_json, embed=False, test=False) -> Background:
         with open(populated_json, 'r', encoding='utf-8') as f:
             populated = json.load(f)
 
-        _, selected_image = random.choice(list(populated.items()))
+        selected_image = random.choice([ i for i in populated.values() if i.get("bg_url")])
 
         if not selected_image:
             logging.error(f"No se encontró la imagen {r} en el JSON de origen.")
             return None
 
-        url = f"http://192.168.4.10/theframe/paintings/{selected_image.get('filename')}"
-        with urllib.request.urlopen(url) as img_response:
+        with urllib.request.urlopen(selected_image.get("bg_url")) as img_response:
             image_data = img_response.read()
 
 
@@ -215,7 +214,7 @@ def pick_random_image(populated_json, embed=False, test=False) -> Background:
         bgimage = {
             "metadata": {
                 "filename": selected_image.get('filename', 'unknown.jpg'),
-                "url": url,
+                "url": selected_image.get("bg_url"),
                 "author": metadata.get('author', 'Unknown'),
                 "style": metadata.get('style', 'Unknown'),
                 "year": metadata.get('year', 'Unknown'),
