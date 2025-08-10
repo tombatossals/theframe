@@ -1747,7 +1747,7 @@
     "year": "1893",
     "century": "XIX",
     "location": "Musée d'Orsay, Paris, France",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Child_Bath",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Child%27s_Bath",
     "languages": {
       "es": {
         "title": "Baño del Niño",
@@ -1760,7 +1760,7 @@
     },
     "number": 80,
     "filename": "0080-mary-cassatt-the-child-bath.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0080-mary-cassatt-the-child-bath.jpg"
   },
   "0081-rene-magritte-the-seducer.jpg": {
     "title": "The Seducer",
@@ -1914,7 +1914,7 @@
     },
     "number": 87,
     "filename": "0087-pablo-picasso-portrait-of-daniel-henry-kahnweiler.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0087-pablo-picasso-portrait-of-daniel-henry-kahnweiler.jpg"
   },
   "0088-vincent-van-gogh-the-haystacks.jpg": {
     "title": "The Haystacks",
@@ -1936,7 +1936,7 @@
     },
     "number": 88,
     "filename": "0088-vincent-van-gogh-the-haystacks.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0088-vincent-van-gogh-the-haystacks.jpg"
   },
   "0089-leonardo-da-vinci-vitruvian-man.jpg": {
     "title": "Vitruvian Man",
@@ -1958,7 +1958,7 @@
     },
     "number": 89,
     "filename": "0089-leonardo-da-vinci-vitruvian-man.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0089-leonardo-da-vinci-vitruvian-man.jpg"
   },
   "0090-wassily-kandinsky-composition-vii.jpg": {
     "title": "Composition VII",
@@ -1980,7 +1980,7 @@
     },
     "number": 90,
     "filename": "0090-wassily-kandinsky-composition-vii.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0090-wassily-kandinsky-composition-vii.jpg"
   },
   "0091-katsushika-hokusai-the-great-wave-off-kanagawa.jpg": {
     "title": "The Great Wave off Kanagawa",
@@ -2002,7 +2002,7 @@
     },
     "number": 91,
     "filename": "0091-katsushika-hokusai-the-great-wave-off-kanagawa.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0091-katsushika-hokusai-the-great-wave-off-kanagawa.jpg"
   },
   "0092-benjamin-constant-the-throne-chamber-in-byzantium.jpg": {
     "title": "The Throne Chamber in Byzantium",
@@ -2024,7 +2024,7 @@
     },
     "number": 92,
     "filename": "0092-benjamin-constant-the-throne-chamber-in-byzantium.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0092-benjamin-constant-the-throne-chamber-in-byzantium.jpg"
   },
   "0093-edvard-munch-madonna.jpg": {
     "title": "Madonna",
@@ -2046,7 +2046,7 @@
     },
     "number": 93,
     "filename": "0093-edvard-munch-madonna.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0093-edvard-munch-madonna.jpg"
   },
   "0094-august-macke-woman-in-a-green-jacket.jpg": {
     "title": "Woman in a Green Jacket",
@@ -2068,7 +2068,7 @@
     },
     "number": 94,
     "filename": "0094-august-macke-woman-in-a-green-jacket.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0094-august-macke-woman-in-a-green-jacket.jpg"
   },
   "0095-john-singer-sargent-madame-x.jpg": {
     "title": "Madame X",
@@ -2077,7 +2077,7 @@
     "year": "1884",
     "century": "XIX",
     "location": "National Academy of Design, New York, USA",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Madame_X",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Madame_X",
     "languages": {
       "es": {
         "title": "Madame X",
@@ -2090,7 +2090,7 @@
     },
     "number": 95,
     "filename": "0095-john-singer-sargent-madame-x.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0095-john-singer-sargent-madame-x.jpg"
   },
   "0096-wassily-kandinsky-improvisation-gorge.jpg": {
     "title": "Improvisation (Gorge)",
@@ -2112,7 +2112,7 @@
     },
     "number": 96,
     "filename": "0096-wassily-kandinsky-improvisation-gorge.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0096-wassily-kandinsky-improvisation-gorge.jpg"
   },
   "0097-pieter-bruegel-the-elder-the-hunters-in-the-snow.jpg": {
     "title": "The Hunters in the Snow",
@@ -2134,7 +2134,7 @@
     },
     "number": 97,
     "filename": "0097-pieter-bruegel-the-elder-the-hunters-in-the-snow.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0097-pieter-bruegel-the-elder-the-hunters-in-the-snow.jpg"
   },
   "0098-albrecht-durer-young-hare.jpg": {
     "title": "Young Hare",
@@ -2156,7 +2156,7 @@
     },
     "number": 98,
     "filename": "0098-albrecht-durer-young-hare.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0098-albrecht-durer-young-hare.jpg"
   },
   "0099-gustave-courbet-the-origin-of-the-world.jpg": {
     "title": "The Origin of the World",
@@ -2165,7 +2165,7 @@
     "year": "1866",
     "century": "XIX",
     "location": "Private collection",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Origin_of_the_World_(Courbet)",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/L%27Origine_du_monde",
     "languages": {
       "es": {
         "title": "El origen del mundo",
@@ -2178,7 +2178,7 @@
     },
     "number": 99,
     "filename": "0099-gustave-courbet-the-origin-of-the-world.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0099-gustave-courbet-the-origin-of-the-world.jpg"
   },
   "0100-georges-braque-mandola.jpg": {
     "title": "Mandola",
