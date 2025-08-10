@@ -2690,7 +2690,7 @@
     "year": "1889",
     "century": "XIX",
     "location": "The Van Gogh Museum, Amsterdam, Netherlands",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Vincent_van_Gogh",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Skull_of_a_Skeleton_with_Burning_Cigarette",
     "languages": {
       "es": {
         "title": "Calavera con cigarrillo quemado",
@@ -2703,7 +2703,7 @@
     },
     "number": 123,
     "filename": "0123-vincent-van-gogh-skull-with-a-burned-cigarette.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0123-vincent-van-gogh-skull-with-a-burned-cigarette.jpg"
   },
   "0124-sandro-botticelli-birth-of-venus.jpg": {
     "title": "Birth of Venus",
@@ -2857,7 +2857,7 @@
     },
     "number": 130,
     "filename": "0130-sandro-botticelli-adoration-of-the-magi.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0130-sandro-botticelli-adoration-of-the-magi.jpg"
   },
   "0131-edvard-munch-the-sick-child.jpg": {
     "title": "The Sick Child",
@@ -2879,7 +2879,7 @@
     },
     "number": 131,
     "filename": "0131-edvard-munch-the-sick-child.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0131-edvard-munch-the-sick-child.jpg"
   },
   "0132-gustav-klimt-portrait-of-adele-bloch-bauer-i.jpg": {
     "title": "Portrait of Adele Bloch-Bauer I",
