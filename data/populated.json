@@ -767,7 +767,8 @@
     },
     "image_url": "",
     "number": 35,
-    "filename": "0035-caravaggio-narcissus.jpg"
+    "filename": "0035-caravaggio-narcissus.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0035-caravaggio-narcissus.jpg"
   },
   "0036-jean-michel-basquiat-untitled-skull.jpg": {
     "title": "Untitled (Skull)",
@@ -3759,7 +3760,7 @@
     },
     "number": 171,
     "filename": "0171-tintoretto-the-last-supper.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0171-tintoretto-the-last-supper.jpg"
   },
   "0172-frida-kahlo-frida-and-diego-rivera.jpg": {
     "title": "Frida and Diego Rivera",
@@ -3825,7 +3826,7 @@
     },
     "number": 174,
     "filename": "0174-rembrandt-van-rijn-self-portrait-with-two-circles.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0174-rembrandt-van-rijn-self-portrait-with-two-circles.jpg"
   },
   "0175-amedeo-modigliani-reclining-nude-with-blue-cushion.jpg": {
     "title": "Reclining Nude with Blue Cushion",
@@ -3847,7 +3848,7 @@
     },
     "number": 175,
     "filename": "0175-amedeo-modigliani-reclining-nude-with-blue-cushion.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0175-amedeo-modigliani-reclining-nude-with-blue-cushion.jpg"
   },
   "0176-salvador-dali-crucifixion.jpg": {
     "title": "Crucifixion",
@@ -3913,7 +3914,7 @@
     },
     "number": 178,
     "filename": "0178-johannes-vermeer-the-milkmaid.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0178-johannes-vermeer-the-milkmaid.jpg"
   },
   "0179-titian-diana-and-actaeon.jpg": {
     "title": "Diana and Actaeon",
@@ -3935,7 +3936,7 @@
     },
     "number": 179,
     "filename": "0179-titian-diana-and-actaeon.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0179-titian-diana-and-actaeon.jpg"
   },
   "0180-pierre-auguste-renoir-after-the-bath.jpg": {
     "title": "After the Bath",
@@ -4001,7 +4002,7 @@
     },
     "number": 182,
     "filename": "0182-vincent-van-gogh-irises.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0182-vincent-van-gogh-irises.jpg"
   },
   "0183-albert-bierstadt-rocky-mountains.jpg": {
     "title": "Rocky Mountains",
@@ -4023,7 +4024,7 @@
     },
     "number": 183,
     "filename": "0183-albert-bierstadt-rocky-mountains.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0183-albert-bierstadt-rocky-mountains.jpg"
   },
   "0184-frida-kahlo-self-portrait-with-cropped-hair.jpg": {
     "title": "Self-portrait with Cropped Hair",
@@ -4067,7 +4068,7 @@
     },
     "number": 185,
     "filename": "0185-titian-bacchus-and-ariadne.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0185-titian-bacchus-and-ariadne.jpg"
   },
   "0186-vincent-van-gogh-seascape-saintes-maries.jpg": {
     "title": "Seascape, Saintes-Maries",
@@ -4089,7 +4090,7 @@
     },
     "number": 186,
     "filename": "0186-vincent-van-gogh-seascape-saintes-maries.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0186-vincent-van-gogh-seascape-saintes-maries.jpg"
   },
   "0187-diego-velazquez-the-surrender-of-breda.jpg": {
     "title": "The Surrender of Breda",
@@ -4111,7 +4112,7 @@
     },
     "number": 187,
     "filename": "0187-diego-velazquez-the-surrender-of-breda.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0187-diego-velazquez-the-surrender-of-breda.jpg"
   },
   "0188-el-greco-the-burial-of-count-orgaz.jpg": {
     "title": "The Burial of Count Orgaz",
