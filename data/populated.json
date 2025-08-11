@@ -4375,5 +4375,49 @@
     "number": 199,
     "filename": "0199-pablo-picasso-two-women-running-on-the-beach.jpg",
     "bg_url": null
+  },
+  "0200-georges-braque-the-house-in-l-estaque.jpg": {
+    "title": "The House in L'Estaque",
+    "author": "Georges Braque",
+    "style": "Fauvism",
+    "year": "1909",
+    "century": "XX",
+    "location": "National Gallery of Victoria, Melbourne, Australia",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_House_in_L%27Estaque",
+    "languages": {
+      "es": {
+        "title": "Casa en L'Estaque",
+        "author": "Georges Braque",
+        "style": "Fauvismo",
+        "year": "1909",
+        "century": "XX",
+        "location": "National Gallery of Victoria, Melbourne, Australia"
+      }
+    },
+    "number": 200,
+    "filename": "0200-georges-braque-the-house-in-l-estaque.jpg",
+    "bg_url": null
+  },
+  "0201-wassily-kandinsky-view-of-murnau-with-train-and-castle.jpg": {
+    "title": "View of Murnau with train and castle",
+    "author": "Wassily Kandinsky",
+    "style": "Post-Impressionism",
+    "year": "1914",
+    "century": "XX",
+    "location": "Pushkin Museum, Moscow, Russia",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/View_of_Murnau_with_train_and_castle",
+    "languages": {
+      "es": {
+        "title": "Vista de Murnau con tren y castillo",
+        "author": "Wassily Kandinsky",
+        "style": "Postimpresionismo",
+        "year": "1914",
+        "century": "XX",
+        "location": "Museo Pushkin, Moscú, Rusia"
+      }
+    },
+    "number": 201,
+    "filename": "0201-wassily-kandinsky-view-of-murnau-with-train-and-castle.jpg",
+    "bg_url": null
   }
 }

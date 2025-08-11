@@ -456,12 +456,12 @@ def url_exists(url: str) -> bool:
         return False
 
 
-def get_next_number(completed: Dict[str, Any]) -> int:
+def get_next_number(completed: Dict[str, Any], current_index: int) -> int:
     """Get the next available number for a painting."""
     existing_numbers = [
         v.get("number") for v in completed.values() if isinstance(v.get("number"), int)
     ]
-    return max(existing_numbers, default=0) + 1
+    return max(existing_numbers, default=0) + current_index + 1
 
 
 def populate(
@@ -631,7 +631,7 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
             # Parse AI response
             content = response.message.content or ""
             answer = json.loads(content.strip())
-            answer["number"] = get_next_number(completed)
+            answer["number"] = get_next_number(completed, i)
             answer["filename"] = (
                 f"{str(answer.get('number')).zfill(4)}-{slugify(answer.get('author'))}-{slugify(answer.get('title'))}.jpg"
             )
