@@ -9,6 +9,7 @@ import sys
 from dotenv import load_dotenv
 
 from tools import (find_duplicates, generate_json,
+                   get_incremental_completed_name,
                    get_incremental_pending_name, pick_random_image, populate,
                    upload_to_tv)
 
@@ -144,6 +145,13 @@ def main():
             with open(populated_json, 'w', encoding='utf-8') as f:
                 json.dump(populated, f, ensure_ascii=False, indent=2)
 
+            with open(get_incremental_completed_name(populated_json), "r", encoding="utf-8") as f:
+                data = json.load(f)
+                for k in [ k for k in data.keys() if k in populated.keys()]:
+                    data.pop(k, None)
+
+                with open(get_incremental_completed_name(populated_json), "w", encoding="utf-8") as f:
+                    json.dump(data, f, ensure_ascii=False, indent=2)
 
     elif args.command == 'errors':
         populated_json = args.populated_json or os.getenv('POPULATED_JSON')
