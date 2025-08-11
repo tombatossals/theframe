@@ -2291,13 +2291,13 @@
     "bg_url": null
   },
   "0105-grant-wood-hijas-de-la-revolucion.jpg": {
-    "title": "Hijas de la Revolución",
+    "title": "Daughters of Revolution",
     "author": "Grant Wood",
     "style": "American Regionalism",
     "year": "Unknown",
     "century": "Unknown",
     "location": "Unknown",
-    "wikipedia_url": "",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Daughters_of_Revolution",
     "languages": {
       "es": {
         "title": "Hijas de la Revolución",
@@ -2319,7 +2319,7 @@
     "year": "1720",
     "century": "XVII",
     "location": "Louvre, Paris, France",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_a_Young_Man_(Watteau)",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pierrot_(Watteau)",
     "languages": {
       "es": {
         "title": "Gilles",
@@ -4334,6 +4334,28 @@
     },
     "number": 197,
     "filename": "0197-raphael-portrait-of-bindo-altoviti.jpg",
+    "bg_url": null
+  },
+  "0198-paolo-uccello-the-battle-of-san-romano.jpg": {
+    "title": "The Battle of San Romano",
+    "author": "Paolo Uccello",
+    "style": "Early Renaissance",
+    "year": "1435-1440",
+    "century": "XIV",
+    "location": "Uffizi, Florence, Italy",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Battle_of_San_Romano",
+    "languages": {
+      "es": {
+        "title": "La batalla de San Romano",
+        "author": "Paolo Uccello",
+        "style": "Renacimiento temprano",
+        "year": "1435-1440",
+        "century": "XIV",
+        "location": "Uffizi, Florencia, Italia"
+      }
+    },
+    "number": 198,
+    "filename": "0198-paolo-uccello-the-battle-of-san-romano.jpg",
     "bg_url": null
   }
 }

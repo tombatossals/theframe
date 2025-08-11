@@ -378,9 +378,11 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
             completed = json.load(f)
 
     if os.path.exists(get_incremental_completed_name(destination_json)):
-        updated = True
         with open(get_incremental_completed_name(destination_json), 'r', encoding='utf-8') as f:
             n = json.load(f)
+            if len(n.keys()) > 0:
+                updated = True
+
             for clave in list(n.keys()):
                 if completed.get(clave, {}).get("bg_url"):
                     del n[clave]
