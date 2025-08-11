@@ -263,13 +263,22 @@ def get_full_name(name: str) -> str:
         return f"{parts[1]} {parts[0]}"
     return name
 
-def get_incremental_name(path_str: str) -> str:
+def get_incremental_pending_name(path_str: str) -> str:
     p = Path(path_str)
     if p.suffix.lower() != ".json":
         raise ValueError("El archivo debe terminar en .json")
 
     filename = p.with_suffix("") # quita .json
-    filename = filename.with_name(filename.name + ".incremental.json")
+    filename = filename.with_name(filename.name + ".incremental.pending.json")
+    return str(filename)
+
+def get_incremental_completed_name(path_str: str) -> str:
+    p = Path(path_str)
+    if p.suffix.lower() != ".json":
+        raise ValueError("El archivo debe terminar en .json")
+
+    filename = p.with_suffix("") # quita .json
+    filename = filename.with_name(filename.name + ".incremental.completed.json")
     return str(filename)
 
 def url_exists(url: str) -> bool:
@@ -358,13 +367,15 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
 
     completed = dict()
     populated = dict()
+    updated = False
 
     if os.path.exists(destination_json):
         with open(destination_json, 'r', encoding='utf-8') as f:
             completed = json.load(f)
 
-    if os.path.exists(get_incremental_name(destination_json)):
-        with open(get_incremental_name(destination_json), 'r', encoding='utf-8') as f:
+    if os.path.exists(get_incremental_completed_name(destination_json)):
+        updated = True
+        with open(get_incremental_completed_name(destination_json), 'r', encoding='utf-8') as f:
             n = json.load(f)
             for clave in list(n.keys()):
                 if completed.get(clave, {}).get("bg_url"):
@@ -382,7 +393,6 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
             }
         return completed
 
-    updated = False
     for i, painting in enumerate(completed.values()):
         if painting.get("image_url"):
             del painting["image_url"]
@@ -394,32 +404,44 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
     if updated:
         return completed
 
-    for i, painting in enumerate(completed.values()):
-        if painting.get("filename") is None:
-            logging.debug(f"Populating data: {painting.get('title')}...")
-            response: ChatResponse = chat(model='gpt-oss:20b', messages=[
-            {
-                'role': 'user',
-                'content': prompt.format(
-                    title=painting.get('title', 'Unknown')
-                )
-            }])
+    pending = dict()
+    newdata = dict()
 
-            answer = json.loads(response.message.content.strip())
-            answer["number"] = i
-            answer["filename"] = f"{str(i+1).zfill(4)}-{slugify(answer.get('author'))}-{slugify(answer.get('title'))}.jpg"
-            if url_exists(f"{base_url}/{answer.get('filename')}"):
-                answer["bg_url"] = f"{base_url}/{answer.get('filename')}"
-            else:
-                answer["bg_url"] = None
-            populated[answer.get("filename")] = answer
+    if os.path.exists(get_incremental_pending_name(destination_json)):
+        with open(get_incremental_pending_name(destination_json), 'r', encoding='utf-8') as f:
+            pending = json.load(f)
 
-            logging.debug(f"Done. ({i + 1}/{len(paintings)}) {answer.get('filename')}")
+    for i, painting in enumerate(pending):
+        logging.debug(f"Populating data: {painting.get('name')}...")
+        response: ChatResponse = chat(model='gpt-oss:20b', messages=[
+        {
+            'role': 'user',
+            'content': prompt.format(
+                title=painting.get('name', 'Unknown')
+            )
+        }])
 
-            with open(get_incremental_name(destination_json), "w") as f:
-                json.dump(populated, f, ensure_ascii=False, indent=2)
-                f.flush()
-                os.fsync(f.fileno())
+        answer = json.loads(response.message.content.strip())
+        answer["number"] = i
+        answer["filename"] = f"{str(i+1).zfill(4)}-{slugify(answer.get('author'))}-{slugify(answer.get('title'))}.jpg"
+        if url_exists(f"{base_url}/{answer.get('filename')}"):
+            answer["bg_url"] = f"{base_url}/{answer.get('filename')}"
+        else:
+            answer["bg_url"] = None
+        newdata[answer.get("filename")] = answer
+
+        logging.debug(f"Done. ({i + 1}/{len(paintings)}) {answer.get('filename')}")
+
+        with open(get_incremental_pending_name(destination_json), "w") as f:
+            pending.pop(i)
+            json.dump(pending, f, ensure_ascii=False, indent=2)
+            f.flush()
+            os.fsync(f.fileno())
+
+        with open(get_incremental_completed_name(destination_json), "w") as f:
+            json.dump(newdata, f, ensure_ascii=False, indent=2)
+            f.flush()
+            os.fsync(f.fileno())
 
 
     return completed

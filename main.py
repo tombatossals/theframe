@@ -8,7 +8,8 @@ import sys
 
 from dotenv import load_dotenv
 
-from tools import (find_duplicates, generate_json, pick_random_image, populate,
+from tools import (find_duplicates, generate_json,
+                   get_incremental_pending_name, pick_random_image, populate,
                    upload_to_tv)
 
 # Load environment variables
@@ -128,17 +129,21 @@ def main():
 
         if increment:
             with open(paintings_json, 'r', encoding='utf-8') as f:
-                p = json.load(f)[0:10]
-                paintings = p[0:10]
-                finished_paintings = p[10:] if len(p) > 10 else []
+                p = json.load(f)
+                paintings = p[0:2]
+                finished_paintings = p[2:] if len(p) > 2 else []
 
-        populated = populate(populated_json, paintings, base_url)
-        with open(populated_json, 'w', encoding='utf-8') as f:
-            json.dump(populated, f, ensure_ascii=False, indent=2)
+                with open(get_incremental_pending_name(populated_json), "w", encoding="utf-8") as f:
+                    json.dump(paintings, f, ensure_ascii=False, indent=2)
 
-        if increment and len(finished_paintings) > 0:
-            with open(paintings_json, "w", encoding="utf-8") as f:
-                json.dump(finished_paintings, f, ensure_ascii=False, indent=2)
+                if len(finished_paintings) > 0:
+                    with open(paintings_json, "w", encoding="utf-8") as f:
+                        json.dump(finished_paintings, f, ensure_ascii=False, indent=2)
+        else:
+            populated = populate(populated_json, paintings, base_url)
+            with open(populated_json, 'w', encoding='utf-8') as f:
+                json.dump(populated, f, ensure_ascii=False, indent=2)
+
 
     elif args.command == 'errors':
         populated_json = args.populated_json or os.getenv('POPULATED_JSON')
