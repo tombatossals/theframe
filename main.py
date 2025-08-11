@@ -132,7 +132,7 @@ def main():
                 paintings = p[0:10]
                 finished_paintings = p[10:] if len(p) > 10 else []
 
-        populated = populate(populated_json, paintings, base_url,)
+        populated = populate(populated_json, paintings, base_url)
         with open(populated_json, 'w', encoding='utf-8') as f:
             json.dump(populated, f, ensure_ascii=False, indent=2)
 
@@ -149,7 +149,7 @@ def main():
         with open(populated_json, 'r', encoding='utf-8') as f:
             populated = json.load(f)
             numbers = set()
-            for painting in populated.values():
+            for painting in reversed([ v for v in populated.values() if v.get("filename")]):
                 if painting.get("number") in numbers:
                     logging.error(f"Duplicated: {painting.get('number')} - {painting.get('title', 'Unknown')} - {painting.get('author', 'Unknown')}")
                 numbers.add(painting.get("number"))
@@ -163,7 +163,7 @@ def main():
             for m in missing:
                 logging.error(f"Missing painting: {m}")
 
-            duplicates = find_duplicates(list(populated.values()))
+            duplicates = find_duplicates([ v for v in populated.values() if v.get("filename")])
             for dup in duplicates:
                 logging.error(f"Duplicate painting found: {dup.get('title', 'Unknown')} - {dup.get('author', 'Unknown')}")
 

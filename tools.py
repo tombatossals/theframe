@@ -396,12 +396,12 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
 
     for i, painting in enumerate(completed.values()):
         if painting.get("filename") is None:
-            logging.debug(f"Populating data: {title}...")
+            logging.debug(f"Populating data: {painting.get('title')}...")
             response: ChatResponse = chat(model='gpt-oss:20b', messages=[
             {
                 'role': 'user',
                 'content': prompt.format(
-                    title=title
+                    title=painting.get('title', 'Unknown')
                 )
             }])
 

@@ -2187,7 +2187,7 @@
     "year": "1915",
     "century": "XX",
     "location": "Metropolitan Museum of Art, New York, United States",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mandolin_(Braque)",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mandora_(painting)",
     "languages": {
       "es": {
         "title": "Mandola",
@@ -2200,7 +2200,7 @@
     },
     "number": 100,
     "filename": "0100-georges-braque-mandola.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0100-georges-braque-mandola.jpg"
   },
   "0101-salvador-dali-the-elephants.jpg": {
     "title": "The Elephants",
@@ -2222,7 +2222,7 @@
     },
     "number": 101,
     "filename": "0101-salvador-dali-the-elephants.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0101-salvador-dali-the-elephants.jpg"
   },
   "0102-vincent-van-gogh-portrait-of-patience-escalier.jpg": {
     "title": "Portrait of Patience Escalier",
@@ -2244,7 +2244,7 @@
     },
     "number": 102,
     "filename": "0102-vincent-van-gogh-portrait-of-patience-escalier.jpg",
-    "bg_url": null
+    "bg_url": "http://192.168.4.10/theframe/paintings/0102-vincent-van-gogh-portrait-of-patience-escalier.jpg"
   },
   "0103-titian-assumption-of-the-virgin.jpg": {
     "title": "Assumption of the Virgin",
@@ -4314,7 +4314,7 @@
     "filename": "0196-albert-charles-lebourg-quays-of-dieppe-after-the-rain.jpg",
     "bg_url": null
   },
-  "0198-raphael-portrait-of-bindo-altoviti.jpg": {
+  "0197-raphael-portrait-of-bindo-altoviti.jpg": {
     "title": "Portrait of Bindo Altoviti",
     "author": "Raphael",
     "style": "High Renaissance",
@@ -4332,8 +4332,8 @@
         "location": "Galería Uffizi, Florencia, Italia"
       }
     },
-    "number": 198,
-    "filename": "0198-raphael-portrait-of-bindo-altoviti.jpg",
+    "number": 197,
+    "filename": "0197-raphael-portrait-of-bindo-altoviti.jpg",
     "bg_url": null
   }
 }
