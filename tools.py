@@ -246,10 +246,12 @@ def upload_to_tv(image, tv_ip, tv_token, tv_port=8002, timeout=5):
         # Delete old images
         try:
             current_img = tv.art().get_current()
+            info = tv.art().available()
             ids = [ i.get("content_id") for i in info if i.get("content_id") != current_img.get("content_id")]
             logging.debug(f"Deleting old images: {ids}")
             tv.art().delete_list(ids)
         except Exception as e:
+            logging.error(f"Error deleting old images", e)
             return
 
     except Exception as e:
