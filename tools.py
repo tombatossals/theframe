@@ -251,7 +251,7 @@ def upload_to_tv(image, tv_ip, tv_token, tv_port=8002, timeout=5):
             logging.debug(f"Deleting old images: {ids}")
             tv.art().delete_list(ids)
         except Exception as e:
-            logging.error(f"Error deleting old images", e)
+            logging.debug(f"Error deleting old images", e)
             return
 
     except Exception as e:
