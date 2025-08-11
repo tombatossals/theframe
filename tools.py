@@ -427,7 +427,7 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
 
         answer = json.loads(response.message.content.strip())
         answer["number"] = get_next_number(completed)
-        answer["filename"] = f"{str(i+1).zfill(4)}-{slugify(answer.get('author'))}-{slugify(answer.get('title'))}.jpg"
+        answer["filename"] = f"{answer.get('number').zfill(4)}-{slugify(answer.get('author'))}-{slugify(answer.get('title'))}.jpg"
         if url_exists(f"{base_url}/{answer.get('filename')}"):
             answer["bg_url"] = f"{base_url}/{answer.get('filename')}"
         else:
