@@ -290,6 +290,10 @@ def url_exists(url: str) -> bool:
     except requests.RequestException:
         return False
 
+def get_next_number(completed: dict) -> int:
+    existing_numbers = [v.get("number") for v in completed.values() if v.get("number") is not None]
+    return max(existing_numbers, default=0) + 1
+
 def populate(destination_json, paintings, base_url):
     disable_logger("httpx")
     disable_logger("httpcore")
@@ -422,7 +426,7 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
         }])
 
         answer = json.loads(response.message.content.strip())
-        answer["number"] = i
+        answer["number"] = get_next_number(completed)
         answer["filename"] = f"{str(i+1).zfill(4)}-{slugify(answer.get('author'))}-{slugify(answer.get('title'))}.jpg"
         if url_exists(f"{base_url}/{answer.get('filename')}"):
             answer["bg_url"] = f"{base_url}/{answer.get('filename')}"
