@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "theframe"
+version = "1.1.0"
+description = "Upload a random image from a public repository to your Samsung TheFrameTV"
+readme = "README.md"
+authors = [
+    {name = "Dave", email = "dave@example.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.8.1"
+dependencies = [
+    "samsungtvws[async,encrypted]>=2.0.0",
+    "pillow>=10.0.0",
+    "python-dotenv>=1.0.0",
+    "ollama>=0.1.7",
+    "python-slugify>=8.0.0",
+    "httpx>=0.25.0",
+    "aiohttp>=3.8.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "rich>=13.0.0",
+    "typing-extensions>=4.8.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.5.0",
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0"
+]
+
+[project.scripts]
+theframe = "main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["theframe*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]

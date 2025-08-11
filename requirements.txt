@@ -1,5 +1,30 @@
-samsungtvws[async,encrypted]
-pillow
-dotenv
-ollama
-python-slugify
+# Samsung TV Communication
+samsungtvws[async,encrypted]>=2.0.0
+
+# Image Processing
+pillow>=10.0.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# AI/LLM Integration
+ollama>=0.1.7
+
+# String Processing
+python-slugify>=8.0.0
+
+# HTTP Client (more modern than urllib)
+httpx>=0.25.0
+
+# Modern async HTTP client
+aiohttp>=3.8.0
+
+# Configuration management
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# Rich console output
+rich>=13.0.0
+
+# Type checking utilities
+typing-extensions>=4.8.0

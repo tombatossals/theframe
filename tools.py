@@ -1,14 +1,17 @@
+import asyncio
 import io
 import json
 import logging
 import os
 import platform
 import random
-import urllib.request
 from collections import Counter
 from pathlib import Path
+from typing import Any, Dict, List, Optional, Union
 from urllib.parse import quote
 
+import aiohttp
+import httpx
 import requests
 from dotenv import load_dotenv
 from ollama import ChatResponse, chat
@@ -18,8 +21,12 @@ from slugify import slugify
 
 from _types import Background
 
+# Load environment variables
+load_dotenv()
 
-def disable_logger(logger_name):
+
+def disable_logger(logger_name: str) -> None:
+    """Disable a specific logger to reduce noise."""
     logger = logging.getLogger(logger_name)
     logger.setLevel(logging.CRITICAL)
     logger.propagate = False
@@ -27,93 +34,146 @@ def disable_logger(logger_name):
     logger.addHandler(logging.NullHandler())
 
 
-def generate_json(base_dir, base_url):
+def generate_json(base_dir: str, base_url: str) -> List[Dict[str, Any]]:
+    """Generate JSON metadata for images in a directory."""
     result = []
-    for root, _, files in os.walk(base_dir):
-        # Calcular profundidad
-        rel_path = os.path.relpath(root, base_dir)
-        niveles = rel_path.split(os.sep) if rel_path != "." else []
+    base_path = Path(base_dir)
 
-        # Saltar si hay más de 3 niveles
-        if len(niveles) > 3:
-            continue
+    # Use Path.walk() for more modern approach (Python 3.12+)
+    try:
+        # For compatibility with older Python versions
+        for root, _, files in os.walk(base_dir):
+            # Calculate depth
+            rel_path = os.path.relpath(root, base_dir)
+            levels = rel_path.split(os.sep) if rel_path != "." else []
 
-        for file in files:
-            if file.lower().endswith(('.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp')):
-                ruta_absoluta = os.path.join(root, file)
-                ruta_relativa = os.path.relpath(ruta_absoluta, base_dir)
-                ruta_url = quote(ruta_relativa.replace(os.sep, '/'))
-                url = f"{base_url}/{ruta_url}"
+            # Skip if more than 3 levels
+            if len(levels) > 3:
+                continue
 
-                data = os.path.basename(os.path.splitext(file)[0]).split("-")
-                author = data[0].strip()
-                title = data[1].strip() if len(data) > 1 else author
+            for file in files:
+                if file.lower().endswith(
+                    (".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp")
+                ):
+                    absolute_path = os.path.join(root, file)
+                    relative_path = os.path.relpath(absolute_path, base_dir)
+                    url_path = quote(relative_path.replace(os.sep, "/"))
+                    url = f"{base_url}/{url_path}"
 
-                result.append({
-                    "filename": file,
-                    "title": title,
-                    "author": author,
-                    "file_size": os.path.getsize(ruta_absoluta),
-                    "file_type": os.path.splitext(file)[1].lower(),
-                    "url": url
-                })
+                    data = os.path.basename(os.path.splitext(file)[0]).split("-")
+                    author = data[0].strip()
+                    title = data[1].strip() if len(data) > 1 else author
 
-    paintings = set()
-    final = list()
+                    result.append(
+                        {
+                            "filename": file,
+                            "title": title,
+                            "author": author,
+                            "file_size": os.path.getsize(absolute_path),
+                            "file_type": os.path.splitext(file)[1].lower(),
+                            "url": url,
+                        }
+                    )
+    except Exception as e:
+        logging.error(f"Error generating JSON from {base_dir}: {e}")
+        return []
+
+    # Remove duplicates while preserving order
+    seen = set()
+    final = []
     for paint in result:
         key = (paint.get("author"), paint.get("title"))
-        if key not in paintings:
-            paintings.add(key)
+        if key not in seen:
+            seen.add(key)
             final.append(paint)
 
     logging.debug(f"Generated JSON with {len(final)} images from {base_dir}")
     return final
 
-def embed_metadata(image: Background, test=False) -> bytes:
+
+def embed_metadata(image: Background, test: bool = False) -> bytes:
+    """Embed metadata into an image."""
     disable_logger("PIL")
-    disable_logger("PIL.image")
+    disable_logger("PIL.Image")
 
-    pil_image = Image.open(io.BytesIO(image.get("binary"))).convert("RGBA")
+    image_binary = image.get("binary")
+    if image_binary is None:
+        raise ValueError("Image binary data is None")
+
+    try:
+        pil_image = Image.open(io.BytesIO(image_binary)).convert("RGBA")
+    except Exception as e:
+        logging.error(f"Error opening image: {e}")
+        raise
+
     metadata = image.get("metadata", {})
-    _, height = pil_image.size
+    width, height = pil_image.size
 
-    # Crear capa para dibujo
+    # Create overlay for drawing
     overlay = Image.new("RGBA", pil_image.size, (255, 255, 255, 0))
     draw = ImageDraw.Draw(overlay)
 
-    # Cargar fuente
-    if platform.system() == "Darwin":
-        font_path = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+    # Load font with fallbacks
+    font_paths = [
+        "/System/Library/Fonts/Supplemental/Arial Bold.ttf",  # macOS
+        "/usr/share/fonts/TTF/DejaVuSans-Bold.ttf",  # Linux
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",  # Debian/Ubuntu
+        "arialbd.ttf",  # Windows
+    ]
+
+    font_path = None
+    for path in font_paths:
+        if os.path.exists(path):
+            font_path = path
+            break
+
+    if not font_path:
+        # Fallback to default font
+        font_author = ImageFont.load_default()
+        font_title = ImageFont.load_default()
+        font_extra = ImageFont.load_default()
     else:
-        font_path = "/usr/share/fonts/TTF/DejaVuSans-Bold.ttf"
+        try:
+            font_size_author = max(12, int(height * 0.02))
+            font_size_title = max(14, int(height * 0.03))
+            font_size_extra = max(10, int(height * 0.02))
 
-    font_size_author = int(height * 0.02)
-    font_size_title = int(height * 0.03)
-    font_size_extra = int(height * 0.02)
+            font_author = ImageFont.truetype(font_path, font_size_author)
+            font_title = ImageFont.truetype(font_path, font_size_title)
+            font_extra = ImageFont.truetype(font_path, font_size_extra)
+        except Exception:
+            # Fallback to default font if truetype fails
+            font_author = ImageFont.load_default()
+            font_title = ImageFont.load_default()
+            font_extra = ImageFont.load_default()
 
-    font_author = ImageFont.truetype(font_path, font_size_author)
-    font_title = ImageFont.truetype(font_path, font_size_title)
-    font_extra = ImageFont.truetype(font_path, font_size_extra)
-
-    color_author =(255, 239, 180, 255)
+    color_author = (255, 239, 180, 255)
     color_title = (255, 255, 255, 255)
     color_extra = (90, 130, 200, 255)
 
-    # Texto a mostrar
-    line_author = f"{metadata.get('author', 'Unknown')}"
-    line_title = f"{metadata.get('title', 'Unknown')}"
-    line_extra = f"Estilo {metadata.get('style', 'Estilo desconocido')} · {metadata.get('century', 'Siglo desconocido')} ({metadata.get('year', 'Año desconocido')}) · {metadata.get('location', 'Ubicación desconocida')}"
+    # Text to display
+    line_author = str(metadata.get("author", "Unknown"))
+    line_title = str(metadata.get("title", "Unknown"))
+    line_extra = f"Style {metadata.get('style', 'Unknown style')} · {metadata.get('century', 'Unknown century')} ({metadata.get('year', 'Unknown year')}) · {metadata.get('location', 'Unknown location')}"
 
-    # Calcular tamaños de texto usando textbbox
-    def get_text_size(text, font):
+    # Calculate text sizes using textbbox
+    def get_text_size(
+        text: str, font: Union[ImageFont.FreeTypeFont, ImageFont.ImageFont]
+    ) -> tuple[int, int]:
         bbox = draw.textbbox((0, 0), text, font=font)
-        return bbox[2] - bbox[0], bbox[3] - bbox[1]
+        return int(bbox[2] - bbox[0]), int(bbox[3] - bbox[1])
 
-    text_w1, text_h1 = get_text_size(line_author, font_author)
-    text_w2, text_h2 = get_text_size(line_title, font_title)
-    text_w3, text_h3 = get_text_size(line_extra, font_extra)
+    try:
+        text_w1, text_h1 = get_text_size(line_author, font_author)
+        text_w2, text_h2 = get_text_size(line_title, font_title)
+        text_w3, text_h3 = get_text_size(line_extra, font_extra)
+    except Exception:
+        # Fallback if text size calculation fails
+        text_w1, text_h1 = len(line_author) * 8, 16
+        text_w2, text_h2 = len(line_title) * 10, 20
+        text_w3, text_h3 = len(line_extra) * 7, 14
 
-    # Padding
+    # Padding and spacing
     padding_x = 40
     padding_y = 35
     spacing = 15
@@ -122,186 +182,298 @@ def embed_metadata(image: Background, test=False) -> bytes:
 
     box_width = max(text_w1, text_w2, text_w3) + 2 * padding_x
     box_height = (
-        text_h1 + 2 + text_h2 + divider_height+ text_h3 + 2 * padding_y +
-        2 * spacing + line_space
+        text_h1
+        + 2
+        + text_h2
+        + divider_height
+        + text_h3
+        + 2 * padding_y
+        + 2 * spacing
+        + line_space
     )
 
-    box_x0 = 50
-    box_y0 = height - box_height - 50
+    # Position box at bottom left with margins
+    margin_x, margin_y = 50, 50
+    box_x0 = margin_x
+    box_y0 = height - box_height - margin_y
     box_x1 = box_x0 + box_width
     box_y1 = box_y0 + box_height
 
+    # Ensure box is within image bounds
+    box_x0 = max(0, min(box_x0, width - box_width))
+    box_x1 = box_x0 + box_width
+    box_y0 = max(0, min(box_y0, height - box_height))
+    box_y1 = box_y0 + box_height
 
-    # Crear capa sombra
+    # Create shadow layer
     shadow = Image.new("RGBA", pil_image.size, (0, 0, 0, 0))
     shadow_draw = ImageDraw.Draw(shadow)
-    offset = 10
-    shadow_box = [box_x0 + offset, box_y0 + offset, box_x1 + offset, box_y1 + offset]
+    shadow_offset = 10
+    shadow_box = [
+        box_x0 + shadow_offset,
+        box_y0 + shadow_offset,
+        box_x1 + shadow_offset,
+        box_y1 + shadow_offset,
+    ]
     shadow_draw.rectangle(shadow_box, fill=(0, 0, 0, 180))
     shadow = shadow.filter(ImageFilter.GaussianBlur(radius=10))
 
-    # Dibujar caja y texto **antes** de componer capas
+    # Draw box background
     draw.rectangle(
         [box_x0, box_y0, box_x1, box_y1],
-        fill=(0, 0, 0, 140),
-        outline=(255, 255, 255, 255),
-        width=1
+        fill=(0, 0, 0, 140),  # Semi-transparent background
+        outline=(255, 255, 255, 255),  # White border
+        width=1,  # Border thickness
     )
 
-    # 4. Componer sombra + caja + texto
-    base = Image.alpha_composite(pil_image, shadow)
-
-    # Dibujar caja con sombra (más oscura)
-    draw.rectangle(
-        [box_x0, box_y0, box_x1, box_y1],
-        fill=(0, 0, 0, 140),            # Fondo semitransparente
-        outline=(255, 255, 255, 255),  # Borde blanco
-        width=1                        # Grosor del borde
-    )
-
-    # Coordenadas de texto
+    # Text coordinates
     text_x = box_x0 + padding_x
     text_y = box_y0 + padding_y
 
-    # Dibujar autor (sombra y texto)
+    # Draw author (with shadow effect)
     shadow_offset = 2
-    draw.text((text_x + shadow_offset, text_y + shadow_offset), line_author, font=font_author, fill=(0, 0, 0, 255))
+    draw.text(
+        (text_x + shadow_offset, text_y + shadow_offset),
+        line_author,
+        font=font_author,
+        fill=(0, 0, 0, 255),
+    )
     draw.text((text_x, text_y), line_author, font=font_author, fill=color_author)
 
-    # Título
+    # Title
     title_y = text_y + text_h1 + spacing
-    draw.text((text_x + shadow_offset, title_y + shadow_offset), line_title, font=font_title, fill=(0, 0, 0, 255))
+    draw.text(
+        (text_x + shadow_offset, title_y + shadow_offset),
+        line_title,
+        font=font_title,
+        fill=(0, 0, 0, 255),
+    )
     draw.text((text_x, title_y), line_title, font=font_title, fill=color_title)
 
-    # Línea divisoria
+    # Divider line
     divider_y = title_y + text_h2 + line_space
     draw.rectangle(
-        [text_x, divider_y, text_x + max(text_w1, text_w2, text_w3), divider_y + divider_height],
-        fill=color_title
+        [
+            text_x,
+            divider_y,
+            text_x + max(text_w1, text_w2, text_w3),
+            divider_y + divider_height,
+        ],
+        fill=color_title,
     )
 
-    # Extra
+    # Extra information
     extra_y = divider_y + divider_height + spacing
-    draw.text((text_x + shadow_offset, extra_y + shadow_offset), line_extra, font=font_extra, fill=(0, 0, 0, 255))
+    draw.text(
+        (text_x + shadow_offset, extra_y + shadow_offset),
+        line_extra,
+        font=font_extra,
+        fill=(0, 0, 0, 255),
+    )
     draw.text((text_x, extra_y), line_extra, font=font_extra, fill=color_extra)
 
-    # Componer imagen final
+    # Compose final image
+    try:
+        base = Image.alpha_composite(pil_image, shadow)
+        final_image = Image.alpha_composite(base, overlay)
+    except Exception:
+        # Fallback if alpha composition fails
+        final_image = pil_image
+
     buffer = io.BytesIO()
-    final_image = Image.alpha_composite(base, overlay)
-    final_image.convert("RGB").save(buffer, format="JPEG", quality=95)
+    try:
+        final_image.convert("RGB").save(buffer, format="JPEG", quality=95)
+    except Exception as e:
+        logging.error(f"Error saving image: {e}")
+        # Try with default parameters
+        final_image.convert("RGB").save(buffer, format="JPEG")
 
     if test:
-        final_image.convert("RGB").save("test.jpg", format="JPEG", quality=95)
+        try:
+            final_image.convert("RGB").save("test.jpg", format="JPEG", quality=95)
+        except Exception:
+            final_image.convert("RGB").save("test.jpg", format="JPEG")
 
     return buffer.getvalue()
 
-def pick_random_image(populated_json, embed=False, test=False) -> Background:
-        with open(populated_json, 'r', encoding='utf-8') as f:
-            populated = json.load(f)
 
-        selected_image = random.choice([ i for i in populated.values() if i.get("bg_url")])
+async def fetch_image_data(url: str) -> bytes:
+    """Asynchronously fetch image data from a URL."""
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get(url) as response:
+                response.raise_for_status()
+                return await response.read()
+    except Exception as e:
+        logging.error(f"Error fetching image data from {url}: {e}")
+        raise
 
-        if not selected_image:
-            logging.error(f"No se encontró la imagen {r} en el JSON de origen.")
+
+def pick_random_image(
+    populated_json: str, embed: bool = False, test: bool = False
+) -> Optional[Background]:
+    """Pick a random image from the populated JSON."""
+    try:
+        populated_path = Path(populated_json)
+        if not populated_path.exists():
+            logging.error(f"Populated JSON file not found: {populated_json}")
             return None
 
-        with urllib.request.urlopen(selected_image.get("bg_url")) as img_response:
-            image_data = img_response.read()
+        with open(populated_json, "r", encoding="utf-8") as f:
+            populated = json.load(f)
 
+        # Filter images with bg_url
+        selected_images = [i for i in populated.values() if i.get("bg_url")]
+        if not selected_images:
+            logging.error("No images with bg_url found in the JSON.")
+            return None
 
-        logging.debug(f"Fetched image: {selected_image.get('author', 'Unknown')} - {selected_image.get('title', 'Unknown')}")
+        selected_image = random.choice(selected_images)
 
-        metadata = selected_image.get("languages").get("es")
-        bgimage = {
+        # Fetch image data with timeout
+        try:
+            with httpx.Client(timeout=30.0) as client:
+                response = client.get(selected_image.get("bg_url"))
+                response.raise_for_status()
+                image_data = response.content
+        except httpx.RequestError as e:
+            logging.error(
+                f"Error fetching image from {selected_image.get('bg_url')}: {e}"
+            )
+            return None
+        except httpx.HTTPStatusError as e:
+            logging.error(f"HTTP error {e.response.status_code} fetching image: {e}")
+            return None
+
+        logging.debug(
+            f"Fetched image: {selected_image.get('author', 'Unknown')} - {selected_image.get('title', 'Unknown')}"
+        )
+
+        # Extract metadata
+        metadata = selected_image.get("languages", {}).get("es", {})
+        bgimage: Background = {
             "metadata": {
-                "filename": selected_image.get('filename', 'unknown.jpg'),
-                "url": selected_image.get("bg_url"),
-                "author": metadata.get('author', 'Unknown'),
-                "style": metadata.get('style', 'Unknown'),
-                "year": metadata.get('year', 'Unknown'),
-                "century": metadata.get('century', 'Unknown'),
-                "location": metadata.get('location', 'Unknown'),
-                "title": metadata.get('title', 'Unknown')
+                "author": metadata.get("author", "Unknown"),
+                "style": metadata.get("style", "Unknown"),
+                "year": metadata.get("year", "Unknown"),
+                "century": metadata.get("century", "Unknown"),
+                "location": metadata.get("location", "Unknown"),
+                "title": metadata.get("title", "Unknown"),
+                "wikipedia_url": metadata.get("wikipedia_url", ""),
             },
-            "binary": image_data
+            "binary": image_data,
+            "number": selected_image.get("number"),
+            "filename": selected_image.get("filename"),
+            "bg_url": selected_image.get("bg_url"),
         }
 
         if embed:
-            bgimage['binary'] = embed_metadata(bgimage, test=test)
+            bgimage["binary"] = embed_metadata(bgimage, test=test)
 
         return bgimage
 
+    except json.JSONDecodeError as e:
+        logging.error(f"Error parsing JSON file {populated_json}: {e}")
+        return None
+    except Exception as e:
+        logging.error(f"Error picking random image: {e}")
+        return None
 
-def upload_to_tv(image, tv_ip, tv_token, tv_port=8002, timeout=5):
 
+def upload_to_tv(
+    image: Background, tv_ip: str, tv_token: str, tv_port: int = 8002
+) -> None:
+    """Upload an image to the Samsung TV."""
     try:
-        logging.debug(f"Conectando a TV en {tv_ip}:{tv_port} con token {tv_token}")
+        logging.debug(f"Connecting to TV at {tv_ip}:{tv_port} with token {tv_token}")
         disable_logger("samsungtvws")
 
-        tv = SamsungTVWS(host=tv_ip, port=tv_port, token=tv_token)
-        uploadedID = tv.art().upload(image.get("binary"), file_type="JPEG", matte='none')
-        tv.art().select_image(uploadedID, show=tv.art().get_artmode() == "on")
-        logging.debug(f"Uploaded image: {image.get('metadata', {}).get('title', 'Unknown')}")
+        tv = SamsungTVWS(host=tv_ip, port=tv_port, token=tv_token, timeout=10)
+        uploaded_id = tv.art().upload(image["binary"], file_type="JPEG", matte="none")
+        tv.art().select_image(uploaded_id, show=tv.art().get_artmode() == "on")
+        logging.info(f"Uploaded image: {image['metadata'].get('title', 'Unknown')}")
 
-        # Delete old images
+        # Delete old images (optional cleanup)
         try:
             current_img = tv.art().get_current()
             info = tv.art().available()
-            ids = [ i.get("content_id") for i in info if i.get("content_id") != current_img.get("content_id")]
-            logging.debug(f"Deleting old images: {ids}")
-            tv.art().delete_list(ids)
+            ids = [
+                i.get("content_id")
+                for i in info
+                if i.get("content_id") != current_img.get("content_id")
+            ]
+            if ids:
+                logging.debug(f"Deleting old images: {ids}")
+                tv.art().delete_list(ids)
         except Exception as e:
-            logging.debug(f"Error deleting old images", e)
-            return
+            logging.debug(f"Note: Could not clean up old images: {e}")
 
     except Exception as e:
-        logging.error(f"Error al subir la imagen a la TV: {e}")
+        logging.error(f"Error uploading image to TV: {e}")
+        raise
+
 
 def get_full_name(name: str) -> str:
+    """Convert a name from 'Last, First' to 'First Last' format."""
     parts = [p.strip() for p in name.split(",")]
     if len(parts) == 2:
         return f"{parts[1]} {parts[0]}"
     return name
 
-def get_incremental_pending_name(path_str: str) -> str:
-    p = Path(path_str)
-    if p.suffix.lower() != ".json":
-        raise ValueError("El archivo debe terminar en .json")
 
-    filename = p.with_suffix("") # quita .json
+def get_incremental_pending_name(path_str: str) -> str:
+    """Get the name for the incremental pending file."""
+    path = Path(path_str)
+    if path.suffix.lower() != ".json":
+        raise ValueError("File must end in .json")
+
+    filename = path.with_suffix("")  # Remove .json
     filename = filename.with_name(filename.name + ".incremental.pending.json")
     return str(filename)
 
-def get_incremental_completed_name(path_str: str) -> str:
-    p = Path(path_str)
-    if p.suffix.lower() != ".json":
-        raise ValueError("El archivo debe terminar en .json")
 
-    filename = p.with_suffix("") # quita .json
+def get_incremental_completed_name(path_str: str) -> str:
+    """Get the name for the incremental completed file."""
+    path = Path(path_str)
+    if path.suffix.lower() != ".json":
+        raise ValueError("File must end in .json")
+
+    filename = path.with_suffix("")  # Remove .json
     filename = filename.with_name(filename.name + ".incremental.completed.json")
     return str(filename)
 
+
 def url_exists(url: str) -> bool:
+    """Check if a URL exists."""
     disable_logger("requests")
     disable_logger("urllib3")
     try:
-        respuesta = requests.head(url, allow_redirects=True, timeout=5)
-        return respuesta.status_code == 200
-    except requests.RequestException:
+        response = requests.head(url, allow_redirects=True, timeout=10)
+        result: bool = response.status_code == 200
+        return result
+    except requests.RequestException as e:
+        logging.debug(f"URL check failed for {url}: {e}")
         return False
 
-def get_next_number(completed: dict) -> int:
-    existing_numbers = [v.get("number") for v in completed.values() if v.get("number") is not None]
+
+def get_next_number(completed: Dict[str, Any]) -> int:
+    """Get the next available number for a painting."""
+    existing_numbers = [
+        v.get("number") for v in completed.values() if isinstance(v.get("number"), int)
+    ]
     return max(existing_numbers, default=0) + 1
 
-def populate(destination_json, paintings, base_url):
+
+def populate(
+    destination_json: str, paintings: List[Dict[str, Any]], base_url: str
+) -> Dict[str, Any]:
+    """Populate artwork metadata."""
     disable_logger("httpx")
     disable_logger("httpcore")
     disable_logger("asyncio")
 
-    prompt = """
-    System instructions:
-
+    # System prompt for AI metadata enrichment
+    system_prompt = """
 You are an expert in art history and museum cataloging.
 
 Your task is to normalize and complete artwork metadata from a minimal input JSON.
@@ -315,7 +487,7 @@ If multiple versions of an artwork exist, prioritize the canonical or best-docum
 Fill missing fields with the best available evidence; if there is reasonable doubt, choose the most well-supported data from museums or reference catalogs and maintain historical consistency.
 
 Required output format:
-{{
+{
 "title": "...",
 "author": "...",
 "style": "...",
@@ -323,140 +495,198 @@ Required output format:
 "century": "...",
 "location": "...",
 "wikipedia_url": "...",
-"languages": {{
-    "es": {{
+"languages": {
+    "es": {
         "title": "...",
         "author": "...",
         "style": "...",
         "year": "...",
         "century": "...",
         "location": "..."
-    }}
-}}
-}}
+    }
+}
+}
 
 Rules:
-
 title: In english, title without year or notes.
-
 author: normalized author name, in english.
-
 style: In english, style or movement (e.g., Venetian Renaissance, Mannerism, High Renaissance). Use the most accepted term for that specific work.
-
 year: most accepted execution year for the prioritized version (numeric or brief range if appropriate).
-
 century: century in Roman numerals (e.g., XVI).
-
 location: In english, museum, city, country.
-
 wikipedia_url: English Wikipedia URL of this painting.
 
 Do not include comments or explanations outside the JSON.
 
 User instructions:
 Input:
-{{
+{
 "title_and_author": "{title}"
-}}
+}
 
 Return the enriched JSON.
 
 Implementation notes:
+If the input contains an ambiguous year (e.g., "1542" in the title), do not carry it over to the "year" field if it does not match the prioritized version; use the most accepted year for the canonical version (for Venus y Adonis, Prado 1554).
+If the user wants a different policy (e.g., prioritize a specific museum's version), add an optional "preferred_location" parameter in the input and adapt the selection accordingly.
+For works with multiple versions (e.g., variants in the Getty or NGA), if no preference is provided, prioritize the best-documented or primary academic reference version; for Venus y Adonis, the Prado version with the precise 1554 date is commonly the reference.
+"""
 
-If the input contains an ambiguous year (e.g., “1542” in the title), do not carry it over to the “year” field if it does not match the prioritized version; use the most accepted year for the canonical version (for Venus y Adonis, Prado 1554).
-
-If the user wants a different policy (e.g., prioritize a specific museum’s version), add an optional “preferred_location” parameter in the input and adapt the selection accordingly.
-
-For works with multiple versions (e.g., variants in the Getty or NGA), if no preference is provided, prioritize the best-documented or primary academic reference version; for Venus y Adonis, the Prado version with the precise 1554 date is commonly the reference."""
-
-    completed = dict()
-    populated = dict()
+    completed: Dict[str, Any] = dict()
+    populated: Dict[str, Any] = dict()
     updated = False
 
-    if os.path.exists(destination_json):
-        with open(destination_json, 'r', encoding='utf-8') as f:
-            completed = json.load(f)
+    # Load existing completed data
+    destination_path = Path(destination_json)
+    if destination_path.exists():
+        try:
+            with open(destination_json, "r", encoding="utf-8") as f:
+                completed = json.load(f)
+        except json.JSONDecodeError as e:
+            logging.error(f"Error parsing existing JSON file {destination_json}: {e}")
+            completed = dict()
 
-    if os.path.exists(get_incremental_completed_name(destination_json)):
-        with open(get_incremental_completed_name(destination_json), 'r', encoding='utf-8') as f:
-            n = json.load(f)
-            if len(n.keys()) > 0:
-                updated = True
+    # Load incremental completed data
+    incremental_completed_path = get_incremental_completed_name(destination_json)
+    if Path(incremental_completed_path).exists():
+        try:
+            with open(incremental_completed_path, "r", encoding="utf-8") as f:
+                n = json.load(f)
+                if n:  # Check if dict is not empty
+                    updated = True
 
-            for clave in list(n.keys()):
-                if completed.get(clave, {}).get("bg_url"):
-                    del n[clave]
-            completed = { **completed, **n }
+                # Merge with completed, preferring completed entries that have bg_url
+                for key in list(n.keys()):
+                    if completed.get(key, {}).get("bg_url"):
+                        del n[key]
+                completed = {**completed, **n}
+        except json.JSONDecodeError as e:
+            logging.error(f"Error parsing incremental completed JSON: {e}")
 
+    # Count completed paintings
     pending = [i for i in completed.values() if i.get("bg_url") is not None]
-    logging.debug(f"Found {len(pending)}/{len(completed)} completed paintings in {destination_json}")
+    logging.debug(
+        f"Found {len(pending)}/{len(completed)} completed paintings in {destination_json}"
+    )
 
-    if len(paintings) > 0:
-        for i, painting in enumerate(paintings):
-            title = painting.get('name')
-            completed[f"new-{slugify(title)}"] = {
-                "title": title
-            }
+    # If we have new paintings to process
+    if paintings:
+        for painting in paintings:
+            title = painting.get("name", "Unknown")
+            key = f"new-{slugify(title)}"
+            completed[key] = {"title": title}
         return completed
 
-    for i, painting in enumerate(completed.values()):
-        if painting.get("image_url"):
+    # Update bg_url for existing entries if missing
+    for painting in completed.values():
+        # Remove deprecated fields
+        if "image_url" in painting:
             del painting["image_url"]
 
-        if painting.get("bg_url") == None and url_exists(f"{base_url}/{painting.get('filename')}"):
-            painting["bg_url"] = f"{base_url}/{painting.get('filename')}"
-            updated = True
+        # Add bg_url if missing and file exists
+        if painting.get("bg_url") is None and painting.get("filename"):
+            url = f"{base_url}/{painting['filename']}"
+            if url_exists(url):
+                painting["bg_url"] = url
+                updated = True
 
+    # If we updated anything, return early
     if updated:
         return completed
 
-    pending = dict()
-    newdata = dict()
+    # Process pending paintings with AI enrichment
+    pending_paintings: List[Dict[str, Any]] = []
+    newdata: Dict[str, Any] = dict()
 
-    if os.path.exists(get_incremental_pending_name(destination_json)):
-        with open(get_incremental_pending_name(destination_json), 'r', encoding='utf-8') as f:
-            pending = json.load(f)
+    incremental_pending_path = get_incremental_pending_name(destination_json)
+    if Path(incremental_pending_path).exists():
+        try:
+            with open(incremental_pending_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                if isinstance(data, list):
+                    pending_paintings = data
+                else:
+                    logging.error(f"Expected list in pending file, got {type(data)}")
+                    pending_paintings = []
+        except json.JSONDecodeError as e:
+            logging.error(f"Error parsing incremental pending JSON: {e}")
+            pending_paintings = []
 
-    for i, painting in enumerate(pending):
-        logging.debug(f"Populating data: {painting.get('name')}...")
-        response: ChatResponse = chat(model='gpt-oss:20b', messages=[
-        {
-            'role': 'user',
-            'content': prompt.format(
-                title=painting.get('name', 'Unknown')
+    # Process each pending painting
+    processed_indices = []
+    for i, painting in enumerate(pending_paintings):
+        try:
+            title = painting.get("name", "Unknown")
+            logging.debug(f"Populating data: {title}...")
+
+            # Get AI enrichment
+            response: ChatResponse = chat(
+                model="gpt-oss:20b",
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": f'{{"title_and_author": "{title}"}}'},
+                ],
             )
-        }])
 
-        answer = json.loads(response.message.content.strip())
-        answer["number"] = get_next_number(completed)
-        answer["filename"] = f"{str(answer.get('number')).zfill(4)}-{slugify(answer.get('author'))}-{slugify(answer.get('title'))}.jpg"
-        if url_exists(f"{base_url}/{answer.get('filename')}"):
-            answer["bg_url"] = f"{base_url}/{answer.get('filename')}"
-        else:
-            answer["bg_url"] = None
-        newdata[answer.get("filename")] = answer
+            # Parse AI response
+            content = response.message.content or ""
+            answer = json.loads(content.strip())
+            answer["number"] = get_next_number(completed)
+            answer["filename"] = (
+                f"{str(answer.get('number')).zfill(4)}-{slugify(answer.get('author'))}-{slugify(answer.get('title'))}.jpg"
+            )
 
-        logging.debug(f"Done. ({i + 1}/{len(paintings)}) {answer.get('filename')}")
+            # Check if image file exists
+            if url_exists(f"{base_url}/{answer.get('filename')}"):
+                answer["bg_url"] = f"{base_url}/{answer.get('filename')}"
+            else:
+                answer["bg_url"] = None
 
-        with open(get_incremental_pending_name(destination_json), "w") as f:
-            pending.pop(i)
-            json.dump(pending, f, ensure_ascii=False, indent=2)
-            f.flush()
-            os.fsync(f.fileno())
+            newdata[answer.get("filename")] = answer
+            processed_indices.append(i)
 
-        with open(get_incremental_completed_name(destination_json), "w") as f:
-            json.dump(newdata, f, ensure_ascii=False, indent=2)
-            f.flush()
-            os.fsync(f.fileno())
+            logging.debug(f"Done. ({i + 1}/{len(pending)}) {answer.get('filename')}")
 
+        except json.JSONDecodeError as e:
+            logging.error(f"Error parsing AI response for {painting.get('name')}: {e}")
+            continue
+        except Exception as e:
+            logging.error(f"Error processing {painting.get('name')}: {e}")
+            continue
+
+    # Update pending and completed files
+    if processed_indices:
+        # Remove processed items from pending
+        for i in sorted(processed_indices, reverse=True):
+            if i < len(pending):
+                pending.pop(i)
+
+        # Save updated pending file
+        try:
+            with open(incremental_pending_path, "w", encoding="utf-8") as f:
+                json.dump(pending, f, ensure_ascii=False, indent=2)
+        except Exception as e:
+            logging.error(f"Error saving pending file: {e}")
+
+        # Save completed data
+        try:
+            with open(incremental_completed_path, "w", encoding="utf-8") as f:
+                json.dump(newdata, f, ensure_ascii=False, indent=2)
+        except Exception as e:
+            logging.error(f"Error saving completed file: {e}")
 
     return completed
 
-def find_duplicates(paintings):
-    seen = Counter()
-    duplicates = []
+
+def find_duplicates(paintings: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Find duplicate paintings in a list."""
+    seen: Counter[tuple[str, str]] = Counter()
+    duplicates: List[Dict[str, Any]] = []
     for painting in paintings:
-        identifier = (painting['title'], painting['author'])
+        # Create a unique identifier for the painting
+        title = painting.get("title", "") or ""
+        author = painting.get("author", "") or ""
+        identifier = (title.lower().strip(), author.lower().strip())
         seen[identifier] += 1
         if seen[identifier] > 1:
             duplicates.append(painting)

@@ -765,7 +765,6 @@
         "location": "Galería Nacional, Londres, Reino Unido"
       }
     },
-    "image_url": "",
     "number": 35,
     "filename": "0035-caravaggio-narcissus.jpg",
     "bg_url": "http://192.168.4.10/theframe/paintings/0035-caravaggio-narcissus.jpg"
@@ -876,7 +875,6 @@
         "location": "Galería Nacional, Londres, Reino Unido"
       }
     },
-    "image_url": "",
     "number": 40,
     "filename": "0040-thomas-gainsborough-the-blue-boy.jpg",
     "bg_url": "http://192.168.4.10/theframe/paintings/0040-thomas-gainsborough-the-blue-boy.jpg"
@@ -921,7 +919,6 @@
         "location": "Museo de Bellas Artes de Houston, Estados Unidos"
       }
     },
-    "image_url": "",
     "number": 42,
     "filename": "0042-max-beckmann-night.jpg",
     "bg_url": "http://192.168.4.10/theframe/paintings/0042-max-beckmann-night.jpg"
@@ -3892,7 +3889,6 @@
         "location": "Museo de Arte Moderno, Nueva York, Estados Unidos"
       }
     },
-    "image_url": "",
     "number": 177,
     "filename": "0177-jackson-pollock-autumn-rhythm-number-30.jpg"
   },
