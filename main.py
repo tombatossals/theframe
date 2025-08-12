@@ -38,7 +38,7 @@ class Config(BaseSettings):
 
 def setup_logging(debug: bool = False) -> None:
     """Set up logging with rich formatting."""
-    log_level = logging.DEBUG if debug else logging.INFO
+    log_level = logging.DEBUG if debug else logging.ERROR
     logging.basicConfig(
         level=log_level,
         format="%(message)s",
