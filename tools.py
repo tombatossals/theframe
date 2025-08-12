@@ -651,7 +651,7 @@ For works with multiple versions (e.g., variants in the Getty or NGA), if no pre
             logging.error(f"Error parsing AI response for {painting.get('name')}: {e}")
             continue
         except Exception as e:
-            logging.error(f"Error processing {painting.get('name')}: {e}")
+            logging.error(f"Error {painting.get('name')}: {e}")
             continue
 
     # Update pending and completed files
