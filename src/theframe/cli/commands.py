@@ -81,12 +81,12 @@ class UpdateCommand(BaseCommand):
         # Update bg_url for existing entries if missing
         for artwork in populated_collection.artworks.values():
             # Add bg_url if missing and file exists
-            if artwork.bg_url is None and artwork.filename:
+            if artwork.bg_url is None and artwork.bg_url_exists(self.settings.base_url) is True:
+
                 url = f"{self.settings.base_url}/{artwork.filename}"
-                if self.url_exists(url):
-                    self.logger.info(f"Found new image...")
-                    artwork.bg_url = url
-                    updated = True
+                self.logger.info(f"Found background {artwork.filename}...")
+                artwork.bg_url = url
+                updated = True
 
         if updated:
             # Save populated collection

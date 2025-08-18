@@ -5,12 +5,13 @@ from pathlib import Path
 from typing import Dict, List, Optional, Union
 from urllib.parse import urlparse
 
+import requests
 from pydantic import BaseModel, Field, validator
 
 
 class ArtworkMetadata(BaseModel):
     """Metadata for artwork pieces."""
-    
+
     author: str = Field(..., description="Artist name")
     title: str = Field(..., description="Artwork title")
     style: str = Field(..., description="Art style/movement")
@@ -18,12 +19,12 @@ class ArtworkMetadata(BaseModel):
     century: str = Field(..., description="Century period")
     location: str = Field(..., description="Current location")
     wikipedia_url: Optional[str] = Field(None, description="Wikipedia URL")
-    
+
     @validator('year', pre=True)
     def validate_year(cls, v: Union[str, int]) -> str:
         """Convert year to string if needed."""
         return str(v)
-    
+
     @validator('wikipedia_url')
     def validate_wikipedia_url(cls, v: Optional[str]) -> Optional[str]:
         if v and not urlparse(v).scheme:
@@ -33,21 +34,35 @@ class ArtworkMetadata(BaseModel):
 
 class Artwork(BaseModel):
     """Complete artwork with metadata and file information."""
-    
+
     number: Optional[int] = Field(None, description="Artwork number")
     filename: Optional[str] = Field(None, description="Image filename")
     bg_url: Optional[str] = Field(None, description="Background image URL")
     metadata: ArtworkMetadata
     binary_data: Optional[bytes] = Field(None, description="Image binary data")
-    
+
     class Config:
         arbitrary_types_allowed = True
-    
+
+    def bg_url_exists(self, base_url) -> bool:
+        """Check if a BG_URL exists."""
+        if self.bg_url is not None or base_url is None:
+            return False
+
+        url = f"{base_url}/{self.filename}"
+
+        try:
+            response = requests.head(url, allow_redirects=True, timeout=10)
+            result: bool = response.status_code == 200
+            return result
+        except requests.RequestException as e:
+            return False
+
     @property
     def display_name(self) -> str:
         """Human readable display name."""
         return f"{self.metadata.title} by {self.metadata.author}"
-    
+
     @property
     def safe_filename(self) -> str:
         """Generate safe filename for the artwork."""
@@ -60,11 +75,11 @@ class Artwork(BaseModel):
 
 class TVDevice(BaseModel):
     """Samsung TV device configuration."""
-    
+
     ip: str = Field(..., description="TV IP address")
     token: str = Field(..., description="TV authentication token")
     name: Optional[str] = Field("Samsung Frame TV", description="Device name")
-    
+
     @validator('ip')
     def validate_ip(cls, v: str) -> str:
         """Basic IP validation."""
@@ -82,42 +97,42 @@ class TVDevice(BaseModel):
 
 class ProcessingJob(BaseModel):
     """Background processing job for artwork generation."""
-    
+
     id: str = Field(..., description="Unique job identifier")
     status: str = Field("pending", description="Job status")
     artworks: List[Artwork] = Field(default_factory=list)
     created_at: datetime = Field(default_factory=datetime.now)
     completed_at: Optional[datetime] = None
     error_message: Optional[str] = None
-    
+
     class Config:
         arbitrary_types_allowed = True
 
 
 class ArtworkCollection(BaseModel):
     """Collection of artworks with metadata."""
-    
+
     name: str = Field(..., description="Collection name")
     artworks: Dict[str, Artwork] = Field(default_factory=dict)
     created_at: datetime = Field(default_factory=datetime.now)
     updated_at: Optional[datetime] = None
-    
+
     class Config:
         arbitrary_types_allowed = True
-    
+
     def add_artwork(self, artwork: Artwork) -> None:
         """Add artwork to collection."""
         key = f"{artwork.number}" if artwork.number else artwork.safe_filename
         self.artworks[key] = artwork
         self.updated_at = datetime.now()
-    
+
     def get_random_artwork(self) -> Optional[Artwork]:
         """Get a random artwork from collection."""
         if not self.artworks:
             return None
         import random
         return random.choice(list(self.artworks.values()))
-    
+
     def count(self) -> int:
         """Get number of artworks in collection."""
         return len(self.artworks)
