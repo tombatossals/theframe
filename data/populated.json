@@ -2705,26 +2705,26 @@
     "filename": "0123-vincent-van-gogh-skull-with-a-burned-cigarette.jpg",
     "bg_url": "http://192.168.4.10/theframe/paintings/0123-vincent-van-gogh-skull-with-a-burned-cigarette.jpg"
   },
-  "0124-sandro-botticelli-birth-of-venus.jpg": {
-    "title": "Birth of Venus",
-    "author": "Sandro Botticelli",
-    "style": "Italian Renaissance",
-    "year": "1485",
-    "century": "XV",
-    "location": "Uffizi Gallery, Florence, Italy",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Birth_of_Venus_(Botticelli)",
+  "0124-wassily-kandinsky-view-of-murnau-with-train-and-castle.jpg": {
+    "title": "View of Murnau with train and castle",
+    "author": "Wassily Kandinsky",
+    "style": "Post-Impressionism",
+    "year": "1914",
+    "century": "XX",
+    "location": "Pushkin Museum, Moscow, Russia",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/View_of_Murnau_with_train_and_castle",
     "languages": {
       "es": {
-        "title": "El nacimiento de Venus",
-        "author": "Sandro Botticelli",
-        "style": "Renacimiento italiano",
-        "year": "1485",
-        "century": "XV",
-        "location": "Galería Uffizi, Florencia, Italia"
+        "title": "Vista de Murnau con tren y castillo",
+        "author": "Wassily Kandinsky",
+        "style": "Postimpresionismo",
+        "year": "1914",
+        "century": "XX",
+        "location": "Museo Pushkin, Moscú, Rusia"
       }
     },
     "number": 124,
-    "filename": "0124-sandro-botticelli-birth-of-venus.jpg",
+    "filename": "0124-wassily-kandinsky-view-of-murnau-with-train-and-castle.jpg",
     "bg_url": null
   },
   "0125-edouard-manet-luncheon-on-the-grass.jpg": {
@@ -4396,28 +4396,6 @@
     },
     "number": 200,
     "filename": "0200-georges-braque-the-house-in-l-estaque.jpg",
-    "bg_url": null
-  },
-  "0201-wassily-kandinsky-view-of-murnau-with-train-and-castle.jpg": {
-    "title": "View of Murnau with train and castle",
-    "author": "Wassily Kandinsky",
-    "style": "Post-Impressionism",
-    "year": "1914",
-    "century": "XX",
-    "location": "Pushkin Museum, Moscow, Russia",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/View_of_Murnau_with_train_and_castle",
-    "languages": {
-      "es": {
-        "title": "Vista de Murnau con tren y castillo",
-        "author": "Wassily Kandinsky",
-        "style": "Postimpresionismo",
-        "year": "1914",
-        "century": "XX",
-        "location": "Museo Pushkin, Moscú, Rusia"
-      }
-    },
-    "number": 201,
-    "filename": "0201-wassily-kandinsky-view-of-murnau-with-train-and-castle.jpg",
     "bg_url": null
   }
 }
