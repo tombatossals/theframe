@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "theframe"
-version = "1.1.0"
-description = "Upload a random image from a public repository to your Samsung TheFrameTV"
+version = "2.0.0"
+description = "Modern Samsung Frame TV artwork manager with AI-powered metadata"
 readme = "README.md"
 authors = [
     {name = "Dave", email = "dave@example.com"}
@@ -34,7 +34,8 @@ dependencies = [
     "pydantic>=2.0.0",
     "pydantic-settings>=2.0.0",
     "rich>=13.0.0",
-    "typing-extensions>=4.8.0"
+    "structlog>=23.0.0",
+    "typing-extensions>=4.8.0",
 ]
 
 [project.optional-dependencies]
@@ -47,10 +48,11 @@ dev = [
 ]
 
 [project.scripts]
-theframe = "main:main"
+theframe = "src.theframe.cli.main:main"
+theframe-legacy = "main:main"
 
 [tool.setuptools.packages.find]
-where = ["."]
+where = ["src"]
 include = ["theframe*"]
 
 [tool.black]
