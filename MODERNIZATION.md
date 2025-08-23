@@ -5,8 +5,9 @@
 The codebase has been completely modernized with a clean, modular architecture:
 
 ### ✨ New Features
+
 - **Modular Design**: Clear separation of concerns with dedicated modules
-- **Async/Await Support**: Modern async patterns for better performance  
+- **Async/Await Support**: Modern async patterns for better performance
 - **Type Safety**: Full Pydantic models with validation
 - **Command Pattern**: Clean CLI architecture with dedicated command classes
 - **Error Handling**: Comprehensive exception hierarchy
@@ -51,7 +52,8 @@ The modernized version provides the same functionality with better architecture:
 # Using the modern CLI
 theframe upload --ip 192.168.1.100 --embed --debug
 theframe generate --images-dir ./art --base-url https://example.com/images
-theframe populate --increment --debug
+theframe populate --debug
+theframe update --debug
 theframe errors --debug
 
 # Legacy version still available
@@ -61,6 +63,7 @@ theframe-legacy upload --ip 192.168.1.100
 ### 🔄 Migration Guide
 
 **Environment Variables** (recommended):
+
 ```bash
 export THEFRAME_TV_IP="192.168.1.100"
 export THEFRAME_TV_TOKEN="your-token"
@@ -71,6 +74,7 @@ export THEFRAME_BASE_URL="https://your-server.com/images"
 ```
 
 **Key Improvements:**
+
 - Better error messages with actionable details
 - Async processing for faster operations
 - Type safety prevents runtime errors

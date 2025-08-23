@@ -134,39 +134,37 @@ class PopulateCommand(BaseCommand):
         """Validate settings for populate command."""
         self.settings.validate_for_populate()
 
-    async def execute(self, increment: bool = False) -> None:
+    async def execute(self) -> None:
         """Execute populate command."""
         metadata_service = MetadataService()
 
         # Load existing collection
         collection = metadata_service.load_collection_from_json(self.settings.populated_json)
 
-        if increment:
-            # Load existing collection
-            new_collection = metadata_service.load_collection_from_json(self.settings.paintings_json)
+        # Load existing collection
+        new_collection = metadata_service.load_collection_from_json(self.settings.paintings_json)
 
-            # Process incrementally (first 2 items)
-            artworks = list(new_collection.artworks.items())
-            if len(artworks) > 2:
-                # Take first 2 for processing
-                pending_items = dict(artworks[:2])
-                remaining_items = dict(artworks[2:])
+        # Process incrementally (first 2 items)
+        artworks = list(new_collection.artworks.items())
+        if len(artworks) > 2:
+            # Take first 2 for processing
+            pending_items = dict(artworks[:2])
+            remaining_items = dict(artworks[2:])
 
-                # Save pending items
-                pending_collection = collection.__class__(name="pending")
-                pending_collection.artworks = pending_items
+            # Save pending items
+            pending_collection = collection.__class__(name="pending")
+            pending_collection.artworks = pending_items
 
-                pending_path = self.settings.populated_json.replace(".json", ".incremental.pending.json")
-                metadata_service.save_collection_to_json(pending_collection, pending_path)
+            pending_path = self.settings.populated_json.replace(".json", ".incremental.pending.json")
+            metadata_service.save_collection_to_json(pending_collection, pending_path)
 
-                # Update main collection with remaining items
-                collection.artworks = remaining_items
-                metadata_service.save_collection_to_json(collection, self.settings.paintings_json)
+            # Update main collection with remaining items
+            collection.artworks = remaining_items
+            metadata_service.save_collection_to_json(collection, self.settings.paintings_json)
 
-                self.logger.info(f"Prepared {len(pending_items)} artworks for incremental processing")
-            else:
-                self.logger.info("Not enough artworks for incremental processing")
-
+            self.logger.info(f"Prepared {len(pending_items)} artworks for incremental processing")
+        else:
+            self.logger.info("Not enough artworks for incremental processing")
 
 class ErrorsCommand(BaseCommand):
     """Check for errors in artwork metadata."""

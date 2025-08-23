@@ -75,11 +75,6 @@ Examples:
         "--test", action="store_true",
         help="Save test image instead of uploading (upload command)"
     )
-    parser.add_argument(
-        "--increment", action="store_true",
-        help="Process artworks incrementally (populate command)"
-    )
-
     # Command
     parser.add_argument(
         "command",
@@ -139,8 +134,6 @@ def main() -> None:
         # Execute command with appropriate arguments
         if args.command == "upload":
             command.run(embed=args.embed, test=args.test)
-        elif args.command == "populate":
-            command.run(increment=args.increment)
         else:
             command.run()
 
