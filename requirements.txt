@@ -28,3 +28,5 @@ rich>=13.0.0
 
 # Type checking utilities
 typing-extensions>=4.8.0
+
+ping3>=4.0.0
