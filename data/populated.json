@@ -1507,7 +1507,8 @@
     "location": "Metropolitan Museum of Art, New York, United States",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Self-Portrait_as_the_Allegory_of_Painting",
     "number": 126,
-    "filename": "0126-artemisia-gentileschi-self-portrait-as-the-allegory-of-painting.jpg"
+    "filename": "0126-artemisia-gentileschi-self-portrait-as-the-allegory-of-painting.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0126-artemisia-gentileschi-self-portrait-as-the-allegory-of-painting.jpg"
   },
   "0127-matthias-grunewald-the-mocking-of-christ.jpg": {
     "author": "Matthias Grünewald",
@@ -1516,9 +1517,10 @@
     "year": "1514",
     "century": "XVI",
     "location": "Museo del Prado, Madrid, Spain",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mocking_of_Christ_(Grunewald)",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Mocking_of_Christ_(Gr%C3%BCnewald)",
     "number": 127,
-    "filename": "0127-matthias-grunewald-the-mocking-of-christ.jpg"
+    "filename": "0127-matthias-grunewald-the-mocking-of-christ.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0127-matthias-grunewald-the-mocking-of-christ.jpg"
   },
   "0128-vincent-van-gogh-the-street-the-yellow-house.jpg": {
     "author": "Vincent van Gogh",
@@ -1529,7 +1531,8 @@
     "location": "Musée d'Orsay, Paris, France",
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Street_(Van_Gogh)",
     "number": 128,
-    "filename": "0128-vincent-van-gogh-the-street-the-yellow-house.jpg"
+    "filename": "0128-vincent-van-gogh-the-street-the-yellow-house.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0128-vincent-van-gogh-the-street-the-yellow-house.jpg"
   },
   "0129-vincent-van-gogh-sunflowers.jpg": {
     "author": "Vincent van Gogh",
