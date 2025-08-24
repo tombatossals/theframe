@@ -1668,14 +1668,15 @@
   },
   "0140-salvador-dali-self-portrait-with-cobalt.jpg": {
     "author": "Salvador Dalí",
-    "title": "Self-portrait with Cobalt",
+    "title": "Cubist self-portrait",
     "style": "Surrealism",
     "year": "c. 1966",
     "century": "XX",
     "location": "Salvador Dalí Museum, St. Petersburg, Florida, USA",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD",
     "number": 140,
-    "filename": "0140-salvador-dali-self-portrait-with-cobalt.jpg"
+    "filename": "0140-salvador-dali-self-portrait-with-cobalt.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0140-salvador-dali-self-portrait-with-cobalt.jpg"
   },
   "0141-andrew-wyeth-christina-s-world.jpg": {
     "author": "Andrew Wyeth",
@@ -1722,7 +1723,8 @@
     "location": "National Gallery of Art, Washington, D.C., United States",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Anthropometries_in_Blue",
     "number": 144,
-    "filename": "0144-yves-klein-anthropometries-in-blue.jpg"
+    "filename": "0144-yves-klein-anthropometries-in-blue.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0144-yves-klein-anthropometries-in-blue.jpg"
   },
   "0145-frida-kahlo-self-portrait-with-monocle.jpg": {
     "author": "Frida Kahlo",
@@ -1733,7 +1735,8 @@
     "location": "Museo Nacional de Bellas Artes, Buenos Aires, Argentina",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Self-portrait_with_monocle",
     "number": 145,
-    "filename": "0145-frida-kahlo-self-portrait-with-monocle.jpg"
+    "filename": "0145-frida-kahlo-self-portrait-with-monocle.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0145-frida-kahlo-self-portrait-with-monocle.jpg"
   },
   "0146-gustav-klimt-portrait-of-fritza-riedler.jpg": {
     "author": "Gustav Klimt",
@@ -1876,7 +1879,8 @@
     "location": "Museum of Modern Art, New York, United States",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Whaam!",
     "number": 157,
-    "filename": "0157-roy-lichtenstein-whaam.jpg"
+    "filename": "0157-roy-lichtenstein-whaam.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0157-roy-lichtenstein-whaam.jpg"
   },
   "0158-giuseppe-arcimboldo-floral-still-life.jpg": {
     "author": "Giuseppe Arcimboldo",
@@ -1887,7 +1891,8 @@
     "location": "Metropolitan Museum of Art, New York, United States",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Floral_Still_Life_(Arcimboldo)",
     "number": 158,
-    "filename": "0158-giuseppe-arcimboldo-floral-still-life.jpg"
+    "filename": "0158-giuseppe-arcimboldo-floral-still-life.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0158-giuseppe-arcimboldo-floral-still-life.jpg"
   },
   "0159-piet-mondrian-composition-with-red-blue-and-yellow.jpg": {
     "author": "Piet Mondrian",
@@ -1910,7 +1915,8 @@
     "location": "Museum of Modern Art, New York, United States",
     "wikipedia_url": "https://en.wikipedia.org/wiki/En_Blanco_II",
     "number": 160,
-    "filename": "0160-wassily-kandinsky-in-white-ii.jpg"
+    "filename": "0160-wassily-kandinsky-in-white-ii.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0160-wassily-kandinsky-in-white-ii.jpg"
   },
   "0161-paul-delvaux-sleeping-venus.jpg": {
     "author": "Paul Delvaux",
@@ -1921,7 +1927,8 @@
     "location": "National Museum of Fine Arts, Havana, Cuba",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Venus_Endormie",
     "number": 161,
-    "filename": "0161-paul-delvaux-sleeping-venus.jpg"
+    "filename": "0161-paul-delvaux-sleeping-venus.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0161-paul-delvaux-sleeping-venus.jpg"
   },
   "0162-egon-schiele-self-portrait-ii-death-and-man.jpg": {
     "author": "Egon Schiele",
@@ -1944,7 +1951,8 @@
     "location": "Metropolitan Museum of Art, New York City, United States",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Man_with_a_Guitar_(Braque)",
     "number": 163,
-    "filename": "0163-georges-braque-man-with-a-guitar.jpg"
+    "filename": "0163-georges-braque-man-with-a-guitar.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0163-georges-braque-man-with-a-guitar.jpg"
   },
   "0164-lucian-freud-big-sue.jpg": {
     "author": "Lucian Freud",
@@ -1991,7 +1999,8 @@
     "location": "Museum Ludwig, Cologne, Germany",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Self-Portrait_as_a_Degenerate_Artist",
     "number": 167,
-    "filename": "0167-oskar-kokoschka-self-portrait-as-a-degenerate-artist.jpg"
+    "filename": "0167-oskar-kokoschka-self-portrait-as-a-degenerate-artist.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0167-oskar-kokoschka-self-portrait-as-a-degenerate-artist.jpg"
   },
   "0168-frida-kahlo-the-broken-column.jpg": {
     "author": "Frida Kahlo",
@@ -2026,7 +2035,8 @@
     "location": "Museum of Fine Arts, Budapest, Hungary",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ruins_of_the_old_Kreuzkirche_in_Dresden",
     "number": 170,
-    "filename": "0170-bernardo-bellotto-ruins-of-the-old-kreuzkirche-in-dresden.jpg"
+    "filename": "0170-bernardo-bellotto-ruins-of-the-old-kreuzkirche-in-dresden.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0170-bernardo-bellotto-ruins-of-the-old-kreuzkirche-in-dresden.jpg"
   },
   "0171-tintoretto-the-last-supper.jpg": {
     "author": "Tintoretto",
@@ -2049,7 +2059,8 @@
     "location": "Museum of Fine Arts, Houston, United States",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Frida_and_Diego_Rivera",
     "number": 172,
-    "filename": "0172-frida-kahlo-frida-and-diego-rivera.jpg"
+    "filename": "0172-frida-kahlo-frida-and-diego-rivera.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0172-frida-kahlo-frida-and-diego-rivera.jpg"
   },
   "0173-max-beckmann-the-great-scene-of-agony.jpg": {
     "author": "Max Beckmann",
@@ -2060,7 +2071,8 @@
     "location": "Museo Nacional Centro de Arte Reina Sofía, Madrid, Spain",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Max_Beckmann",
     "number": 173,
-    "filename": "0173-max-beckmann-the-great-scene-of-agony.jpg"
+    "filename": "0173-max-beckmann-the-great-scene-of-agony.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0173-max-beckmann-the-great-scene-of-agony.jpg"
   },
   "0174-rembrandt-van-rijn-self-portrait-with-two-circles.jpg": {
     "author": "Rembrandt van Rijn",
@@ -2191,7 +2203,8 @@
     "location": "Museo Nacional de Arte, Mexico City, Mexico",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Self-portrait_with_Cropped_Hair",
     "number": 184,
-    "filename": "0184-frida-kahlo-self-portrait-with-cropped-hair.jpg"
+    "filename": "0184-frida-kahlo-self-portrait-with-cropped-hair.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0184-frida-kahlo-self-portrait-with-cropped-hair.jpg"
   },
   "0185-titian-bacchus-and-ariadne.jpg": {
     "author": "Titian",
@@ -2274,7 +2287,8 @@
     "location": "Fundació Joan Miró, Barcelona, Spain",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Joan_Miró",
     "number": 191,
-    "filename": "0191-joan-miro-life-with-old-shoes.jpg"
+    "filename": "0191-joan-miro-life-with-old-shoes.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0191-joan-miro-life-with-old-shoes.jpg"
   },
   "0192-paul-delvaux-night-train.jpg": {
     "author": "Paul Delvaux",
@@ -2333,7 +2347,8 @@
     "location": "Musée d'Orsay, Paris, France",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Albert-Charles_Lebourg",
     "number": 196,
-    "filename": "0196-albert-charles-lebourg-quays-of-dieppe-after-the-rain.jpg"
+    "filename": "0196-albert-charles-lebourg-quays-of-dieppe-after-the-rain.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0196-albert-charles-lebourg-quays-of-dieppe-after-the-rain.jpg"
   },
   "0197-raphael-portrait-of-bindo-altoviti.jpg": {
     "author": "Raphael",
@@ -2368,7 +2383,8 @@
     "location": "Musée des Beaux-Arts de Lyon, Lyon, France",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pablo_Picasso",
     "number": 199,
-    "filename": "0199-pablo-picasso-two-women-running-on-the-beach.jpg"
+    "filename": "0199-pablo-picasso-two-women-running-on-the-beach.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0199-pablo-picasso-two-women-running-on-the-beach.jpg"
   },
   "0200-georges-braque-the-house-in-l-estaque.jpg": {
     "author": "Georges Braque",
