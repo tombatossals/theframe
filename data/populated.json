@@ -2095,7 +2095,8 @@
     "location": "Museu Nacional d'Art de Catalunya, Barcelona, Spain",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Crucifixion_(Corpus_Hypercubus)",
     "number": 176,
-    "filename": "0176-salvador-dali-crucifixion.jpg"
+    "filename": "0176-salvador-dali-crucifixion.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0176-salvador-dali-crucifixion.jpg"
   },
   "0177-jackson-pollock-autumn-rhythm-number-30.jpg": {
     "author": "Jackson Pollock",
@@ -2106,7 +2107,8 @@
     "location": "Museum of Modern Art (MoMA), New York City, United States",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Autumn_Rhythm_(Number_30)",
     "number": 177,
-    "filename": "0177-jackson-pollock-autumn-rhythm-number-30.jpg"
+    "filename": "0177-jackson-pollock-autumn-rhythm-number-30.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0177-jackson-pollock-autumn-rhythm-number-30.jpg"
   },
   "0178-johannes-vermeer-the-milkmaid.jpg": {
     "author": "Johannes Vermeer",
@@ -2141,7 +2143,8 @@
     "location": "Musée d'Orsay, Paris, France",
     "wikipedia_url": "https://en.wikipedia.org/wiki/After_the_Bath_(Renoir)",
     "number": 180,
-    "filename": "0180-pierre-auguste-renoir-after-the-bath.jpg"
+    "filename": "0180-pierre-auguste-renoir-after-the-bath.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0180-pierre-auguste-renoir-after-the-bath.jpg"
   },
   "0181-marc-chagall-in-the-city.jpg": {
     "author": "Marc Chagall",
@@ -2152,7 +2155,8 @@
     "location": "Musée d'Orsay, Paris, France",
     "wikipedia_url": "https://en.wikipedia.org/wiki/In_the_City_(Chagall)",
     "number": 181,
-    "filename": "0181-marc-chagall-in-the-city.jpg"
+    "filename": "0181-marc-chagall-in-the-city.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0181-marc-chagall-in-the-city.jpg"
   },
   "0182-vincent-van-gogh-irises.jpg": {
     "author": "Vincent van Gogh",
@@ -2234,7 +2238,8 @@
     "location": "Museo del Prado, Madrid, Spain",
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Burial_of_Count_Orgaz",
     "number": 188,
-    "filename": "0188-el-greco-the-burial-of-count-orgaz.jpg"
+    "filename": "0188-el-greco-the-burial-of-count-orgaz.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0188-el-greco-the-burial-of-count-orgaz.jpg"
   },
   "0189-gustave-caillebotte-paris-street-rainy-day.jpg": {
     "author": "Gustave Caillebotte",
@@ -2245,7 +2250,8 @@
     "location": "Musée d'Orsay, Paris, France",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Paris_Street%3B_Rainy_Day",
     "number": 189,
-    "filename": "0189-gustave-caillebotte-paris-street-rainy-day.jpg"
+    "filename": "0189-gustave-caillebotte-paris-street-rainy-day.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0189-gustave-caillebotte-paris-street-rainy-day.jpg"
   },
   "0190-gustav-klimt-tree-of-life.jpg": {
     "author": "Gustav Klimt",
@@ -2256,7 +2262,8 @@
     "location": "National Gallery of Art, Washington, D.C., United States",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tree_of_Life_(Klimt)",
     "number": 190,
-    "filename": "0190-gustav-klimt-tree-of-life.jpg"
+    "filename": "0190-gustav-klimt-tree-of-life.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0190-gustav-klimt-tree-of-life.jpg"
   },
   "0191-joan-miro-life-with-old-shoes.jpg": {
     "author": "Joan Miró",
@@ -2276,9 +2283,10 @@
     "year": "1947",
     "century": "XX",
     "location": "Musée des Beaux-Arts, Liège, Belgium",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Night_Train_(Delvaux)",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Night_Train_(painting)",
     "number": 192,
-    "filename": "0192-paul-delvaux-night-train.jpg"
+    "filename": "0192-paul-delvaux-night-train.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0192-paul-delvaux-night-train.jpg"
   },
   "0193-francis-bacon-three-studies-for-figures-on-the-base-of-a-crucifixion.jpg": {
     "author": "Francis Bacon",
@@ -2289,7 +2297,8 @@
     "location": "Tate Britain, London, United Kingdom",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Studies_for_Figures_on_the_Base_of_a_Crucifixion",
     "number": 193,
-    "filename": "0193-francis-bacon-three-studies-for-figures-on-the-base-of-a-crucifixion.jpg"
+    "filename": "0193-francis-bacon-three-studies-for-figures-on-the-base-of-a-crucifixion.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0193-francis-bacon-three-studies-for-figures-on-the-base-of-a-crucifixion.jpg"
   },
   "0194-nicolas-poussin-the-violation-of-the-sabine-women.jpg": {
     "author": "Nicolas Poussin",
@@ -2300,7 +2309,8 @@
     "location": "Musée du Louvre, Paris, France",
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Violation_of_the_Sabine_Women",
     "number": 194,
-    "filename": "0194-nicolas-poussin-the-violation-of-the-sabine-women.jpg"
+    "filename": "0194-nicolas-poussin-the-violation-of-the-sabine-women.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0194-nicolas-poussin-the-violation-of-the-sabine-women.jpg"
   },
   "0195-umberto-boccioni-modern-idol.jpg": {
     "author": "Umberto Boccioni",
@@ -2311,7 +2321,8 @@
     "location": "Musée d'Orsay, Paris, France",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Modern_Idol",
     "number": 195,
-    "filename": "0195-umberto-boccioni-modern-idol.jpg"
+    "filename": "0195-umberto-boccioni-modern-idol.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0195-umberto-boccioni-modern-idol.jpg"
   },
   "0196-albert-charles-lebourg-quays-of-dieppe-after-the-rain.jpg": {
     "author": "Albert-Charles Lebourg",
@@ -2333,7 +2344,8 @@
     "location": "Uffizi Gallery, Florence, Italy",
     "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Bindo_Altoviti",
     "number": 197,
-    "filename": "0197-raphael-portrait-of-bindo-altoviti.jpg"
+    "filename": "0197-raphael-portrait-of-bindo-altoviti.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0197-raphael-portrait-of-bindo-altoviti.jpg"
   },
   "0198-paolo-uccello-the-battle-of-san-romano.jpg": {
     "author": "Paolo Uccello",
@@ -2344,7 +2356,8 @@
     "location": "Uffizi, Florence, Italy",
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Battle_of_San_Romano",
     "number": 198,
-    "filename": "0198-paolo-uccello-the-battle-of-san-romano.jpg"
+    "filename": "0198-paolo-uccello-the-battle-of-san-romano.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0198-paolo-uccello-the-battle-of-san-romano.jpg"
   },
   "0199-pablo-picasso-two-women-running-on-the-beach.jpg": {
     "author": "Pablo Picasso",
@@ -2366,6 +2379,7 @@
     "location": "National Gallery of Victoria, Melbourne, Australia",
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_House_in_L%27Estaque",
     "number": 200,
-    "filename": "0200-georges-braque-the-house-in-l-estaque.jpg"
+    "filename": "0200-georges-braque-the-house-in-l-estaque.jpg",
+    "bg_url": "http://192.168.4.10/theframe/paintings/0200-georges-braque-the-house-in-l-estaque.jpg"
   }
 }
