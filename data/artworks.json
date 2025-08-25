@@ -1,0 +1,3602 @@
+{
+  "0001-leonardo-da-vinci-mona-lisa.json": {
+    "author": "Leonardo da Vinci",
+    "title": "Mona Lisa",
+    "style": "Renaissance",
+    "year": "1503-1519",
+    "century": "XVI",
+    "location": "Louvre Museum, Paris",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mona_Lisa",
+    "i18n": {
+      "es": {
+        "author": "Leonardo da Vinci",
+        "title": "La Gioconda",
+        "style": "Renacimiento",
+        "location": "Museo del Louvre, París"
+      }
+    },
+    "number": 1
+  },
+  "0002-vincent-van-gogh-starry-night.json": {
+    "author": "Vincent van Gogh",
+    "title": "The Starry Night",
+    "style": "Post-Impressionism",
+    "year": 1889,
+    "century": "XIX",
+    "location": "Museum of Modern Art, New York City",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Starry_Night",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "La noche estrellada",
+        "style": "Postimpresionismo",
+        "location": "Museo de Arte Moderno, Ciudad de Nueva York"
+      }
+    },
+    "number": 2
+  },
+  "0003-edvard-munch-the-scream.json": {
+    "author": "Edvard Munch",
+    "title": "The Scream",
+    "style": "Expressionism",
+    "year": 1893,
+    "century": "XIX",
+    "location": "National Gallery, Oslo",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Scream",
+    "i18n": {
+      "es": {
+        "author": "Edvard Munch",
+        "title": "El Grito",
+        "style": "Expresionismo",
+        "location": "Galería Nacional, Oslo"
+      }
+    },
+    "number": 3
+  },
+  "0004-sandro-botticelli-the-birth-of-venus.json": {
+    "author": "Sandro Botticelli",
+    "title": "The Birth of Venus",
+    "style": "Early Italian Renaissance",
+    "year": 1485,
+    "century": "XV",
+    "location": "Uffizi Gallery, Florence, Italy",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Birth_of_Venus",
+    "i18n": {
+      "es": {
+        "author": "Sandro Botticelli",
+        "title": "El nacimiento de Venus",
+        "style": "Primer Renacimiento italiano",
+        "location": "Galería Uffizi, Florencia, Italia"
+      }
+    },
+    "number": 4
+  },
+  "0005-grant-wood-american-gothic.json": {
+    "author": "Grant Wood",
+    "title": "American Gothic",
+    "style": "Regionalism",
+    "year": 1930,
+    "century": "XX",
+    "location": "Art Institute of Chicago",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/American_Gothic",
+    "i18n": {
+      "es": {
+        "author": "Grant Wood",
+        "title": "Gótico Americano",
+        "style": "Regionalismo",
+        "location": "Instituto de Arte de Chicago"
+      }
+    },
+    "number": 5
+  },
+  "0006-pablo-picasso-three-musicians.json": {
+    "author": "Pablo Picasso",
+    "title": "Three Musicians",
+    "style": "Synthetic Cubism",
+    "year": 1921,
+    "century": "XX",
+    "location": "The Museum of Modern Art, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Musicians_(Picasso)",
+    "i18n": {
+      "es": {
+        "author": "Pablo Picasso",
+        "title": "Los tres músicos",
+        "style": "Cubismo sintético",
+        "location": "Museo de Arte Moderno de Nueva York"
+      }
+    },
+    "number": 6
+  },
+  "0007-pablo-picasso-les-demoiselles-d-avignon.json": {
+    "author": "Pablo Picasso",
+    "title": "Les Demoiselles d'Avignon",
+    "style": "Cubism",
+    "year": 1907,
+    "century": "XX",
+    "location": "Museum of Modern Art, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Demoiselles_d'Avignon",
+    "i18n": {
+      "es": {
+        "author": "Pablo Picasso",
+        "title": "Las señoritas de Avignon",
+        "style": "Cubismo",
+        "location": "Museo de Arte Moderno, Nueva York"
+      }
+    },
+    "number": 7
+  },
+  "0008-michelangelo-buonarroti-the-creation-of-adam.json": {
+    "author": "Michelangelo Buonarroti",
+    "title": "The Creation of Adam",
+    "style": "Renaissance",
+    "year": 1511,
+    "century": "XVI",
+    "location": "Sistine Chapel, Vatican City",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Creation_of_Adam",
+    "i18n": {
+      "es": {
+        "author": "Miguel Ángel Buonarroti",
+        "title": "La creación de Adán",
+        "style": "Renacimiento",
+        "location": "Capilla Sixtina, Ciudad del Vaticano"
+      }
+    },
+    "number": 8
+  },
+  "0009-johannes-vermeer-girl-with-a-pearl-earring.json": {
+    "author": "Johannes Vermeer",
+    "title": "Girl with a Pearl Earring",
+    "style": "Baroque, Tronie",
+    "year": "c. 1665",
+    "century": "XVII",
+    "location": "Mauritshuis, The Hague, Netherlands",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring",
+    "i18n": {
+      "es": {
+        "author": "Johannes Vermeer",
+        "title": "La joven con el pendiente de perla",
+        "style": "Barroco, Tronie",
+        "location": "Mauritshuis, La Haya, Países Bajos"
+      }
+    },
+    "number": 9
+  },
+  "0010-gustav-klimt-the-kiss.json": {
+    "author": "Gustav Klimt",
+    "title": "The Kiss",
+    "style": "Art Nouveau",
+    "year": 1908,
+    "century": "XX",
+    "location": "Österreichische Galerie Belvedere, Vienna",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Kiss_(Klimt)",
+    "i18n": {
+      "es": {
+        "author": "Gustav Klimt",
+        "title": "El beso",
+        "style": "Modernismo",
+        "location": "Galería Belvedere, Viena"
+      }
+    },
+    "number": 10
+  },
+  "0011-salvador-dali-the-disintegration-of-the-persistence-of-memory.json": {
+    "author": "Salvador Dalí",
+    "title": "The Disintegration of the Persistence of Memory",
+    "style": "Surrealism",
+    "year": 1954,
+    "century": "XX",
+    "location": "Salvador Dalí Museum, St. Petersburg, FL, US",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Disintegration_of_the_Persistence_of_Memory",
+    "i18n": {
+      "es": {
+        "author": "Salvador Dalí",
+        "title": "La Desintegración de la Persistencia de la Memoria",
+        "style": "Surrealismo",
+        "location": "Museo Salvador Dalí, San Petersburgo, Florida, EE. UU."
+      }
+    },
+    "number": 11
+  },
+  "0012-diego-velazquez-las-meninas.json": {
+    "author": "Diego Velázquez",
+    "title": "Las Meninas",
+    "style": "Baroque",
+    "year": 1656,
+    "century": "XVII",
+    "location": "Museo del Prado, Madrid",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Las_meninas",
+    "i18n": {
+      "es": {
+        "author": "Diego Velázquez",
+        "title": "Las Meninas",
+        "style": "Barroco",
+        "location": "Museo del Prado, Madrid"
+      }
+    },
+    "number": 12
+  },
+  "0013-francisco-de-goya-the-third-of-may-1808.json": {
+    "author": "Francisco de Goya",
+    "title": "The Third of May 1808",
+    "style": "Romanticism",
+    "year": 1814,
+    "century": "XIX",
+    "location": "Museo del Prado, Madrid",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Third_of_May_1808",
+    "i18n": {
+      "es": {
+        "author": "Francisco de Goya",
+        "title": "El tres de mayo de 1808",
+        "style": "Romanticismo",
+        "location": "Museo del Prado, Madrid"
+      }
+    },
+    "number": 13
+  },
+  "0014-claude-monet-water-lilies.json": {
+    "author": "Claude Monet",
+    "title": "Water Lilies",
+    "style": "Impressionism",
+    "year": "1914-1915",
+    "century": "XX",
+    "location": "Musée de l'Orangerie, Paris",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)",
+    "i18n": {
+      "es": {
+        "author": "Claude Monet",
+        "title": "Nenúfares",
+        "style": "Impresionismo",
+        "location": "Museo de la Orangerie, París"
+      }
+    },
+    "number": 14
+  },
+  "0015-edouard-manet-olympia.json": {
+    "author": "Édouard Manet",
+    "title": "Olympia",
+    "style": "Realism / Early Impressionism",
+    "year": 1863,
+    "century": "XIX",
+    "location": "Musée d'Orsay, Paris",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Olympia_(Manet)",
+    "i18n": {
+      "es": {
+        "author": "Édouard Manet",
+        "title": "Olympia",
+        "style": "Realismo / Primer Impresionismo",
+        "location": "Museo de Orsay, París"
+      }
+    },
+    "number": 15
+  },
+  "0016-michelangelo-merisi-da-caravaggio-the-calling-of-saint-matthew.json": {
+    "author": "Michelangelo Merisi da Caravaggio",
+    "title": "The Calling of Saint Matthew",
+    "style": "Baroque",
+    "year": "1599–1600",
+    "century": "XVII",
+    "location": "Contarelli Chapel, San Luigi dei Francesi, Rome",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Calling_of_Saint_Matthew",
+    "i18n": {
+      "es": {
+        "author": "Michelangelo Merisi da Caravaggio",
+        "title": "La vocación de San Mateo",
+        "style": "Barroco",
+        "location": "Capilla Contarelli, Iglesia de San Luis de los Franceses, Roma"
+      }
+    },
+    "number": 16
+  },
+  "0017-jackson-pollock-number-1.json": {
+    "author": "Jackson Pollock",
+    "title": "Number 1, 1950 (Lavender Mist)",
+    "style": "Abstract Expressionism",
+    "year": 1950,
+    "century": "XX",
+    "location": "National Gallery of Art, Washington, D.C.",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lavender_Mist",
+    "i18n": {
+      "es": {
+        "author": "Jackson Pollock",
+        "title": "Número 1, 1950 (Bruma de lavanda)",
+        "style": "Expresionismo abstracto",
+        "location": "Galería Nacional de Arte, Washington D.C."
+      }
+    },
+    "number": 17
+  },
+  "0018-andy-warhol-marilyn-diptych.json": {
+    "author": "Andy Warhol",
+    "title": "Marilyn Diptych",
+    "style": "Pop Art",
+    "year": 1962,
+    "century": "XX",
+    "location": "Tate, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Marilyn_Diptych",
+    "i18n": {
+      "es": {
+        "author": "Andy Warhol",
+        "title": "Marilyn Diptych",
+        "style": "Pop Art",
+        "location": "Tate, Londres"
+      }
+    },
+    "number": 18
+  },
+  "0019-georges-seurat-a-sunday-afternoon-on-the-island-of-la-grande-jatte.json": {
+    "author": "Georges Seurat",
+    "title": "A Sunday Afternoon on the Island of La Grande Jatte",
+    "style": "Pointillism (Divisionism, Neo-Impressionism)",
+    "year": 1884,
+    "century": "XIX",
+    "location": "Art Institute of Chicago",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Tarde_de_domingo_en_la_isla_de_la_Grande_Jatte",
+    "i18n": {
+      "es": {
+        "author": "Georges Seurat",
+        "title": "Tarde de domingo en la isla de la Grande Jatte",
+        "style": "Puntillismo (Divisionismo, Neoimpresionismo)",
+        "location": "Instituto de Arte de Chicago"
+      }
+    },
+    "number": 19
+  },
+  "0020-hieronymus-bosch-the-garden-of-earthly-delights.json": {
+    "author": "Hieronymus Bosch",
+    "title": "The Garden of Earthly Delights",
+    "style": "Early Netherlandish / Northern Renaissance",
+    "year": "c. 1490–1510",
+    "century": "XVI",
+    "location": "Museo del Prado, Madrid, Spain",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights",
+    "i18n": {
+      "es": {
+        "author": "El Bosco",
+        "title": "El jardín de las delicias",
+        "style": "Primitivo flamenco / Renacimiento del Norte",
+        "location": "Museo del Prado, Madrid, España"
+      }
+    },
+    "number": 20
+  },
+  "0021-frida-kahlo-the-two-fridas.json": {
+    "author": "Frida Kahlo",
+    "title": "The Two Fridas",
+    "style": "Surrealism",
+    "year": 1939,
+    "century": "XX",
+    "location": "Museo de Arte Moderno, Mexico City",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Two_Fridas",
+    "i18n": {
+      "es": {
+        "author": "Frida Kahlo",
+        "title": "Las dos Fridas",
+        "style": "Surrealismo",
+        "location": "Museo de Arte Moderno, Ciudad de México"
+      }
+    },
+    "number": 21
+  },
+  "0022-jan-van-eyck-portrait-of-giovanni-arnolfini-and-his-wife.json": {
+    "author": "Jan van Eyck",
+    "title": "The Arnolfini Portrait",
+    "style": "Early Netherlandish",
+    "year": 1434,
+    "century": "XV",
+    "location": "National Gallery, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Arnolfini_Portrait",
+    "i18n": {
+      "es": {
+        "author": "Jan van Eyck",
+        "title": "El retrato de Arnolfini",
+        "style": "Primitivos flamencos",
+        "location": "Galería Nacional, Londres"
+      }
+    },
+    "number": 22
+  },
+  "0023-peter-paul-rubens-the-descent-from-the-cross.json": {
+    "author": "Peter Paul Rubens",
+    "title": "The Descent from the Cross",
+    "style": "Baroque",
+    "year": "1612–1614",
+    "century": "XVII",
+    "location": "Cathedral of Our Lady, Antwerp, Belgium",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Descent_from_the_Cross_(Rubens,_1612–1614)",
+    "i18n": {
+      "es": {
+        "author": "Pedro Pablo Rubens",
+        "title": "El Descendimiento de la Cruz",
+        "style": "Barroco",
+        "location": "Catedral de Nuestra Señora, Amberes, Bélgica"
+      }
+    },
+    "number": 23
+  },
+  "0024-rembrandt-van-rijn-the-night-watch.json": {
+    "author": "Rembrandt van Rijn",
+    "title": "The Night Watch",
+    "style": "Baroque",
+    "year": 1642,
+    "century": "XVII",
+    "location": "Rijksmuseum, Amsterdam",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Night_Watch",
+    "i18n": {
+      "es": {
+        "author": "Rembrandt van Rijn",
+        "title": "La Ronda de Noche",
+        "style": "Barroco",
+        "location": "Rijksmuseum, Ámsterdam"
+      }
+    },
+    "number": 24
+  },
+  "0025-rene-magritte-the-transfixed-time.json": {
+    "author": "René Magritte",
+    "title": "Time Transfixed",
+    "style": "Surrealism",
+    "year": 1938,
+    "century": "XX",
+    "location": "Art Institute of Chicago",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Time_Transfixed",
+    "i18n": {
+      "es": {
+        "author": "René Magritte",
+        "title": "La durée poignardée",
+        "style": "Surrealismo",
+        "location": "Instituto de Arte de Chicago"
+      }
+    },
+    "number": 25
+  },
+  "0026-eugene-delacroix-the-death-of-sardanapalus.json": {
+    "author": "Eugène Delacroix",
+    "title": "The Death of Sardanapalus",
+    "style": "Romanticism",
+    "year": 1827,
+    "century": "XIX",
+    "location": "Musée du Louvre, Paris",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Death_of_Sardanapalus",
+    "i18n": {
+      "es": {
+        "author": "Eugène Delacroix",
+        "title": "La Muerte de Sardanápalo",
+        "style": "Romanticismo",
+        "location": "Museo del Louvre, París"
+      }
+    },
+    "number": 26
+  },
+  "0027-wassily-kandinsky-composition-viii.json": {
+    "author": "Wassily Kandinsky",
+    "title": "Composition VIII",
+    "style": "Abstract",
+    "year": 1923,
+    "century": "XX",
+    "location": "Solomon R. Guggenheim Museum, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Composition_VIII",
+    "i18n": {
+      "es": {
+        "author": "Wassily Kandinsky",
+        "title": "Composición VIII",
+        "style": "Abstracto",
+        "location": "Museo Solomon R. Guggenheim, Nueva York"
+      }
+    },
+    "number": 27
+  },
+  "0028-caspar-david-friedrich-sea-of-ice.json": {
+    "author": "Caspar David Friedrich",
+    "title": "The Sea of Ice",
+    "style": "Romanticism",
+    "year": 1824,
+    "century": "XIX",
+    "location": "Kunsthalle Hamburg, Germany",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Sea_of_Ice",
+    "i18n": {
+      "es": {
+        "author": "Caspar David Friedrich",
+        "title": "El Mar de Hielo",
+        "style": "Romanticismo",
+        "location": "Kunsthalle Hamburgo, Alemania"
+      }
+    },
+    "number": 28
+  },
+  "0029-joan-miro-dutch-interior-i.json": {
+    "author": "Joan Miró",
+    "title": "Dutch Interior I",
+    "style": "Surrealism",
+    "year": 1928,
+    "century": "XX",
+    "location": "Museum of Modern Art (MoMA), New York City, NY, US",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dutch_Interiors",
+    "i18n": {
+      "es": {
+        "author": "Joan Miró",
+        "title": "Interior holandés I",
+        "style": "Surrealismo",
+        "location": "Museo de Arte Moderno (MoMA), Nueva York, EE. UU."
+      }
+    },
+    "number": 29
+  },
+  "0030-marc-chagall-i-and-the-people.json": {
+    "author": "Marc Chagall",
+    "title": "I and the Village",
+    "style": "Cubism, Surrealism, Modernism",
+    "year": 1911,
+    "century": "XX",
+    "location": "Museum of Modern Art, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/I_and_the_Village",
+    "i18n": {
+      "es": {
+        "author": "Marc Chagall",
+        "title": "Yo y el pueblo",
+        "style": "Cubismo, Surrealismo, Modernismo",
+        "location": "Museo de Arte Moderno, Nueva York"
+      }
+    },
+    "number": 30
+  },
+  "0031-pablo-picasso-guernica.json": {
+    "author": "Pablo Picasso",
+    "title": "Guernica",
+    "style": "Cubismo",
+    "year": 1937,
+    "century": "XX",
+    "location": "Museo Nacional Centro de Arte Reina Sofía, Madrid",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Guernica_(cuadro)",
+    "i18n": {
+      "es": {
+        "author": "Pablo Picasso",
+        "title": "Guernica",
+        "style": "Cubismo",
+        "location": "Museo Nacional Centro de Arte Reina Sofía, Madrid"
+      }
+    },
+    "number": 31
+  },
+  "0032-vincent-van-gogh-bedroom-in-arles.json": {
+    "author": "Vincent van Gogh",
+    "title": "The Bedroom",
+    "style": "Post-Impressionism",
+    "year": 1888,
+    "century": "XIX",
+    "location": "Van Gogh Museum, Amsterdam",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bedroom_in_Arles",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "El dormitorio de Arlés",
+        "style": "Postimpresionismo",
+        "location": "Museo Van Gogh, Ámsterdam"
+      }
+    },
+    "number": 32
+  },
+  "0033-james-abbott-mcneill-whistler-arrangement-in-grey-and-black-no-1.json": {
+    "author": "James Abbott McNeill Whistler",
+    "title": "Arrangement in Grey and Black No. 1",
+    "style": "Realism, Tonalism",
+    "year": 1871,
+    "century": "XIX",
+    "location": "Musée d'Orsay, Paris",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Whistler's_Mother",
+    "i18n": {
+      "es": {
+        "author": "James Abbott McNeill Whistler",
+        "title": "Arreglo en gris y negro n.º 1",
+        "style": "Realismo, Tonalismo",
+        "location": "Museo de Orsay, París"
+      }
+    },
+    "number": 33
+  },
+  "0034-vincent-van-gogh-the-night-cafe.json": {
+    "author": "Vincent van Gogh",
+    "title": "The Night Café",
+    "style": "Post-Impressionism",
+    "year": 1888,
+    "century": "XIX",
+    "location": "Yale University Art Gallery, New Haven, Connecticut",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Night_Caf%C3%A9",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "El Café de Noche",
+        "style": "Postimpresionismo",
+        "location": "Galería de Arte de la Universidad de Yale, New Haven, Connecticut"
+      }
+    },
+    "number": 34
+  },
+  "0035-caravaggio-narcissus.json": {
+    "author": "Caravaggio",
+    "title": "Narcissus",
+    "style": "Baroque",
+    "year": "1597-1599",
+    "century": "XVI",
+    "location": "Galleria Nazionale d'Arte Antica, Palazzo Barberini, Rome, Italy",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Narciso_(Caravaggio)",
+    "i18n": {
+      "es": {
+        "author": "Caravaggio",
+        "title": "Narciso",
+        "style": "Barroco",
+        "location": "Galería Nacional de Arte Antigua, Palazzo Barberini, Roma, Italia"
+      }
+    },
+    "number": 35
+  },
+  "0036-jean-michel-basquiat-untitled-skull.json": {
+    "author": "Jean-Michel Basquiat",
+    "title": "Untitled (Skull)",
+    "style": "Neo-Expressionism",
+    "year": 1981,
+    "century": "XX",
+    "location": "The Broad, Los Angeles, USA",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jean-Michel_Basquiat",
+    "i18n": {
+      "es": {
+        "author": "Jean-Michel Basquiat",
+        "title": "Sin título (Calavera)",
+        "style": "Neoexpresionismo",
+        "location": "The Broad, Los Ángeles, Estados Unidos"
+      }
+    },
+    "number": 36
+  },
+  "0037-leonardo-da-vinci-the-last-supper.json": {
+    "author": "Leonardo da Vinci",
+    "title": "The Last Supper",
+    "style": "High Renaissance",
+    "year": "1495–1498",
+    "century": "XV",
+    "location": "Refectory, Convent of Santa Maria delle Grazie, Milan, Italy",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Last_Supper_(Leonardo)",
+    "i18n": {
+      "es": {
+        "author": "Leonardo da Vinci",
+        "title": "La Última Cena",
+        "style": "Alto Renacimiento",
+        "location": "Refectorio, Convento de Santa Maria delle Grazie, Milán, Italia"
+      }
+    },
+    "number": 37
+  },
+  "0038-vincent-van-gogh-cafe-terrace-at-night.json": {
+    "author": "Vincent van Gogh",
+    "title": "Café Terrace at Night",
+    "style": "Post-Impressionism",
+    "year": 1888,
+    "century": "XIX",
+    "location": "Kröller-Müller Museum, Otterlo, Netherlands",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Caf%C3%A9_Terrace_at_Night",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "Terraza de café por la noche",
+        "style": "Postimpresionismo",
+        "location": "Museo Kröller-Müller, Otterlo, Países Bajos"
+      }
+    },
+    "number": 38
+  },
+  "0039-pierre-auguste-renoir-the-great-bathers.json": {
+    "author": "Pierre-Auguste Renoir",
+    "title": "Les Grandes Baigneuses",
+    "style": "Impressionism",
+    "year": "1884-1887",
+    "century": "XIX",
+    "location": "Philadelphia Museum of Art, Philadelphia",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Grandes_Baigneuses_(Renoir)",
+    "i18n": {
+      "es": {
+        "author": "Pierre-Auguste Renoir",
+        "title": "Las grandes bañistas",
+        "style": "Impresionismo",
+        "location": "Museo de Arte de Filadelfia, Filadelfia"
+      }
+    },
+    "number": 39
+  },
+  "0040-thomas-gainsborough-the-blue-boy.json": {
+    "author": "Thomas Gainsborough",
+    "title": "The Blue Boy",
+    "style": "Rococo",
+    "year": 1770,
+    "century": "XVIII",
+    "location": "The Huntington Library, Art Museum, and Botanical Gardens, San Marino, California, United States",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Blue_Boy",
+    "i18n": {
+      "es": {
+        "author": "Thomas Gainsborough",
+        "title": "El Niño Azul",
+        "style": "Rococó",
+        "location": "La Biblioteca Huntington, Museo de Arte y Jardines Botánicos, San Marino, California, Estados Unidos"
+      }
+    },
+    "number": 40
+  },
+  "0041-raphael-the-school-of-athens.json": {
+    "author": "Raphael",
+    "title": "The School of Athens",
+    "style": "High Renaissance",
+    "year": "1509-1511",
+    "century": "XVI",
+    "location": "Stanza della Segnatura, Apostolic Palace, Vatican City",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_School_of_Athens",
+    "i18n": {
+      "es": {
+        "author": "Rafael",
+        "title": "La escuela de Atenas",
+        "style": "Alto Renacimiento",
+        "location": "Stanza della Segnatura, Palacio Apostólico, Ciudad del Vaticano"
+      }
+    },
+    "number": 41
+  },
+  "0042-max-beckmann-night.json": {
+    "author": "Max Beckmann",
+    "title": "The Night",
+    "style": "Expressionism, Neue Sachlichkeit (New Objectivity)",
+    "year": 1918,
+    "century": "XX",
+    "location": "Kunstsammlung Nordrhein-Westfalen, Düsseldorf, Germany",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Night_(Beckmann)",
+    "i18n": {
+      "es": {
+        "author": "Max Beckmann",
+        "title": "La noche",
+        "style": "Expresionismo, Nueva objetividad",
+        "location": "Kunstsammlung Nordrhein-Westfalen, Düsseldorf, Alemania"
+      }
+    },
+    "number": 42
+  },
+  "0043-henri-matisse-harmony-in-red.json": {
+    "author": "Henri Matisse",
+    "title": "The Dessert: Harmony in Red (The Red Room)",
+    "style": "Fauvism",
+    "year": 1908,
+    "century": "XX",
+    "location": "Hermitage Museum, Saint Petersburg, Russia",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Dessert:_Harmony_in_Red_(The_Red_Room)",
+    "i18n": {
+      "es": {
+        "author": "Henri Matisse",
+        "title": "La Merienda: Armonía en Rojo (La Habitación Roja)",
+        "style": "Fauvismo",
+        "location": "Museo del Hermitage, San Petersburgo, Rusia"
+      }
+    },
+    "number": 43
+  },
+  "0044-henri-rousseau-sleeping-gypsy.json": {
+    "author": "Henri Rousseau",
+    "title": "The Sleeping Gypsy",
+    "style": "Naïve art",
+    "year": 1897,
+    "century": "XIX",
+    "location": "Museum of Modern Art, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Sleeping_Gypsy",
+    "i18n": {
+      "es": {
+        "author": "Henri Rousseau",
+        "title": "La gitana dormida",
+        "style": "Arte naïf",
+        "location": "Museo de Arte Moderno, Nueva York"
+      }
+    },
+    "number": 44
+  },
+  "0045-rene-magritte-the-murderer.json": {
+    "author": "René Magritte",
+    "title": "The Menaced Assassin",
+    "style": "Surrealism",
+    "year": 1927,
+    "century": "XX",
+    "location": "Museum of Modern Art (MoMA), New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Menaced_Assassin",
+    "i18n": {
+      "es": {
+        "author": "René Magritte",
+        "title": "El asesino amenazado",
+        "style": "Surrealismo",
+        "location": "Museo de Arte Moderno (MoMA), Nueva York"
+      }
+    },
+    "number": 45
+  },
+  "0046-tiziano-vecellio-venus-de-urbino.json": {
+    "author": "Titian",
+    "title": "Venus of Urbino",
+    "style": "Renaissance (Mannerism)",
+    "year": "1538",
+    "century": "XVI",
+    "location": "Galleria degli Uffizi, Florence",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Venus_of_Urbino",
+    "i18n": {
+      "es": {
+        "author": "Tiziano Vecellio",
+        "title": "Venus de Urbino",
+        "style": "Renacimiento (Manierismo)",
+        "location": "Galería de los Uffizi, Florencia"
+      }
+    },
+    "number": 46
+  },
+  "0047-joan-miro-ciphers-and-constellations-in-love-with-a-woman.json": {
+    "author": "Joan Miró",
+    "title": "Ciphers and Constellations, in Love with a Woman",
+    "style": "Surrealism",
+    "year": 1941,
+    "century": "XX",
+    "location": "Art Institute of Chicago, Chicago, Illinois, USA",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ciphers_and_Constellations,_in_Love_with_a_Woman",
+    "i18n": {
+      "es": {
+        "author": "Joan Miró",
+        "title": "Cifras y constelaciones enamoradas de una mujer",
+        "style": "Surrealismo",
+        "location": "Instituto de Arte de Chicago, Chicago, Illinois, EE. UU."
+      }
+    },
+    "number": 47
+  },
+  "0048-henri-matisse-the-dance.json": {
+    "author": "Henri Matisse",
+    "title": "Dance (La Danse)",
+    "style": "Fauvism",
+    "year": 1910,
+    "century": "XX",
+    "location": "Hermitage Museum, Saint Petersburg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dance_(Matisse)",
+    "i18n": {
+      "es": {
+        "author": "Henri Matisse",
+        "title": "La Danza",
+        "style": "Fovismo",
+        "location": "Museo del Hermitage, San Petersburgo"
+      }
+    },
+    "number": 48
+  },
+  "0049-amedeo-modigliani-nude-on-a-divan.json": {
+    "author": "Amedeo Modigliani",
+    "title": "Nude Sitting on a Divan (The Beautiful Roman Woman)",
+    "style": "Modernism",
+    "year": 1917,
+    "century": "XX",
+    "location": "Private collection",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nude_Sitting_on_a_Divan",
+    "i18n": {
+      "es": {
+        "author": "Amedeo Modigliani",
+        "title": "Desnudo sentado en un diván (La bella romana)",
+        "style": "Modernismo",
+        "location": "Colección privada"
+      }
+    },
+    "number": 49
+  },
+  "0050-edvard-munch-melancholy.json": {
+    "author": "Edvard Munch",
+    "title": "Melancholy",
+    "style": "Symbolism",
+    "year": 1894,
+    "century": "XIX",
+    "location": "Asgardstrand, Norway",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Edvard_Munch",
+    "i18n": {
+      "es": {
+        "author": "Edvard Munch",
+        "title": "Melancolía",
+        "style": "Simbolismo",
+        "location": "Åsgårdstrand, Noruega"
+      }
+    },
+    "number": 50
+  },
+  "0051-claude-monet-gare-saint-lazare.json": {
+    "author": "Claude Monet",
+    "title": "La Gare Saint-Lazare",
+    "style": "Impresionismo",
+    "year": 1877,
+    "century": "XIX",
+    "location": "Musée d'Orsay, París",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/La_estaci%C3%B3n_Saint-Lazare_(Monet)",
+    "i18n": {
+      "es": {
+        "author": "Claude Monet",
+        "title": "La Gare Saint-Lazare",
+        "style": "Impresionismo",
+        "location": "Museo de Orsay, París"
+      }
+    },
+    "number": 51
+  },
+  "0052-georgia-o-keeffe-ram-s-head-white-hollyhock-hills.json": {
+    "author": "Georgia O'Keeffe",
+    "title": "Ram's Head, White Hollyhock-Hills",
+    "style": "Precisionism",
+    "year": 1935,
+    "century": "XX",
+    "location": "Brooklyn Museum, New York, NY, US",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Georgia_O%27Keeffe",
+    "i18n": {
+      "es": {
+        "author": "Georgia O'Keeffe",
+        "title": "Cabeza de carnero, Malva blanca - Colinas",
+        "style": "Precisionismo",
+        "location": "Museo Brooklyn, Nueva York, EE. UU."
+      }
+    },
+    "number": 52
+  },
+  "0053-andrea-mantegna-lamentation-over-the-dead-christ.json": {
+    "author": "Andrea Mantegna",
+    "title": "Lamentation of Christ",
+    "style": "Early Renaissance",
+    "year": 1483,
+    "century": "XV",
+    "location": "Pinacoteca di Brera, Milan",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lamentation_of_Christ_(Mantegna)",
+    "i18n": {
+      "es": {
+        "author": "Andrea Mantegna",
+        "title": "La lamentación sobre Cristo muerto",
+        "style": "Primer Renacimiento",
+        "location": "Pinacoteca de Brera, Milán"
+      }
+    },
+    "number": 53
+  },
+  "0054-rene-magritte-the-son-of-man.json": {
+    "author": "René Magritte",
+    "title": "The Son of Man",
+    "style": "Surrealism",
+    "year": 1964,
+    "century": "XX",
+    "location": "Private collection",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Son_of_Man",
+    "i18n": {
+      "es": {
+        "author": "René Magritte",
+        "title": "El hijo del hombre",
+        "style": "Surrealismo",
+        "location": "Colección privada"
+      }
+    },
+    "number": 54
+  },
+  "0055-artemisia-gentileschi-judith-beheading-holofernes.json": {
+    "author": "Artemisia Gentileschi",
+    "title": "Judith Slaying Holofernes",
+    "style": "Baroque",
+    "year": "c. 1620",
+    "century": "XVII",
+    "location": "Uffizi Gallery, Florence, Italy",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Judith_Slaying_Holofernes_(Artemisia_Gentileschi,_Florence)",
+    "i18n": {
+      "es": {
+        "author": "Artemisia Gentileschi",
+        "title": "Judith decapitando a Holofernes",
+        "style": "Barroco",
+        "location": "Galería Uffizi, Florencia, Italia"
+      }
+    },
+    "number": 55
+  },
+  "0056-paul-gauguin-nafea-ipo.json": {
+    "author": "Paul Gauguin",
+    "title": "Nafea Faa Ipoipo? (When Will You Marry?)",
+    "style": "Postimpresionismo",
+    "year": 1892,
+    "century": "XIX",
+    "location": "Colección privada (anteriormente Kunstmuseum Basel, Suiza)",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/When_Will_You_Marry%3F",
+    "i18n": {
+      "es": {
+        "author": "Paul Gauguin",
+        "title": "Nafea Faa Ipoipo? (¿Cuándo te casarás?)",
+        "style": "Postimpresionismo",
+        "location": "Colección privada (anteriormente Kunstmuseum Basel, Suiza)"
+      }
+    },
+    "number": 56
+  },
+  "0057-arshile-gorky-waterfall.json": {
+    "author": "Arshile Gorky",
+    "title": "Waterfall",
+    "style": "Abstract Expressionism",
+    "year": 1943,
+    "century": "XX",
+    "location": "Tate Modern, London",
+    "wikipedia_url": "https://www.wikiart.org/en/arshile-gorky/waterfall",
+    "i18n": {
+      "es": {
+        "author": "Arshile Gorky",
+        "title": "Cascada",
+        "style": "Expresionismo abstracto",
+        "location": "Tate Modern, Londres"
+      }
+    },
+    "number": 57
+  },
+  "0058-paul-gauguin-where-are-we-going.json": {
+    "author": "Paul Gauguin",
+    "title": "Where Do We Come From? What Are We? Where Are We Going?",
+    "style": "Post-Impressionism",
+    "year": "1897–98",
+    "century": "XIX",
+    "location": "Museum of Fine Arts, Boston, Massachusetts, USA",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Where_Do_We_Come_From%3F_What_Are_We%3F_Where_Are_We_Going%3F",
+    "i18n": {
+      "es": {
+        "author": "Paul Gauguin",
+        "title": "¿De dónde venimos? ¿Qué somos? ¿Adónde vamos?",
+        "style": "Postimpresionismo",
+        "location": "Museo de Bellas Artes, Boston, Massachusetts, Estados Unidos"
+      }
+    },
+    "number": 58
+  },
+  "0059-pablo-picasso-women-of-algiers-version-o.json": {
+    "author": "Pablo Picasso",
+    "title": "Les femmes d'Alger (Version O)",
+    "style": "Cubismo",
+    "year": 1955,
+    "century": "XX",
+    "location": "Colección privada (anteriormente en posesión del primer ministro de Catar, Hamad bin Jassim bin Jaber Al Thani)",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Femmes_d'Alger",
+    "i18n": {
+      "es": {
+        "author": "Pablo Picasso",
+        "title": "Las mujeres de Argel (Versión O)",
+        "style": "Cubismo",
+        "location": "Colección privada (anteriormente en posesión del primer ministro de Catar, Hamad bin Jassim bin Jaber Al Thani)"
+      }
+    },
+    "number": 59
+  },
+  "0060-francisco-de-goya-saturn-devouring-his-son.json": {
+    "author": "Francisco de Goya",
+    "title": "Saturn Devouring His Son",
+    "style": "Romanticism / Black Paintings",
+    "year": "1820-1823",
+    "century": "XIX",
+    "location": "Museo del Prado, Madrid",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Saturn_Devouring_His_Son",
+    "i18n": {
+      "es": {
+        "author": "Francisco de Goya",
+        "title": "Saturno devorando a su hijo",
+        "style": "Romanticismo / Pinturas negras",
+        "location": "Museo del Prado, Madrid"
+      }
+    },
+    "number": 60
+  },
+  "0061-vincent-van-gogh-the-sower.json": {
+    "author": "Vincent van Gogh",
+    "title": "The Sower",
+    "style": "Post-Impressionism",
+    "year": 1888,
+    "century": "XIX",
+    "location": "Van Gogh Museum, Amsterdam",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Sower_(painting_series)#By_Vincent_van_Gogh",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "El sembrador",
+        "style": "Postimpresionismo",
+        "location": "Museo Van Gogh, Ámsterdam"
+      }
+    },
+    "number": 61
+  },
+  "0062-joseph-mallord-william-turner-the-fighting-temeraire.json": {
+    "author": "Joseph Mallord William Turner",
+    "title": "The Fighting Temeraire",
+    "style": "Romanticism",
+    "year": 1839,
+    "century": "XIX",
+    "location": "The National Gallery, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Fighting_Temeraire",
+    "i18n": {
+      "es": {
+        "author": "Joseph Mallord William Turner",
+        "title": "El Temeraire remolcado a su último atraque para ser desguazado",
+        "style": "Romanticismo",
+        "location": "La National Gallery, Londres"
+      }
+    },
+    "number": 62
+  },
+  "0063-joan-miro-landscape.json": {
+    "author": "Joan Miró",
+    "title": "The Hunter (Catalan Landscape)",
+    "style": "Surrealism",
+    "year": 1923,
+    "century": "XX",
+    "location": "The Museum of Modern Art, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Hunter_(Catalan_Landscape)",
+    "i18n": {
+      "es": {
+        "author": "Joan Miró",
+        "title": "El cazador (Paisaje catalán)",
+        "style": "Surrealismo",
+        "location": "Museo de Arte Moderno, Nueva York"
+      }
+    },
+    "number": 63
+  },
+  "0064-winslow-homer-fog-warning.json": {
+    "author": "Winslow Homer",
+    "title": "The Fog Warning",
+    "style": "Realism",
+    "year": 1885,
+    "century": "XIX",
+    "location": "Museum of Fine Arts, Boston",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Fog_Warning",
+    "i18n": {
+      "es": {
+        "author": "Winslow Homer",
+        "title": "La advertencia de niebla",
+        "style": "Realismo",
+        "location": "Museo de Bellas Artes de Boston"
+      }
+    },
+    "number": 64
+  },
+  "0065-willem-de-kooning-woman.json": {
+    "author": "Willem de Kooning",
+    "title": "Woman I",
+    "style": "Abstract Expressionism",
+    "year": "1950-1952",
+    "century": "XX",
+    "location": "Museum of Modern Art, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Woman_I",
+    "i18n": {
+      "es": {
+        "author": "Willem de Kooning",
+        "title": "Mujer I",
+        "style": "Expresionismo abstracto",
+        "location": "Museo de Arte Moderno de Nueva York"
+      }
+    },
+    "number": 65
+  },
+  "0066-paul-cezanne-the-card-players.json": {
+    "author": "Paul Cézanne",
+    "title": "The Card Players",
+    "style": "Post-Impressionism",
+    "year": "1894–95",
+    "century": "XIX",
+    "location": "Musée d'Orsay, Paris",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Card_Players",
+    "i18n": {
+      "es": {
+        "author": "Paul Cézanne",
+        "title": "Los jugadores de cartas",
+        "style": "Postimpresionismo",
+        "location": "Museo de Orsay, París"
+      }
+    },
+    "number": 66
+  },
+  "0067-pablo-picasso-portrait-of-ambroise-vollard.json": {
+    "author": "Pablo Picasso",
+    "title": "Portrait of Ambroise Vollard",
+    "style": "Analytical Cubism",
+    "year": 1910,
+    "century": "XX",
+    "location": "Pushkin State Museum of Fine Arts, Moscow",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Ambroise_Vollard_(Picasso)",
+    "i18n": {
+      "es": {
+        "author": "Pablo Picasso",
+        "title": "Retrato de Ambroise Vollard",
+        "style": "Cubismo analítico",
+        "location": "Museo Estatal de Bellas Artes Pushkin, Moscú"
+      }
+    },
+    "number": 67
+  },
+  "0068-albrecht-durer-portrait-of-a-venetian-young-woman.json": {
+    "author": "Albrecht Dürer",
+    "title": "Portrait of a Young Venetian Woman",
+    "style": "Northern Renaissance",
+    "year": 1505,
+    "century": "XVI",
+    "location": "Kunsthistorisches Museum, Vienna",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_a_Venetian_Woman",
+    "i18n": {
+      "es": {
+        "author": "Alberto Durero",
+        "title": "Retrato de una joven veneciana",
+        "style": "Renacimiento del Norte",
+        "location": "Museo de Historia del Arte de Viena"
+      }
+    },
+    "number": 68
+  },
+  "0069-henri-matisse-the-joy-of-life.json": {
+    "author": "Henri Matisse",
+    "title": "Le Bonheur de Vivre",
+    "style": "Fauvism",
+    "year": 1906,
+    "century": "XX",
+    "location": "The Barnes Foundation, Philadelphia",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Le_Bonheur_de_Vivre",
+    "i18n": {
+      "es": {
+        "author": "Henri Matisse",
+        "title": "La alegría de vivir",
+        "style": "Fauvismo",
+        "location": "La Barnes Foundation, Filadelfia"
+      }
+    },
+    "number": 69
+  },
+  "0070-emil-nolde-mockery-of-christ.json": {
+    "author": "Emil Nolde",
+    "title": "Mocking of Christ",
+    "style": "Expressionism",
+    "year": 1909,
+    "century": "XX",
+    "location": "Brücke Museum, Berlin, Germany",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Emil_Nolde",
+    "i18n": {
+      "es": {
+        "author": "Emil Nolde",
+        "title": "La burla de Cristo",
+        "style": "Expresionismo",
+        "location": "Museo Brücke, Berlín, Alemania"
+      }
+    },
+    "number": 70
+  },
+  "0071-kazimir-malevich-black-square.json": {
+    "author": "Kazimir Malevich",
+    "title": "Black Square",
+    "style": "Suprematism",
+    "year": 1915,
+    "century": "XX",
+    "location": "State Tretyakov Gallery, Moscow",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Square",
+    "i18n": {
+      "es": {
+        "author": "Kazimir Malévich",
+        "title": "Cuadro negro",
+        "style": "Suprematismo",
+        "location": "Galería Estatal Tretiakov, Moscú"
+      }
+    },
+    "number": 71
+  },
+  "0072-suzanne-valadon-the-blue-room.json": {
+    "author": "Suzanne Valadon",
+    "title": "The Blue Room",
+    "style": "Post-Impressionism",
+    "year": 1923,
+    "century": "XX",
+    "location": "Musée National d'Art Moderne, Centre Georges Pompidou, Paris",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Blue_Room_(Valadon)",
+    "i18n": {
+      "es": {
+        "author": "Suzanne Valadon",
+        "title": "La chambre bleue",
+        "style": "Postimpresionismo",
+        "location": "Museo Nacional de Arte Moderno, Centro Georges Pompidou, París"
+      }
+    },
+    "number": 72
+  },
+  "0073-edward-hopper-nighthawks.json": {
+    "author": "Edward Hopper",
+    "title": "Nighthawks",
+    "style": "Realism, American Modernism",
+    "year": 1942,
+    "century": "XX",
+    "location": "Art Institute of Chicago",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nighthawks",
+    "i18n": {
+      "es": {
+        "author": "Edward Hopper",
+        "title": "Nighthawks",
+        "style": "Realismo, Modernismo Americano",
+        "location": "Instituto de Arte de Chicago"
+      }
+    },
+    "number": 73
+  },
+  "0074-vincent-van-gogh-self-portrait.json": {
+    "author": "Vincent van Gogh",
+    "title": "Self-Portrait",
+    "style": "Post-Impressionism",
+    "year": 1889,
+    "century": "XIX",
+    "location": "National Gallery of Art, Washington D.C.",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Portraits_of_Vincent_van_Gogh",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "Autorretrato",
+        "style": "Postimpresionismo",
+        "location": "Galería Nacional de Arte, Washington D.C."
+      }
+    },
+    "number": 74
+  },
+  "0075-hans-holbein-the-younger-the-ambassadors.json": {
+    "author": "Hans Holbein the Younger",
+    "title": "The Ambassadors",
+    "style": "Renaissance",
+    "year": 1533,
+    "century": "XVI",
+    "location": "The National Gallery, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)",
+    "i18n": {
+      "es": {
+        "author": "Hans Holbein el Joven",
+        "title": "Los embajadores",
+        "style": "Renacimiento",
+        "location": "La National Gallery, Londres"
+      }
+    },
+    "number": 75
+  },
+  "0076-gustave-caillebotte-man-on-the-window.json": {
+    "author": "Gustave Caillebotte",
+    "title": "Young Man at His Window",
+    "style": "Impressionism",
+    "year": 1876,
+    "century": "XIX",
+    "location": "J. Paul Getty Museum, Los Angeles",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Young_Man_at_His_Window",
+    "i18n": {
+      "es": {
+        "author": "Gustave Caillebotte",
+        "title": "Joven en la ventana",
+        "style": "Impresionismo",
+        "location": "Museo J. Paul Getty, Los Ángeles"
+      }
+    },
+    "number": 76
+  },
+  "0077-georges-seurat-bathers-at-asnieres.json": {
+    "author": "Georges Seurat",
+    "title": "Bathers at Asnières",
+    "style": "Post-Impressionism",
+    "year": 1884,
+    "century": "XIX",
+    "location": "National Gallery, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bathers_at_Asni%C3%A8res",
+    "i18n": {
+      "es": {
+        "author": "Georges Seurat",
+        "title": "Una Bañada en Asnières",
+        "style": "Postimpresionismo",
+        "location": "Galería Nacional, Londres"
+      }
+    },
+    "number": 77
+  },
+  "0078-pablo-picasso-boy-with-a-pipe.json": {
+    "author": "Pablo Picasso",
+    "title": "Garçon à la pipe",
+    "style": "Rose Period",
+    "year": 1905,
+    "century": "XX",
+    "location": "Private Collection",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gar%C3%A7on_%C3%A0_la_pipe",
+    "i18n": {
+      "es": {
+        "author": "Pablo Picasso",
+        "title": "Garçon à la pipe",
+        "style": "Periodo Rosa",
+        "location": "Colección privada"
+      }
+    },
+    "number": 78
+  },
+  "0079-camille-pissarro-boulevard-montmartre-at-night.json": {
+    "author": "Camille Pissarro",
+    "title": "The Boulevard Montmartre at Night",
+    "style": "Impressionism",
+    "year": 1897,
+    "century": "XIX",
+    "location": "National Gallery, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Camille_Pissarro",
+    "i18n": {
+      "es": {
+        "author": "Camille Pissarro",
+        "title": "El bulevar Montmartre de noche",
+        "style": "Impresionismo",
+        "location": "National Gallery, Londres"
+      }
+    },
+    "number": 79
+  },
+  "0080-mary-cassatt-the-child-bath.json": {
+    "author": "Mary Cassatt",
+    "title": "The Child's Bath",
+    "style": "Impressionism, influenced by Japanese woodcut prints",
+    "year": 1893,
+    "century": "XIX",
+    "location": "Art Institute of Chicago, Chicago, USA",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Child's_Bath",
+    "i18n": {
+      "es": {
+        "author": "Mary Cassatt",
+        "title": "La Toilette de l’enfant",
+        "style": "Impresionismo, influenciado por grabados japoneses",
+        "location": "Instituto de Arte de Chicago, Chicago, EE.UU."
+      }
+    },
+    "number": 80
+  },
+  "0081-rene-magritte-the-seducer.json": {
+    "author": "René Magritte",
+    "title": "The Seducer",
+    "style": "Surrealism",
+    "year": 1953,
+    "century": "XX",
+    "location": "Private collection, Brussels, Belgium",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Seducer",
+    "i18n": {
+      "es": {
+        "author": "René Magritte",
+        "title": "El Seductor",
+        "style": "Surrealismo",
+        "location": "Colección privada, Bruselas, Bélgica"
+      }
+    },
+    "number": 81
+  },
+  "0082-jean-auguste-dominique-ingres-the-grande-odalisque.json": {
+    "author": "Jean-Auguste-Dominique Ingres",
+    "title": "La Grande Odalisque",
+    "style": "Neoclassicism, Orientalism",
+    "year": 1814,
+    "century": "XIX",
+    "location": "Louvre, Paris, France",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Grande_Odalisque",
+    "i18n": {
+      "es": {
+        "author": "Jean-Auguste-Dominique Ingres",
+        "title": "La Gran Odalisca",
+        "style": "Neoclasicismo, Orientalismo",
+        "location": "Museo del Louvre, París, Francia"
+      }
+    },
+    "number": 82
+  },
+  "0083-salvador-dali-premonicion-de-la-guerra-civil.json": {
+    "author": "Salvador Dalí",
+    "title": "Construcción blanda con judías hervidas (Premonición de la Guerra Civil)",
+    "style": "Surrealismo",
+    "year": 1936,
+    "century": "XX",
+    "location": "Philadelphia Museum of Art",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Construcci%C3%B3n_blanda_con_jud%C3%ADas_hervidas",
+    "i18n": {
+      "es": {
+        "author": "Salvador Dalí",
+        "title": "Construcción blanda con judías hervidas (Premonición de la Guerra Civil)",
+        "style": "Surrealismo",
+        "location": "Museo de Arte de Filadelfia"
+      }
+    },
+    "number": 83
+  },
+  "0084-frida-kahlo-self-portrait-with-thorn-necklace-and-hummingbird.json": {
+    "author": "Frida Kahlo",
+    "title": "Self-Portrait with Thorn Necklace and Hummingbird",
+    "style": "Surrealism / Symbolism",
+    "year": 1940,
+    "century": "XX",
+    "location": "Harry Ransom Center, University of Texas at Austin",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Self-Portrait_with_Thorn_Necklace_and_Hummingbird",
+    "i18n": {
+      "es": {
+        "author": "Frida Kahlo",
+        "title": "Autorretrato con collar de espinas y colibrí",
+        "style": "Surrealismo / Simbolismo",
+        "location": "Centro Harry Ransom, Universidad de Texas en Austin"
+      }
+    },
+    "number": 84
+  },
+  "0085-rene-magritte-the-meaning-of-the-night.json": {
+    "author": "René Magritte",
+    "title": "The Meaning of Night",
+    "style": "Surrealism",
+    "year": 1927,
+    "century": "XX",
+    "location": "Menil Collection, Houston",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Meaning_of_Night_(painting)",
+    "i18n": {
+      "es": {
+        "author": "René Magritte",
+        "title": "El significado de la noche",
+        "style": "Surrealismo",
+        "location": "Colección Menil, Houston"
+      }
+    },
+    "number": 85
+  },
+  "0086-albrecht-durer-self-portrait-at-28.json": {
+    "author": "Albrecht Dürer",
+    "title": "Self-Portrait at Twenty-Eight",
+    "style": "Northern Renaissance",
+    "year": 1500,
+    "century": "XVI",
+    "location": "Alte Pinakothek, Munich, Germany",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Self-Portrait_(Dürer,_Munich)",
+    "i18n": {
+      "es": {
+        "author": "Alberto Durero",
+        "title": "Autorretrato a los veintiocho años",
+        "style": "Renacimiento del norte",
+        "location": "Alte Pinakothek, Múnich, Alemania"
+      }
+    },
+    "number": 86
+  },
+  "0087-pablo-picasso-portrait-of-daniel-henry-kahnweiler.json": {
+    "author": "Pablo Picasso",
+    "title": "Portrait of Daniel-Henry Kahnweiler",
+    "style": "Analytical Cubism",
+    "year": 1910,
+    "century": "XX",
+    "location": "Art Institute of Chicago, Illinois, United States",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Daniel-Henry_Kahnweiler_(Picasso)",
+    "i18n": {
+      "es": {
+        "author": "Pablo Picasso",
+        "title": "Retrato de Daniel-Henry Kahnweiler",
+        "style": "Cubismo analítico",
+        "location": "Instituto de Arte de Chicago, Illinois, Estados Unidos"
+      }
+    },
+    "number": 87
+  },
+  "0088-vincent-van-gogh-the-haystacks.json": {
+    "author": "Vincent van Gogh",
+    "title": "Haystacks in Provence",
+    "style": "Post-Impressionism",
+    "year": 1888,
+    "century": "XIX",
+    "location": "Kröller-Müller Museum, Otterlo, Netherlands",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Vincent_van_Gogh",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "Almíjares en Provenza",
+        "style": "Postimpresionismo",
+        "location": "Museo Kröller-Müller, Otterlo, Países Bajos"
+      }
+    },
+    "number": 88
+  },
+  "0089-leonardo-da-vinci-vitruvian-man.json": {
+    "author": "Leonardo da Vinci",
+    "title": "Vitruvian Man",
+    "style": "Renaissance",
+    "year": 1490,
+    "century": "XV",
+    "location": "Gallerie dell'Accademia, Venice",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Vitruvian_Man",
+    "i18n": {
+      "es": {
+        "author": "Leonardo da Vinci",
+        "title": "El hombre de Vitruvio",
+        "style": "Renacimiento",
+        "location": "Galería de la Academia, Venecia"
+      }
+    },
+    "number": 89
+  },
+  "0090-wassily-kandinsky-composition-vii.json": {
+    "author": "Wassily Kandinsky",
+    "title": "Composition VII",
+    "style": "Abstract art",
+    "year": 1913,
+    "century": "XX",
+    "location": "The State Tretyakov Gallery, Moscow",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Composition_VII",
+    "i18n": {
+      "es": {
+        "author": "Wassily Kandinsky",
+        "title": "Composición VII",
+        "style": "Arte abstracto",
+        "location": "Galería Estatal Tretiakov, Moscú"
+      }
+    },
+    "number": 90
+  },
+  "0091-katsushika-hokusai-the-great-wave-off-kanagawa.json": {
+    "author": "Katsushika Hokusai",
+    "title": "The Great Wave off Kanagawa",
+    "style": "Ukiyo-e",
+    "year": 1831,
+    "century": "XIX",
+    "location": "Japan",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa",
+    "i18n": {
+      "es": {
+        "author": "Katsushika Hokusai",
+        "title": "La Gran Ola de Kanagawa",
+        "style": "Ukiyo-e",
+        "location": "Japón"
+      }
+    },
+    "number": 91
+  },
+  "0092-benjamin-constant-the-throne-chamber-in-byzantium.json": {
+    "author": "Jean-Joseph Benjamin-Constant",
+    "title": "The Throne Room in Byzantium",
+    "style": "Orientalism",
+    "year": "c. 1880",
+    "century": "XIX",
+    "location": "Private collection",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jean-Joseph_Benjamin-Constant",
+    "i18n": {
+      "es": {
+        "author": "Jean-Joseph Benjamin-Constant",
+        "title": "La Sala del Trono en Bizancio",
+        "style": "Orientalismo",
+        "location": "Colección privada"
+      }
+    },
+    "number": 92
+  },
+  "0093-edvard-munch-madonna.json": {
+    "author": "Edvard Munch",
+    "title": "Madonna",
+    "style": "Symbolism, Expressionism",
+    "year": 1894,
+    "century": "XIX",
+    "location": "Munch Museum, Oslo",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Madonna_(Munch)",
+    "i18n": {
+      "es": {
+        "author": "Edvard Munch",
+        "title": "Madonna",
+        "style": "Simbolismo, Expresionismo",
+        "location": "Museo Munch, Oslo"
+      }
+    },
+    "number": 93
+  },
+  "0094-august-macke-woman-in-a-green-jacket.json": {
+    "author": "August Macke",
+    "title": "Lady in Green Jacket",
+    "style": "Expressionism",
+    "year": 1913,
+    "century": "XX",
+    "location": "Museum Ludwig, Cologne, Germany",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lady_in_Green_Jacket",
+    "i18n": {
+      "es": {
+        "author": "August Macke",
+        "title": "Dama con chaqueta verde",
+        "style": "Expresionismo",
+        "location": "Museo Ludwig, Colonia, Alemania"
+      }
+    },
+    "number": 94
+  },
+  "0095-john-singer-sargent-madame-x.json": {
+    "author": "John Singer Sargent",
+    "title": "Portrait of Madame X",
+    "style": "Portraiture, Realism",
+    "year": 1884,
+    "century": "XIX",
+    "location": "The Metropolitan Museum of Art, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Madame_X",
+    "i18n": {
+      "es": {
+        "author": "John Singer Sargent",
+        "title": "Retrato de Madame X",
+        "style": "Retrato, Realismo",
+        "location": "Museo Metropolitano de Arte, Nueva York"
+      }
+    },
+    "number": 95
+  },
+  "0096-wassily-kandinsky-improvisation-gorge.json": {
+    "author": "Wassily Kandinsky",
+    "title": "Improvisation. Gorge",
+    "style": "Abstract Art",
+    "year": 1914,
+    "century": "XX",
+    "location": "Lenbachhaus, Munich, Germany",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wassily_Kandinsky",
+    "i18n": {
+      "es": {
+        "author": "Wassily Kandinsky",
+        "title": "Improvisación. Garganta",
+        "style": "Arte abstracto",
+        "location": "Lenbachhaus, Múnich, Alemania"
+      }
+    },
+    "number": 96
+  },
+  "0097-pieter-bruegel-the-elder-the-hunters-in-the-snow.json": {
+    "author": "Pieter Bruegel the Elder",
+    "title": "Hunters in the Snow",
+    "style": "Northern Renaissance, Genre painting",
+    "year": "1565",
+    "century": "XVI",
+    "location": "Kunsthistorisches Museum, Vienna",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Hunters_in_the_Snow",
+    "i18n": {
+      "es": {
+        "author": "Pieter Bruegel el Viejo",
+        "title": "Cazadores en la nieve",
+        "style": "Renacimiento del Norte, pintura de género",
+        "location": "Museo de Historia del Arte, Viena"
+      }
+    },
+    "number": 97
+  },
+  "0098-albrecht-durer-young-hare.json": {
+    "author": "Albrecht Dürer",
+    "title": "Young Hare",
+    "style": "Renaissance, observational art, watercolor and bodycolour",
+    "year": 1502,
+    "century": "XVI",
+    "location": "Albertina Museum, Vienna, Austria",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Young_Hare",
+    "i18n": {
+      "es": {
+        "author": "Alberto Durero",
+        "title": "Liebre joven",
+        "style": "Renacimiento, arte de observación, acuarela y gouache",
+        "location": "Museo Albertina, Viena, Austria"
+      }
+    },
+    "number": 98
+  },
+  "0099-gustave-courbet-the-origin-of-the-world.json": {
+    "author": "Gustave Courbet",
+    "title": "L'Origine du monde",
+    "style": "Realism",
+    "year": 1866,
+    "century": "XIX",
+    "location": "Musée d'Orsay, Paris, France",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/L%27Origine_du_monde",
+    "i18n": {
+      "es": {
+        "author": "Gustave Courbet",
+        "title": "El origen del mundo",
+        "style": "Realismo",
+        "location": "Museo de Orsay, París, Francia"
+      }
+    },
+    "number": 99
+  },
+  "0100-georges-braque-mandola.json": {
+    "author": "Georges Braque",
+    "title": "Mandora",
+    "style": "Analytical Cubism",
+    "year": "1909-1910",
+    "century": "XX",
+    "location": "Tate Modern, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mandora_(painting)",
+    "i18n": {
+      "es": {
+        "author": "Georges Braque",
+        "title": "Mandora",
+        "style": "Cubismo analítico",
+        "location": "Tate Modern, Londres"
+      }
+    },
+    "number": 100
+  },
+  "0101-salvador-dali-the-elephants.json": {
+    "author": "Salvador Dalí",
+    "title": "The Elephants",
+    "style": "Surrealism",
+    "year": 1948,
+    "century": "XX",
+    "location": "Private collection",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Elephants",
+    "i18n": {
+      "es": {
+        "author": "Salvador Dalí",
+        "title": "Los elefantes",
+        "style": "Surrealismo",
+        "location": "Colección privada"
+      }
+    },
+    "number": 101
+  },
+  "0102-vincent-van-gogh-portrait-of-patience-escalier.json": {
+    "author": "Vincent van Gogh",
+    "title": "Portrait of a Peasant (Patience Escalier)",
+    "style": "Post-Impressionism",
+    "year": 1888,
+    "century": "XIX",
+    "location": "Norton Simon Museum, Pasadena, USA",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_a_Peasant_(Patience_Escalier)",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "Retrato de un campesino (Patience Escalier)",
+        "style": "Postimpresionismo",
+        "location": "Museo Norton Simon, Pasadena, EE. UU."
+      }
+    },
+    "number": 102
+  },
+  "0103-titian-assumption-of-the-virgin.json": {
+    "author": "Titian",
+    "title": "Assumption of the Virgin",
+    "style": "High Renaissance",
+    "year": 1518,
+    "century": "XVI",
+    "location": "Santa Maria Gloriosa dei Frari, Venice",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Assumption_of_the_Virgin_(Titian)",
+    "i18n": {
+      "es": {
+        "author": "Tiziano",
+        "title": "La Asunción de la Virgen",
+        "style": "Alto Renacimiento",
+        "location": "Basílica de Santa Maria Gloriosa dei Frari, Venecia"
+      }
+    },
+    "number": 103
+  },
+  "0104-pieter-bruegel-the-younger-the-battle-between-lent-and-carnival.json": {
+    "author": "Pieter Brueghel the Younger",
+    "title": "The Fight Between Carnival and Lent",
+    "style": "Northern Renaissance",
+    "year": "after 1600",
+    "century": "XVII",
+    "location": "Musées Royaux des Beaux-Arts, Brussels",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Fight_Between_Carnival_and_Lent",
+    "i18n": {
+      "es": {
+        "author": "Pieter Brueghel el Joven",
+        "title": "La lucha entre el Carnaval y la Cuaresma",
+        "style": "Renacimiento del Norte",
+        "location": "Museos Reales de Bellas Artes de Bélgica, Bruselas"
+      }
+    },
+    "number": 104
+  },
+  "0105-grant-wood-daughters-of-revolution.json": {
+    "author": "Grant Wood",
+    "title": "Daughters of Revolution",
+    "style": "American Regionalism",
+    "year": 1932,
+    "century": "XX",
+    "location": "Cincinnati Art Museum, Cincinnati, Ohio, United States",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Daughters_of_Revolution",
+    "i18n": {
+      "es": {
+        "author": "Grant Wood",
+        "title": "Hijas de la Revolución",
+        "style": "Regionalismo americano",
+        "location": "Museo de Arte de Cincinnati, Cincinnati, Ohio, Estados Unidos"
+      }
+    },
+    "number": 105
+  },
+  "0106-jean-antoine-watteau-gilles.json": {
+    "author": "Jean-Antoine Watteau",
+    "title": "Pierrot (anteriormente conocido como Gilles)",
+    "style": "Rococó",
+    "year": 1721,
+    "century": "XVIII",
+    "location": "Musée du Louvre, Paris, France",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Gilles",
+    "i18n": {
+      "es": {
+        "author": "Jean-Antoine Watteau",
+        "title": "Pierrot (anteriormente conocido como Gilles)",
+        "style": "Rococó",
+        "location": "Museo del Louvre, París, Francia"
+      }
+    },
+    "number": 106
+  },
+  "0107-norman-rockwell-freedom-from-want.json": {
+    "author": "Norman Rockwell",
+    "title": "Freedom from Want",
+    "style": "Regionalism",
+    "year": 1943,
+    "century": "XX",
+    "location": "Norman Rockwell Museum, Stockbridge, Massachusetts",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Freedom_from_Want",
+    "i18n": {
+      "es": {
+        "author": "Norman Rockwell",
+        "title": "Libertad de querer",
+        "style": "Regionalismo",
+        "location": "Museo Norman Rockwell, Stockbridge, Massachusetts"
+      }
+    },
+    "number": 107
+  },
+  "0108-vincent-van-gogh-the-bedroom.json": {
+    "author": "Vincent van Gogh",
+    "title": "Bedroom in Arles",
+    "style": "Post-Impressionism",
+    "year": 1888,
+    "century": "XIX",
+    "location": "Van Gogh Museum, Amsterdam",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bedroom_in_Arles",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "El dormitorio en Arlés",
+        "style": "Postimpresionismo",
+        "location": "Museo Van Gogh, Ámsterdam"
+      }
+    },
+    "number": 108
+  },
+  "0109-vincent-van-gogh-the-potato-eaters.json": {
+    "author": "Vincent van Gogh",
+    "title": "The Potato Eaters",
+    "style": "Realism",
+    "year": 1885,
+    "century": "XIX",
+    "location": "Van Gogh Museum, Amsterdam",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Potato_Eaters",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "Los comedores de patatas",
+        "style": "Realismo",
+        "location": "Museo Van Gogh, Ámsterdam"
+      }
+    },
+    "number": 109
+  },
+  "0110-diego-rivera-man-at-the-crossroads.json": {
+    "author": "Diego Rivera",
+    "title": "Man at the Crossroads",
+    "style": "Mexican Muralism",
+    "year": 1933,
+    "century": "XX",
+    "location": "Lobby of RCA Building (Rockefeller Center), New York (original, destroyed)",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Man_at_the_Crossroads",
+    "i18n": {
+      "es": {
+        "author": "Diego Rivera",
+        "title": "El hombre en la encrucijada",
+        "style": "Muralismo mexicano",
+        "location": "Vestíbulo del Edificio RCA (Rockefeller Center), Nueva York (original, destruido)"
+      }
+    },
+    "number": 110
+  },
+  "0111-jean-frederic-bazille-bathers-summer-scene.json": {
+    "author": "Jean Frédéric Bazille",
+    "title": "Scène d'été",
+    "style": "Impressionism",
+    "year": 1869,
+    "century": "XIX",
+    "location": "Fogg Art Museum, Cambridge, Massachusetts",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sc%C3%A8ne_d'%C3%A9t%C3%A9",
+    "i18n": {
+      "es": {
+        "author": "Jean Frédéric Bazille",
+        "title": "Escena de verano",
+        "style": "Impresionismo",
+        "location": "Museo de Arte Fogg, Cambridge, Massachusetts"
+      }
+    },
+    "number": 111
+  },
+  "0112-sandro-botticelli-primavera.json": {
+    "author": "Sandro Botticelli",
+    "title": "La Primavera",
+    "style": "Renacimiento",
+    "year": "1477-1482",
+    "century": "XV",
+    "location": "Galería Uffizi, Florencia",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/La_primavera_(Botticelli)",
+    "i18n": {
+      "es": {
+        "author": "Sandro Botticelli",
+        "title": "La Primavera",
+        "style": "Renacimiento",
+        "location": "Galería Uffizi, Florencia"
+      }
+    },
+    "number": 112
+  },
+  "0113-leonardo-da-vinci-the-baptism-of-christ.json": {
+    "author": "Andrea del Verrocchio and Leonardo da Vinci",
+    "title": "The Baptism of Christ",
+    "style": "Early Renaissance",
+    "year": "1472-1475",
+    "century": "XV",
+    "location": "Uffizi Gallery, Florence",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Baptism_of_Christ_(Verrocchio)",
+    "i18n": {
+      "es": {
+        "author": "Andrea del Verrocchio y Leonardo da Vinci",
+        "title": "El Bautismo de Cristo",
+        "style": "Primer Renacimiento",
+        "location": "Galería Uffizi, Florencia"
+      }
+    },
+    "number": 113
+  },
+  "0114-lucian-freud-self-portrait-with-two-children.json": {
+    "author": "Lucian Freud",
+    "title": "Reflection with Two Children (Self-Portrait)",
+    "style": "Expressionism",
+    "year": 1965,
+    "century": "XX",
+    "location": "Thyssen-Bornemisza Museum, Madrid, Spain",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lucian_Freud",
+    "i18n": {
+      "es": {
+        "author": "Lucian Freud",
+        "title": "Reflejo con dos niños (Autorretrato)",
+        "style": "Expresionismo",
+        "location": "Museo Thyssen-Bornemisza, Madrid, España"
+      }
+    },
+    "number": 114
+  },
+  "0115-paul-gauguin-two-women-on-the-beach.json": {
+    "author": "Paul Gauguin",
+    "title": "Tahitian Women on the Beach",
+    "style": "Post-Impressionism",
+    "year": 1891,
+    "century": "XIX",
+    "location": "Musée d'Orsay, Paris",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tahitian_Women_on_the_Beach",
+    "i18n": {
+      "es": {
+        "author": "Paul Gauguin",
+        "title": "Mujeres de Tahití en la playa",
+        "style": "Postimpresionismo",
+        "location": "Museo de Orsay, París"
+      }
+    },
+    "number": 115
+  },
+  "0116-pavel-filonov-peasant-family.json": {
+    "author": "Pavel Filonov",
+    "title": "Peasant Family (The Holy Family)",
+    "style": "Analytical Realism",
+    "year": 1914,
+    "century": "XX",
+    "location": "Russian Museum, St. Petersburg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pavel_Filonov",
+    "i18n": {
+      "es": {
+        "author": "Pável Filónov",
+        "title": "Familia campesina (La Sagrada Familia)",
+        "style": "Realismo analítico",
+        "location": "Museo Ruso, San Petersburgo"
+      }
+    },
+    "number": 116
+  },
+  "0117-claude-monet-grainstack-in-the-morning-snow-effect.json": {
+    "author": "Claude Monet",
+    "title": "Wheatstacks, Snow Effect, Morning",
+    "style": "Impressionism",
+    "year": 1891,
+    "century": "XIX",
+    "location": "J. Paul Getty Museum, Los Angeles",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Meules_(Monet_series)",
+    "i18n": {
+      "es": {
+        "author": "Claude Monet",
+        "title": "Almíjares, efecto de nieve, por la mañana",
+        "style": "Impresionismo",
+        "location": "Museo J. Paul Getty, Los Ángeles"
+      }
+    },
+    "number": 117
+  },
+  "0118-jean-honore-fragonard-the-swing.json": {
+    "author": "Jean-Honoré Fragonard",
+    "title": "Les Hasards heureux de l'escarpolette",
+    "style": "Rococo",
+    "year": "1767–1768",
+    "century": "XVIII",
+    "location": "Wallace Collection, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Swing_(Fragonard)",
+    "i18n": {
+      "es": {
+        "author": "Jean-Honoré Fragonard",
+        "title": "Los felices azares del columpio",
+        "style": "Rococó",
+        "location": "Wallace Collection, Londres"
+      }
+    },
+    "number": 118
+  },
+  "0119-pablo-picasso-portrait-of-maya-with-a-doll.json": {
+    "author": "Pablo Picasso",
+    "title": "Portrait of Maya with her Doll",
+    "style": "Surrealism",
+    "year": 1938,
+    "century": "XX",
+    "location": "Musée Picasso, Paris, France",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Maya_with_Doll",
+    "i18n": {
+      "es": {
+        "author": "Pablo Picasso",
+        "title": "Retrato de Maya con su muñeca",
+        "style": "Surrealismo",
+        "location": "Museo Picasso, París, Francia"
+      }
+    },
+    "number": 119
+  },
+  "0120-egon-schiele-portrait-of-wally.json": {
+    "author": "Egon Schiele",
+    "title": "Portrait of Wally Neuzil",
+    "style": "Expressionism",
+    "year": 1912,
+    "century": "XX",
+    "location": "Leopold Museum, Vienna",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Wally",
+    "i18n": {
+      "es": {
+        "author": "Egon Schiele",
+        "title": "Retrato de Wally Neuzil",
+        "style": "Expresionismo",
+        "location": "Museo Leopold, Viena"
+      }
+    },
+    "number": 120
+  },
+  "0121-robert-delaunay-the-city-of-paris.json": {
+    "author": "Robert Delaunay",
+    "title": "The City of Paris",
+    "style": "Orphism",
+    "year": "1910-1912",
+    "century": "XX",
+    "location": "Georges Pompidou Center, Paris, France",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Delaunay",
+    "i18n": {
+      "es": {
+        "author": "Robert Delaunay",
+        "title": "La Ville de Paris",
+        "style": "Orfismo",
+        "location": "Centro Georges Pompidou, París, Francia"
+      }
+    },
+    "number": 121
+  },
+  "0122-raphael-transfiguration.json": {
+    "author": "Raphael",
+    "title": "The Transfiguration",
+    "style": "High Renaissance",
+    "year": 1520,
+    "century": "XVI",
+    "location": "Pinacoteca Vaticana, Vatican City",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Transfiguration_(Raphael)",
+    "i18n": {
+      "es": {
+        "author": "Rafael",
+        "title": "La Transfiguración",
+        "style": "Alto Renacimiento",
+        "location": "Pinacoteca Vaticana, Ciudad del Vaticano"
+      }
+    },
+    "number": 122
+  },
+  "0123-vincent-van-gogh-skull-with-a-burned-cigarette.json": {
+    "author": "Vincent van Gogh",
+    "title": "Head of a Skeleton with a Burning Cigarette",
+    "style": "Post-Impressionism",
+    "year": 1886,
+    "century": "XIX",
+    "location": "Van Gogh Museum, Amsterdam",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Skull_of_a_Skeleton_with_Burning_Cigarette",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "Cabeza de un esqueleto con un cigarrillo encendido",
+        "style": "Postimpresionismo",
+        "location": "Museo Van Gogh, Ámsterdam"
+      }
+    },
+    "number": 123
+  },
+  "0124-wassily-kandinsky-view-of-murnau-with-train-and-castle.json": {
+    "author": "Wassily Kandinsky",
+    "title": "Murnau view with railway and castle",
+    "style": "Expressionism",
+    "year": 1909,
+    "century": "XX",
+    "location": "Lenbachhaus, Munich, Germany",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wassily_Kandinsky",
+    "i18n": {
+      "es": {
+        "author": "Wassily Kandinsky",
+        "title": "Vista de Murnau con ferrocarril y castillo",
+        "style": "Expresionismo",
+        "location": "Lenbachhaus, Múnich, Alemania"
+      }
+    },
+    "number": 124
+  },
+  "0125-edouard-manet-luncheon-on-the-grass.json": {
+    "author": "Édouard Manet",
+    "title": "Le Déjeuner sur l'herbe",
+    "style": "Realism / Early Impressionism",
+    "year": "1862–1863",
+    "century": "XIX",
+    "location": "Musée d'Orsay, Paris",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Le_D%C3%A9jeuner_sur_l'herbe",
+    "i18n": {
+      "es": {
+        "author": "Édouard Manet",
+        "title": "Almuerzo sobre la hierba",
+        "style": "Realismo / Prerrealismo impresionista",
+        "location": "Museo de Orsay, París"
+      }
+    },
+    "number": 125
+  },
+  "0126-artemisia-gentileschi-self-portrait-as-the-allegory-of-painting.json": {
+    "author": "Artemisia Gentileschi",
+    "title": "Self-Portrait as the Allegory of Painting",
+    "style": "Baroque",
+    "year": "1638-1639",
+    "century": "XVII",
+    "location": "Royal Collection, Hampton Court Palace, UK",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Self-Portrait_as_the_Allegory_of_Painting",
+    "i18n": {
+      "es": {
+        "author": "Artemisia Gentileschi",
+        "title": "Autorretrato como la alegoría de la pintura",
+        "style": "Barroco",
+        "location": "Colección Real, Palacio de Hampton Court, Reino Unido"
+      }
+    },
+    "number": 126
+  },
+  "0127-matthias-grunewald-the-mocking-of-christ.json": {
+    "author": "Matthias Grünewald",
+    "title": "The Mocking of Christ",
+    "style": "Northern Renaissance",
+    "year": "1503–1505",
+    "century": "XVI",
+    "location": "Alte Pinakothek, Munich",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Mocking_of_Christ_(Gr%C3%BCnewald)",
+    "i18n": {
+      "es": {
+        "author": "Matthias Grünewald",
+        "title": "La burla de Cristo",
+        "style": "Renacimiento del Norte",
+        "location": "Alte Pinakothek, Múnich"
+      }
+    },
+    "number": 127
+  },
+  "0128-vincent-van-gogh-the-street-the-yellow-house.json": {
+    "author": "Vincent van Gogh",
+    "title": "The Yellow House (The Street)",
+    "style": "Post-Impressionism",
+    "year": 1888,
+    "century": "XIX",
+    "location": "Van Gogh Museum, Amsterdam",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Yellow_House",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "La casa amarilla (La calle)",
+        "style": "Postimpresionismo",
+        "location": "Museo Van Gogh, Ámsterdam"
+      }
+    },
+    "number": 128
+  },
+  "0129-vincent-van-gogh-sunflowers.json": {
+    "author": "Vincent van Gogh",
+    "title": "Sunflowers",
+    "style": "Post-Impressionism",
+    "year": 1888,
+    "century": "XIX",
+    "location": "National Gallery, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sunflowers_(Van_Gogh_series)",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "Los girasoles",
+        "style": "Postimpresionismo",
+        "location": "Galería Nacional, Londres"
+      }
+    },
+    "number": 129
+  },
+  "0130-sandro-botticelli-adoration-of-the-magi.json": {
+    "author": "Sandro Botticelli",
+    "title": "Adoration of the Magi",
+    "style": "Early Renaissance",
+    "year": 1482,
+    "century": "XV",
+    "location": "Uffizi Gallery, Florence",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Adoration_of_the_Magi_(Botticelli)",
+    "i18n": {
+      "es": {
+        "author": "Sandro Botticelli",
+        "title": "La adoración de los Magos",
+        "style": "Primer Renacimiento",
+        "location": "Galería Uffizi, Florencia"
+      }
+    },
+    "number": 130
+  },
+  "0131-edvard-munch-the-sick-child.json": {
+    "author": "Edvard Munch",
+    "title": "The Sick Child",
+    "style": "Expressionism",
+    "year": 1885,
+    "century": "XIX",
+    "location": "National Gallery, Oslo",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Sick_Child_(Munch)",
+    "i18n": {
+      "es": {
+        "author": "Edvard Munch",
+        "title": "La niña enferma",
+        "style": "Expresionismo",
+        "location": "Galería Nacional, Oslo"
+      }
+    },
+    "number": 131
+  },
+  "0132-gustav-klimt-portrait-of-adele-bloch-bauer-i.json": {
+    "author": "Gustav Klimt",
+    "title": "Portrait of Adele Bloch-Bauer I",
+    "style": "Art Nouveau",
+    "year": 1907,
+    "century": "XX",
+    "location": "Neue Galerie New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Adele_Bloch-Bauer_I",
+    "i18n": {
+      "es": {
+        "author": "Gustav Klimt",
+        "title": "Retrato de Adele Bloch-Bauer I",
+        "style": "Modernismo vienés",
+        "location": "Neue Galerie Nueva York"
+      }
+    },
+    "number": 132
+  },
+  "0133-edouard-manet-a-bar-at-the-folies-bergere.json": {
+    "author": "Édouard Manet",
+    "title": "A Bar at the Folies-Bergère",
+    "style": "Realism",
+    "year": 1882,
+    "century": "XIX",
+    "location": "Courtauld Gallery, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/A_Bar_at_the_Folies-Berg%C3%A8re",
+    "i18n": {
+      "es": {
+        "author": "Édouard Manet",
+        "title": "Un bar en las Folies-Bergère",
+        "style": "Realismo",
+        "location": "Galería Courtauld, Londres"
+      }
+    },
+    "number": 133
+  },
+  "0134-vincent-van-gogh-young-man-with-a-cornflower.json": {
+    "author": "Vincent van Gogh",
+    "title": "Young Man with Cornflower",
+    "style": "Post-Impressionism",
+    "year": 1890,
+    "century": "XIX",
+    "location": "Private Collection, Auvers-sur-Oise, France",
+    "wikipedia_url": "https://www.wikiart.org/en/vincent-van-gogh/young-man-with-cornflower-1890",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "Joven con aciano",
+        "style": "Postimpresionismo",
+        "location": "Colección privada, Auvers-sur-Oise, Francia"
+      }
+    },
+    "number": 134
+  },
+  "0135-john-constable-the-hay-wain.json": {
+    "author": "John Constable",
+    "title": "The Hay Wain",
+    "style": "Romanticism",
+    "year": 1821,
+    "century": "XIX",
+    "location": "National Gallery, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Hay_Wain",
+    "i18n": {
+      "es": {
+        "author": "John Constable",
+        "title": "La carreta de heno",
+        "style": "Romanticismo",
+        "location": "Galería Nacional, Londres"
+      }
+    },
+    "number": 135
+  },
+  "0136-georgios-jakobides-first-step.json": {
+    "author": "Georgios Jakobides",
+    "title": "First Steps",
+    "style": "Realism",
+    "year": 1893,
+    "century": "XIX",
+    "location": "National Gallery, Athens",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Steps",
+    "i18n": {
+      "es": {
+        "author": "Georgios Jakobides",
+        "title": "Los Primeros Pasos",
+        "style": "Realismo",
+        "location": "Galería Nacional, Atenas"
+      }
+    },
+    "number": 136
+  },
+  "0137-pierre-auguste-renoir-moulin-de-la-galette.json": {
+    "author": "Pierre-Auguste Renoir",
+    "title": "Bal du moulin de la Galette",
+    "style": "Impressionism",
+    "year": 1876,
+    "century": "XIX",
+    "location": "Musée d'Orsay, Paris",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bal_du_moulin_de_la_Galette",
+    "i18n": {
+      "es": {
+        "author": "Pierre-Auguste Renoir",
+        "title": "Baile en el Moulin de la Galette",
+        "style": "Impresionismo",
+        "location": "Museo de Orsay, París"
+      }
+    },
+    "number": 137
+  },
+  "0138-rene-magritte-the-false-mirror.json": {
+    "author": "René Magritte",
+    "title": "The False Mirror",
+    "style": "Surrealism",
+    "year": "1928",
+    "century": "XX",
+    "location": "Museum of Modern Art, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_False_Mirror",
+    "i18n": {
+      "es": {
+        "author": "René Magritte",
+        "title": "El falso espejo",
+        "style": "Surrealismo",
+        "location": "Museo de Arte Moderno, Nueva York"
+      }
+    },
+    "number": 138
+  },
+  "0139-marc-chagall-the-birthday.json": {
+    "author": "Marc Chagall",
+    "title": "The Birthday",
+    "style": "Cubism, Expressionism, Modernism",
+    "year": 1915,
+    "century": "XX",
+    "location": "Museum of Modern Art, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Birthday_(Chagall)",
+    "i18n": {
+      "es": {
+        "author": "Marc Chagall",
+        "title": "El cumpleaños",
+        "style": "Cubismo, Expresionismo, Modernismo",
+        "location": "Museo de Arte Moderno, Nueva York"
+      }
+    },
+    "number": 139
+  },
+  "0140-salvador-dali-cubist-self-portrait.json": {
+    "author": "Salvador Dalí",
+    "title": "Cubist Self-Portrait",
+    "style": "Cubism",
+    "year": 1923,
+    "century": "XX",
+    "location": "Museo Reina Sofía, Madrid",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD",
+    "i18n": {
+      "es": {
+        "author": "Salvador Dalí",
+        "title": "Autorretrato cubista",
+        "style": "Cubismo",
+        "location": "Museo Reina Sofía, Madrid"
+      }
+    },
+    "number": 140
+  },
+  "0141-andrew-wyeth-christina-s-world.json": {
+    "author": "Andrew Wyeth",
+    "title": "Christina's World",
+    "style": "Realism",
+    "year": 1948,
+    "century": "XX",
+    "location": "Museum of Modern Art, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Christina's_World",
+    "i18n": {
+      "es": {
+        "author": "Andrew Wyeth",
+        "title": "El mundo de Christina",
+        "style": "Realismo",
+        "location": "Museo de Arte Moderno, Nueva York"
+      }
+    },
+    "number": 141
+  },
+  "0142-albrecht-durer-christ-between-the-doctors.json": {
+    "author": "Albrecht Dürer",
+    "title": "Christ Among the Doctors",
+    "style": "Northern Renaissance",
+    "year": 1506,
+    "century": "XVI",
+    "location": "Museo Thyssen-Bornemisza, Madrid, Spain",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Christ_Among_the_Doctors_(Dürer)",
+    "i18n": {
+      "es": {
+        "author": "Alberto Durero",
+        "title": "Jesús entre los doctores",
+        "style": "Renacimiento del norte",
+        "location": "Museo Thyssen-Bornemisza, Madrid, España"
+      }
+    },
+    "number": 142
+  },
+  "0143-kazimir-malevich-suprematist-composition.json": {
+    "author": "Kazimir Malevich",
+    "title": "Suprematist Composition (Blue Rectangle Over the Red Beam)",
+    "style": "Suprematism",
+    "year": 1916,
+    "century": "XX",
+    "location": "Private collection",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Suprematist_Composition",
+    "i18n": {
+      "es": {
+        "author": "Kazimir Malévich",
+        "title": "Composición Suprematista (Rectángulo azul sobre la viga roja)",
+        "style": "Suprematismo",
+        "location": "Colección privada"
+      }
+    },
+    "number": 143
+  },
+  "0144-yves-klein-anthropometries-in-blue.json": {
+    "author": "Yves Klein",
+    "title": "ANT 82, Blue Age Anthropometry",
+    "style": "Nouveau réalisme, performance art",
+    "year": 1960,
+    "century": "XX",
+    "location": "Musée National d'Art Moderne, Paris",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/ANT_82,_Blue_Age_Anthropometry",
+    "i18n": {
+      "es": {
+        "author": "Yves Klein",
+        "title": "ANT 82, Anthropométrie de l'époque bleue",
+        "style": "Nouveau réalisme, arte de performance",
+        "location": "Museo Nacional de Arte Moderno, París"
+      }
+    },
+    "number": 144
+  },
+  "0145-frida-kahlo-self-portrait-with-monocle.json": {
+    "author": "Frida Kahlo",
+    "title": "Self-Portrait with Thorn Necklace and Hummingbird",
+    "style": "Surrealism / Modern Art",
+    "year": 1940,
+    "century": "XX",
+    "location": "Harry Ransom Center, University of Texas at Austin",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Self-Portrait_with_Thorn_Necklace_and_Hummingbird",
+    "i18n": {
+      "es": {
+        "author": "Frida Kahlo",
+        "title": "Autorretrato con collar de espinas y colibrí",
+        "style": "Surrealismo / Arte Moderno",
+        "location": "Centro Harry Ransom, Universidad de Texas en Austin"
+      }
+    },
+    "number": 145
+  },
+  "0146-gustav-klimt-portrait-of-fritza-riedler.json": {
+    "author": "Gustav Klimt",
+    "title": "Portrait of Fritza Riedler",
+    "style": "Art Nouveau (Golden Phase)",
+    "year": 1906,
+    "century": "XX",
+    "location": "Belvedere Museum, Vienna",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Fritza_Riedler",
+    "i18n": {
+      "es": {
+        "author": "Gustav Klimt",
+        "title": "Retrato de Fritza Riedler",
+        "style": "Art Nouveau (Período Dorado)",
+        "location": "Museo Belvedere, Viena"
+      }
+    },
+    "number": 146
+  },
+  "0147-fernand-leger-the-city.json": {
+    "author": "Fernand Léger",
+    "title": "The City",
+    "style": "Cubism",
+    "year": 1919,
+    "century": "XX",
+    "location": "Philadelphia Museum of Art",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_City_(L%C3%A9ger)",
+    "i18n": {
+      "es": {
+        "author": "Fernand Léger",
+        "title": "La Ville",
+        "style": "Cubismo",
+        "location": "Museo de Arte de Filadelfia"
+      }
+    },
+    "number": 147
+  },
+  "0148-michelangelo-merisi-da-caravaggio-the-musicians.json": {
+    "author": "Michelangelo Merisi da Caravaggio",
+    "title": "The Musicians",
+    "style": "Baroque",
+    "year": 1595,
+    "century": "XVI",
+    "location": "The Metropolitan Museum of Art, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Musicians_(Caravaggio)",
+    "i18n": {
+      "es": {
+        "author": "Michelangelo Merisi da Caravaggio",
+        "title": "Los músicos",
+        "style": "Barroco",
+        "location": "Museo Metropolitano de Arte, Nueva York"
+      }
+    },
+    "number": 148
+  },
+  "0149-joan-miro-the-farm.json": {
+    "author": "Joan Miró",
+    "title": "The Farm",
+    "style": "Cubism and Realism (transition to Surrealism)",
+    "year": "1921-1922",
+    "century": "XX",
+    "location": "National Gallery of Art, Washington, D.C.",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Farm_(Mir%C3%B3)",
+    "i18n": {
+      "es": {
+        "author": "Joan Miró",
+        "title": "La Masia",
+        "style": "Cubismo y Realismo (transición al Surrealismo)",
+        "location": "Galería Nacional de Arte, Washington D.C."
+      }
+    },
+    "number": 149
+  },
+  "0150-leonardo-da-vinci-lady-with-an-ermine.json": {
+    "author": "Leonardo da Vinci",
+    "title": "Lady with an Ermine",
+    "style": "Renaissance",
+    "year": 1489,
+    "century": "XV",
+    "location": "National Museum in Krakow",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lady_with_an_Ermine",
+    "i18n": {
+      "es": {
+        "author": "Leonardo da Vinci",
+        "title": "La dama del armiño",
+        "style": "Renacimiento",
+        "location": "Museo Nacional de Cracovia"
+      }
+    },
+    "number": 150
+  },
+  "0151-amedeo-modigliani-portrait-of-jeanne-hebuterne.json": {
+    "author": "Amedeo Modigliani",
+    "title": "Jeanne Hébuterne",
+    "style": "Modernismo / Retrato figurativo",
+    "year": 1918,
+    "century": "XX",
+    "location": "Norton Simon Museum, Pasadena, California, EE.UU.",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Amedeo_Modigliani",
+    "i18n": {
+      "es": {
+        "author": "Amedeo Modigliani",
+        "title": "Jeanne Hébuterne",
+        "style": "Modernismo / Retrato figurativo",
+        "location": "Museo Norton Simon, Pasadena, California, EE. UU."
+      }
+    },
+    "number": 151
+  },
+  "0152-giorgione-la-tempest.json": {
+    "author": "Giorgione",
+    "title": "The Tempest",
+    "style": "Renaissance",
+    "year": "c. 1508",
+    "century": "XVI",
+    "location": "Gallerie dell'Accademia, Venice",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Tempest_(Giorgione)",
+    "i18n": {
+      "es": {
+        "author": "Giorgione",
+        "title": "La Tempestad",
+        "style": "Renacimiento",
+        "location": "Galería de la Academia de Venecia"
+      }
+    },
+    "number": 152
+  },
+  "0153-arshile-gorky-the-liver-is-the-comb-of-the-cock.json": {
+    "author": "Arshile Gorky",
+    "title": "The Liver Is the Cock's Comb",
+    "style": "Abstract Expressionism",
+    "year": 1944,
+    "century": "XX",
+    "location": "Albright-Knox Art Gallery, Buffalo, NY, US",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Liver_Is_the_Cock%27s_Comb",
+    "i18n": {
+      "es": {
+        "author": "Arshile Gorky",
+        "title": "El hígado es la cresta del gallo",
+        "style": "Expresionismo abstracto",
+        "location": "Galería Albright-Knox, Buffalo, Nueva York, EE.UU."
+      }
+    },
+    "number": 153
+  },
+  "0154-pieter-bruegel-the-elder-the-tower-of-babel.json": {
+    "author": "Pieter Bruegel the Elder",
+    "title": "The Tower of Babel",
+    "style": "Renaissance",
+    "year": 1563,
+    "century": "XVI",
+    "location": "Kunsthistorisches Museum, Vienna",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Tower_of_Babel_(Bruegel)",
+    "i18n": {
+      "es": {
+        "author": "Pieter Bruegel el Viejo",
+        "title": "La torre de Babel",
+        "style": "Renacimiento",
+        "location": "Museo de Historia del Arte de Viena"
+      }
+    },
+    "number": 154
+  },
+  "0155-vincent-van-gogh-self-portrait-with-pipe.json": {
+    "author": "Vincent van Gogh",
+    "title": "Self-Portrait with Pipe",
+    "style": "Realism",
+    "year": 1886,
+    "century": "XIX",
+    "location": "Van Gogh Museum, Amsterdam, Netherlands",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Portraits_of_Vincent_van_Gogh",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "Autorretrato con pipa",
+        "style": "Realismo",
+        "location": "Museo Van Gogh, Ámsterdam, Países Bajos"
+      }
+    },
+    "number": 155
+  },
+  "0156-august-macke-landscape-with-cows-and-camel.json": {
+    "author": "August Macke",
+    "title": "Landscape with Cows and a Camel",
+    "style": "Orphism / German Expressionism",
+    "year": 1914,
+    "century": "XX",
+    "location": "Kunsthaus Zürich, Zürich, Switzerland",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Landscape_with_Cows_and_Camel",
+    "i18n": {
+      "es": {
+        "author": "August Macke",
+        "title": "Paisaje con vacas y un camello",
+        "style": "Orfismo / Expresionismo alemán",
+        "location": "Kunsthaus Zürich, Zúrich, Suiza"
+      }
+    },
+    "number": 156
+  },
+  "0157-roy-lichtenstein-whaam.json": {
+    "author": "Roy Lichtenstein",
+    "title": "Whaam!",
+    "style": "Pop Art",
+    "year": 1963,
+    "century": "XX",
+    "location": "Tate Modern, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Whaam!",
+    "i18n": {
+      "es": {
+        "author": "Roy Lichtenstein",
+        "title": "Whaam!",
+        "style": "Arte pop",
+        "location": "Tate Modern, Londres"
+      }
+    },
+    "number": 157
+  },
+  "0158-giuseppe-arcimboldo-floral-still-life.json": {
+    "author": "Giuseppe Arcimboldo",
+    "title": "Flora",
+    "style": "Manierismo",
+    "year": 1589,
+    "century": "XVI",
+    "location": "Colección privada",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Giuseppe_Arcimboldo",
+    "i18n": {
+      "es": {
+        "author": "Giuseppe Arcimboldo",
+        "title": "Flora",
+        "style": "Manierismo",
+        "location": "Colección privada"
+      }
+    },
+    "number": 158
+  },
+  "0159-piet-mondrian-composition-with-red-blue-and-yellow.json": {
+    "author": "Piet Mondrian",
+    "title": "Composition with Red, Blue and Yellow",
+    "style": "Neoplasticism",
+    "year": "1930",
+    "century": "XX",
+    "location": "Kunsthaus Zürich, Zürich, Switzerland",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Composition_with_Red,_Blue_and_Yellow",
+    "i18n": {
+      "es": {
+        "author": "Piet Mondrian",
+        "title": "Composición con rojo, azul y amarillo",
+        "style": "Neoplasticismo",
+        "location": "Kunsthaus Zürich, Zúrich, Suiza"
+      }
+    },
+    "number": 159
+  },
+  "0160-wassily-kandinsky-in-white-ii.json": {
+    "author": "Wassily Kandinsky",
+    "title": "On White II",
+    "style": "Abstract Art",
+    "year": 1923,
+    "century": "XX",
+    "location": "Georges Pompidou Center, Paris, France",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Auf_Weiss_II_(Sur_blanc_II)",
+    "i18n": {
+      "es": {
+        "author": "Wassily Kandinsky",
+        "title": "Sobre blanco II",
+        "style": "Arte abstracto",
+        "location": "Centro Georges Pompidou, París, Francia"
+      }
+    },
+    "number": 160
+  },
+  "0161-paul-delvaux-sleeping-venus.json": {
+    "author": "Paul Delvaux",
+    "title": "Sleeping Venus",
+    "style": "Surrealism",
+    "year": 1944,
+    "century": "XX",
+    "location": "Tate, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sleeping_Venus_(Delvaux)",
+    "i18n": {
+      "es": {
+        "author": "Paul Delvaux",
+        "title": "La Venus dormida",
+        "style": "Surrealismo",
+        "location": "Tate, Londres"
+      }
+    },
+    "number": 161
+  },
+  "0162-egon-schiele-self-portrait-ii-death-and-man.json": {
+    "author": "Egon Schiele",
+    "title": "Self-Seer II (Death and Man)",
+    "style": "Expressionism",
+    "year": 1911,
+    "century": "XX",
+    "location": "Leopold Museum, Vienna, Austria",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Egon_Schiele",
+    "i18n": {
+      "es": {
+        "author": "Egon Schiele",
+        "title": "El autovidente II (La muerte y el hombre)",
+        "style": "Expresionismo",
+        "location": "Museo Leopold, Viena, Austria"
+      }
+    },
+    "number": 162
+  },
+  "0163-georges-braque-man-with-a-guitar.json": {
+    "author": "Georges Braque",
+    "title": "Man with a Guitar",
+    "style": "Analytical Cubism",
+    "year": "1911",
+    "century": "XX",
+    "location": "Museum of Modern Art, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/File:Georges_Braque,_1911-12,_Man_with_a_Guitar_(Figure,_L%E2%80%99homme_%C3%A0_la_guitare),_oil_on_canvas,_116.2_x_80.9_cm_(45.75_x_31.9_in),_Museum_of_Modern_Art,_New_York.jpg",
+    "i18n": {
+      "es": {
+        "author": "Georges Braque",
+        "title": "Hombre con guitarra",
+        "style": "Cubismo analítico",
+        "location": "Museo de Arte Moderno, Nueva York"
+      }
+    },
+    "number": 163
+  },
+  "0164-lucian-freud-big-sue.json": {
+    "author": "Lucian Freud",
+    "title": "Benefits Supervisor Sleeping",
+    "style": "Expressionism",
+    "year": 1995,
+    "century": "XX",
+    "location": "Private collection (sold at Christie's, New York)",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Benefits_Supervisor_Sleeping",
+    "i18n": {
+      "es": {
+        "author": "Lucian Freud",
+        "title": "La supervisora de beneficios durmiendo",
+        "style": "Expresionismo",
+        "location": "Colección privada (subastada en Christie's, Nueva York)"
+      }
+    },
+    "number": 164
+  },
+  "0165-rene-magritte-the-human-condition.json": {
+    "author": "René Magritte",
+    "title": "La condition humaine",
+    "style": "Surrealism",
+    "year": 1933,
+    "century": "XX",
+    "location": "National Gallery of Art, Washington, DC, United States",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Human_Condition_(Magritte)",
+    "i18n": {
+      "es": {
+        "author": "René Magritte",
+        "title": "La condición humana",
+        "style": "Surrealismo",
+        "location": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+      }
+    },
+    "number": 165
+  },
+  "0166-emil-nolde-flower-garden.json": {
+    "author": "Emil Nolde",
+    "title": "Flower Garden",
+    "style": "Expressionism",
+    "year": "1908",
+    "century": "XX",
+    "location": "National Gallery of Art, Washington, Gallery 217-A",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Emil_Nolde",
+    "i18n": {
+      "es": {
+        "author": "Emil Nolde",
+        "title": "Jardín de flores",
+        "style": "Expresionismo",
+        "location": "Galería Nacional de Arte, Washington, Galería 217-A"
+      }
+    },
+    "number": 166
+  },
+  "0167-oskar-kokoschka-self-portrait-as-a-degenerate-artist.json": {
+    "author": "Oskar Kokoschka",
+    "title": "Self-portrait of a 'Degenerate Artist'",
+    "style": "Expressionism",
+    "year": 1937,
+    "century": "XX",
+    "location": "Scottish National Gallery, Edinburgh, UK",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Oskar_Kokoschka",
+    "i18n": {
+      "es": {
+        "author": "Oskar Kokoschka",
+        "title": "Autorretrato de un 'artista degenerado'",
+        "style": "Expresionismo",
+        "location": "Galería Nacional de Escocia, Edimburgo, Reino Unido"
+      }
+    },
+    "number": 167
+  },
+  "0168-frida-kahlo-the-broken-column.json": {
+    "author": "Frida Kahlo",
+    "title": "The Broken Column",
+    "style": "Surrealism, Magical Realism, Mexicayotl movement",
+    "year": 1944,
+    "century": "XX",
+    "location": "Museo Dolores Olmedo, Ciudad de México, México",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Broken_Column",
+    "i18n": {
+      "es": {
+        "author": "Frida Kahlo",
+        "title": "La columna rota",
+        "style": "Surrealismo, Realismo mágico, movimiento Mexicayotl",
+        "location": "Museo Dolores Olmedo, Ciudad de México, México"
+      }
+    },
+    "number": 168
+  },
+  "0169-michelangelo-buonarroti-the-last-judgement.json": {
+    "author": "Michelangelo Buonarroti",
+    "title": "The Last Judgment",
+    "style": "Renaissance",
+    "year": "1536–1541",
+    "century": "XVI",
+    "location": "Sistine Chapel, Vatican City",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Last_Judgment_(Michelangelo)",
+    "i18n": {
+      "es": {
+        "author": "Miguel Ángel Buonarroti",
+        "title": "El Juicio Final",
+        "style": "Renacimiento",
+        "location": "Capilla Sixtina, Ciudad del Vaticano"
+      }
+    },
+    "number": 169
+  },
+  "0170-bernardo-bellotto-ruins-of-the-old-kreuzkirche-in-dresden.json": {
+    "author": "Bernardo Bellotto",
+    "title": "The Ruins of the Old Kreuzkirche in Dresden",
+    "style": "Vedutismo",
+    "year": 1765,
+    "century": "XVIII",
+    "location": "Gemäldegalerie, Dresden",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bernardo_Bellotto",
+    "i18n": {
+      "es": {
+        "author": "Bernardo Bellotto",
+        "title": "Las ruinas de la antigua Kreuzkirche en Dresde",
+        "style": "Vedutismo",
+        "location": "Galería de Pinturas de Dresde"
+      }
+    },
+    "number": 170
+  },
+  "0171-tintoretto-the-last-supper.json": {
+    "author": "Jacopo Tintoretto",
+    "title": "The Last Supper",
+    "style": "Mannerism",
+    "year": 1594,
+    "century": "XVI",
+    "location": "Basilica di San Giorgio Maggiore, Venice, Italy",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Last_Supper_(Tintoretto)",
+    "i18n": {
+      "es": {
+        "author": "Jacopo Tintoretto",
+        "title": "La Última Cena",
+        "style": "Manierismo",
+        "location": "Basílica de San Giorgio Maggiore, Venecia, Italia"
+      }
+    },
+    "number": 171
+  },
+  "0172-frida-kahlo-frida-and-diego-rivera.json": {
+    "author": "Frida Kahlo",
+    "title": "Frieda and Diego Rivera",
+    "style": "Modernismo mexicano",
+    "year": 1931,
+    "century": "XX",
+    "location": "San Francisco Museum of Modern Art, San Francisco, California",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Frieda_and_Diego_Rivera",
+    "i18n": {
+      "es": {
+        "author": "Frida Kahlo",
+        "title": "Frieda y Diego Rivera",
+        "style": "Modernismo mexicano",
+        "location": "Museo de Arte Moderno de San Francisco, San Francisco, California"
+      }
+    },
+    "number": 172
+  },
+  "0173-max-beckmann-the-great-scene-of-agony.json": {
+    "author": "Max Beckmann",
+    "title": "Great Scene of Agony",
+    "style": "Expressionism",
+    "year": "1906",
+    "century": "XX",
+    "location": "Private collection",
+    "wikipedia_url": "https://www.wikiart.org/en/max-beckmann/great-scene-of-agony-1906",
+    "i18n": {
+      "es": {
+        "author": "Max Beckmann",
+        "title": "Gran Escena de Agonía",
+        "style": "Expresionismo",
+        "location": "Colección privada"
+      }
+    },
+    "number": 173
+  },
+  "0174-rembrandt-van-rijn-self-portrait-with-two-circles.json": {
+    "author": "Rembrandt van Rijn",
+    "title": "Self-Portrait with Two Circles",
+    "style": "Baroque",
+    "year": "c. 1665–1669",
+    "century": "XVII",
+    "location": "Kenwood House, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Self-Portrait_with_Two_Circles",
+    "i18n": {
+      "es": {
+        "author": "Rembrandt van Rijn",
+        "title": "Autorretrato con dos círculos",
+        "style": "Barroco",
+        "location": "Casa Kenwood, Londres"
+      }
+    },
+    "number": 174
+  },
+  "0175-amedeo-modigliani-reclining-nude-with-blue-cushion.json": {
+    "author": "Amedeo Modigliani",
+    "title": "Reclining Nude on Blue Cushion",
+    "style": "Expressionism",
+    "year": 1916,
+    "century": "XX",
+    "location": "Private Collection (Dmitry Rybolovlev), previously Paris, France",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Reclining_Nude_on_Blue_Cushion",
+    "i18n": {
+      "es": {
+        "author": "Amedeo Modigliani",
+        "title": "Desnudo reclinado sobre cojín azul",
+        "style": "Expresionismo",
+        "location": "Colección privada (Dmitry Rybolovlev), previamente París, Francia"
+      }
+    },
+    "number": 175
+  },
+  "0176-salvador-dali-crucifixion.json": {
+    "author": "Salvador Dalí",
+    "title": "Crucifixión (Corpus hypercubus)",
+    "style": "Surrealism",
+    "year": 1954,
+    "century": "XX",
+    "location": "The Metropolitan Museum of Art, New York",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Crucifixión_(Dalí)",
+    "i18n": {
+      "es": {
+        "author": "Salvador Dalí",
+        "title": "Crucifixión (Corpus hypercubus)",
+        "style": "Surrealismo",
+        "location": "Museo Metropolitano de Arte, Nueva York"
+      }
+    },
+    "number": 176
+  },
+  "0177-jackson-pollock-autumn-rhythm-number-30.json": {
+    "author": "Jackson Pollock",
+    "title": "Autumn Rhythm (Number 30)",
+    "style": "Abstract Expressionism",
+    "year": 1950,
+    "century": "XX",
+    "location": "The Metropolitan Museum of Art, New York City, United States",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Autumn_Rhythm_(Number_30)",
+    "i18n": {
+      "es": {
+        "author": "Jackson Pollock",
+        "title": "Ritmo de otoño (Número 30)",
+        "style": "Expresionismo abstracto",
+        "location": "Museo Metropolitano de Arte, Ciudad de Nueva York, Estados Unidos"
+      }
+    },
+    "number": 177
+  },
+  "0178-johannes-vermeer-the-milkmaid.json": {
+    "author": "Johannes Vermeer",
+    "title": "The Milkmaid",
+    "style": "Dutch Baroque",
+    "year": "1657-1658",
+    "century": "XVII",
+    "location": "Rijksmuseum, Amsterdam",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Milkmaid_(Vermeer)",
+    "i18n": {
+      "es": {
+        "author": "Johannes Vermeer",
+        "title": "La lechera",
+        "style": "Barroco holandés",
+        "location": "Rijksmuseum, Ámsterdam"
+      }
+    },
+    "number": 178
+  },
+  "0179-titian-diana-and-actaeon.json": {
+    "author": "Titian",
+    "title": "Diana and Actaeon",
+    "style": "High Renaissance",
+    "year": "1556–1559",
+    "century": "XVI",
+    "location": "National Gallery, London / National Galleries of Scotland",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Diana_and_Actaeon_(Titian)",
+    "i18n": {
+      "es": {
+        "author": "Tiziano",
+        "title": "Diana y Acteón",
+        "style": "Alto Renacimiento",
+        "location": "Galería Nacional, Londres / Galerías Nacionales de Escocia"
+      }
+    },
+    "number": 179
+  },
+  "0180-pierre-auguste-renoir-after-the-bath.json": {
+    "author": "Pierre-Auguste Renoir",
+    "title": "After the Bath",
+    "style": "Impressionism",
+    "year": 1910,
+    "century": "XX",
+    "location": "Barnes Foundation, Philadelphia",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/After_the_Bath_(Renoir)",
+    "i18n": {
+      "es": {
+        "author": "Pierre-Auguste Renoir",
+        "title": "Después del baño",
+        "style": "Impresionismo",
+        "location": "Barnes Foundation, Filadelfia"
+      }
+    },
+    "number": 180
+  },
+  "0181-marc-chagall-in-the-city.json": {
+    "author": "Marc Chagall",
+    "title": "Over the Town",
+    "style": "Surrealism",
+    "year": 1918,
+    "century": "XX",
+    "location": "Tretyakov Gallery, Moscow, Russia",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Over_the_Town_(painting)",
+    "i18n": {
+      "es": {
+        "author": "Marc Chagall",
+        "title": "Sobre la ciudad",
+        "style": "Surrealismo",
+        "location": "Galería Tretiakov, Moscú, Rusia"
+      }
+    },
+    "number": 181
+  },
+  "0182-vincent-van-gogh-irises.json": {
+    "author": "Vincent van Gogh",
+    "title": "Irises",
+    "style": "Post-Impressionism",
+    "year": 1889,
+    "century": "XIX",
+    "location": "J. Paul Getty Museum, Los Angeles, California, USA",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Irises_(painting)",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "Lirios",
+        "style": "Postimpresionismo",
+        "location": "Museo J. Paul Getty, Los Ángeles, California, Estados Unidos"
+      }
+    },
+    "number": 182
+  },
+  "0183-albert-bierstadt-rocky-mountains.json": {
+    "author": "Albert Bierstadt",
+    "title": "The Rocky Mountains, Lander's Peak",
+    "style": "Hudson River School",
+    "year": 1863,
+    "century": "XIX",
+    "location": "Metropolitan Museum of Art, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Rocky_Mountains,_Lander's_Peak",
+    "i18n": {
+      "es": {
+        "author": "Albert Bierstadt",
+        "title": "Las Montañas Rocosas, Pico de Lander",
+        "style": "Escuela del Río Hudson",
+        "location": "Museo Metropolitano de Arte, Nueva York"
+      }
+    },
+    "number": 183
+  },
+  "0184-frida-kahlo-self-portrait-with-cropped-hair.json": {
+    "author": "Frida Kahlo",
+    "title": "Self Portrait with Cropped Hair",
+    "style": "Surrealism / Naïve Art",
+    "year": 1940,
+    "century": "XX",
+    "location": "MoMA, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Self-Portrait_with_Cropped_Hair",
+    "i18n": {
+      "es": {
+        "author": "Frida Kahlo",
+        "title": "Autorretrato con el pelo cortado",
+        "style": "Surrealismo / Arte Naïf",
+        "location": "MoMA, Nueva York"
+      }
+    },
+    "number": 184
+  },
+  "0185-titian-bacchus-and-ariadne.json": {
+    "author": "Titian",
+    "title": "Bacchus and Ariadne",
+    "style": "High Renaissance",
+    "year": 1520,
+    "century": "XVI",
+    "location": "National Gallery, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bacchus_and_Ariadne",
+    "i18n": {
+      "es": {
+        "author": "Tiziano",
+        "title": "Baco y Ariadna",
+        "style": "Alto Renacimiento",
+        "location": "Galería Nacional, Londres"
+      }
+    },
+    "number": 185
+  },
+  "0186-vincent-van-gogh-seascape-saintes-maries.json": {
+    "author": "Vincent van Gogh",
+    "title": "Seascape near Les Saintes-Maries-de-la-Mer",
+    "style": "Post-Impressionism",
+    "year": 1888,
+    "century": "XIX",
+    "location": "Van Gogh Museum, Amsterdam",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Saintes-Maries_(Van_Gogh_series)",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "Marina cerca de Saintes-Maries-de-la-Mer",
+        "style": "Postimpresionismo",
+        "location": "Museo Van Gogh, Ámsterdam"
+      }
+    },
+    "number": 186
+  },
+  "0187-diego-velazquez-the-surrender-of-breda.json": {
+    "author": "Diego Velázquez",
+    "title": "The Surrender of Breda",
+    "style": "Baroque",
+    "year": 1634,
+    "century": "XVII",
+    "location": "Museo del Prado, Madrid",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Surrender_of_Breda",
+    "i18n": {
+      "es": {
+        "author": "Diego Velázquez",
+        "title": "La rendición de Breda",
+        "style": "Barroco",
+        "location": "Museo del Prado, Madrid"
+      }
+    },
+    "number": 187
+  },
+  "0188-el-greco-the-burial-of-count-orgaz.json": {
+    "author": "El Greco",
+    "title": "The Burial of the Count of Orgaz",
+    "style": "Mannerism",
+    "year": 1586,
+    "century": "XVI",
+    "location": "Iglesia de Santo Tomé, Toledo, Spain",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Burial_of_the_Count_of_Orgaz",
+    "i18n": {
+      "es": {
+        "author": "El Greco",
+        "title": "El entierro del Conde de Orgaz",
+        "style": "Manierismo",
+        "location": "Iglesia de Santo Tomé, Toledo, España"
+      }
+    },
+    "number": 188
+  },
+  "0189-gustave-caillebotte-paris-street-rainy-day.json": {
+    "author": "Gustave Caillebotte",
+    "title": "Paris Street; Rainy Day",
+    "style": "Impressionism",
+    "year": 1877,
+    "century": "XIX",
+    "location": "Art Institute of Chicago",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Paris_Street;_Rainy_Day",
+    "i18n": {
+      "es": {
+        "author": "Gustave Caillebotte",
+        "title": "Calle de París, día lluvioso",
+        "style": "Impresionismo",
+        "location": "Instituto de Arte de Chicago"
+      }
+    },
+    "number": 189
+  },
+  "0190-gustav-klimt-tree-of-life.json": {
+    "author": "Gustav Klimt",
+    "title": "The Tree of Life, Stoclet Frieze",
+    "style": "Art Nouveau (Symbolism)",
+    "year": 1909,
+    "century": "XX",
+    "location": "Museum of Applied Arts, Vienna, Austria",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Tree_of_Life,_Stoclet_Frieze",
+    "i18n": {
+      "es": {
+        "author": "Gustav Klimt",
+        "title": "El Árbol de la Vida, Friso Stoclet",
+        "style": "Art Nouveau (Simbolismo)",
+        "location": "Museo de Artes Aplicadas, Viena, Austria"
+      }
+    },
+    "number": 190
+  },
+  "0191-joan-miro-life-with-old-shoes.json": {
+    "author": "Joan Miró",
+    "title": "Still Life with Old Shoe",
+    "style": "Surrealism",
+    "year": 1937,
+    "century": "XX",
+    "location": "Museum of Modern Art (MoMA), New York City, United States",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Still_Life_with_Old_Shoe",
+    "i18n": {
+      "es": {
+        "author": "Joan Miró",
+        "title": "Naturaleza muerta con zapato viejo",
+        "style": "Surrealismo",
+        "location": "Museo de Arte Moderno (MoMA), Nueva York, Estados Unidos"
+      }
+    },
+    "number": 191
+  },
+  "0192-paul-delvaux-night-train.json": {
+    "author": "Paul Delvaux",
+    "title": "Night Train",
+    "style": "Surrealism",
+    "year": 1947,
+    "century": "XX",
+    "location": "Museum of Modern Art, Toyama, Japan",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Night_Train_(painting)",
+    "i18n": {
+      "es": {
+        "author": "Paul Delvaux",
+        "title": "El tren de noche",
+        "style": "Surrealismo",
+        "location": "Museo de Arte Moderno, Toyama, Japón"
+      }
+    },
+    "number": 192
+  },
+  "0193-francis-bacon-three-studies-for-figures-on-the-base-of-a-crucifixion.json": {
+    "author": "Francis Bacon",
+    "title": "Three Studies for Figures at the Base of a Crucifixion",
+    "style": "Existentialism, Modernism, Figurative art",
+    "year": 1944,
+    "century": "XX",
+    "location": "Tate Britain, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Studies_for_Figures_at_the_Base_of_a_Crucifixion",
+    "i18n": {
+      "es": {
+        "author": "Francis Bacon",
+        "title": "Tres estudios para figuras en la base de una crucifixión",
+        "style": "Existencialismo, Modernismo, Arte figurativo",
+        "location": "Tate Britain, Londres"
+      }
+    },
+    "number": 193
+  },
+  "0194-nicolas-poussin-the-violation-of-the-sabine-women.json": {
+    "author": "Nicolas Poussin",
+    "title": "The Abduction of the Sabine Women",
+    "style": "Classicism",
+    "year": "1633–1634",
+    "century": "XVII",
+    "location": "The Metropolitan Museum of Art, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Rape_of_the_Sabine_Women_(Poussin)",
+    "i18n": {
+      "es": {
+        "author": "Nicolas Poussin",
+        "title": "El Rapto de las Sabinas",
+        "style": "Clasicismo",
+        "location": "Museo Metropolitano de Arte, Nueva York"
+      }
+    },
+    "number": 194
+  },
+  "0195-umberto-boccioni-modern-idol.json": {
+    "author": "Umberto Boccioni",
+    "title": "Modern Idol",
+    "style": "Futurism",
+    "year": 1911,
+    "century": "XX",
+    "location": "National Gallery of Modern and Contemporary Art, Rome",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Umberto_Boccioni",
+    "i18n": {
+      "es": {
+        "author": "Umberto Boccioni",
+        "title": "Ídolo moderno",
+        "style": "Futurismo",
+        "location": "Galería Nacional de Arte Moderno y Contemporáneo, Roma"
+      }
+    },
+    "number": 195
+  },
+  "0196-albert-charles-lebourg-quays-of-dieppe-after-the-rain.json": {
+    "author": "Albert-Charles Lebourg",
+    "title": "The Quays of Dieppe, After the Rain",
+    "style": "Impressionism",
+    "year": 1882,
+    "century": "XIX",
+    "location": "Private collection",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Albert_Lebourg",
+    "i18n": {
+      "es": {
+        "author": "Albert-Charles Lebourg",
+        "title": "Los muelles de Dieppe después de la lluvia",
+        "style": "Impresionismo",
+        "location": "Colección privada"
+      }
+    },
+    "number": 196
+  },
+  "0197-raphael-portrait-of-bindo-altoviti.json": {
+    "author": "Raphael",
+    "title": "Portrait of Bindo Altoviti",
+    "style": "High Renaissance",
+    "year": "c. 1512–1515",
+    "century": "XVI",
+    "location": "National Gallery of Art, Washington, D.C.",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Bindo_Altoviti",
+    "i18n": {
+      "es": {
+        "author": "Rafael",
+        "title": "Retrato de Bindo Altoviti",
+        "style": "Alto Renacimiento",
+        "location": "Galería Nacional de Arte, Washington D. C."
+      }
+    },
+    "number": 197
+  },
+  "0198-paolo-uccello-the-battle-of-san-romano.json": {
+    "author": "Paolo Uccello",
+    "title": "The Battle of San Romano",
+    "style": "Early Italian Renaissance",
+    "year": 1438,
+    "century": "XV",
+    "location": "National Gallery, London; Galleria degli Uffizi, Florence; Musée du Louvre, Paris",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Battle_of_San_Romano",
+    "i18n": {
+      "es": {
+        "author": "Paolo Uccello",
+        "title": "La Batalla de San Romano",
+        "style": "Primer Renacimiento Italiano",
+        "location": "National Gallery, Londres; Galería Uffizi, Florencia; Museo del Louvre, París"
+      }
+    },
+    "number": 198
+  },
+  "0199-pablo-picasso-two-women-running-on-the-beach.json": {
+    "author": "Pablo Picasso",
+    "title": "Two Women Running on the Beach (The Race)",
+    "style": "Neoclassicism",
+    "year": 1922,
+    "century": "XX",
+    "location": "Musée Picasso, Paris, France",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Two_Women_Running_on_the_Beach",
+    "i18n": {
+      "es": {
+        "author": "Pablo Picasso",
+        "title": "Dos mujeres corriendo en la playa (La carrera)",
+        "style": "Neoclasicismo",
+        "location": "Museo Picasso, París, Francia"
+      }
+    },
+    "number": 199
+  },
+  "0200-georges-braque-the-house-in-l-estaque.json": {
+    "author": "Georges Braque",
+    "title": "Houses at L'Estaque",
+    "style": "Cubism",
+    "year": 1908,
+    "century": "XX",
+    "location": "Kunstmuseum Bern, Bern, Switzerland",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Georges_Braque",
+    "i18n": {
+      "es": {
+        "author": "Georges Braque",
+        "title": "Casas en L'Estaque",
+        "style": "Cubismo",
+        "location": "Kunstmuseum Bern, Berna, Suiza"
+      }
+    },
+    "number": 200
+  }
+}

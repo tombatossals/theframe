@@ -6,8 +6,8 @@ from typing import Dict, Type
 
 from ..core.config import get_settings, setup_logging
 from ..core.exceptions import TheFrameError
-from .commands import (ErrorsCommand, GenerateCommand, PopulateCommand,
-                       UpdateCommand, UploadCommand)
+from .commands import (ErrorsCommand, GenerateJsonCommand, PopulateCommand,
+                       UploadCommand)
 
 
 def create_parser() -> argparse.ArgumentParser:
@@ -18,13 +18,13 @@ def create_parser() -> argparse.ArgumentParser:
         epilog="""
 Commands:
   upload    Upload a random artwork to your Samsung Frame TV
-  generate  Generate artwork metadata from image files
+  generate_json  Generate artwork metadata from image files
   populate  Populate artwork metadata with AI enrichment
   errors    Check for errors and duplicates in artwork metadata
 
 Examples:
   theframe upload --ip 192.168.1.100 --token abc123
-  theframe generate --images-dir ./art --base-url http://example.com/images
+  theframe generate_json --images-dir ./art --base-url http://example.com/images
   theframe populate --ai-model llama3.2:latest
   theframe errors --populated-json ./data/populated.json
         """
@@ -48,13 +48,10 @@ Examples:
 
     # File paths
     parser.add_argument(
-        "--paintings-json",
-        help="Path to paintings JSON file (or set THEFRAME_PAINTINGS_JSON)"
+        "--artworks-json",
+        help="Path to artworks JSON file (or set THEFRAME_ARTWORKS_JSON)"
     )
-    parser.add_argument(
-        "--populated-json",
-        help="Path to populated JSON file (or set THEFRAME_POPULATED_JSON)"
-    )
+
     parser.add_argument(
         "--images-dir",
         help="Directory containing images (or set THEFRAME_IMAGES_DIR)"
@@ -78,7 +75,7 @@ Examples:
     # Command
     parser.add_argument(
         "command",
-        choices=["upload", "update", "generate", "populate", "errors"],
+        choices=["upload", "populate", "generate_json", "errors"],
         help="Command to execute"
     )
 
@@ -91,10 +88,8 @@ def override_settings_from_args(settings, args) -> None:
         settings.tv_ip = args.tv_ip
     if args.tv_token:
         settings.tv_token = args.tv_token
-    if args.paintings_json:
-        settings.paintings_json = args.paintings_json
-    if args.populated_json:
-        settings.populated_json = args.populated_json
+    if args.artworks_json:
+        settings.artworks_json = args.artworks_json
     if args.images_dir:
         settings.images_dir = args.images_dir
     if args.base_url:
@@ -121,9 +116,8 @@ def main() -> None:
         # Command mapping
         commands: Dict[str, Type] = {
             "upload": UploadCommand,
-            "generate": GenerateCommand,
+            "generate_json": GenerateJsonCommand,
             "populate": PopulateCommand,
-            "update": UpdateCommand,
             "errors": ErrorsCommand,
         }
 

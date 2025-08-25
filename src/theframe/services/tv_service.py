@@ -41,7 +41,6 @@ class TVService:
 
             # Try to get device info as a connection test
             info = self.tv.rest_device_info()
-            print(info)
             self.logger.debug("Connected to TV", device_info=info, tv_ip=self.device.ip)
             return True
         except Exception as e:

@@ -3,6 +3,7 @@
 import asyncio
 import json
 import logging
+import os
 import random
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -369,6 +370,24 @@ class MetadataService:
                 seen[key] = artwork
 
         return duplicates
+
+    def find_missing_images(self, collection: ArtworkCollection) -> List[Artwork]:
+        """Find missing images."""
+        missing = []
+
+        for artwork in collection.artworks.values():
+            if not os.path.exists(Path("artworks") / artwork.filename):
+                missing.append(artwork)
+
+                for old in os.listdir("artworks"):
+                    if old.startswith(f"{artwork.number:04d}-"):
+                        o = os.path.join("artworks", old)
+                        n = os.path.join("artworks", artwork.filename)
+                        print(f"Found old artwork file: {o}, new file: {n}")
+                        os.rename(o, n)
+                        break
+
+        return missing
 
     def validate_collection(self, collection: ArtworkCollection) -> List[str]:
         """Validate collection and return list of issues."""

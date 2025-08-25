@@ -1,5 +1,6 @@
 """Core domain models for TheFrame application."""
 
+import os
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Union
@@ -7,6 +8,7 @@ from urllib.parse import urlparse
 
 import requests
 from pydantic import BaseModel, Field, validator
+from slugify import slugify
 
 
 class ArtworkMetadata(BaseModel):
@@ -36,8 +38,6 @@ class Artwork(BaseModel):
     """Complete artwork with metadata and file information."""
 
     number: Optional[int] = Field(None, description="Artwork number")
-    filename: Optional[str] = Field(None, description="Image filename")
-    bg_url: Optional[str] = Field(None, description="Background image URL")
     metadata: ArtworkMetadata
     binary_data: Optional[bytes] = Field(None, description="Image binary data")
 
@@ -57,6 +57,17 @@ class Artwork(BaseModel):
             return result
         except requests.RequestException as e:
             return False
+
+    @property
+    def filename(self) -> Optional[str]:
+        """Get the image filename."""
+        n = f"{str(self.number).zfill(4)} - {self.metadata.author} - {self.metadata.title}"
+        return f"{slugify(n)}.jpg"
+
+    @property
+    def bg_url(self) -> Optional[str]:
+        """Get the background URL."""
+        return f"{os.getenv('THEFRAME_BASE_URL')}/{self.filename}"
 
     @property
     def display_name(self) -> str:

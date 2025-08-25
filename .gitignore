@@ -203,6 +203,7 @@ cython_debug/
 
 test.jpg
 paintings/
+artworks/
 .DS_Store
 
 # Marimo

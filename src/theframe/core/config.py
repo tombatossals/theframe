@@ -26,8 +26,7 @@ class Settings(BaseSettings):
     tv_token: Optional[str] = Field(None, description="Samsung TV authentication token")
 
     # File Paths
-    paintings_json: Optional[str] = Field(None, description="Path to paintings JSON file")
-    populated_json: Optional[str] = Field(None, description="Path to populated JSON file")
+    artworks_json: Optional[str] = Field(None, description="Path to paintings JSON file")
     images_dir: Optional[str] = Field(None, description="Directory containing images")
 
     # URLs
@@ -37,6 +36,10 @@ class Settings(BaseSettings):
     # Processing
     batch_size: int = Field(5, description="Batch size for processing")
     max_retries: int = Field(3, description="Maximum retries for operations")
+
+    # AI API keys
+    ai_api_key: Optional[str] = Field(None, description="AI API KEY to use")
+    ai_base_url: Optional[str] = Field(None, description="AI API base URL")
 
     # Logging
     log_level: str = Field("INFO", description="Logging level")
@@ -78,10 +81,10 @@ class Settings(BaseSettings):
                 "TV token is required for upload",
                 "Set THEFRAME_TV_TOKEN environment variable or use --token"
             )
-        if not self.populated_json:
+        if not self.artworks_json:
             raise ConfigurationError(
-                "Populated JSON path is required for upload",
-                "Set THEFRAME_POPULATED_JSON environment variable or use --populated-json"
+                "Artworks JSON path is required for upload",
+                "Set THEFRAME_ARTWORKS_JSON environment variable or use --artworks-json"
             )
 
     def validate_for_generate(self) -> None:
@@ -96,10 +99,10 @@ class Settings(BaseSettings):
                 "Base URL is required for generate",
                 "Set THEFRAME_BASE_URL environment variable or use --base-url"
             )
-        if not self.paintings_json:
+        if not self.artworks_json:
             raise ConfigurationError(
-                "Paintings JSON path is required for generate",
-                "Set THEFRAME_PAINTINGS_JSON environment variable or use --paintings-json"
+                "Artworks JSON path is required for generate",
+                "Set THEFRAME_ARTWORKS_JSON environment variable or use --artworks-json"
             )
 
     def validate_for_update(self) -> None:
@@ -114,23 +117,18 @@ class Settings(BaseSettings):
                 "Base URL is required for generate",
                 "Set THEFRAME_BASE_URL environment variable or use --base-url"
             )
-        if not self.populated_json:
+        if not self.artworks_json:
             raise ConfigurationError(
-                "Paintings JSON path is required for generate",
-                "Set THEFRAME_PAINTINGS_JSON environment variable or use --paintings-json"
+                "Artworks JSON path is required for generate",
+                "Set THEFRAME_ARTWORKS_JSON environment variable or use --artworks-json"
             )
 
     def validate_for_populate(self) -> None:
         """Validate settings required for populate command."""
-        if not self.paintings_json:
+        if not self.artworks_json:
             raise ConfigurationError(
-                "Paintings JSON path is required for populate",
-                "Set THEFRAME_PAINTINGS_JSON environment variable or use --paintings-json"
-            )
-        if not self.populated_json:
-            raise ConfigurationError(
-                "Populated JSON path is required for populate",
-                "Set THEFRAME_POPULATED_JSON environment variable or use --populated-json"
+                "Artworks JSON path is required for populate",
+                "Set THEFRAME_ARTWORKS_JSON environment variable or use --artworks-json"
             )
         if not self.base_url:
             raise ConfigurationError(

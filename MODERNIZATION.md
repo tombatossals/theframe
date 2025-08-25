@@ -67,8 +67,7 @@ theframe-legacy upload --ip 192.168.1.100
 ```bash
 export THEFRAME_TV_IP="192.168.1.100"
 export THEFRAME_TV_TOKEN="your-token"
-export THEFRAME_PAINTINGS_JSON="./data/paintings.json"
-export THEFRAME_POPULATED_JSON="./data/populated.json"
+export THEFRAME_ARTWORKS_JSON="./data/populated.json"
 export THEFRAME_IMAGES_DIR="./images"
 export THEFRAME_BASE_URL="https://your-server.com/images"
 ```

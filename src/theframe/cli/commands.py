@@ -1,7 +1,7 @@
 """CLI commands for TheFrame application."""
 
-import asyncio
-import logging
+import json
+import os
 from pathlib import Path
 from typing import Any, Optional
 
@@ -24,7 +24,7 @@ class UploadCommand(BaseCommand):
         """Execute upload command."""
         # Load artwork collection
         metadata_service = MetadataService()
-        collection = metadata_service.load_collection_from_json(self.settings.populated_json)
+        collection = metadata_service.load_collection_from_json(self.settings.artworks_json)
 
         if collection.count() == 0:
             raise ConfigurationError("No artworks found in collection")
@@ -59,73 +59,6 @@ class UploadCommand(BaseCommand):
                 self.logger.info(f"Successfully uploaded {filename} to TV")
             else:
                 raise TVConnectionError("Upload failed")
-
-class UpdateCommand(BaseCommand):
-    """Update populated with new backgrounds."""
-    pass
-    def validate_settings(self) -> None:
-        """Validate settings for generate command."""
-        self.settings.validate_for_generate()
-
-    async def execute(self) -> None:
-        """Execute generate command."""
-        metadata_service = MetadataService()
-
-        # Load existing collection
-        populated_collection = metadata_service.load_collection_from_json(self.settings.populated_json)
-
-        # Full population with AI
-        self.logger.info(f"Updating collection backgrounds...")
-
-        updated = False
-        # Update bg_url for existing entries if missing
-        for artwork in populated_collection.artworks.values():
-            # Add bg_url if missing and file exists
-            if artwork.bg_url is None and artwork.bg_url_exists(self.settings.base_url) is True:
-
-                url = f"{self.settings.base_url}/{artwork.filename}"
-                self.logger.info(f"Found background {artwork.filename}...")
-                artwork.bg_url = url
-                updated = True
-
-        if updated:
-            # Save populated collection
-            metadata_service.save_collection_to_json(
-                populated_collection, self.settings.populated_json
-            )
-
-            self.logger.info(f"Populated collection saved to {self.settings.populated_json}")
-
-class GenerateCommand(BaseCommand):
-    """Generate artwork metadata from image directory."""
-
-    def validate_settings(self) -> None:
-        """Validate settings for generate command."""
-        self.settings.validate_for_generate()
-
-    async def execute(self) -> None:
-        """Execute generate command."""
-        metadata_service = MetadataService()
-
-        # Generate metadata from images
-        artwork_data = metadata_service.generate_metadata_from_images(
-            self.settings.images_dir, self.settings.base_url
-        )
-
-        if not artwork_data:
-            raise ConfigurationError("No images found in directory")
-
-        # Save to JSON file
-        import json
-        output_path = Path(self.settings.paintings_json)
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-
-        with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(artwork_data, f, ensure_ascii=False, indent=2)
-
-        self.logger.info(f"Generated metadata for {len(artwork_data)} artworks")
-        self.logger.info(f"Saved to {output_path}")
-
 
 class PopulateCommand(BaseCommand):
     """Populate artwork metadata with AI enhancement."""
@@ -171,10 +104,10 @@ class ErrorsCommand(BaseCommand):
 
     def validate_settings(self) -> None:
         """Validate settings for errors command."""
-        if not self.settings.populated_json:
+        if not self.settings.artworks_json:
             raise ConfigurationError(
-                "Populated JSON path is required for errors command",
-                "Set THEFRAME_POPULATED_JSON environment variable or use --populated-json"
+                "Artworks JSON path is required for errors command",
+                "Set THEFRAME_ARTWORKS_JSON environment variable or use --artworks-json"
             )
 
     async def execute(self) -> None:
@@ -182,23 +115,59 @@ class ErrorsCommand(BaseCommand):
         metadata_service = MetadataService()
 
         # Load collection
-        collection = metadata_service.load_collection_from_json(self.settings.populated_json)
+        collection = metadata_service.load_collection_from_json(self.settings.artworks_json)
 
         # Find duplicates
         duplicates = metadata_service.find_duplicates(collection)
         if duplicates:
             self.logger.error("Found duplicate artworks:")
             for artwork in duplicates:
-                self.logger.error(f"  - {artwork.display_name}")
+                self.logger.error(f"{artwork.display_name}")
+
+        # Check missing images
+        missing = metadata_service.find_missing_images(collection)
+        if missing:
+            self.logger.error("Found missing images:")
+            for artwork in missing:
+                self.logger.error(f"{artwork.filename}")
 
         # Validate collection
         issues = metadata_service.validate_collection(collection)
         if issues:
             self.logger.error("Validation issues found:")
             for issue in issues:
-                self.logger.error(f"  - {issue}")
+                self.logger.error(f"{issue}")
 
         if not duplicates and not issues:
             self.logger.info("No errors found in collection")
         else:
             self.logger.info(f"Found {len(duplicates)} duplicates and {len(issues)} issues")
+
+class GenerateJsonCommand(BaseCommand):
+    """Generate JSON file from artwork metadata."""
+
+    def validate_settings(self) -> None:
+        """Validate settings for generate_json command."""
+        if not self.settings.artworks_json:
+            raise ConfigurationError(
+                "Artworks JSON path is required for generate_json command",
+                "Set THEFRAME_ARTWORKS_JSON environment variable or use --artworks-json"
+            )
+
+    async def execute(self) -> None:
+        """Execute generate_json command."""
+        metadata_service = MetadataService()
+
+        json_path = Path(__file__).parent / ".." / ".." / ".." / "json"
+
+        artworks = {}
+        for f in sorted(json_path.glob("*.json")):
+            with open(f, "r", encoding="utf-8") as json_file:
+                data = json.load(json_file)
+                artworks[f.name] = data
+
+        with open(os.getenv("THEFRAME_ARTWORKS_JSON"), "w", encoding="utf-8") as json_file:
+            json.dump(artworks, json_file, ensure_ascii=False, indent=2)
+
+        self.logger.info(f"Generated JSON file at {json_path}")
+
