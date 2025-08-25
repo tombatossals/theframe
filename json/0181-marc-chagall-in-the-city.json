@@ -1,0 +1,18 @@
+{
+  "author": "Marc Chagall",
+  "title": "Over the Town",
+  "style": "Surrealism",
+  "year": 1918,
+  "century": "XX",
+  "location": "Tretyakov Gallery, Moscow, Russia",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Over_the_Town_(painting)",
+  "i18n": {
+    "es": {
+      "author": "Marc Chagall",
+      "title": "Sobre la ciudad",
+      "style": "Surrealismo",
+      "location": "Galería Tretiakov, Moscú, Rusia"
+    }
+  },
+  "number": 181
+}

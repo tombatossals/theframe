@@ -1,0 +1,18 @@
+{
+  "author": "Diego Rivera",
+  "title": "Man at the Crossroads",
+  "style": "Mexican Muralism",
+  "year": 1933,
+  "century": "XX",
+  "location": "Lobby of RCA Building (Rockefeller Center), New York (original, destroyed)",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Man_at_the_Crossroads",
+  "i18n": {
+    "es": {
+      "author": "Diego Rivera",
+      "title": "El hombre en la encrucijada",
+      "style": "Muralismo mexicano",
+      "location": "Vestíbulo del Edificio RCA (Rockefeller Center), Nueva York (original, destruido)"
+    }
+  },
+  "number": 110
+}

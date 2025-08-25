@@ -1,0 +1,18 @@
+{
+  "author": "René Magritte",
+  "title": "The Meaning of Night",
+  "style": "Surrealism",
+  "year": 1927,
+  "century": "XX",
+  "location": "Menil Collection, Houston",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Meaning_of_Night_(painting)",
+  "i18n": {
+    "es": {
+      "author": "René Magritte",
+      "title": "El significado de la noche",
+      "style": "Surrealismo",
+      "location": "Colección Menil, Houston"
+    }
+  },
+  "number": 85
+}

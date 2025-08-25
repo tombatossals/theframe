@@ -1,0 +1,18 @@
+{
+  "author": "Vincent van Gogh",
+  "title": "Young Man with Cornflower",
+  "style": "Post-Impressionism",
+  "year": 1890,
+  "century": "XIX",
+  "location": "Private Collection, Auvers-sur-Oise, France",
+  "wikipedia_url": "https://www.wikiart.org/en/vincent-van-gogh/young-man-with-cornflower-1890",
+  "i18n": {
+    "es": {
+      "author": "Vincent van Gogh",
+      "title": "Joven con aciano",
+      "style": "Postimpresionismo",
+      "location": "Colección privada, Auvers-sur-Oise, Francia"
+    }
+  },
+  "number": 134
+}

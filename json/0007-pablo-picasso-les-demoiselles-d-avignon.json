@@ -1,0 +1,18 @@
+{
+  "author": "Pablo Picasso",
+  "title": "Les Demoiselles d'Avignon",
+  "style": "Cubism",
+  "year": 1907,
+  "century": "XX",
+  "location": "Museum of Modern Art, New York",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Demoiselles_d'Avignon",
+  "i18n": {
+    "es": {
+      "author": "Pablo Picasso",
+      "title": "Las señoritas de Avignon",
+      "style": "Cubismo",
+      "location": "Museo de Arte Moderno, Nueva York"
+    }
+  },
+  "number": 7
+}

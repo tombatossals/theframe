@@ -1,0 +1,18 @@
+{
+  "author": "Winslow Homer",
+  "title": "The Fog Warning",
+  "style": "Realism",
+  "year": 1885,
+  "century": "XIX",
+  "location": "Museum of Fine Arts, Boston",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Fog_Warning",
+  "i18n": {
+    "es": {
+      "author": "Winslow Homer",
+      "title": "La advertencia de niebla",
+      "style": "Realismo",
+      "location": "Museo de Bellas Artes de Boston"
+    }
+  },
+  "number": 64
+}

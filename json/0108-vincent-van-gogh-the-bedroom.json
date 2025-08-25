@@ -1,0 +1,18 @@
+{
+  "author": "Vincent van Gogh",
+  "title": "Bedroom in Arles",
+  "style": "Post-Impressionism",
+  "year": 1888,
+  "century": "XIX",
+  "location": "Van Gogh Museum, Amsterdam",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Bedroom_in_Arles",
+  "i18n": {
+    "es": {
+      "author": "Vincent van Gogh",
+      "title": "El dormitorio en Arlés",
+      "style": "Postimpresionismo",
+      "location": "Museo Van Gogh, Ámsterdam"
+    }
+  },
+  "number": 108
+}

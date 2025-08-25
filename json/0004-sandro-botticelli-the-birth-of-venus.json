@@ -1,0 +1,18 @@
+{
+  "author": "Sandro Botticelli",
+  "title": "The Birth of Venus",
+  "style": "Early Italian Renaissance",
+  "year": 1485,
+  "century": "XV",
+  "location": "Uffizi Gallery, Florence, Italy",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Birth_of_Venus",
+  "i18n": {
+    "es": {
+      "author": "Sandro Botticelli",
+      "title": "El nacimiento de Venus",
+      "style": "Primer Renacimiento italiano",
+      "location": "Galería Uffizi, Florencia, Italia"
+    }
+  },
+  "number": 4
+}

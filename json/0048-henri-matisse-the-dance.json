@@ -1,0 +1,18 @@
+{
+  "author": "Henri Matisse",
+  "title": "Dance (La Danse)",
+  "style": "Fauvism",
+  "year": 1910,
+  "century": "XX",
+  "location": "Hermitage Museum, Saint Petersburg",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Dance_(Matisse)",
+  "i18n": {
+    "es": {
+      "author": "Henri Matisse",
+      "title": "La Danza",
+      "style": "Fovismo",
+      "location": "Museo del Hermitage, San Petersburgo"
+    }
+  },
+  "number": 48
+}

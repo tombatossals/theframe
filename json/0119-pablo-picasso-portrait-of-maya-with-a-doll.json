@@ -1,0 +1,18 @@
+{
+  "author": "Pablo Picasso",
+  "title": "Portrait of Maya with her Doll",
+  "style": "Surrealism",
+  "year": 1938,
+  "century": "XX",
+  "location": "Musée Picasso, Paris, France",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Maya_with_Doll",
+  "i18n": {
+    "es": {
+      "author": "Pablo Picasso",
+      "title": "Retrato de Maya con su muñeca",
+      "style": "Surrealismo",
+      "location": "Museo Picasso, París, Francia"
+    }
+  },
+  "number": 119
+}

@@ -1,0 +1,18 @@
+{
+  "author": "Jean Frédéric Bazille",
+  "title": "Scène d'été",
+  "style": "Impressionism",
+  "year": 1869,
+  "century": "XIX",
+  "location": "Fogg Art Museum, Cambridge, Massachusetts",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Sc%C3%A8ne_d'%C3%A9t%C3%A9",
+  "i18n": {
+    "es": {
+      "author": "Jean Frédéric Bazille",
+      "title": "Escena de verano",
+      "style": "Impresionismo",
+      "location": "Museo de Arte Fogg, Cambridge, Massachusetts"
+    }
+  },
+  "number": 111
+}

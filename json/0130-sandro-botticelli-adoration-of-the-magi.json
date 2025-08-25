@@ -1,0 +1,18 @@
+{
+  "author": "Sandro Botticelli",
+  "title": "Adoration of the Magi",
+  "style": "Early Renaissance",
+  "year": 1482,
+  "century": "XV",
+  "location": "Uffizi Gallery, Florence",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Adoration_of_the_Magi_(Botticelli)",
+  "i18n": {
+    "es": {
+      "author": "Sandro Botticelli",
+      "title": "La adoración de los Magos",
+      "style": "Primer Renacimiento",
+      "location": "Galería Uffizi, Florencia"
+    }
+  },
+  "number": 130
+}

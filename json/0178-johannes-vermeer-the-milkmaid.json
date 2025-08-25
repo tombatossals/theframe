@@ -1,0 +1,18 @@
+{
+  "author": "Johannes Vermeer",
+  "title": "The Milkmaid",
+  "style": "Dutch Baroque",
+  "year": "1657-1658",
+  "century": "XVII",
+  "location": "Rijksmuseum, Amsterdam",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Milkmaid_(Vermeer)",
+  "i18n": {
+    "es": {
+      "author": "Johannes Vermeer",
+      "title": "La lechera",
+      "style": "Barroco holandés",
+      "location": "Rijksmuseum, Ámsterdam"
+    }
+  },
+  "number": 178
+}

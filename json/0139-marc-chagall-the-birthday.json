@@ -1,0 +1,18 @@
+{
+  "author": "Marc Chagall",
+  "title": "The Birthday",
+  "style": "Cubism, Expressionism, Modernism",
+  "year": 1915,
+  "century": "XX",
+  "location": "Museum of Modern Art, New York",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Birthday_(Chagall)",
+  "i18n": {
+    "es": {
+      "author": "Marc Chagall",
+      "title": "El cumpleaños",
+      "style": "Cubismo, Expresionismo, Modernismo",
+      "location": "Museo de Arte Moderno, Nueva York"
+    }
+  },
+  "number": 139
+}

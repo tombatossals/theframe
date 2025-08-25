@@ -1,0 +1,18 @@
+{
+  "author": "Roy Lichtenstein",
+  "title": "Whaam!",
+  "style": "Pop Art",
+  "year": 1963,
+  "century": "XX",
+  "location": "Tate Modern, London",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Whaam!",
+  "i18n": {
+    "es": {
+      "author": "Roy Lichtenstein",
+      "title": "Whaam!",
+      "style": "Arte pop",
+      "location": "Tate Modern, Londres"
+    }
+  },
+  "number": 157
+}

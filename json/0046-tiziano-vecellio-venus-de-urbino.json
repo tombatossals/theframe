@@ -1,0 +1,18 @@
+{
+  "author": "Titian",
+  "title": "Venus of Urbino",
+  "style": "Renaissance (Mannerism)",
+  "year": "1538",
+  "century": "XVI",
+  "location": "Galleria degli Uffizi, Florence",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Venus_of_Urbino",
+  "i18n": {
+    "es": {
+      "author": "Tiziano Vecellio",
+      "title": "Venus de Urbino",
+      "style": "Renacimiento (Manierismo)",
+      "location": "Galería de los Uffizi, Florencia"
+    }
+  },
+  "number": 46
+}

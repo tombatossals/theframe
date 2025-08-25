@@ -1,0 +1,18 @@
+{
+  "author": "Joseph Mallord William Turner",
+  "title": "The Fighting Temeraire",
+  "style": "Romanticism",
+  "year": 1839,
+  "century": "XIX",
+  "location": "The National Gallery, London",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Fighting_Temeraire",
+  "i18n": {
+    "es": {
+      "author": "Joseph Mallord William Turner",
+      "title": "El Temeraire remolcado a su último atraque para ser desguazado",
+      "style": "Romanticismo",
+      "location": "La National Gallery, Londres"
+    }
+  },
+  "number": 62
+}

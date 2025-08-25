@@ -1,0 +1,18 @@
+{
+  "author": "Giorgione",
+  "title": "The Tempest",
+  "style": "Renaissance",
+  "year": "c. 1508",
+  "century": "XVI",
+  "location": "Gallerie dell'Accademia, Venice",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Tempest_(Giorgione)",
+  "i18n": {
+    "es": {
+      "author": "Giorgione",
+      "title": "La Tempestad",
+      "style": "Renacimiento",
+      "location": "Galería de la Academia de Venecia"
+    }
+  },
+  "number": 152
+}

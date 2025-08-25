@@ -1,0 +1,18 @@
+{
+  "author": "Georges Seurat",
+  "title": "A Sunday Afternoon on the Island of La Grande Jatte",
+  "style": "Pointillism (Divisionism, Neo-Impressionism)",
+  "year": 1884,
+  "century": "XIX",
+  "location": "Art Institute of Chicago",
+  "wikipedia_url": "https://es.wikipedia.org/wiki/Tarde_de_domingo_en_la_isla_de_la_Grande_Jatte",
+  "i18n": {
+    "es": {
+      "author": "Georges Seurat",
+      "title": "Tarde de domingo en la isla de la Grande Jatte",
+      "style": "Puntillismo (Divisionismo, Neoimpresionismo)",
+      "location": "Instituto de Arte de Chicago"
+    }
+  },
+  "number": 19
+}

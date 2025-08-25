@@ -1,0 +1,18 @@
+{
+  "author": "René Magritte",
+  "title": "The False Mirror",
+  "style": "Surrealism",
+  "year": "1928",
+  "century": "XX",
+  "location": "Museum of Modern Art, New York",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_False_Mirror",
+  "i18n": {
+    "es": {
+      "author": "René Magritte",
+      "title": "El falso espejo",
+      "style": "Surrealismo",
+      "location": "Museo de Arte Moderno, Nueva York"
+    }
+  },
+  "number": 138
+}

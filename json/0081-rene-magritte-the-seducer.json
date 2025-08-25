@@ -1,0 +1,18 @@
+{
+  "author": "René Magritte",
+  "title": "The Seducer",
+  "style": "Surrealism",
+  "year": 1953,
+  "century": "XX",
+  "location": "Private collection, Brussels, Belgium",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Seducer",
+  "i18n": {
+    "es": {
+      "author": "René Magritte",
+      "title": "El Seductor",
+      "style": "Surrealismo",
+      "location": "Colección privada, Bruselas, Bélgica"
+    }
+  },
+  "number": 81
+}

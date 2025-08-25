@@ -1,0 +1,18 @@
+{
+  "author": "El Greco",
+  "title": "The Burial of the Count of Orgaz",
+  "style": "Mannerism",
+  "year": 1586,
+  "century": "XVI",
+  "location": "Iglesia de Santo Tomé, Toledo, Spain",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Burial_of_the_Count_of_Orgaz",
+  "i18n": {
+    "es": {
+      "author": "El Greco",
+      "title": "El entierro del Conde de Orgaz",
+      "style": "Manierismo",
+      "location": "Iglesia de Santo Tomé, Toledo, España"
+    }
+  },
+  "number": 188
+}

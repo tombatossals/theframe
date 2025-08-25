@@ -1,0 +1,18 @@
+{
+  "author": "Vincent van Gogh",
+  "title": "Haystacks in Provence",
+  "style": "Post-Impressionism",
+  "year": 1888,
+  "century": "XIX",
+  "location": "Kröller-Müller Museum, Otterlo, Netherlands",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Vincent_van_Gogh",
+  "i18n": {
+    "es": {
+      "author": "Vincent van Gogh",
+      "title": "Almíjares en Provenza",
+      "style": "Postimpresionismo",
+      "location": "Museo Kröller-Müller, Otterlo, Países Bajos"
+    }
+  },
+  "number": 88
+}

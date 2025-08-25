@@ -1,0 +1,18 @@
+{
+  "author": "Pablo Picasso",
+  "title": "Les femmes d'Alger (Version O)",
+  "style": "Cubismo",
+  "year": 1955,
+  "century": "XX",
+  "location": "Colección privada (anteriormente en posesión del primer ministro de Catar, Hamad bin Jassim bin Jaber Al Thani)",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Femmes_d'Alger",
+  "i18n": {
+    "es": {
+      "author": "Pablo Picasso",
+      "title": "Las mujeres de Argel (Versión O)",
+      "style": "Cubismo",
+      "location": "Colección privada (anteriormente en posesión del primer ministro de Catar, Hamad bin Jassim bin Jaber Al Thani)"
+    }
+  },
+  "number": 59
+}

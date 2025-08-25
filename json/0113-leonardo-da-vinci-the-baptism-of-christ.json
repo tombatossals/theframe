@@ -1,0 +1,18 @@
+{
+  "author": "Andrea del Verrocchio and Leonardo da Vinci",
+  "title": "The Baptism of Christ",
+  "style": "Early Renaissance",
+  "year": "1472-1475",
+  "century": "XV",
+  "location": "Uffizi Gallery, Florence",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Baptism_of_Christ_(Verrocchio)",
+  "i18n": {
+    "es": {
+      "author": "Andrea del Verrocchio y Leonardo da Vinci",
+      "title": "El Bautismo de Cristo",
+      "style": "Primer Renacimiento",
+      "location": "Galería Uffizi, Florencia"
+    }
+  },
+  "number": 113
+}

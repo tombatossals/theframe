@@ -1,0 +1,18 @@
+{
+  "author": "René Magritte",
+  "title": "The Menaced Assassin",
+  "style": "Surrealism",
+  "year": 1927,
+  "century": "XX",
+  "location": "Museum of Modern Art (MoMA), New York",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Menaced_Assassin",
+  "i18n": {
+    "es": {
+      "author": "René Magritte",
+      "title": "El asesino amenazado",
+      "style": "Surrealismo",
+      "location": "Museo de Arte Moderno (MoMA), Nueva York"
+    }
+  },
+  "number": 45
+}

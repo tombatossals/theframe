@@ -1,0 +1,18 @@
+{
+  "author": "Vincent van Gogh",
+  "title": "Self-Portrait with Pipe",
+  "style": "Realism",
+  "year": 1886,
+  "century": "XIX",
+  "location": "Van Gogh Museum, Amsterdam, Netherlands",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Portraits_of_Vincent_van_Gogh",
+  "i18n": {
+    "es": {
+      "author": "Vincent van Gogh",
+      "title": "Autorretrato con pipa",
+      "style": "Realismo",
+      "location": "Museo Van Gogh, Ámsterdam, Países Bajos"
+    }
+  },
+  "number": 155
+}

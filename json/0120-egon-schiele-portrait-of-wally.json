@@ -1,0 +1,18 @@
+{
+  "author": "Egon Schiele",
+  "title": "Portrait of Wally Neuzil",
+  "style": "Expressionism",
+  "year": 1912,
+  "century": "XX",
+  "location": "Leopold Museum, Vienna",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Wally",
+  "i18n": {
+    "es": {
+      "author": "Egon Schiele",
+      "title": "Retrato de Wally Neuzil",
+      "style": "Expresionismo",
+      "location": "Museo Leopold, Viena"
+    }
+  },
+  "number": 120
+}

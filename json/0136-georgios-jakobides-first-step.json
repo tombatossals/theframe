@@ -1,0 +1,18 @@
+{
+  "author": "Georgios Jakobides",
+  "title": "First Steps",
+  "style": "Realism",
+  "year": 1893,
+  "century": "XIX",
+  "location": "National Gallery, Athens",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/First_Steps",
+  "i18n": {
+    "es": {
+      "author": "Georgios Jakobides",
+      "title": "Los Primeros Pasos",
+      "style": "Realismo",
+      "location": "Galería Nacional, Atenas"
+    }
+  },
+  "number": 136
+}

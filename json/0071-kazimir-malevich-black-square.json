@@ -1,0 +1,18 @@
+{
+  "author": "Kazimir Malevich",
+  "title": "Black Square",
+  "style": "Suprematism",
+  "year": 1915,
+  "century": "XX",
+  "location": "State Tretyakov Gallery, Moscow",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Square",
+  "i18n": {
+    "es": {
+      "author": "Kazimir Malévich",
+      "title": "Cuadro negro",
+      "style": "Suprematismo",
+      "location": "Galería Estatal Tretiakov, Moscú"
+    }
+  },
+  "number": 71
+}

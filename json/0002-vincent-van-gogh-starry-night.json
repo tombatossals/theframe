@@ -1,0 +1,18 @@
+{
+  "author": "Vincent van Gogh",
+  "title": "The Starry Night",
+  "style": "Post-Impressionism",
+  "year": 1889,
+  "century": "XIX",
+  "location": "Museum of Modern Art, New York City",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Starry_Night",
+  "i18n": {
+    "es": {
+      "author": "Vincent van Gogh",
+      "title": "La noche estrellada",
+      "style": "Postimpresionismo",
+      "location": "Museo de Arte Moderno, Ciudad de Nueva York"
+    }
+  },
+  "number": 2
+}

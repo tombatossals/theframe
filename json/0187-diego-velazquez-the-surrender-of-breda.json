@@ -1,0 +1,18 @@
+{
+  "author": "Diego Velázquez",
+  "title": "The Surrender of Breda",
+  "style": "Baroque",
+  "year": 1634,
+  "century": "XVII",
+  "location": "Museo del Prado, Madrid",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Surrender_of_Breda",
+  "i18n": {
+    "es": {
+      "author": "Diego Velázquez",
+      "title": "La rendición de Breda",
+      "style": "Barroco",
+      "location": "Museo del Prado, Madrid"
+    }
+  },
+  "number": 187
+}

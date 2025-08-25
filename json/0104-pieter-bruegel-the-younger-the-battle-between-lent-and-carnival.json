@@ -1,0 +1,18 @@
+{
+  "author": "Pieter Brueghel the Younger",
+  "title": "The Fight Between Carnival and Lent",
+  "style": "Northern Renaissance",
+  "year": "after 1600",
+  "century": "XVII",
+  "location": "Musées Royaux des Beaux-Arts, Brussels",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Fight_Between_Carnival_and_Lent",
+  "i18n": {
+    "es": {
+      "author": "Pieter Brueghel el Joven",
+      "title": "La lucha entre el Carnaval y la Cuaresma",
+      "style": "Renacimiento del Norte",
+      "location": "Museos Reales de Bellas Artes de Bélgica, Bruselas"
+    }
+  },
+  "number": 104
+}

@@ -1,0 +1,18 @@
+{
+  "author": "Frida Kahlo",
+  "title": "Self Portrait with Cropped Hair",
+  "style": "Surrealism / Naïve Art",
+  "year": 1940,
+  "century": "XX",
+  "location": "MoMA, New York",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Self-Portrait_with_Cropped_Hair",
+  "i18n": {
+    "es": {
+      "author": "Frida Kahlo",
+      "title": "Autorretrato con el pelo cortado",
+      "style": "Surrealismo / Arte Naïf",
+      "location": "MoMA, Nueva York"
+    }
+  },
+  "number": 184
+}

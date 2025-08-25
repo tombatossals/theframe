@@ -1,0 +1,18 @@
+{
+  "author": "Vincent van Gogh",
+  "title": "Self-Portrait",
+  "style": "Post-Impressionism",
+  "year": 1889,
+  "century": "XIX",
+  "location": "National Gallery of Art, Washington D.C.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Portraits_of_Vincent_van_Gogh",
+  "i18n": {
+    "es": {
+      "author": "Vincent van Gogh",
+      "title": "Autorretrato",
+      "style": "Postimpresionismo",
+      "location": "Galería Nacional de Arte, Washington D.C."
+    }
+  },
+  "number": 74
+}

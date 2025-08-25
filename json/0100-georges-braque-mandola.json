@@ -1,0 +1,18 @@
+{
+  "author": "Georges Braque",
+  "title": "Mandora",
+  "style": "Analytical Cubism",
+  "year": "1909-1910",
+  "century": "XX",
+  "location": "Tate Modern, London",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Mandora_(painting)",
+  "i18n": {
+    "es": {
+      "author": "Georges Braque",
+      "title": "Mandora",
+      "style": "Cubismo analítico",
+      "location": "Tate Modern, Londres"
+    }
+  },
+  "number": 100
+}

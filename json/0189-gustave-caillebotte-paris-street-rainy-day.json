@@ -1,0 +1,18 @@
+{
+  "author": "Gustave Caillebotte",
+  "title": "Paris Street; Rainy Day",
+  "style": "Impressionism",
+  "year": 1877,
+  "century": "XIX",
+  "location": "Art Institute of Chicago",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Paris_Street;_Rainy_Day",
+  "i18n": {
+    "es": {
+      "author": "Gustave Caillebotte",
+      "title": "Calle de París, día lluvioso",
+      "style": "Impresionismo",
+      "location": "Instituto de Arte de Chicago"
+    }
+  },
+  "number": 189
+}

@@ -1,0 +1,18 @@
+{
+  "author": "Vincent van Gogh",
+  "title": "Irises",
+  "style": "Post-Impressionism",
+  "year": 1889,
+  "century": "XIX",
+  "location": "J. Paul Getty Museum, Los Angeles, California, USA",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Irises_(painting)",
+  "i18n": {
+    "es": {
+      "author": "Vincent van Gogh",
+      "title": "Lirios",
+      "style": "Postimpresionismo",
+      "location": "Museo J. Paul Getty, Los Ángeles, California, Estados Unidos"
+    }
+  },
+  "number": 182
+}

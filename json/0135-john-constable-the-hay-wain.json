@@ -1,0 +1,18 @@
+{
+  "author": "John Constable",
+  "title": "The Hay Wain",
+  "style": "Romanticism",
+  "year": 1821,
+  "century": "XIX",
+  "location": "National Gallery, London",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Hay_Wain",
+  "i18n": {
+    "es": {
+      "author": "John Constable",
+      "title": "La carreta de heno",
+      "style": "Romanticismo",
+      "location": "Galería Nacional, Londres"
+    }
+  },
+  "number": 135
+}

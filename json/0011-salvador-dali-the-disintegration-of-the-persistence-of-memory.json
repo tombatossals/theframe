@@ -1,0 +1,18 @@
+{
+  "author": "Salvador Dalí",
+  "title": "The Disintegration of the Persistence of Memory",
+  "style": "Surrealism",
+  "year": 1954,
+  "century": "XX",
+  "location": "Salvador Dalí Museum, St. Petersburg, FL, US",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Disintegration_of_the_Persistence_of_Memory",
+  "i18n": {
+    "es": {
+      "author": "Salvador Dalí",
+      "title": "La Desintegración de la Persistencia de la Memoria",
+      "style": "Surrealismo",
+      "location": "Museo Salvador Dalí, San Petersburgo, Florida, EE. UU."
+    }
+  },
+  "number": 11
+}

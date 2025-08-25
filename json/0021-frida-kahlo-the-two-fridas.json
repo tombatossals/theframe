@@ -1,0 +1,18 @@
+{
+  "author": "Frida Kahlo",
+  "title": "The Two Fridas",
+  "style": "Surrealism",
+  "year": 1939,
+  "century": "XX",
+  "location": "Museo de Arte Moderno, Mexico City",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Two_Fridas",
+  "i18n": {
+    "es": {
+      "author": "Frida Kahlo",
+      "title": "Las dos Fridas",
+      "style": "Surrealismo",
+      "location": "Museo de Arte Moderno, Ciudad de México"
+    }
+  },
+  "number": 21
+}

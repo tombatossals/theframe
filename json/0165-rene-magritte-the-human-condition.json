@@ -1,0 +1,18 @@
+{
+  "author": "René Magritte",
+  "title": "La condition humaine",
+  "style": "Surrealism",
+  "year": 1933,
+  "century": "XX",
+  "location": "National Gallery of Art, Washington, DC, United States",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Human_Condition_(Magritte)",
+  "i18n": {
+    "es": {
+      "author": "René Magritte",
+      "title": "La condición humana",
+      "style": "Surrealismo",
+      "location": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+    }
+  },
+  "number": 165
+}

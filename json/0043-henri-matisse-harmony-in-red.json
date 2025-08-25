@@ -1,0 +1,18 @@
+{
+  "author": "Henri Matisse",
+  "title": "The Dessert: Harmony in Red (The Red Room)",
+  "style": "Fauvism",
+  "year": 1908,
+  "century": "XX",
+  "location": "Hermitage Museum, Saint Petersburg, Russia",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Dessert:_Harmony_in_Red_(The_Red_Room)",
+  "i18n": {
+    "es": {
+      "author": "Henri Matisse",
+      "title": "La Merienda: Armonía en Rojo (La Habitación Roja)",
+      "style": "Fauvismo",
+      "location": "Museo del Hermitage, San Petersburgo, Rusia"
+    }
+  },
+  "number": 43
+}

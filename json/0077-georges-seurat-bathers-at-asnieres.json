@@ -1,0 +1,18 @@
+{
+  "author": "Georges Seurat",
+  "title": "Bathers at Asnières",
+  "style": "Post-Impressionism",
+  "year": 1884,
+  "century": "XIX",
+  "location": "National Gallery, London",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Bathers_at_Asni%C3%A8res",
+  "i18n": {
+    "es": {
+      "author": "Georges Seurat",
+      "title": "Una Bañada en Asnières",
+      "style": "Postimpresionismo",
+      "location": "Galería Nacional, Londres"
+    }
+  },
+  "number": 77
+}

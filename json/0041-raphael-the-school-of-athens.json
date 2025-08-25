@@ -1,0 +1,18 @@
+{
+  "author": "Raphael",
+  "title": "The School of Athens",
+  "style": "High Renaissance",
+  "year": "1509-1511",
+  "century": "XVI",
+  "location": "Stanza della Segnatura, Apostolic Palace, Vatican City",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_School_of_Athens",
+  "i18n": {
+    "es": {
+      "author": "Rafael",
+      "title": "La escuela de Atenas",
+      "style": "Alto Renacimiento",
+      "location": "Stanza della Segnatura, Palacio Apostólico, Ciudad del Vaticano"
+    }
+  },
+  "number": 41
+}

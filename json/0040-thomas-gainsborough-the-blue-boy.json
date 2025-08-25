@@ -1,0 +1,18 @@
+{
+  "author": "Thomas Gainsborough",
+  "title": "The Blue Boy",
+  "style": "Rococo",
+  "year": 1770,
+  "century": "XVIII",
+  "location": "The Huntington Library, Art Museum, and Botanical Gardens, San Marino, California, United States",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Blue_Boy",
+  "i18n": {
+    "es": {
+      "author": "Thomas Gainsborough",
+      "title": "El Niño Azul",
+      "style": "Rococó",
+      "location": "La Biblioteca Huntington, Museo de Arte y Jardines Botánicos, San Marino, California, Estados Unidos"
+    }
+  },
+  "number": 40
+}

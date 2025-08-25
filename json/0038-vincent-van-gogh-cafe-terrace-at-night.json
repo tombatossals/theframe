@@ -1,0 +1,18 @@
+{
+  "author": "Vincent van Gogh",
+  "title": "Café Terrace at Night",
+  "style": "Post-Impressionism",
+  "year": 1888,
+  "century": "XIX",
+  "location": "Kröller-Müller Museum, Otterlo, Netherlands",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Caf%C3%A9_Terrace_at_Night",
+  "i18n": {
+    "es": {
+      "author": "Vincent van Gogh",
+      "title": "Terraza de café por la noche",
+      "style": "Postimpresionismo",
+      "location": "Museo Kröller-Müller, Otterlo, Países Bajos"
+    }
+  },
+  "number": 38
+}

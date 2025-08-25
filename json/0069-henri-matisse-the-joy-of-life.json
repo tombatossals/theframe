@@ -1,0 +1,18 @@
+{
+  "author": "Henri Matisse",
+  "title": "Le Bonheur de Vivre",
+  "style": "Fauvism",
+  "year": 1906,
+  "century": "XX",
+  "location": "The Barnes Foundation, Philadelphia",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Le_Bonheur_de_Vivre",
+  "i18n": {
+    "es": {
+      "author": "Henri Matisse",
+      "title": "La alegría de vivir",
+      "style": "Fauvismo",
+      "location": "La Barnes Foundation, Filadelfia"
+    }
+  },
+  "number": 69
+}

@@ -1,0 +1,18 @@
+{
+  "author": "Salvador Dalí",
+  "title": "Cubist Self-Portrait",
+  "style": "Cubism",
+  "year": 1923,
+  "century": "XX",
+  "location": "Museo Reina Sofía, Madrid",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD",
+  "i18n": {
+    "es": {
+      "author": "Salvador Dalí",
+      "title": "Autorretrato cubista",
+      "style": "Cubismo",
+      "location": "Museo Reina Sofía, Madrid"
+    }
+  },
+  "number": 140
+}

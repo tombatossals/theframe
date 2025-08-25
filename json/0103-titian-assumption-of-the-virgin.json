@@ -1,0 +1,18 @@
+{
+  "author": "Titian",
+  "title": "Assumption of the Virgin",
+  "style": "High Renaissance",
+  "year": 1518,
+  "century": "XVI",
+  "location": "Santa Maria Gloriosa dei Frari, Venice",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Assumption_of_the_Virgin_(Titian)",
+  "i18n": {
+    "es": {
+      "author": "Tiziano",
+      "title": "La Asunción de la Virgen",
+      "style": "Alto Renacimiento",
+      "location": "Basílica de Santa Maria Gloriosa dei Frari, Venecia"
+    }
+  },
+  "number": 103
+}

@@ -1,0 +1,18 @@
+{
+  "author": "Johannes Vermeer",
+  "title": "Girl with a Pearl Earring",
+  "style": "Baroque, Tronie",
+  "year": "c. 1665",
+  "century": "XVII",
+  "location": "Mauritshuis, The Hague, Netherlands",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring",
+  "i18n": {
+    "es": {
+      "author": "Johannes Vermeer",
+      "title": "La joven con el pendiente de perla",
+      "style": "Barroco, Tronie",
+      "location": "Mauritshuis, La Haya, Países Bajos"
+    }
+  },
+  "number": 9
+}

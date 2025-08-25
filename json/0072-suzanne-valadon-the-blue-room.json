@@ -1,0 +1,18 @@
+{
+  "author": "Suzanne Valadon",
+  "title": "The Blue Room",
+  "style": "Post-Impressionism",
+  "year": 1923,
+  "century": "XX",
+  "location": "Musée National d'Art Moderne, Centre Georges Pompidou, Paris",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Blue_Room_(Valadon)",
+  "i18n": {
+    "es": {
+      "author": "Suzanne Valadon",
+      "title": "La chambre bleue",
+      "style": "Postimpresionismo",
+      "location": "Museo Nacional de Arte Moderno, Centro Georges Pompidou, París"
+    }
+  },
+  "number": 72
+}

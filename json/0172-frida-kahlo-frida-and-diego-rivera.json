@@ -1,0 +1,18 @@
+{
+  "author": "Frida Kahlo",
+  "title": "Frieda and Diego Rivera",
+  "style": "Modernismo mexicano",
+  "year": 1931,
+  "century": "XX",
+  "location": "San Francisco Museum of Modern Art, San Francisco, California",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Frieda_and_Diego_Rivera",
+  "i18n": {
+    "es": {
+      "author": "Frida Kahlo",
+      "title": "Frieda y Diego Rivera",
+      "style": "Modernismo mexicano",
+      "location": "Museo de Arte Moderno de San Francisco, San Francisco, California"
+    }
+  },
+  "number": 172
+}

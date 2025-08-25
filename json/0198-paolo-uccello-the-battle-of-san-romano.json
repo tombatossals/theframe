@@ -1,0 +1,18 @@
+{
+  "author": "Paolo Uccello",
+  "title": "The Battle of San Romano",
+  "style": "Early Italian Renaissance",
+  "year": 1438,
+  "century": "XV",
+  "location": "National Gallery, London; Galleria degli Uffizi, Florence; Musée du Louvre, Paris",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Battle_of_San_Romano",
+  "i18n": {
+    "es": {
+      "author": "Paolo Uccello",
+      "title": "La Batalla de San Romano",
+      "style": "Primer Renacimiento Italiano",
+      "location": "National Gallery, Londres; Galería Uffizi, Florencia; Museo del Louvre, París"
+    }
+  },
+  "number": 198
+}

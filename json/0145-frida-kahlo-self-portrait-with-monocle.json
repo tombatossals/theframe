@@ -1,0 +1,18 @@
+{
+  "author": "Frida Kahlo",
+  "title": "Self-Portrait with Thorn Necklace and Hummingbird",
+  "style": "Surrealism / Modern Art",
+  "year": 1940,
+  "century": "XX",
+  "location": "Harry Ransom Center, University of Texas at Austin",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Self-Portrait_with_Thorn_Necklace_and_Hummingbird",
+  "i18n": {
+    "es": {
+      "author": "Frida Kahlo",
+      "title": "Autorretrato con collar de espinas y colibrí",
+      "style": "Surrealismo / Arte Moderno",
+      "location": "Centro Harry Ransom, Universidad de Texas en Austin"
+    }
+  },
+  "number": 145
+}

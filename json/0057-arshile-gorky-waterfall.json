@@ -1,0 +1,18 @@
+{
+  "author": "Arshile Gorky",
+  "title": "Waterfall",
+  "style": "Abstract Expressionism",
+  "year": 1943,
+  "century": "XX",
+  "location": "Tate Modern, London",
+  "wikipedia_url": "https://www.wikiart.org/en/arshile-gorky/waterfall",
+  "i18n": {
+    "es": {
+      "author": "Arshile Gorky",
+      "title": "Cascada",
+      "style": "Expresionismo abstracto",
+      "location": "Tate Modern, Londres"
+    }
+  },
+  "number": 57
+}

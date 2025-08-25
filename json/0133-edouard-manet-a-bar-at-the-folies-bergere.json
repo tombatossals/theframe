@@ -1,0 +1,18 @@
+{
+  "author": "Édouard Manet",
+  "title": "A Bar at the Folies-Bergère",
+  "style": "Realism",
+  "year": 1882,
+  "century": "XIX",
+  "location": "Courtauld Gallery, London",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/A_Bar_at_the_Folies-Berg%C3%A8re",
+  "i18n": {
+    "es": {
+      "author": "Édouard Manet",
+      "title": "Un bar en las Folies-Bergère",
+      "style": "Realismo",
+      "location": "Galería Courtauld, Londres"
+    }
+  },
+  "number": 133
+}

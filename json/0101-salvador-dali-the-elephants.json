@@ -1,0 +1,18 @@
+{
+  "author": "Salvador Dalí",
+  "title": "The Elephants",
+  "style": "Surrealism",
+  "year": 1948,
+  "century": "XX",
+  "location": "Private collection",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Elephants",
+  "i18n": {
+    "es": {
+      "author": "Salvador Dalí",
+      "title": "Los elefantes",
+      "style": "Surrealismo",
+      "location": "Colección privada"
+    }
+  },
+  "number": 101
+}

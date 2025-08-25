@@ -1,0 +1,18 @@
+{
+  "author": "Gustav Klimt",
+  "title": "The Kiss",
+  "style": "Art Nouveau",
+  "year": 1908,
+  "century": "XX",
+  "location": "Österreichische Galerie Belvedere, Vienna",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Kiss_(Klimt)",
+  "i18n": {
+    "es": {
+      "author": "Gustav Klimt",
+      "title": "El beso",
+      "style": "Modernismo",
+      "location": "Galería Belvedere, Viena"
+    }
+  },
+  "number": 10
+}

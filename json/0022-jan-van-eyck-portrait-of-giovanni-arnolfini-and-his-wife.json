@@ -1,0 +1,18 @@
+{
+  "author": "Jan van Eyck",
+  "title": "The Arnolfini Portrait",
+  "style": "Early Netherlandish",
+  "year": 1434,
+  "century": "XV",
+  "location": "National Gallery, London",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Arnolfini_Portrait",
+  "i18n": {
+    "es": {
+      "author": "Jan van Eyck",
+      "title": "El retrato de Arnolfini",
+      "style": "Primitivos flamencos",
+      "location": "Galería Nacional, Londres"
+    }
+  },
+  "number": 22
+}

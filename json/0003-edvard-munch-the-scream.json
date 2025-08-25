@@ -1,0 +1,18 @@
+{
+  "author": "Edvard Munch",
+  "title": "The Scream",
+  "style": "Expressionism",
+  "year": 1893,
+  "century": "XIX",
+  "location": "National Gallery, Oslo",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Scream",
+  "i18n": {
+    "es": {
+      "author": "Edvard Munch",
+      "title": "El Grito",
+      "style": "Expresionismo",
+      "location": "Galería Nacional, Oslo"
+    }
+  },
+  "number": 3
+}

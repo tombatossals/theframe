@@ -1,0 +1,18 @@
+{
+  "author": "Vincent van Gogh",
+  "title": "Sunflowers",
+  "style": "Post-Impressionism",
+  "year": 1888,
+  "century": "XIX",
+  "location": "National Gallery, London",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Sunflowers_(Van_Gogh_series)",
+  "i18n": {
+    "es": {
+      "author": "Vincent van Gogh",
+      "title": "Los girasoles",
+      "style": "Postimpresionismo",
+      "location": "Galería Nacional, Londres"
+    }
+  },
+  "number": 129
+}

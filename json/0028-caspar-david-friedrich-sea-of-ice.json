@@ -1,0 +1,18 @@
+{
+  "author": "Caspar David Friedrich",
+  "title": "The Sea of Ice",
+  "style": "Romanticism",
+  "year": 1824,
+  "century": "XIX",
+  "location": "Kunsthalle Hamburg, Germany",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Sea_of_Ice",
+  "i18n": {
+    "es": {
+      "author": "Caspar David Friedrich",
+      "title": "El Mar de Hielo",
+      "style": "Romanticismo",
+      "location": "Kunsthalle Hamburgo, Alemania"
+    }
+  },
+  "number": 28
+}

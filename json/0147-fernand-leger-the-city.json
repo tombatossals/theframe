@@ -1,0 +1,18 @@
+{
+  "author": "Fernand Léger",
+  "title": "The City",
+  "style": "Cubism",
+  "year": 1919,
+  "century": "XX",
+  "location": "Philadelphia Museum of Art",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_City_(L%C3%A9ger)",
+  "i18n": {
+    "es": {
+      "author": "Fernand Léger",
+      "title": "La Ville",
+      "style": "Cubismo",
+      "location": "Museo de Arte de Filadelfia"
+    }
+  },
+  "number": 147
+}

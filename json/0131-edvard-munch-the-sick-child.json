@@ -1,0 +1,18 @@
+{
+  "author": "Edvard Munch",
+  "title": "The Sick Child",
+  "style": "Expressionism",
+  "year": 1885,
+  "century": "XIX",
+  "location": "National Gallery, Oslo",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Sick_Child_(Munch)",
+  "i18n": {
+    "es": {
+      "author": "Edvard Munch",
+      "title": "La niña enferma",
+      "style": "Expresionismo",
+      "location": "Galería Nacional, Oslo"
+    }
+  },
+  "number": 131
+}

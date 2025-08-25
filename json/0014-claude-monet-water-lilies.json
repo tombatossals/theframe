@@ -1,0 +1,18 @@
+{
+  "author": "Claude Monet",
+  "title": "Water Lilies",
+  "style": "Impressionism",
+  "year": "1914-1915",
+  "century": "XX",
+  "location": "Musée de l'Orangerie, Paris",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)",
+  "i18n": {
+    "es": {
+      "author": "Claude Monet",
+      "title": "Nenúfares",
+      "style": "Impresionismo",
+      "location": "Museo de la Orangerie, París"
+    }
+  },
+  "number": 14
+}

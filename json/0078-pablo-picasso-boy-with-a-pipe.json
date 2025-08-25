@@ -1,0 +1,18 @@
+{
+  "author": "Pablo Picasso",
+  "title": "Garçon à la pipe",
+  "style": "Rose Period",
+  "year": 1905,
+  "century": "XX",
+  "location": "Private Collection",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Gar%C3%A7on_%C3%A0_la_pipe",
+  "i18n": {
+    "es": {
+      "author": "Pablo Picasso",
+      "title": "Garçon à la pipe",
+      "style": "Periodo Rosa",
+      "location": "Colección privada"
+    }
+  },
+  "number": 78
+}

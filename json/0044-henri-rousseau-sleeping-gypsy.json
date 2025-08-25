@@ -1,0 +1,18 @@
+{
+  "author": "Henri Rousseau",
+  "title": "The Sleeping Gypsy",
+  "style": "Naïve art",
+  "year": 1897,
+  "century": "XIX",
+  "location": "Museum of Modern Art, New York",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Sleeping_Gypsy",
+  "i18n": {
+    "es": {
+      "author": "Henri Rousseau",
+      "title": "La gitana dormida",
+      "style": "Arte naïf",
+      "location": "Museo de Arte Moderno, Nueva York"
+    }
+  },
+  "number": 44
+}

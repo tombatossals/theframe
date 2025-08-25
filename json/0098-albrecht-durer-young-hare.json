@@ -1,0 +1,18 @@
+{
+  "author": "Albrecht Dürer",
+  "title": "Young Hare",
+  "style": "Renaissance, observational art, watercolor and bodycolour",
+  "year": 1502,
+  "century": "XVI",
+  "location": "Albertina Museum, Vienna, Austria",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Young_Hare",
+  "i18n": {
+    "es": {
+      "author": "Alberto Durero",
+      "title": "Liebre joven",
+      "style": "Renacimiento, arte de observación, acuarela y gouache",
+      "location": "Museo Albertina, Viena, Austria"
+    }
+  },
+  "number": 98
+}

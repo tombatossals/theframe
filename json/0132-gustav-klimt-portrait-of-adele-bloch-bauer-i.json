@@ -1,0 +1,18 @@
+{
+  "author": "Gustav Klimt",
+  "title": "Portrait of Adele Bloch-Bauer I",
+  "style": "Art Nouveau",
+  "year": 1907,
+  "century": "XX",
+  "location": "Neue Galerie New York",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Adele_Bloch-Bauer_I",
+  "i18n": {
+    "es": {
+      "author": "Gustav Klimt",
+      "title": "Retrato de Adele Bloch-Bauer I",
+      "style": "Modernismo vienés",
+      "location": "Neue Galerie Nueva York"
+    }
+  },
+  "number": 132
+}

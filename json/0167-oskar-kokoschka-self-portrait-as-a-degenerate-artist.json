@@ -1,0 +1,18 @@
+{
+  "author": "Oskar Kokoschka",
+  "title": "Self-portrait of a 'Degenerate Artist'",
+  "style": "Expressionism",
+  "year": 1937,
+  "century": "XX",
+  "location": "Scottish National Gallery, Edinburgh, UK",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Oskar_Kokoschka",
+  "i18n": {
+    "es": {
+      "author": "Oskar Kokoschka",
+      "title": "Autorretrato de un 'artista degenerado'",
+      "style": "Expresionismo",
+      "location": "Galería Nacional de Escocia, Edimburgo, Reino Unido"
+    }
+  },
+  "number": 167
+}

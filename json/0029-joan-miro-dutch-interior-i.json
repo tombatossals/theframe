@@ -1,0 +1,18 @@
+{
+  "author": "Joan Miró",
+  "title": "Dutch Interior I",
+  "style": "Surrealism",
+  "year": 1928,
+  "century": "XX",
+  "location": "Museum of Modern Art (MoMA), New York City, NY, US",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Dutch_Interiors",
+  "i18n": {
+    "es": {
+      "author": "Joan Miró",
+      "title": "Interior holandés I",
+      "style": "Surrealismo",
+      "location": "Museo de Arte Moderno (MoMA), Nueva York, EE. UU."
+    }
+  },
+  "number": 29
+}

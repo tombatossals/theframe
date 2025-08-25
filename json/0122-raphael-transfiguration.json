@@ -1,0 +1,18 @@
+{
+  "author": "Raphael",
+  "title": "The Transfiguration",
+  "style": "High Renaissance",
+  "year": 1520,
+  "century": "XVI",
+  "location": "Pinacoteca Vaticana, Vatican City",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Transfiguration_(Raphael)",
+  "i18n": {
+    "es": {
+      "author": "Rafael",
+      "title": "La Transfiguración",
+      "style": "Alto Renacimiento",
+      "location": "Pinacoteca Vaticana, Ciudad del Vaticano"
+    }
+  },
+  "number": 122
+}

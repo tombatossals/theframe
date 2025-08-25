@@ -1,0 +1,18 @@
+{
+  "author": "Georges Braque",
+  "title": "Houses at L'Estaque",
+  "style": "Cubism",
+  "year": 1908,
+  "century": "XX",
+  "location": "Kunstmuseum Bern, Bern, Switzerland",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Georges_Braque",
+  "i18n": {
+    "es": {
+      "author": "Georges Braque",
+      "title": "Casas en L'Estaque",
+      "style": "Cubismo",
+      "location": "Kunstmuseum Bern, Berna, Suiza"
+    }
+  },
+  "number": 200
+}

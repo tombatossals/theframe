@@ -1,0 +1,18 @@
+{
+  "author": "Gustav Klimt",
+  "title": "Portrait of Fritza Riedler",
+  "style": "Art Nouveau (Golden Phase)",
+  "year": 1906,
+  "century": "XX",
+  "location": "Belvedere Museum, Vienna",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Fritza_Riedler",
+  "i18n": {
+    "es": {
+      "author": "Gustav Klimt",
+      "title": "Retrato de Fritza Riedler",
+      "style": "Art Nouveau (Período Dorado)",
+      "location": "Museo Belvedere, Viena"
+    }
+  },
+  "number": 146
+}

@@ -1,0 +1,18 @@
+{
+  "author": "Caravaggio",
+  "title": "Narcissus",
+  "style": "Baroque",
+  "year": "1597-1599",
+  "century": "XVI",
+  "location": "Galleria Nazionale d'Arte Antica, Palazzo Barberini, Rome, Italy",
+  "wikipedia_url": "https://es.wikipedia.org/wiki/Narciso_(Caravaggio)",
+  "i18n": {
+    "es": {
+      "author": "Caravaggio",
+      "title": "Narciso",
+      "style": "Barroco",
+      "location": "Galería Nacional de Arte Antigua, Palazzo Barberini, Roma, Italia"
+    }
+  },
+  "number": 35
+}

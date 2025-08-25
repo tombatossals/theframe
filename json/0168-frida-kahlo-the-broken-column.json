@@ -1,0 +1,18 @@
+{
+  "author": "Frida Kahlo",
+  "title": "The Broken Column",
+  "style": "Surrealism, Magical Realism, Mexicayotl movement",
+  "year": 1944,
+  "century": "XX",
+  "location": "Museo Dolores Olmedo, Ciudad de México, México",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Broken_Column",
+  "i18n": {
+    "es": {
+      "author": "Frida Kahlo",
+      "title": "La columna rota",
+      "style": "Surrealismo, Realismo mágico, movimiento Mexicayotl",
+      "location": "Museo Dolores Olmedo, Ciudad de México, México"
+    }
+  },
+  "number": 168
+}

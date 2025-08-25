@@ -1,0 +1,18 @@
+{
+  "author": "Vincent van Gogh",
+  "title": "Seascape near Les Saintes-Maries-de-la-Mer",
+  "style": "Post-Impressionism",
+  "year": 1888,
+  "century": "XIX",
+  "location": "Van Gogh Museum, Amsterdam",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Saintes-Maries_(Van_Gogh_series)",
+  "i18n": {
+    "es": {
+      "author": "Vincent van Gogh",
+      "title": "Marina cerca de Saintes-Maries-de-la-Mer",
+      "style": "Postimpresionismo",
+      "location": "Museo Van Gogh, Ámsterdam"
+    }
+  },
+  "number": 186
+}

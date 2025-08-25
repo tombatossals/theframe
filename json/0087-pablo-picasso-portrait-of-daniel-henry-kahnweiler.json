@@ -1,0 +1,18 @@
+{
+  "author": "Pablo Picasso",
+  "title": "Portrait of Daniel-Henry Kahnweiler",
+  "style": "Analytical Cubism",
+  "year": 1910,
+  "century": "XX",
+  "location": "Art Institute of Chicago, Illinois, United States",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Daniel-Henry_Kahnweiler_(Picasso)",
+  "i18n": {
+    "es": {
+      "author": "Pablo Picasso",
+      "title": "Retrato de Daniel-Henry Kahnweiler",
+      "style": "Cubismo analítico",
+      "location": "Instituto de Arte de Chicago, Illinois, Estados Unidos"
+    }
+  },
+  "number": 87
+}

@@ -1,0 +1,18 @@
+{
+  "author": "Michelangelo Buonarroti",
+  "title": "The Creation of Adam",
+  "style": "Renaissance",
+  "year": 1511,
+  "century": "XVI",
+  "location": "Sistine Chapel, Vatican City",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Creation_of_Adam",
+  "i18n": {
+    "es": {
+      "author": "Miguel Ángel Buonarroti",
+      "title": "La creación de Adán",
+      "style": "Renacimiento",
+      "location": "Capilla Sixtina, Ciudad del Vaticano"
+    }
+  },
+  "number": 8
+}

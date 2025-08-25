@@ -1,0 +1,18 @@
+{
+  "author": "Albrecht Dürer",
+  "title": "Self-Portrait at Twenty-Eight",
+  "style": "Northern Renaissance",
+  "year": 1500,
+  "century": "XVI",
+  "location": "Alte Pinakothek, Munich, Germany",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Self-Portrait_(Dürer,_Munich)",
+  "i18n": {
+    "es": {
+      "author": "Alberto Durero",
+      "title": "Autorretrato a los veintiocho años",
+      "style": "Renacimiento del norte",
+      "location": "Alte Pinakothek, Múnich, Alemania"
+    }
+  },
+  "number": 86
+}

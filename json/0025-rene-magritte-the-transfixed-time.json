@@ -1,0 +1,18 @@
+{
+  "author": "René Magritte",
+  "title": "Time Transfixed",
+  "style": "Surrealism",
+  "year": 1938,
+  "century": "XX",
+  "location": "Art Institute of Chicago",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Time_Transfixed",
+  "i18n": {
+    "es": {
+      "author": "René Magritte",
+      "title": "La durée poignardée",
+      "style": "Surrealismo",
+      "location": "Instituto de Arte de Chicago"
+    }
+  },
+  "number": 25
+}

@@ -1,0 +1,18 @@
+{
+  "author": "Emil Nolde",
+  "title": "Flower Garden",
+  "style": "Expressionism",
+  "year": "1908",
+  "century": "XX",
+  "location": "National Gallery of Art, Washington, Gallery 217-A",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Emil_Nolde",
+  "i18n": {
+    "es": {
+      "author": "Emil Nolde",
+      "title": "Jardín de flores",
+      "style": "Expresionismo",
+      "location": "Galería Nacional de Arte, Washington, Galería 217-A"
+    }
+  },
+  "number": 166
+}

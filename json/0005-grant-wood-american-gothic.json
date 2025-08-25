@@ -1,0 +1,18 @@
+{
+  "author": "Grant Wood",
+  "title": "American Gothic",
+  "style": "Regionalism",
+  "year": 1930,
+  "century": "XX",
+  "location": "Art Institute of Chicago",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/American_Gothic",
+  "i18n": {
+    "es": {
+      "author": "Grant Wood",
+      "title": "Gótico Americano",
+      "style": "Regionalismo",
+      "location": "Instituto de Arte de Chicago"
+    }
+  },
+  "number": 5
+}

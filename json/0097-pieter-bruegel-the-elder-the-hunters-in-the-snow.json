@@ -1,0 +1,18 @@
+{
+  "author": "Pieter Bruegel the Elder",
+  "title": "Hunters in the Snow",
+  "style": "Northern Renaissance, Genre painting",
+  "year": "1565",
+  "century": "XVI",
+  "location": "Kunsthistorisches Museum, Vienna",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Hunters_in_the_Snow",
+  "i18n": {
+    "es": {
+      "author": "Pieter Bruegel el Viejo",
+      "title": "Cazadores en la nieve",
+      "style": "Renacimiento del Norte, pintura de género",
+      "location": "Museo de Historia del Arte, Viena"
+    }
+  },
+  "number": 97
+}

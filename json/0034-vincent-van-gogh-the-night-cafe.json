@@ -1,0 +1,18 @@
+{
+  "author": "Vincent van Gogh",
+  "title": "The Night Café",
+  "style": "Post-Impressionism",
+  "year": 1888,
+  "century": "XIX",
+  "location": "Yale University Art Gallery, New Haven, Connecticut",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Night_Caf%C3%A9",
+  "i18n": {
+    "es": {
+      "author": "Vincent van Gogh",
+      "title": "El Café de Noche",
+      "style": "Postimpresionismo",
+      "location": "Galería de Arte de la Universidad de Yale, New Haven, Connecticut"
+    }
+  },
+  "number": 34
+}

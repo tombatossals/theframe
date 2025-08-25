@@ -1,0 +1,18 @@
+{
+  "author": "Katsushika Hokusai",
+  "title": "The Great Wave off Kanagawa",
+  "style": "Ukiyo-e",
+  "year": 1831,
+  "century": "XIX",
+  "location": "Japan",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa",
+  "i18n": {
+    "es": {
+      "author": "Katsushika Hokusai",
+      "title": "La Gran Ola de Kanagawa",
+      "style": "Ukiyo-e",
+      "location": "Japón"
+    }
+  },
+  "number": 91
+}

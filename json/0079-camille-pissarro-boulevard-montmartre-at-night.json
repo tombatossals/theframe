@@ -1,0 +1,18 @@
+{
+  "author": "Camille Pissarro",
+  "title": "The Boulevard Montmartre at Night",
+  "style": "Impressionism",
+  "year": 1897,
+  "century": "XIX",
+  "location": "National Gallery, London",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Camille_Pissarro",
+  "i18n": {
+    "es": {
+      "author": "Camille Pissarro",
+      "title": "El bulevar Montmartre de noche",
+      "style": "Impresionismo",
+      "location": "National Gallery, Londres"
+    }
+  },
+  "number": 79
+}

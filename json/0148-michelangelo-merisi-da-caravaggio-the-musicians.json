@@ -1,0 +1,18 @@
+{
+  "author": "Michelangelo Merisi da Caravaggio",
+  "title": "The Musicians",
+  "style": "Baroque",
+  "year": 1595,
+  "century": "XVI",
+  "location": "The Metropolitan Museum of Art, New York",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Musicians_(Caravaggio)",
+  "i18n": {
+    "es": {
+      "author": "Michelangelo Merisi da Caravaggio",
+      "title": "Los músicos",
+      "style": "Barroco",
+      "location": "Museo Metropolitano de Arte, Nueva York"
+    }
+  },
+  "number": 148
+}

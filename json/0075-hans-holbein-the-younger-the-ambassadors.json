@@ -1,0 +1,18 @@
+{
+  "author": "Hans Holbein the Younger",
+  "title": "The Ambassadors",
+  "style": "Renaissance",
+  "year": 1533,
+  "century": "XVI",
+  "location": "The National Gallery, London",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)",
+  "i18n": {
+    "es": {
+      "author": "Hans Holbein el Joven",
+      "title": "Los embajadores",
+      "style": "Renacimiento",
+      "location": "La National Gallery, Londres"
+    }
+  },
+  "number": 75
+}

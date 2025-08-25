@@ -1,0 +1,18 @@
+{
+  "author": "Joan Miró",
+  "title": "The Hunter (Catalan Landscape)",
+  "style": "Surrealism",
+  "year": 1923,
+  "century": "XX",
+  "location": "The Museum of Modern Art, New York",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Hunter_(Catalan_Landscape)",
+  "i18n": {
+    "es": {
+      "author": "Joan Miró",
+      "title": "El cazador (Paisaje catalán)",
+      "style": "Surrealismo",
+      "location": "Museo de Arte Moderno, Nueva York"
+    }
+  },
+  "number": 63
+}

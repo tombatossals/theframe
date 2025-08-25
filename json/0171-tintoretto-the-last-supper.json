@@ -1,0 +1,18 @@
+{
+  "author": "Jacopo Tintoretto",
+  "title": "The Last Supper",
+  "style": "Mannerism",
+  "year": 1594,
+  "century": "XVI",
+  "location": "Basilica di San Giorgio Maggiore, Venice, Italy",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Last_Supper_(Tintoretto)",
+  "i18n": {
+    "es": {
+      "author": "Jacopo Tintoretto",
+      "title": "La Última Cena",
+      "style": "Manierismo",
+      "location": "Basílica de San Giorgio Maggiore, Venecia, Italia"
+    }
+  },
+  "number": 171
+}

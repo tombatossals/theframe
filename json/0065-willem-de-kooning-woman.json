@@ -1,0 +1,18 @@
+{
+  "author": "Willem de Kooning",
+  "title": "Woman I",
+  "style": "Abstract Expressionism",
+  "year": "1950-1952",
+  "century": "XX",
+  "location": "Museum of Modern Art, New York",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Woman_I",
+  "i18n": {
+    "es": {
+      "author": "Willem de Kooning",
+      "title": "Mujer I",
+      "style": "Expresionismo abstracto",
+      "location": "Museo de Arte Moderno de Nueva York"
+    }
+  },
+  "number": 65
+}

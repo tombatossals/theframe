@@ -1,0 +1,18 @@
+{
+  "author": "Andy Warhol",
+  "title": "Marilyn Diptych",
+  "style": "Pop Art",
+  "year": 1962,
+  "century": "XX",
+  "location": "Tate, London",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Marilyn_Diptych",
+  "i18n": {
+    "es": {
+      "author": "Andy Warhol",
+      "title": "Marilyn Diptych",
+      "style": "Pop Art",
+      "location": "Tate, Londres"
+    }
+  },
+  "number": 18
+}

@@ -1,0 +1,18 @@
+{
+  "author": "Edvard Munch",
+  "title": "Madonna",
+  "style": "Symbolism, Expressionism",
+  "year": 1894,
+  "century": "XIX",
+  "location": "Munch Museum, Oslo",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Madonna_(Munch)",
+  "i18n": {
+    "es": {
+      "author": "Edvard Munch",
+      "title": "Madonna",
+      "style": "Simbolismo, Expresionismo",
+      "location": "Museo Munch, Oslo"
+    }
+  },
+  "number": 93
+}

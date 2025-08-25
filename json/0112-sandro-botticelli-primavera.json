@@ -1,0 +1,18 @@
+{
+  "author": "Sandro Botticelli",
+  "title": "La Primavera",
+  "style": "Renacimiento",
+  "year": "1477-1482",
+  "century": "XV",
+  "location": "Galería Uffizi, Florencia",
+  "wikipedia_url": "https://es.wikipedia.org/wiki/La_primavera_(Botticelli)",
+  "i18n": {
+    "es": {
+      "author": "Sandro Botticelli",
+      "title": "La Primavera",
+      "style": "Renacimiento",
+      "location": "Galería Uffizi, Florencia"
+    }
+  },
+  "number": 112
+}

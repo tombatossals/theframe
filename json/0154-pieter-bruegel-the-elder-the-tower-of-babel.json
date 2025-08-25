@@ -1,0 +1,18 @@
+{
+  "author": "Pieter Bruegel the Elder",
+  "title": "The Tower of Babel",
+  "style": "Renaissance",
+  "year": 1563,
+  "century": "XVI",
+  "location": "Kunsthistorisches Museum, Vienna",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Tower_of_Babel_(Bruegel)",
+  "i18n": {
+    "es": {
+      "author": "Pieter Bruegel el Viejo",
+      "title": "La torre de Babel",
+      "style": "Renacimiento",
+      "location": "Museo de Historia del Arte de Viena"
+    }
+  },
+  "number": 154
+}

@@ -1,0 +1,18 @@
+{
+  "author": "Wassily Kandinsky",
+  "title": "On White II",
+  "style": "Abstract Art",
+  "year": 1923,
+  "century": "XX",
+  "location": "Georges Pompidou Center, Paris, France",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Auf_Weiss_II_(Sur_blanc_II)",
+  "i18n": {
+    "es": {
+      "author": "Wassily Kandinsky",
+      "title": "Sobre blanco II",
+      "style": "Arte abstracto",
+      "location": "Centro Georges Pompidou, París, Francia"
+    }
+  },
+  "number": 160
+}

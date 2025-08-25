@@ -1,0 +1,18 @@
+{
+  "author": "Albrecht Dürer",
+  "title": "Christ Among the Doctors",
+  "style": "Northern Renaissance",
+  "year": 1506,
+  "century": "XVI",
+  "location": "Museo Thyssen-Bornemisza, Madrid, Spain",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Christ_Among_the_Doctors_(Dürer)",
+  "i18n": {
+    "es": {
+      "author": "Alberto Durero",
+      "title": "Jesús entre los doctores",
+      "style": "Renacimiento del norte",
+      "location": "Museo Thyssen-Bornemisza, Madrid, España"
+    }
+  },
+  "number": 142
+}

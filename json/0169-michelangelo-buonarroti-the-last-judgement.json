@@ -1,0 +1,18 @@
+{
+  "author": "Michelangelo Buonarroti",
+  "title": "The Last Judgment",
+  "style": "Renaissance",
+  "year": "1536–1541",
+  "century": "XVI",
+  "location": "Sistine Chapel, Vatican City",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Last_Judgment_(Michelangelo)",
+  "i18n": {
+    "es": {
+      "author": "Miguel Ángel Buonarroti",
+      "title": "El Juicio Final",
+      "style": "Renacimiento",
+      "location": "Capilla Sixtina, Ciudad del Vaticano"
+    }
+  },
+  "number": 169
+}

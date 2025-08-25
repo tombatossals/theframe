@@ -1,0 +1,18 @@
+{
+  "author": "Pablo Picasso",
+  "title": "Portrait of Ambroise Vollard",
+  "style": "Analytical Cubism",
+  "year": 1910,
+  "century": "XX",
+  "location": "Pushkin State Museum of Fine Arts, Moscow",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Ambroise_Vollard_(Picasso)",
+  "i18n": {
+    "es": {
+      "author": "Pablo Picasso",
+      "title": "Retrato de Ambroise Vollard",
+      "style": "Cubismo analítico",
+      "location": "Museo Estatal de Bellas Artes Pushkin, Moscú"
+    }
+  },
+  "number": 67
+}

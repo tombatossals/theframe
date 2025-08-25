@@ -1,0 +1,18 @@
+{
+  "author": "Albrecht Dürer",
+  "title": "Portrait of a Young Venetian Woman",
+  "style": "Northern Renaissance",
+  "year": 1505,
+  "century": "XVI",
+  "location": "Kunsthistorisches Museum, Vienna",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_a_Venetian_Woman",
+  "i18n": {
+    "es": {
+      "author": "Alberto Durero",
+      "title": "Retrato de una joven veneciana",
+      "style": "Renacimiento del Norte",
+      "location": "Museo de Historia del Arte de Viena"
+    }
+  },
+  "number": 68
+}

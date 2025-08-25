@@ -1,0 +1,18 @@
+{
+  "author": "Leonardo da Vinci",
+  "title": "Vitruvian Man",
+  "style": "Renaissance",
+  "year": 1490,
+  "century": "XV",
+  "location": "Gallerie dell'Accademia, Venice",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Vitruvian_Man",
+  "i18n": {
+    "es": {
+      "author": "Leonardo da Vinci",
+      "title": "El hombre de Vitruvio",
+      "style": "Renacimiento",
+      "location": "Galería de la Academia, Venecia"
+    }
+  },
+  "number": 89
+}

@@ -1,0 +1,18 @@
+{
+  "author": "Pablo Picasso",
+  "title": "Guernica",
+  "style": "Cubismo",
+  "year": 1937,
+  "century": "XX",
+  "location": "Museo Nacional Centro de Arte Reina Sofía, Madrid",
+  "wikipedia_url": "https://es.wikipedia.org/wiki/Guernica_(cuadro)",
+  "i18n": {
+    "es": {
+      "author": "Pablo Picasso",
+      "title": "Guernica",
+      "style": "Cubismo",
+      "location": "Museo Nacional Centro de Arte Reina Sofía, Madrid"
+    }
+  },
+  "number": 31
+}

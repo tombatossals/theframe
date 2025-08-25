@@ -1,0 +1,18 @@
+{
+  "author": "Vincent van Gogh",
+  "title": "Portrait of a Peasant (Patience Escalier)",
+  "style": "Post-Impressionism",
+  "year": 1888,
+  "century": "XIX",
+  "location": "Norton Simon Museum, Pasadena, USA",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_a_Peasant_(Patience_Escalier)",
+  "i18n": {
+    "es": {
+      "author": "Vincent van Gogh",
+      "title": "Retrato de un campesino (Patience Escalier)",
+      "style": "Postimpresionismo",
+      "location": "Museo Norton Simon, Pasadena, EE. UU."
+    }
+  },
+  "number": 102
+}

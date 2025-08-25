@@ -1,0 +1,18 @@
+{
+  "author": "Jean-Auguste-Dominique Ingres",
+  "title": "La Grande Odalisque",
+  "style": "Neoclassicism, Orientalism",
+  "year": 1814,
+  "century": "XIX",
+  "location": "Louvre, Paris, France",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Grande_Odalisque",
+  "i18n": {
+    "es": {
+      "author": "Jean-Auguste-Dominique Ingres",
+      "title": "La Gran Odalisca",
+      "style": "Neoclasicismo, Orientalismo",
+      "location": "Museo del Louvre, París, Francia"
+    }
+  },
+  "number": 82
+}

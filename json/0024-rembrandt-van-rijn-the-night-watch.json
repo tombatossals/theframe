@@ -1,0 +1,18 @@
+{
+  "author": "Rembrandt van Rijn",
+  "title": "The Night Watch",
+  "style": "Baroque",
+  "year": 1642,
+  "century": "XVII",
+  "location": "Rijksmuseum, Amsterdam",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Night_Watch",
+  "i18n": {
+    "es": {
+      "author": "Rembrandt van Rijn",
+      "title": "La Ronda de Noche",
+      "style": "Barroco",
+      "location": "Rijksmuseum, Ámsterdam"
+    }
+  },
+  "number": 24
+}

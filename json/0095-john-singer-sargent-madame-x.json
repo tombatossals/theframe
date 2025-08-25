@@ -1,0 +1,18 @@
+{
+  "author": "John Singer Sargent",
+  "title": "Portrait of Madame X",
+  "style": "Portraiture, Realism",
+  "year": 1884,
+  "century": "XIX",
+  "location": "The Metropolitan Museum of Art, New York",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Madame_X",
+  "i18n": {
+    "es": {
+      "author": "John Singer Sargent",
+      "title": "Retrato de Madame X",
+      "style": "Retrato, Realismo",
+      "location": "Museo Metropolitano de Arte, Nueva York"
+    }
+  },
+  "number": 95
+}

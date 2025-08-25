@@ -1,0 +1,18 @@
+{
+  "author": "Edvard Munch",
+  "title": "Melancholy",
+  "style": "Symbolism",
+  "year": 1894,
+  "century": "XIX",
+  "location": "Asgardstrand, Norway",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Edvard_Munch",
+  "i18n": {
+    "es": {
+      "author": "Edvard Munch",
+      "title": "Melancolía",
+      "style": "Simbolismo",
+      "location": "Åsgårdstrand, Noruega"
+    }
+  },
+  "number": 50
+}

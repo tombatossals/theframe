@@ -1,0 +1,18 @@
+{
+  "author": "Claude Monet",
+  "title": "La Gare Saint-Lazare",
+  "style": "Impresionismo",
+  "year": 1877,
+  "century": "XIX",
+  "location": "Musée d'Orsay, París",
+  "wikipedia_url": "https://es.wikipedia.org/wiki/La_estaci%C3%B3n_Saint-Lazare_(Monet)",
+  "i18n": {
+    "es": {
+      "author": "Claude Monet",
+      "title": "La Gare Saint-Lazare",
+      "style": "Impresionismo",
+      "location": "Museo de Orsay, París"
+    }
+  },
+  "number": 51
+}

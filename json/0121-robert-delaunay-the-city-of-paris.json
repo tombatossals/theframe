@@ -1,0 +1,18 @@
+{
+  "author": "Robert Delaunay",
+  "title": "The City of Paris",
+  "style": "Orphism",
+  "year": "1910-1912",
+  "century": "XX",
+  "location": "Georges Pompidou Center, Paris, France",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Delaunay",
+  "i18n": {
+    "es": {
+      "author": "Robert Delaunay",
+      "title": "La Ville de Paris",
+      "style": "Orfismo",
+      "location": "Centro Georges Pompidou, París, Francia"
+    }
+  },
+  "number": 121
+}

@@ -1,0 +1,18 @@
+{
+  "author": "Andrew Wyeth",
+  "title": "Christina's World",
+  "style": "Realism",
+  "year": 1948,
+  "century": "XX",
+  "location": "Museum of Modern Art, New York",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Christina's_World",
+  "i18n": {
+    "es": {
+      "author": "Andrew Wyeth",
+      "title": "El mundo de Christina",
+      "style": "Realismo",
+      "location": "Museo de Arte Moderno, Nueva York"
+    }
+  },
+  "number": 141
+}

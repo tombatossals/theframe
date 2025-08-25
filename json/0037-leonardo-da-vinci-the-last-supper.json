@@ -1,0 +1,18 @@
+{
+  "author": "Leonardo da Vinci",
+  "title": "The Last Supper",
+  "style": "High Renaissance",
+  "year": "1495–1498",
+  "century": "XV",
+  "location": "Refectory, Convent of Santa Maria delle Grazie, Milan, Italy",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Last_Supper_(Leonardo)",
+  "i18n": {
+    "es": {
+      "author": "Leonardo da Vinci",
+      "title": "La Última Cena",
+      "style": "Alto Renacimiento",
+      "location": "Refectorio, Convento de Santa Maria delle Grazie, Milán, Italia"
+    }
+  },
+  "number": 37
+}

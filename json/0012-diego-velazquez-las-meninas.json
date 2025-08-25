@@ -1,0 +1,18 @@
+{
+  "author": "Diego Velázquez",
+  "title": "Las Meninas",
+  "style": "Baroque",
+  "year": 1656,
+  "century": "XVII",
+  "location": "Museo del Prado, Madrid",
+  "wikipedia_url": "https://es.wikipedia.org/wiki/Las_meninas",
+  "i18n": {
+    "es": {
+      "author": "Diego Velázquez",
+      "title": "Las Meninas",
+      "style": "Barroco",
+      "location": "Museo del Prado, Madrid"
+    }
+  },
+  "number": 12
+}

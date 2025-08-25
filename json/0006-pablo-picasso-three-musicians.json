@@ -1,0 +1,18 @@
+{
+  "author": "Pablo Picasso",
+  "title": "Three Musicians",
+  "style": "Synthetic Cubism",
+  "year": 1921,
+  "century": "XX",
+  "location": "The Museum of Modern Art, New York",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Musicians_(Picasso)",
+  "i18n": {
+    "es": {
+      "author": "Pablo Picasso",
+      "title": "Los tres músicos",
+      "style": "Cubismo sintético",
+      "location": "Museo de Arte Moderno de Nueva York"
+    }
+  },
+  "number": 6
+}

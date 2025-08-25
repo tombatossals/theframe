@@ -1,0 +1,18 @@
+{
+  "author": "Pablo Picasso",
+  "title": "Two Women Running on the Beach (The Race)",
+  "style": "Neoclassicism",
+  "year": 1922,
+  "century": "XX",
+  "location": "Musée Picasso, Paris, France",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Two_Women_Running_on_the_Beach",
+  "i18n": {
+    "es": {
+      "author": "Pablo Picasso",
+      "title": "Dos mujeres corriendo en la playa (La carrera)",
+      "style": "Neoclasicismo",
+      "location": "Museo Picasso, París, Francia"
+    }
+  },
+  "number": 199
+}

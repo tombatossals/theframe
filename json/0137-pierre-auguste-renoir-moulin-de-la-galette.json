@@ -1,0 +1,18 @@
+{
+  "author": "Pierre-Auguste Renoir",
+  "title": "Bal du moulin de la Galette",
+  "style": "Impressionism",
+  "year": 1876,
+  "century": "XIX",
+  "location": "Musée d'Orsay, Paris",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Bal_du_moulin_de_la_Galette",
+  "i18n": {
+    "es": {
+      "author": "Pierre-Auguste Renoir",
+      "title": "Baile en el Moulin de la Galette",
+      "style": "Impresionismo",
+      "location": "Museo de Orsay, París"
+    }
+  },
+  "number": 137
+}

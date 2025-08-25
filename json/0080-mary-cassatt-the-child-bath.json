@@ -1,0 +1,18 @@
+{
+  "author": "Mary Cassatt",
+  "title": "The Child's Bath",
+  "style": "Impressionism, influenced by Japanese woodcut prints",
+  "year": 1893,
+  "century": "XIX",
+  "location": "Art Institute of Chicago, Chicago, USA",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Child's_Bath",
+  "i18n": {
+    "es": {
+      "author": "Mary Cassatt",
+      "title": "La Toilette de l’enfant",
+      "style": "Impresionismo, influenciado por grabados japoneses",
+      "location": "Instituto de Arte de Chicago, Chicago, EE.UU."
+    }
+  },
+  "number": 80
+}

@@ -14,18 +14,18 @@ headers = {
     "Content-Type": "application/json"
 }
 
-
-
-def get_artwork_info(author_title: str) -> dict:
+def get_artwork_info(author_title: str) -> dict | None:
     """
     Dado un pintor y el nombre (aproximado) de una obra,
     devuelve información estructurada en formato JSON.
     """
 
     payload = {
-    "model": "sonar-pro",
-    "messages": [
-        {"role": "user", "content": f"""
+        "model": "sonar-pro",
+        "messages": [
+            {
+                "role": "user",
+                "content": f"""
     Dado el siguiente pintor y una obra (puede tener errores ortográficos),
     devuelve un JSON con la siguiente estructura:
 
@@ -53,33 +53,58 @@ def get_artwork_info(author_title: str) -> dict:
     - Corrige el título si está mal escrito o incompleto, devolviendo el más parecido posible.
     - El siglo debe ir en números romanos (ej. XIX, XVII).
     - Responde ÚNICAMENTE con el JSON válido, sin explicaciones adicionales.
+    - Evita incluir código Markdown indicando que es JSON en la respuesta.
     """
-        }
-    ]}
+            }
+        ]
+    }
 
     response = requests.post(url, headers=headers, json=payload)
 
-    r = response.json()
+    try:
+        r = response.json()
+    except Exception:
+        print("⚠️ La API no devolvió JSON válido. Respuesta cruda:")
+        print(response.text[:500])
+        return None
 
-    with open("test.json", 'w', encoding='utf-8') as f:
-      json.dump(r.get("choices")[0].get("message").get("content"), f, ensure_ascii=False, indent=2)
+    # dump para depuración
+    with open("dump.json", 'w', encoding='utf-8') as f:
+        json.dump(r, f, ensure_ascii=False, indent=2)
 
-    return r.get("choices")[0].get("message").get("content")
+    content = r.get("choices", [{}])[0].get("message", {}).get("content")
+    if not content:
+        print("⚠️ No se encontró contenido en la respuesta:", r)
+        return None
+
+    try:
+        return json.loads(content)
+    except json.JSONDecodeError:
+        print("⚠️ El modelo devolvió algo que no es JSON válido:")
+        print(content)
+        return None
+
 
 if __name__ == "__main__":
-    # Ejemplo de uso
-    #result = get_artwork_info("Vincent van Gogh - Noches estrelada")
     with open(os.getenv("THEFRAME_POPULATED_JSON"), "r", encoding='utf-8') as paintings:
         paintings_data = json.load(paintings)
-        for painting in [p for p in paintings_data.values() if not glob.glob(os.path.join("./json", str(p.get("number")).zfill(4)))][:2]:
+
+        for painting in [p for p in paintings_data.values()
+                         if not glob.glob(os.path.join("json", str(p.get("number")).zfill(4) + "*"))][:10]:
             author_title = painting.get("author") + " - " + painting.get("title")
-            print(f"Buscando info para: {author_title}")
-            r = get_artwork_info(author_title)
-            result = json.loads(r)
-            print(type(result))
+            number = painting.get("number")
+
+            result = get_artwork_info(author_title)
+            if not result:
+                continue  # saltar si no hubo respuesta válida
+
             result["number"] = number
 
-            with open(os.path.join("./json", str(number).zfill(4) + "-" + slugify.slugify(author_title) + ".json"), 'w', encoding='utf-8') as f:
-                json.dump(result, f, ensure_ascii=False, indent=2)
-            print(f"Guardado en ./json/{str(number).zfill(4)}-{slugify.slugify(author_title)}.json")
+            filename = os.path.join(
+                "./json",
+                str(number).zfill(4) + "-" + slugify.slugify(author_title) + ".json"
+            )
 
+            with open(filename, 'w', encoding='utf-8') as f:
+                json.dump(result, f, ensure_ascii=False, indent=2)
+                print(f"Guardado en {filename}")

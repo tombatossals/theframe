@@ -1,0 +1,18 @@
+{
+  "author": "Vincent van Gogh",
+  "title": "The Potato Eaters",
+  "style": "Realism",
+  "year": 1885,
+  "century": "XIX",
+  "location": "Van Gogh Museum, Amsterdam",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Potato_Eaters",
+  "i18n": {
+    "es": {
+      "author": "Vincent van Gogh",
+      "title": "Los comedores de patatas",
+      "style": "Realismo",
+      "location": "Museo Van Gogh, Ámsterdam"
+    }
+  },
+  "number": 109
+}

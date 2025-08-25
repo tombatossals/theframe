@@ -1,0 +1,18 @@
+{
+  "author": "René Magritte",
+  "title": "The Son of Man",
+  "style": "Surrealism",
+  "year": 1964,
+  "century": "XX",
+  "location": "Private collection",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Son_of_Man",
+  "i18n": {
+    "es": {
+      "author": "René Magritte",
+      "title": "El hijo del hombre",
+      "style": "Surrealismo",
+      "location": "Colección privada"
+    }
+  },
+  "number": 54
+}
