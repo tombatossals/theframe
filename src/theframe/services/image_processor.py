@@ -83,9 +83,10 @@ class ImageProcessor:
             color_title = (255, 255, 255, 255)
             color_extra = (90, 130, 200, 255)
 
-            line_author = artwork.metadata.author
-            line_title = artwork.metadata.title
-            line_extra = f"Style {artwork.metadata.style} · {artwork.metadata.century} ({artwork.metadata.year}) · {artwork.metadata.location}"
+            metadata = artwork.metadata.i18n.get('es')
+            line_author = metadata.author
+            line_title = metadata.title
+            line_extra = f"{metadata.style} · {artwork.metadata.century} ({artwork.metadata.year}) · {metadata.location}"
 
             # Calculate text sizes using textbbox
             def get_text_size(

@@ -12,7 +12,8 @@ import httpx
 from ollama import chat
 
 from ..core.exceptions import FileOperationError, MetadataError
-from ..core.models import Artwork, ArtworkCollection, ArtworkMetadata
+from ..core.models import (Artwork, ArtworkCollection, ArtworkMetadata,
+                           ArtworkTranslation)
 
 
 class MetadataService:
@@ -77,13 +78,7 @@ class MetadataService:
         try:
             # Extract metadata
             metadata = ArtworkMetadata(
-                author=data.get('author', 'Unknown'),
-                title=data.get('title', 'Untitled'),
-                style=data.get('style', ''),
-                year=data.get('year', ''),
-                century=data.get('century', ''),
-                location=data.get('location', ''),
-                wikipedia_url=data.get('wikipedia_url', '')
+                **data
             )
 
             return Artwork(

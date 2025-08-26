@@ -11,6 +11,14 @@ from pydantic import BaseModel, Field, validator
 from slugify import slugify
 
 
+class ArtworkTranslation(BaseModel):
+    author: Optional[str] = None
+    title: Optional[str] = None
+    style: Optional[str] = None
+    year: Optional[str] = None
+    century: Optional[str] = None
+    location: Optional[str] = None
+
 class ArtworkMetadata(BaseModel):
     """Metadata for artwork pieces."""
 
@@ -21,6 +29,7 @@ class ArtworkMetadata(BaseModel):
     century: str = Field(..., description="Century period")
     location: str = Field(..., description="Current location")
     wikipedia_url: Optional[str] = Field(None, description="Wikipedia URL")
+    i18n: Optional[Dict[str, ArtworkTranslation]] = None
 
     @validator('year', pre=True)
     def validate_year(cls, v: Union[str, int]) -> str:
