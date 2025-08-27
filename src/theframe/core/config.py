@@ -125,10 +125,10 @@ class Settings(BaseSettings):
 
     def validate_for_populate(self) -> None:
         """Validate settings required for populate command."""
-        if not self.artworks_json:
+        if not self.source_json:
             raise ConfigurationError(
-                "Artworks JSON path is required for populate",
-                "Set THEFRAME_ARTWORKS_JSON environment variable or use --artworks-json"
+                "Source JSON path is required for populate",
+                "Set THEFRAME_SOURCE_JSON environment variable or use --source-json"
             )
         if not self.base_url:
             raise ConfigurationError(

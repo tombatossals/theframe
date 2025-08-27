@@ -1,13 +1,11 @@
 """Image processing service for TheFrame application."""
 
-import asyncio
 import io
 import logging
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple, Union
+from typing import Optional, Tuple, Union
 
 import aiohttp
-import httpx
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 from ..core.exceptions import ImageProcessingError

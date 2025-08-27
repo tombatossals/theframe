@@ -52,6 +52,12 @@ Examples:
         help="Path to artworks JSON file (or set THEFRAME_ARTWORKS_JSON)"
     )
 
+    # File paths
+    parser.add_argument(
+        "--source-json",
+        help="Path to source JSON file (or set THEFRAME_SOURCE_JSON)"
+    )
+
     parser.add_argument(
         "--images-dir",
         help="Directory containing images (or set THEFRAME_IMAGES_DIR)"
@@ -90,6 +96,8 @@ def override_settings_from_args(settings, args) -> None:
         settings.tv_token = args.tv_token
     if args.artworks_json:
         settings.artworks_json = args.artworks_json
+    if args.source_json:
+        settings.source_json = args.source_json
     if args.images_dir:
         settings.images_dir = args.images_dir
     if args.base_url:
