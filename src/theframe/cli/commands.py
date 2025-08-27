@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 from typing import Any, Optional
 
+import requests
 from slugify import slugify
 
 from ..core.exceptions import ConfigurationError, TVConnectionError
@@ -71,6 +72,12 @@ class PopulateCommand(BaseCommand):
         devuelve información estructurada en formato JSON.
         """
 
+        url = os.getenv("AI_BASE_URL")
+        headers = {
+            "Authorization": f"Bearer {os.getenv('AI_API_KEY')}",
+            "Content-Type": "application/json"
+        }
+
         payload = {
             "model": "sonar-pro",
             "messages": [
@@ -118,10 +125,6 @@ class PopulateCommand(BaseCommand):
             print("⚠️ La API no devolvió JSON válido. Respuesta cruda:")
             print(response.text[:500])
             return None
-
-        # dump para depuración
-        with open("dump.json", 'w', encoding='utf-8') as f:
-            json.dump(r, f, ensure_ascii=False, indent=2)
 
         content = r.get("choices", [{}])[0].get("message", {}).get("content")
         if not content:
@@ -177,8 +180,9 @@ class PopulateCommand(BaseCommand):
                 json.dump(result, f, ensure_ascii=False, indent=2)
                 print(f"Guardado en {filename}")
 
-            out = source[:1]
-            json.dumps(out, ensure_ascii=False, indent=2)
+            out = source[1:]
+            with open(self.settings.source_json, 'w', encoding='utf-8') as f:
+                json.dumps(out, ensure_ascii=False, indent=2)
 
 class ErrorsCommand(BaseCommand):
     """Check for errors in artwork metadata."""

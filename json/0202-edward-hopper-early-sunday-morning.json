@@ -1,0 +1,18 @@
+{
+  "author": "Edward Hopper",
+  "title": "Early Sunday Morning",
+  "style": "Realismo estadounidense",
+  "year": 1930,
+  "century": "XX",
+  "location": "Whitney Museum of American Art, New York",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Edward_Hopper",
+  "i18n": {
+    "es": {
+      "author": "Edward Hopper",
+      "title": "Mañana de domingo temprano",
+      "style": "Realismo estadounidense",
+      "location": "Whitney Museum of American Art, Nueva York"
+    }
+  },
+  "number": 202
+}

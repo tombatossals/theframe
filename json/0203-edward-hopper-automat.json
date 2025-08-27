@@ -1,0 +1,18 @@
+{
+  "author": "Edward Hopper",
+  "title": "Automat",
+  "style": "American Realism",
+  "year": 1927,
+  "century": "XX",
+  "location": "Des Moines Art Center, Iowa, United States",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Automat_(Hopper)",
+  "i18n": {
+    "es": {
+      "author": "Edward Hopper",
+      "title": "Automat",
+      "style": "Realismo estadounidense",
+      "location": "Des Moines Art Center, Iowa, Estados Unidos"
+    }
+  },
+  "number": 203
+}
