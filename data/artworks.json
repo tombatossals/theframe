@@ -3598,5 +3598,113 @@
       }
     },
     "number": 200
+  },
+  "0201-ernst-ludwig-kirchner-self-portrait-with-a-model.json": {
+    "author": "Ernst Ludwig Kirchner",
+    "title": "Self-Portrait with a Model",
+    "style": "Expressionism",
+    "year": "1910",
+    "century": "XX",
+    "location": "Kunsthalle Hamburg, Hamburg, Germany",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ernst_Ludwig_Kirchner",
+    "i18n": {
+      "es": {
+        "author": "Ernst Ludwig Kirchner",
+        "title": "Autorretrato con una modelo",
+        "style": "Expresionismo",
+        "location": "Kunsthalle Hamburg, Hamburgo, Alemania"
+      }
+    },
+    "number": 207
+  },
+  "0202-edward-hopper-early-sunday-morning.json": {
+    "author": "Edward Hopper",
+    "title": "Early Sunday Morning",
+    "style": "Realismo estadounidense",
+    "year": 1930,
+    "century": "XX",
+    "location": "Whitney Museum of American Art, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Edward_Hopper",
+    "i18n": {
+      "es": {
+        "author": "Edward Hopper",
+        "title": "Mañana de domingo temprano",
+        "style": "Realismo estadounidense",
+        "location": "Whitney Museum of American Art, Nueva York"
+      }
+    },
+    "number": 202
+  },
+  "0203-edward-hopper-automat.json": {
+    "author": "Edward Hopper",
+    "title": "Automat",
+    "style": "American Realism",
+    "year": 1927,
+    "century": "XX",
+    "location": "Des Moines Art Center, Iowa, United States",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Automat_(Hopper)",
+    "i18n": {
+      "es": {
+        "author": "Edward Hopper",
+        "title": "Automat",
+        "style": "Realismo estadounidense",
+        "location": "Des Moines Art Center, Iowa, Estados Unidos"
+      }
+    },
+    "number": 203
+  },
+  "0204-edgar-degas-the-ballet-class.json": {
+    "author": "Edgar Degas",
+    "title": "The Ballet Class",
+    "style": "Impressionism",
+    "year": 1874,
+    "century": "XIX",
+    "location": "Musée d'Orsay, Paris",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Ballet_Class_(Degas,_Mus%C3%A9e_d'Orsay)",
+    "i18n": {
+      "es": {
+        "author": "Edgar Degas",
+        "title": "La clase de danza",
+        "style": "Impresionismo",
+        "location": "Museo de Orsay, París"
+      }
+    },
+    "number": 204
+  },
+  "0205-giovanni-antonio-canal-canaletto-la-entrada-del-gran-canal-y-santa-maria-della-salute.json": {
+    "author": "Giovanni Antonio Canal (Canaletto)",
+    "title": "La entrada del Gran Canal y Santa María della Salute",
+    "style": "Vedutismo",
+    "year": "c. 1740",
+    "century": "XVIII",
+    "location": "Venecia, Italia",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Archivo:Canaletto_Entrance_to_the_Grand_Canal_Venice.jpg",
+    "i18n": {
+      "es": {
+        "author": "Giovanni Antonio Canal (Canaletto)",
+        "title": "La entrada del Gran Canal y Santa María della Salute",
+        "style": "Vedutismo",
+        "location": "Venecia, Italia"
+      }
+    },
+    "number": 205
+  },
+  "0206-albert-charles-lebourg-rouen-snow-effect.json": {
+    "author": "Albert-Charles Lebourg",
+    "title": "Rouen, Snow Effect",
+    "style": "Impressionism",
+    "year": 1890,
+    "century": "XIX",
+    "location": "France, Rouen",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Albert_Lebourg",
+    "i18n": {
+      "es": {
+        "author": "Albert-Charles Lebourg",
+        "title": "Rouen, efecto de nieve",
+        "style": "Impresionismo",
+        "location": "Francia, Ruan"
+      }
+    },
+    "number": 206
   }
 }

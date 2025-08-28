@@ -208,17 +208,15 @@ class ErrorsCommand(BaseCommand):
             for artwork in duplicates:
                 self.logger.error(f"{artwork.display_name}")
 
-        # Check missing images
-        missing = metadata_service.find_missing_images(collection)
-        if missing:
-            self.logger.error("Found missing images:")
-            for artwork in missing:
-                self.logger.error(f"{artwork.filename}")
-
         # Validate collection
         issues = metadata_service.validate_collection(collection)
         if issues:
-            self.logger.error("Validation issues found:")
+            for issue in issues:
+                self.logger.error(f"{issue}")
+
+        # Validate collection
+        issues = metadata_service.check_images(collection)
+        if issues:
             for issue in issues:
                 self.logger.error(f"{issue}")
 

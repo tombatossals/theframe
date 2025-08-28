@@ -366,13 +366,13 @@ class MetadataService:
 
         return duplicates
 
-    def find_missing_images(self, collection: ArtworkCollection) -> List[Artwork]:
+    def check_images(self, collection: ArtworkCollection) -> List[Artwork]:
         """Find missing images."""
-        missing = []
+        issues = []
 
         for artwork in collection.artworks.values():
             if not os.path.exists(Path("artworks") / artwork.filename):
-                missing.append(artwork)
+                issues.append(f"Missing artwork: {artwork.filename}")
 
                 for old in os.listdir("artworks"):
                     if old.startswith(f"{artwork.number:04d}-"):
@@ -382,7 +382,7 @@ class MetadataService:
                         os.rename(o, n)
                         break
 
-        return missing
+        return issues
 
     def validate_collection(self, collection: ArtworkCollection) -> List[str]:
         """Validate collection and return list of issues."""
@@ -414,3 +414,4 @@ class MetadataService:
                 issues.append(f"Missing artwork number {num}")
 
         return issues
+
