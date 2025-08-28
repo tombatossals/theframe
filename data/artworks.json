@@ -2591,20 +2591,20 @@
     },
     "number": 144
   },
-  "0145-frida-kahlo-self-portrait-with-monocle.json": {
-    "author": "Frida Kahlo",
-    "title": "Self-Portrait with Thorn Necklace and Hummingbird",
-    "style": "Surrealism / Modern Art",
-    "year": 1940,
-    "century": "XX",
-    "location": "Harry Ransom Center, University of Texas at Austin",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Self-Portrait_with_Thorn_Necklace_and_Hummingbird",
+  "0145-albert-charles-lebourg-rouen-snow-effect.json": {
+    "author": "Albert-Charles Lebourg",
+    "title": "Rouen, Snow Effect",
+    "style": "Impressionism",
+    "year": 1890,
+    "century": "XIX",
+    "location": "France, Rouen",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Albert_Lebourg",
     "i18n": {
       "es": {
-        "author": "Frida Kahlo",
-        "title": "Autorretrato con collar de espinas y colibrí",
-        "style": "Surrealismo / Arte Moderno",
-        "location": "Centro Harry Ransom, Universidad de Texas en Austin"
+        "author": "Albert-Charles Lebourg",
+        "title": "Rouen, efecto de nieve",
+        "style": "Impresionismo",
+        "location": "Francia, Ruan"
       }
     },
     "number": 145
@@ -3688,23 +3688,5 @@
       }
     },
     "number": 205
-  },
-  "0206-albert-charles-lebourg-rouen-snow-effect.json": {
-    "author": "Albert-Charles Lebourg",
-    "title": "Rouen, Snow Effect",
-    "style": "Impressionism",
-    "year": 1890,
-    "century": "XIX",
-    "location": "France, Rouen",
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Albert_Lebourg",
-    "i18n": {
-      "es": {
-        "author": "Albert-Charles Lebourg",
-        "title": "Rouen, efecto de nieve",
-        "style": "Impresionismo",
-        "location": "Francia, Ruan"
-      }
-    },
-    "number": 206
   }
 }
