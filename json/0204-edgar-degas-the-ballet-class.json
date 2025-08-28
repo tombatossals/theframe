@@ -1,0 +1,18 @@
+{
+  "author": "Edgar Degas",
+  "title": "The Ballet Class",
+  "style": "Impressionism",
+  "year": 1874,
+  "century": "XIX",
+  "location": "Musée d'Orsay, Paris",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Ballet_Class_(Degas,_Mus%C3%A9e_d'Orsay)",
+  "i18n": {
+    "es": {
+      "author": "Edgar Degas",
+      "title": "La clase de danza",
+      "style": "Impresionismo",
+      "location": "Museo de Orsay, París"
+    }
+  },
+  "number": 204
+}

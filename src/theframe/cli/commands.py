@@ -158,31 +158,30 @@ class PopulateCommand(BaseCommand):
 
         # Load existing collection
         source = json.loads(Path(self.settings.source_json).read_text(encoding="utf-8"))
-        for a in source[:1]:
-            author_title = a.get("name")
+        a = source.pop(0)
+        author_title = a.get("name")
 
-            result = self.get_artwork_info(author_title)
-            number = self.next_number("json")
+        result = self.get_artwork_info(author_title)
+        number = self.next_number("json")
 
-            if not result:
-                continue  # saltar si no hubo respuesta válida
+        if not result:
+            print("⚠️ No se recibieron datos:", result)
+            return None
 
-            result["number"] = number
-            author_title = result.get("author") + " - " + result.get("title")
-            print(result)
+        result["number"] = number
+        author_title = result.get("author") + " - " + result.get("title")
 
-            filename = os.path.join(
-                "./json",
-                str(number).zfill(4) + "-" + slugify(author_title) + ".json"
-            )
+        filename = os.path.join(
+            "./json",
+            str(number).zfill(4) + "-" + slugify(author_title) + ".json"
+        )
 
-            with open(filename, 'w', encoding='utf-8') as f:
-                json.dump(result, f, ensure_ascii=False, indent=2)
-                print(f"Guardado en {filename}")
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(result, f, ensure_ascii=False, indent=2)
+            print(f"Guardado en {filename}")
 
-            out = source[1:]
-            with open(self.settings.source_json, 'w', encoding='utf-8') as f:
-                json.dumps(out, ensure_ascii=False, indent=2)
+        with open(self.settings.source_json, 'w', encoding='utf-8') as fp:
+            json.dump(source, fp, ensure_ascii=False, indent=2)
 
 class ErrorsCommand(BaseCommand):
     """Check for errors in artwork metadata."""
