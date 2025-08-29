@@ -3958,5 +3958,95 @@
       }
     },
     "number": 220
+  },
+  "0221-jean-francois-millet-the-angelus.json": {
+    "author": "Jean-François Millet",
+    "title": "The Angelus",
+    "style": "Realism",
+    "year": "1857–1859",
+    "century": "XIX",
+    "location": "Musée d'Orsay, Paris, France",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Angelus_(painting)",
+    "i18n": {
+      "es": {
+        "author": "Jean-François Millet",
+        "title": "El Ángelus",
+        "style": "Realismo",
+        "location": "Museo de Orsay, París, Francia"
+      }
+    },
+    "number": 221
+  },
+  "0222-vincent-van-gogh-a-pair-of-shoes.json": {
+    "author": "Vincent van Gogh",
+    "title": "A Pair of Shoes",
+    "style": "Post-Impressionism",
+    "year": 1886,
+    "century": "XIX",
+    "location": "Van Gogh Museum, Amsterdam",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Shoes_(Vincent_van_Gogh)",
+    "i18n": {
+      "es": {
+        "author": "Vincent van Gogh",
+        "title": "Un par de zapatos",
+        "style": "Postimpresionismo",
+        "location": "Museo Van Gogh, Ámsterdam"
+      }
+    },
+    "number": 222
+  },
+  "0223-otto-dix-portrait-of-the-journalist-sylvia-von-harden.json": {
+    "author": "Otto Dix",
+    "title": "Portrait of the Journalist Sylvia von Harden",
+    "style": "New Objectivity",
+    "year": 1926,
+    "century": "XX",
+    "location": "Centre Pompidou, Paris",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_the_Journalist_Sylvia_von_Harden",
+    "i18n": {
+      "es": {
+        "author": "Otto Dix",
+        "title": "Retrato de la periodista Sylvia von Harden",
+        "style": "Nueva Objetividad",
+        "location": "Centro Pompidou, París"
+      }
+    },
+    "number": 223
+  },
+  "0224-henry-fuseli-johann-heinrich-fussli-the-nightmare.json": {
+    "author": "Henry Fuseli (Johann Heinrich Füssli)",
+    "title": "The Nightmare",
+    "style": "Romanticism",
+    "year": 1781,
+    "century": "XVIII",
+    "location": "Detroit Institute of Arts, Detroit, United States",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/La_pesadilla",
+    "i18n": {
+      "es": {
+        "author": "Johann Heinrich Füssli",
+        "title": "La pesadilla",
+        "style": "Romanticismo",
+        "location": "Instituto de Artes de Detroit, Detroit, Estados Unidos"
+      }
+    },
+    "number": 224
+  },
+  "0225-albrecht-durer-el-martirio-de-los-diez-mil-cristianos.json": {
+    "author": "Albrecht Dürer",
+    "title": "El martirio de los diez mil cristianos",
+    "style": "Renacimiento alemán",
+    "year": 1508,
+    "century": "XVI",
+    "location": "Kunsthistorisches Museum, Viena",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/El_martirio_de_los_diez_mil_cristianos",
+    "i18n": {
+      "es": {
+        "author": "Alberto Durero",
+        "title": "El martirio de los diez mil cristianos",
+        "style": "Renacimiento alemán",
+        "location": "Museo de Historia del Arte de Viena"
+      }
+    },
+    "number": 225
   }
 }

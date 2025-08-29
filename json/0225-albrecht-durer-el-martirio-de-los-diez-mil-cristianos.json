@@ -1,0 +1,18 @@
+{
+  "author": "Albrecht Dürer",
+  "title": "El martirio de los diez mil cristianos",
+  "style": "Renacimiento alemán",
+  "year": 1508,
+  "century": "XVI",
+  "location": "Kunsthistorisches Museum, Viena",
+  "wikipedia_url": "https://es.wikipedia.org/wiki/El_martirio_de_los_diez_mil_cristianos",
+  "i18n": {
+    "es": {
+      "author": "Alberto Durero",
+      "title": "El martirio de los diez mil cristianos",
+      "style": "Renacimiento alemán",
+      "location": "Museo de Historia del Arte de Viena"
+    }
+  },
+  "number": 225
+}

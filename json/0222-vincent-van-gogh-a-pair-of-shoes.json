@@ -1,0 +1,18 @@
+{
+  "author": "Vincent van Gogh",
+  "title": "A Pair of Shoes",
+  "style": "Post-Impressionism",
+  "year": 1886,
+  "century": "XIX",
+  "location": "Van Gogh Museum, Amsterdam",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Shoes_(Vincent_van_Gogh)",
+  "i18n": {
+    "es": {
+      "author": "Vincent van Gogh",
+      "title": "Un par de zapatos",
+      "style": "Postimpresionismo",
+      "location": "Museo Van Gogh, Ámsterdam"
+    }
+  },
+  "number": 222
+}
