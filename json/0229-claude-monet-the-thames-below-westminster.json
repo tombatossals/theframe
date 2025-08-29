@@ -1,0 +1,18 @@
+{
+  "author": "Claude Monet",
+  "title": "The Thames below Westminster",
+  "style": "Impressionism",
+  "year": 1871,
+  "century": "XIX",
+  "location": "The National Gallery, London",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Thames_below_Westminster",
+  "i18n": {
+    "es": {
+      "author": "Claude Monet",
+      "title": "El Támesis debajo de Westminster",
+      "style": "Impresionismo",
+      "location": "La National Gallery, Londres"
+    }
+  },
+  "number": 229
+}

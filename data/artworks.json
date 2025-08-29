@@ -4048,5 +4048,113 @@
       }
     },
     "number": 225
+  },
+  "0226-winslow-homer-snap-the-whip.json": {
+    "author": "Winslow Homer",
+    "title": "Snap the Whip",
+    "style": "Realism",
+    "year": 1872,
+    "century": "XIX",
+    "location": "Metropolitan Museum of Art, New York / Butler Institute of American Art, Youngstown, Ohio",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Snap_the_Whip",
+    "i18n": {
+      "es": {
+        "author": "Winslow Homer",
+        "title": "Tocar el Whip",
+        "style": "Realismo",
+        "location": "Museo Metropolitano de Arte, Nueva York / Instituto Butler de Arte Americano, Youngstown, Ohio"
+      }
+    },
+    "number": 226
+  },
+  "0227-joan-miro-la-siesta.json": {
+    "author": "Joan Miró",
+    "title": "La Siesta",
+    "style": "Surrealismo",
+    "year": 1925,
+    "century": "XX",
+    "location": "Centre Pompidou, París, Musée National d'Art Moderne",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Joan_Mir%C3%B3",
+    "i18n": {
+      "es": {
+        "author": "Joan Miró",
+        "title": "La Siesta",
+        "style": "Surrealismo",
+        "location": "Centre Pompidou, París, Musée National d'Art Moderne"
+      }
+    },
+    "number": 227
+  },
+  "0228-sir-john-everett-millais-ophelia.json": {
+    "author": "Sir John Everett Millais",
+    "title": "Ophelia",
+    "style": "Pre-Raphaelite",
+    "year": "1851–1852",
+    "century": "XIX",
+    "location": "Tate Britain, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ophelia_(painting)",
+    "i18n": {
+      "es": {
+        "author": "Sir John Everett Millais",
+        "title": "Ofelia",
+        "style": "Prerrafaelita",
+        "location": "Tate Britain, Londres"
+      }
+    },
+    "number": 228
+  },
+  "0229-claude-monet-the-thames-below-westminster.json": {
+    "author": "Claude Monet",
+    "title": "The Thames below Westminster",
+    "style": "Impressionism",
+    "year": 1871,
+    "century": "XIX",
+    "location": "The National Gallery, London",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Thames_below_Westminster",
+    "i18n": {
+      "es": {
+        "author": "Claude Monet",
+        "title": "El Támesis debajo de Westminster",
+        "style": "Impresionismo",
+        "location": "La National Gallery, Londres"
+      }
+    },
+    "number": 229
+  },
+  "0230-albert-pinkham-ryder-the-race-track-death-on-a-pale-horse.json": {
+    "author": "Albert Pinkham Ryder",
+    "title": "The Race Track (Death on a Pale Horse)",
+    "style": "American Realism",
+    "year": "c. 1896–1908",
+    "century": "XIX",
+    "location": "Cleveland Museum of Art, Cleveland, Ohio, USA",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Albert_Pinkham_Ryder",
+    "i18n": {
+      "es": {
+        "author": "Albert Pinkham Ryder",
+        "title": "La pista de carreras (La muerte en un caballo pálido)",
+        "style": "Realismo americano",
+        "location": "Museo de Arte de Cleveland, Cleveland, Ohio, EE. UU."
+      }
+    },
+    "number": 230
+  },
+  "0231-camille-pissarro-otono-alamos-eragny.json": {
+    "author": "Camille Pissarro",
+    "title": "Otoño, Álamos, Éragny",
+    "style": "Impresionismo",
+    "year": 1894,
+    "century": "XIX",
+    "location": "Éragny-sur-Epte, Francia",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Camille_Pissarro",
+    "i18n": {
+      "es": {
+        "author": "Camille Pissarro",
+        "title": "Otoño, Álamos, Éragny",
+        "style": "Impresionismo",
+        "location": "Éragny-sur-Epte, Francia"
+      }
+    },
+    "number": 231
   }
 }
