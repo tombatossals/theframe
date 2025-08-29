@@ -3778,5 +3778,95 @@
       }
     },
     "number": 210
+  },
+  "0211-pieter-bruegel-the-elder-the-peasant-wedding.json": {
+    "author": "Pieter Bruegel the Elder",
+    "title": "The Peasant Wedding",
+    "style": "Northern Renaissance",
+    "year": 1567,
+    "century": "XVI",
+    "location": "Kunsthistorisches Museum, Vienna",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Peasant_Wedding",
+    "i18n": {
+      "es": {
+        "author": "Pieter Brueghel el Viejo",
+        "title": "La boda campesina",
+        "style": "Renacimiento del Norte de Europa",
+        "location": "Museo de Historia del Arte, Viena"
+      }
+    },
+    "number": 211
+  },
+  "0212-pablo-picasso-retrato-de-jaime-sabartes.json": {
+    "author": "Pablo Picasso",
+    "title": "Retrato de Jaime Sabartés",
+    "style": "Periodo Azul",
+    "year": 1901,
+    "century": "XX",
+    "location": "Museo Pushkin, Moscú",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Retrato_de_Jaume_Sabart%C3%A9s_con_gorguera_y_sombrero",
+    "i18n": {
+      "es": {
+        "author": "Pablo Picasso",
+        "title": "Retrato de Jaime Sabartés",
+        "style": "Periodo Azul",
+        "location": "Museo Pushkin, Moscú"
+      }
+    },
+    "number": 212
+  },
+  "0213-andre-derain-charing-cross-bridge-london.json": {
+    "author": "André Derain",
+    "title": "Charing Cross Bridge, London",
+    "style": "Fauvism",
+    "year": "1906",
+    "century": "XX",
+    "location": "National Gallery of Art, Washington",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Andr%C3%A9_Derain",
+    "i18n": {
+      "es": {
+        "author": "André Derain",
+        "title": "Puente de Charing Cross, Londres",
+        "style": "Fauvismo",
+        "location": "Galería Nacional de Arte, Washington"
+      }
+    },
+    "number": 213
+  },
+  "0214-edvard-munch-christmas-in-the-brothel.json": {
+    "author": "Edvard Munch",
+    "title": "Christmas in the Brothel",
+    "style": "Expressionism",
+    "year": "1903–04",
+    "century": "XX",
+    "location": "Munch Museum, Oslo",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Christmas_in_the_Brothel",
+    "i18n": {
+      "es": {
+        "author": "Edvard Munch",
+        "title": "Navidad en el burdel",
+        "style": "Expresionismo",
+        "location": "Museo Munch, Oslo"
+      }
+    },
+    "number": 214
+  },
+  "0215-claude-monet-woman-with-a-parasol-madame-monet-and-her-son.json": {
+    "author": "Claude Monet",
+    "title": "Woman with a Parasol – Madame Monet and Her Son",
+    "style": "Impressionism",
+    "year": "1875",
+    "century": "XIX",
+    "location": "National Gallery of Art, Washington D.C.",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Woman_with_a_Parasol_%E2%80%93_Madame_Monet_and_Her_Son",
+    "i18n": {
+      "es": {
+        "author": "Claude Monet",
+        "title": "Mujer con sombrilla (El paseo)",
+        "style": "Impresionismo",
+        "location": "Galería Nacional de Arte, Washington D.C."
+      }
+    },
+    "number": 215
   }
 }

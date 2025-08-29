@@ -1,0 +1,18 @@
+{
+  "author": "Claude Monet",
+  "title": "Woman with a Parasol – Madame Monet and Her Son",
+  "style": "Impressionism",
+  "year": "1875",
+  "century": "XIX",
+  "location": "National Gallery of Art, Washington D.C.",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Woman_with_a_Parasol_%E2%80%93_Madame_Monet_and_Her_Son",
+  "i18n": {
+    "es": {
+      "author": "Claude Monet",
+      "title": "Mujer con sombrilla (El paseo)",
+      "style": "Impresionismo",
+      "location": "Galería Nacional de Arte, Washington D.C."
+    }
+  },
+  "number": 215
+}

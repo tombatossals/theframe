@@ -1,0 +1,18 @@
+{
+  "author": "André Derain",
+  "title": "Charing Cross Bridge, London",
+  "style": "Fauvism",
+  "year": "1906",
+  "century": "XX",
+  "location": "National Gallery of Art, Washington",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Andr%C3%A9_Derain",
+  "i18n": {
+    "es": {
+      "author": "André Derain",
+      "title": "Puente de Charing Cross, Londres",
+      "style": "Fauvismo",
+      "location": "Galería Nacional de Arte, Washington"
+    }
+  },
+  "number": 213
+}

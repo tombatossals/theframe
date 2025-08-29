@@ -1,0 +1,18 @@
+{
+  "author": "Pieter Bruegel the Elder",
+  "title": "The Peasant Wedding",
+  "style": "Northern Renaissance",
+  "year": 1567,
+  "century": "XVI",
+  "location": "Kunsthistorisches Museum, Vienna",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Peasant_Wedding",
+  "i18n": {
+    "es": {
+      "author": "Pieter Brueghel el Viejo",
+      "title": "La boda campesina",
+      "style": "Renacimiento del Norte de Europa",
+      "location": "Museo de Historia del Arte, Viena"
+    }
+  },
+  "number": 211
+}

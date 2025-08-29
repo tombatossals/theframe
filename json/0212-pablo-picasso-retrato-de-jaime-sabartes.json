@@ -1,0 +1,18 @@
+{
+  "author": "Pablo Picasso",
+  "title": "Retrato de Jaime Sabartés",
+  "style": "Periodo Azul",
+  "year": 1901,
+  "century": "XX",
+  "location": "Museo Pushkin, Moscú",
+  "wikipedia_url": "https://es.wikipedia.org/wiki/Retrato_de_Jaume_Sabart%C3%A9s_con_gorguera_y_sombrero",
+  "i18n": {
+    "es": {
+      "author": "Pablo Picasso",
+      "title": "Retrato de Jaime Sabartés",
+      "style": "Periodo Azul",
+      "location": "Museo Pushkin, Moscú"
+    }
+  },
+  "number": 212
+}
