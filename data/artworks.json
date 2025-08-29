@@ -3688,5 +3688,95 @@
       }
     },
     "number": 205
+  },
+  "0206-maurice-denis-les-muses.json": {
+    "author": "Maurice Denis",
+    "title": "Les Muses",
+    "style": "Post-Impressionism",
+    "year": 1893,
+    "century": "XIX",
+    "location": "Musée d'Orsay, Paris, France",
+    "wikipedia_url": "https://fr.wikipedia.org/wiki/Maurice_Denis",
+    "i18n": {
+      "es": {
+        "author": "Maurice Denis",
+        "title": "Las Musas",
+        "style": "Postimpresionismo",
+        "location": "Museo de Orsay, París, Francia"
+      }
+    },
+    "number": 206
+  },
+  "0207-giuseppe-arcimboldo-vertumnus.json": {
+    "author": "Giuseppe Arcimboldo",
+    "title": "Vertumnus",
+    "style": "Mannerism",
+    "year": 1591,
+    "century": "XVI",
+    "location": "Skokloster Castle, Sweden",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Giuseppe_Arcimboldo",
+    "i18n": {
+      "es": {
+        "author": "Giuseppe Arcimboldo",
+        "title": "Vertumno",
+        "style": "Manierismo",
+        "location": "Castillo de Skokloster, Suecia"
+      }
+    },
+    "number": 207
+  },
+  "0208-rene-magritte-la-trahison-des-images.json": {
+    "author": "René Magritte",
+    "title": "La trahison des images",
+    "style": "Surrealismo",
+    "year": 1929,
+    "century": "XX",
+    "location": "Los Angeles County Museum of Art, Los Ángeles, Estados Unidos",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/La_traici%C3%B3n_de_las_im%C3%A1genes",
+    "i18n": {
+      "es": {
+        "author": "René Magritte",
+        "title": "La traición de las imágenes",
+        "style": "Surrealismo",
+        "location": "Museo de Arte del Condado de Los Ángeles, Los Ángeles, Estados Unidos"
+      }
+    },
+    "number": 208
+  },
+  "0209-wassily-kandinsky-composition-x.json": {
+    "author": "Wassily Kandinsky",
+    "title": "Composition X",
+    "style": "Expressionism",
+    "year": 1939,
+    "century": "XX",
+    "location": "Kunstsammlung Nordrhein-Westfalen, Düsseldorf, Alemania",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Wassily_Kandinsky",
+    "i18n": {
+      "es": {
+        "author": "Wassily Kandinsky",
+        "title": "Composición X",
+        "style": "Expresionismo",
+        "location": "Kunstsammlung Nordrhein-Westfalen, Düsseldorf, Alemania"
+      }
+    },
+    "number": 209
+  },
+  "0210-giorgio-de-chirico-el-cerebro-del-nino.json": {
+    "author": "Giorgio De Chirico",
+    "title": "El cerebro del niño",
+    "style": "Metafísico",
+    "year": 1914,
+    "century": "XX",
+    "location": "Nationalmuseum, Estocolmo, Suecia",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Giorgio_de_Chirico",
+    "i18n": {
+      "es": {
+        "author": "Giorgio De Chirico",
+        "title": "El cerebro del niño",
+        "style": "Metafísico",
+        "location": "Nationalmuseum, Estocolmo, Suecia"
+      }
+    },
+    "number": 210
   }
 }

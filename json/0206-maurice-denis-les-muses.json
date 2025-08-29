@@ -1,0 +1,18 @@
+{
+  "author": "Maurice Denis",
+  "title": "Les Muses",
+  "style": "Post-Impressionism",
+  "year": 1893,
+  "century": "XIX",
+  "location": "Musée d'Orsay, Paris, France",
+  "wikipedia_url": "https://fr.wikipedia.org/wiki/Maurice_Denis",
+  "i18n": {
+    "es": {
+      "author": "Maurice Denis",
+      "title": "Las Musas",
+      "style": "Postimpresionismo",
+      "location": "Museo de Orsay, París, Francia"
+    }
+  },
+  "number": 206
+}

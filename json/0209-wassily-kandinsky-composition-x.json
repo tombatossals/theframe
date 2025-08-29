@@ -1,0 +1,18 @@
+{
+  "author": "Wassily Kandinsky",
+  "title": "Composition X",
+  "style": "Expressionism",
+  "year": 1939,
+  "century": "XX",
+  "location": "Kunstsammlung Nordrhein-Westfalen, Düsseldorf, Alemania",
+  "wikipedia_url": "https://es.wikipedia.org/wiki/Wassily_Kandinsky",
+  "i18n": {
+    "es": {
+      "author": "Wassily Kandinsky",
+      "title": "Composición X",
+      "style": "Expresionismo",
+      "location": "Kunstsammlung Nordrhein-Westfalen, Düsseldorf, Alemania"
+    }
+  },
+  "number": 209
+}

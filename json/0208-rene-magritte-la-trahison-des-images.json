@@ -1,0 +1,18 @@
+{
+  "author": "René Magritte",
+  "title": "La trahison des images",
+  "style": "Surrealismo",
+  "year": 1929,
+  "century": "XX",
+  "location": "Los Angeles County Museum of Art, Los Ángeles, Estados Unidos",
+  "wikipedia_url": "https://es.wikipedia.org/wiki/La_traici%C3%B3n_de_las_im%C3%A1genes",
+  "i18n": {
+    "es": {
+      "author": "René Magritte",
+      "title": "La traición de las imágenes",
+      "style": "Surrealismo",
+      "location": "Museo de Arte del Condado de Los Ángeles, Los Ángeles, Estados Unidos"
+    }
+  },
+  "number": 208
+}
