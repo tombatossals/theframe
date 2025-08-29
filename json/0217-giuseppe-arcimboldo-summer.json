@@ -1,0 +1,18 @@
+{
+  "author": "Giuseppe Arcimboldo",
+  "title": "Summer",
+  "style": "Mannerism",
+  "year": 1563,
+  "century": "XVI",
+  "location": "Kunsthistorisches Museum, Vienna",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Four_Seasons_(Arcimboldo)",
+  "i18n": {
+    "es": {
+      "author": "Giuseppe Arcimboldo",
+      "title": "Verano",
+      "style": "Manierismo",
+      "location": "Museo de Historia del Arte de Viena"
+    }
+  },
+  "number": 217
+}

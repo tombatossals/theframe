@@ -3868,5 +3868,95 @@
       }
     },
     "number": 215
+  },
+  "0216-fernand-leger-le-mecanicien.json": {
+    "author": "Fernand Léger",
+    "title": "Le Mécanicien",
+    "style": "Tubismo / Modernismo",
+    "year": 1920,
+    "century": "XX",
+    "location": "Galería Nacional de Canadá, Ottawa",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Fernand_L%C3%A9ger",
+    "i18n": {
+      "es": {
+        "author": "Fernand Léger",
+        "title": "El mecánico",
+        "style": "Tubismo / Modernismo",
+        "location": "Galería Nacional de Canadá, Ottawa"
+      }
+    },
+    "number": 216
+  },
+  "0217-giuseppe-arcimboldo-summer.json": {
+    "author": "Giuseppe Arcimboldo",
+    "title": "Summer",
+    "style": "Mannerism",
+    "year": 1563,
+    "century": "XVI",
+    "location": "Kunsthistorisches Museum, Vienna",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Four_Seasons_(Arcimboldo)",
+    "i18n": {
+      "es": {
+        "author": "Giuseppe Arcimboldo",
+        "title": "Verano",
+        "style": "Manierismo",
+        "location": "Museo de Historia del Arte de Viena"
+      }
+    },
+    "number": 217
+  },
+  "0218-thomas-cole-view-from-mount-holyoke-northampton-massachusetts-after-a-thunderstorm.json": {
+    "author": "Thomas Cole",
+    "title": "View from Mount Holyoke, Northampton, Massachusetts, After a Thunderstorm",
+    "style": "Hudson River School, Romanticism",
+    "year": 1836,
+    "century": "XIX",
+    "location": "The Metropolitan Museum of Art, New York",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/View_from_Mount_Holyoke,_Northampton,_Massachusetts,_after_a_Thunderstorm",
+    "i18n": {
+      "es": {
+        "author": "Thomas Cole",
+        "title": "Vista desde Mount Holyoke, Northampton, Massachusetts, después de una tormenta",
+        "style": "Escuela del río Hudson, Romanticismo",
+        "location": "El Museo Metropolitano de Arte, Nueva York"
+      }
+    },
+    "number": 218
+  },
+  "0219-frederic-bazille-reunion-de-famille.json": {
+    "author": "Frédéric Bazille",
+    "title": "Réunion de famille",
+    "style": "Impresionismo",
+    "year": "1867",
+    "century": "XIX",
+    "location": "Musée d'Orsay, París",
+    "wikipedia_url": "https://es.wikipedia.org/wiki/Retrato_de_una_familia",
+    "i18n": {
+      "es": {
+        "author": "Frédéric Bazille",
+        "title": "Retrato de una familia",
+        "style": "Impresionismo",
+        "location": "Museo de Orsay, París"
+      }
+    },
+    "number": 219
+  },
+  "0220-claude-monet-impression-sunrise.json": {
+    "author": "Claude Monet",
+    "title": "Impression, Sunrise",
+    "style": "Impressionism",
+    "year": 1872,
+    "century": "XIX",
+    "location": "Musée Marmottan Monet, Paris, France",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Impression,_Sunrise",
+    "i18n": {
+      "es": {
+        "author": "Claude Monet",
+        "title": "Impresión, sol naciente",
+        "style": "Impresionismo",
+        "location": "Museo Marmottan Monet, París, Francia"
+      }
+    },
+    "number": 220
   }
 }

@@ -1,0 +1,18 @@
+{
+  "author": "Claude Monet",
+  "title": "Impression, Sunrise",
+  "style": "Impressionism",
+  "year": 1872,
+  "century": "XIX",
+  "location": "Musée Marmottan Monet, Paris, France",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Impression,_Sunrise",
+  "i18n": {
+    "es": {
+      "author": "Claude Monet",
+      "title": "Impresión, sol naciente",
+      "style": "Impresionismo",
+      "location": "Museo Marmottan Monet, París, Francia"
+    }
+  },
+  "number": 220
+}
